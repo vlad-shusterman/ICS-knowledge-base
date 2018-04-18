@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_adventure;;
+
+concept_adventure => nrel_main_idtf:[приключенческий фильм] (* <- lang_ru;; *);;
+concept_adventure => nrel_idtf:[adventure film] (* <- lang_en;; *);;
+
+concept_adventure <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- definition;;
+			=> nrel_main_idtf: [Опр. (приключенческий фильм)] (* <- lang_ru;; *);;
+			<=nrel_using_constants:
+			{
+				concept_genre;
+				concept_cinematography
+			};;
+			<= nrel_sc_text_translation: ...(*
+				-> rrel_example: "file://HTML/concept_adventure_def_ru.html" (*<-lang_ru;; =>nrel_format:format_html;;*);;
+				-> rrel_example: "file://HTML/concept_adventure_def_en.html" (*<-lang_en;; =>nrel_format:format_html;;*);;
+			*);;
+		*);;
+
+concept_adventure <= nrel_inclusion: concept_genre;;
+
+concept_adventure => nrel_inclusion: concept_western;;
