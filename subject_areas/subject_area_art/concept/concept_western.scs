@@ -1,0 +1,22 @@
+sc_node_not_relation -> concept_western;;
+
+concept_western => nrel_main_idtf:[вестерн] (* <- lang_ru;; *);;
+concept_western => nrel_idtf:[western] (* <- lang_en;; *);;
+
+concept_western <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- definition;;
+			=> nrel_main_idtf: [Опр. (вестерн)] (* <- lang_ru;; *);;
+			<=nrel_using_constants:
+			{
+				concept_genre;
+				concept_piece_of_art
+			};;
+			<= nrel_sc_text_translation: ...(*
+				-> rrel_example: "file://HTML/concept_western_def_ru.html" (*<-lang_ru;; =>nrel_format:format_html;;*);;
+				-> rrel_example: "file://HTML/concept_western_def_en.html" (*<-lang_en;; =>nrel_format:format_html;;*);;
+			*);;
+		*);;
+
+concept_western<= nrel_inclusion: concept_genre;;

@@ -1,0 +1,22 @@
+sc_node_not_relation -> concept_tragicomedy;;
+
+concept_tragicomedy => nrel_main_idtf:[трагикомедия] (* <- lang_ru;; *);;
+concept_tragicomedy => nrel_idtf:[tragicomedy] (* <- lang_en;; *);;
+
+concept_tragicomedy <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- definition;;
+			=> nrel_main_idtf: [Опр. (трагикомедия)] (* <- lang_ru;; *);;
+			<=nrel_using_constants:
+			{
+				concept_tragedy;
+                concept_comedy
+			};;
+			<= nrel_sc_text_translation: ...(*
+				-> rrel_example: "file://HTML/concept_tragicomedy_def_ru.html" (*<-lang_ru;; =>nrel_format:format_html;;*);;
+				-> rrel_example: "file://HTML/concept_tragicomedy_def_en.html" (*<-lang_en;; =>nrel_format:format_html;;*);;
+			*);;
+		*);;
+ 
+concept_tragicomedy <= nrel_inclusion: concept_genre;;

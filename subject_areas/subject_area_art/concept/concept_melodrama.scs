@@ -1,0 +1,22 @@
+sc_node_not_relation -> concept_melodrama;;
+
+concept_melodrama => nrel_main_idtf:[мелодрама] (* <- lang_ru;; *);;
+concept_melodrama => nrel_idtf:[melodrama] (* <- lang_en;; *);;
+
+concept_melodrama <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- definition;;
+			=> nrel_main_idtf: [Опр. (мелодрама)] (* <- lang_ru;; *);;
+			<=nrel_using_constants:
+			{
+				concept_genre;
+				concept_piece_of_art
+			};;
+			<= nrel_sc_text_translation: ...(*
+				-> rrel_example: "file://HTML/concept_melodrama_def_ru.html" (*<-lang_ru;; =>nrel_format:format_html;;*);;
+				-> rrel_example: "file://HTML/concept_melodrama_def_en.html" (*<-lang_en;; =>nrel_format:format_html;;*);;
+			*);;
+		*);;
+
+concept_melodrama <= nrel_inclusion: concept_genre;;
