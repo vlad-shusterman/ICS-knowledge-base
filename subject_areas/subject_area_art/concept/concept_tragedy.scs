@@ -1,9 +1,9 @@
-sc_node_not_relation -> concept_tragedy;;
+concept_tragedy -> sc_node_not_relation;
 
-concept_tragedy => nrel_main_idtf:[трагедия] (* <- lang_ru;; *);;
-concept_tragedy => nrel_idtf:[tragedy] (* <- lang_en;; *);;
+=> nrel_main_idtf:[трагедия] (* <- lang_ru;; *);
+=> nrel_idtf:[tragedy] (* <- lang_en;; *);
 
-concept_tragedy <- rrel_key_sc_element: 
+<- rrel_key_sc_element: 
         ... 
         (*
             <- definition;;
@@ -18,7 +18,7 @@ concept_tragedy <- rrel_key_sc_element:
 				-> rrel_example: "file://HTML/concept_tragedy_def_ru.html" (*<-lang_ru;; =>nrel_format:format_html;;*);;
 				-> rrel_example: "file://HTML/concept_tragedy_def_en.html" (*<-lang_en;; =>nrel_format:format_html;;*);;
 			*);;
-		*);;
+		*);
  
 /*concept_tragedy <- rrel_key_sc_element:
 	...(*
@@ -29,6 +29,6 @@ concept_tragedy <- rrel_key_sc_element:
 			*);;
 *);;*/
 
-concept_tragedy<= nrel_inclusion: concept_genre;;
+<= nrel_inclusion: concept_genre;
 
-concept_tragedy => nrel_inclusion: concept_tragicomedy;;
+ => nrel_inclusion: concept_tragicomedy;;

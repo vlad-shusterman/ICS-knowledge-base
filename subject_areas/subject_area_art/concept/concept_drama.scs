@@ -1,13 +1,14 @@
-sc_node_not_relation -> concept_drama;;
+concept_drama <- sc_node_not_relation;
 
-concept_drama => nrel_main_idtf:[драма] (* <- lang_ru;; *);;
-concept_drama => nrel_idtf:[drama] (* <- lang_en;; *);;
+ => nrel_main_idtf:[драма] (* <- lang_ru;; *);
+ => nrel_idtf:[drama] (* <- lang_en;; *);
 
-concept_drama <- rrel_key_sc_element: 
+ <- rrel_key_sc_element: 
         ... 
         (*
             <- definition;;
-			=> nrel_main_idtf: [Опр. (драма)] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [Опр. (драма)] (* <- lang_ru;; *);
+							   [Def. (drama)] (* <- lang_ru;; *);;
 			<=nrel_using_constants:
 			{
 				concept_genre;
@@ -17,11 +18,10 @@ concept_drama <- rrel_key_sc_element:
 				-> rrel_example: "file://HTML/concept_drama_def_ru.html" (*<-lang_ru;; =>nrel_format:format_html;;*);;
 				-> rrel_example: "file://HTML/concept_drama_def_en.html" (*<-lang_en;; =>nrel_format:format_html;;*);;
 			*);;
-		*);;
+		*);
 
-concept_drama <= nrel_inclusion: concept_genre;;
+ <= nrel_inclusion: concept_genre;
 
-concept_drama => nrel_inclusion: concept_melodrama;;
-concept_drama => nrel_inclusion: concept_psyhodrama;;
-concept_tragedy => nrel_inclusion: concept_dramedy;;
+ => nrel_inclusion: concept_melodrama;
+ => nrel_inclusion: concept_psyhodrama;;
 

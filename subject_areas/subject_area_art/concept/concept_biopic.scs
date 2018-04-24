@@ -1,13 +1,14 @@
-sc_node_not_relation -> concept_biopic;;
+concept_biopic <- sc_node_not_relation;
 
-concept_biopic => nrel_main_idtf:[биография] (* <- lang_ru;; *);;
-concept_biopic => nrel_idtf:[biopic] (* <- lang_en;; *);;
+=> nrel_main_idtf:[биография] (* <- lang_ru;; *);
+=> nrel_idtf:[biopic] (* <- lang_en;; *);
 
-concept_biopic <- rrel_key_sc_element: 
+<- rrel_key_sc_element: 
         ... 
         (*
             <- definition;;
-			=> nrel_main_idtf: [Опр. (биография)] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [Опр. (биография)] (* <- lang_ru;; *);
+							   [Def. (biopic)] (* <- lang_en;; *);;
 			<=nrel_using_constants:
 			{
 				concept_cinematography;
@@ -17,6 +18,18 @@ concept_biopic <- rrel_key_sc_element:
 				-> rrel_example: "file://HTML/concept_biopic_def_ru.html" (*<-lang_ru;; =>nrel_format:format_html;;*);;
 				-> rrel_example: "file://HTML/concept_biopic_def_en.html" (*<-lang_en;; =>nrel_format:format_html;;*);;
 			*);;
-		*);;
+		*);
 
-concept_biopic<= nrel_inclusion: concept_genre;;
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (биография)](*<-lang_ru;;*);
+		[Pic. (biopic)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/concept_biopic_img.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<= nrel_inclusion: concept_genre;;

@@ -1,13 +1,14 @@
-sc_node_not_relation -> concept_lyrical_comedy;;
+concept_lyrical_comedy <- sc_node_not_relation;
 
-concept_lyrical_comedy => nrel_main_idtf:[лирическая комедия] (* <- lang_ru;; *);;
-concept_lyrical_comedy => nrel_idtf:[lyrical comedy] (* <- lang_en;; *);;
+ => nrel_main_idtf:[лирическая комедия] (* <- lang_ru;; *);
+ => nrel_idtf:[lyrical comedy] (* <- lang_en;; *);
 
-concept_lyrical_comedy <- rrel_key_sc_element: 
+ <- rrel_key_sc_element: 
         ... 
         (*
             <- definition;;
-			=> nrel_main_idtf: [Опр. (лирическая комедия)] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [Опр. (лирическая комедия)] (* <- lang_ru;; *);
+                               [Def. (lyrical comedy)] (* <- lang_en;; *);;
 			<=nrel_using_constants:
             {
                 concept_genre;
@@ -18,6 +19,6 @@ concept_lyrical_comedy <- rrel_key_sc_element:
                 -> rrel_example: "file://HTML/concept_lyrical_comedy_def_ru.html" (*<-lang_ru;; =>nrel_format:format_html;;*);;
 				-> rrel_example: "file://HTML/concept_lyrical_comedy_def_en.html" (*<-lang_en;; =>nrel_format:format_html;;*);;
 			*);;
-		*);;
+		*);
 
-concept_lyrical_comedy<= nrel_inclusion: concept_genre;;
+<= nrel_inclusion: concept_genre;;

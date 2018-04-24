@@ -1,14 +1,15 @@
-sc_node_not_relation -> concept_documentary;;
+ concept_documentary <- sc_node_not_relation;
 
-concept_documentary => nrel_main_idtf:[документальный фильм] (* <- lang_ru;; *);;
-concept_documentary => nrel_idtf:[документалка] (* <- lang_ru;; *);;
-concept_documentary => nrel_idtf:[documentary] (* <- lang_en;; *);;
+ => nrel_main_idtf:[документальный фильм] (* <- lang_ru;; *);
+ => nrel_idtf:[документалка] (* <- lang_ru;; *);
+ => nrel_idtf:[documentary] (* <- lang_en;; *);
 
-concept_documentary <- rrel_key_sc_element: 
+ <- rrel_key_sc_element: 
         ... 
         (*
             <- definition;;
-			=> nrel_main_idtf: [Опр. (документальный фильм)] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [Опр. (документальный фильм)] (* <- lang_ru;; *);
+								[Def. (documentary)] (* <- lang_en;; *);;
 			<=nrel_using_constants:
 			{
 				concept_genre;
@@ -18,6 +19,6 @@ concept_documentary <- rrel_key_sc_element:
 				-> rrel_example: "file://HTML/concept_documentary_def_ru.html" (*<-lang_ru;; =>nrel_format:format_html;;*);;
 				-> rrel_example: "file://HTML/concept_documentary_def_en.html" (*<-lang_en;; =>nrel_format:format_html;;*);;
 			*);;
-		*);;
+		*);
 
-concept_documentary <= nrel_inclusion: concept_genre;;
+ <= nrel_inclusion: concept_genre;;
