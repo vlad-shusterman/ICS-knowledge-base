@@ -7,8 +7,8 @@ nrel_hiatus <- sc_node_norole_relation;
 <- antitransitive_relation;
 
 => nrel_main_idtf:
-    [хиатус*](*<- lang_en;;*);
-    [hiatus*](*<- lang_ru;;*);
+    [hiatus*](*<- lang_en;;*);
+    [хиатус*](*<- lang_ru;;*);
 
 <- rrel_key_sc_element:... (*
     <- definition;;
