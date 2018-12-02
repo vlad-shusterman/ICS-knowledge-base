@@ -1,0 +1,13 @@
+concept_film_studio -> marvel_studio;disney;bollywood;;
+
+marvel_studio => nrel_foundation_date: ...(* -> rrel_number_of_year: 1947;;*);;
+disney => nrel_foundation_date: ... (* -> rrel_number_of_year: 1923;;*);;
+bollywood => nrel_foundation_date: ... (* -> rrel_number_of_year: 1970;;*);;
+
+marvel_studio => nrel_location: ... (*-> USA;;*);;
+disney => nrel_location: ...(* -> USA;;*);;
+bollywood => nrel_location: ... (*-> India;;*);;
+USA <- concept_country;;
+India <- concept_country;;
+
+

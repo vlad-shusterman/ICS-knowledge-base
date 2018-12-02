@@ -1,0 +1,13 @@
+concept_film -> La_La_Land; The_Star_Is_Born;;
+
+concept_musical_film -> La_La_Land; The_Star_Is_Born;;
+
+La_La_Land => nrel_manufacturer: hollywood;;
+
+The_Star_Is_Born => nrel_manufacturer: hollywood;;
+
+La_La_Land => nrel_premiere: ...(*-> rrel_number_of_year: 2016;;*);;
+
+The_Star_Is_Born => nrel_premiere: ...(*-> rrel_number_of_year: 2018;;*);;
+
+hollywood <- concept_film_studio;;
