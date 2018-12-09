@@ -9,7 +9,7 @@ sc_agent_of_finding_film_by_cinocompanies_and_years
 	(sc_event_add_output_arc => question_initiated);
 
 => nrel_initiation_condition_and_result: 
-	(..sc_agent_of_finding_film_condition => ..sc_agent_of_finding_film_result);
+	(..sc_agent_of_finding_film_by_cinocompanies_and_years_condition => ..sc_agent_of_finding_film_by_cinocompanies_and_years_result);
 
 <= nrel_sc_agent_key_sc_elements: 
 	{
@@ -19,7 +19,7 @@ sc_agent_of_finding_film_by_cinocompanies_and_years
 	};
 
 => nrel_inclusion: 
-	.platform_independent_realization_of_sc_agent_of_finding_film
+	.platform_independent_realization_of_sc_agent_of_finding_film_by_cinocompanies_and_country
 	(*
 	<- platform_independent_abstract_sc_agent;;
 	<= nrel_sc_agent_program: 
@@ -27,11 +27,11 @@ sc_agent_of_finding_film_by_cinocompanies_and_years
 		agent_of_finding_film_by_cinocompanies_and_years 	
 		};;
 
-	-> sc_agent_of_finding_film_scp    
+	-> sc_agent_of_finding_film_by_cinocompanies_and_years    
 		(* <- active_sc_agent;; *);;  
 	*);;
 
-..sc_agent_of_finding_film_condition
+..sc_agent_of_finding_film_by_cinocompanies_and_years_condition
 = [*
 	action_of_finding_film_by_cinocompanies_and_year _-> .._question;;
 	question_initiated _-> .._question;;
@@ -40,7 +40,7 @@ sc_agent_of_finding_film_by_cinocompanies_and_years
 	.._question _-> rrel_2:: .._param2;;
 *];;
 
-..sc_agent_of_finding_film_result
+..sc_agent_of_finding_film_by_cinocompanies_and_years_result
 = [*
 	action_of_finding_film_by_cinocompanies_and_year _-> .._question;;
 	question_finished _-> .._question;;

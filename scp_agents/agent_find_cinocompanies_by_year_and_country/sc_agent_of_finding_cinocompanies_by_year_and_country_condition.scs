@@ -19,7 +19,7 @@ sc_agent_of_finding_cinocompanies_by_year_and_country
 	};
 
 => nrel_inclusion: 
-	.platform_independent_realization_of_sc_agent_of_finding_film
+	.platform_independent_realization_of_sc_agent_of_finding_cinocompanies_by_year_and_country
 	(*
 	<- platform_independent_abstract_sc_agent;;
 	<= nrel_sc_agent_program: 
@@ -27,7 +27,7 @@ sc_agent_of_finding_cinocompanies_by_year_and_country
 		agent_of_finding_cinocompanies_by_year_and_country 	
 		};;
 
-	-> sc_agent_of_finding_film_scp    
+	-> sc_agent_of_finding_cinocompanies_by_year_and_country    
 		(* <- active_sc_agent;; *);;  
 	*);;
 
