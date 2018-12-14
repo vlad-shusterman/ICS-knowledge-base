@@ -1,0 +1,16 @@
+ui_menu_find_films_of_type  <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_find_films_of_type  => nrel_main_idtf: [Найти фильмы по награде] (* <- lang_ru;; *);;
+ui_menu_find_films_of_type  => nrel_main_idtf: [Find  films of awarded] (* <- lang_en;; *);;
+ui_menu_find_films_of_type  => ui_nrel_command_template:
+	[*
+		question_scp_find_films_of_type _-> ._question_scp_find_films_of_type_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;				
+			*);;
+		._question_scp_find_films_of_type_instance _<- question;;
+
+	*];;
+
+ui_menu_find_films_of_type  => ui_nrel_command_lang_template: [Найденные фильмы] (* <- lang_ru;; *);;
+ui_menu_find_films_of_type  => ui_nrel_command_lang_template: [films] (* <- lang_en;; *);;

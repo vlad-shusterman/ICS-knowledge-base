@@ -1,0 +1,61 @@
+scp_program -> proc_find_films_of_type (*
+	
+	-> rrel_params: ... (*
+		-> rrel_1: rrel_in: _type;;
+		-> rrel_2: rrel_in: _result;;
+	*);;
+
+	-> rrel_operators: ... (*
+
+		->rrel_init:  ..not_last_films (*
+			 <- searchSetStr5;; 
+			-> rrel_1: rrel_assign: rrel_scp_var: _node1;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc2;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _type;;                          
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc4;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_be_awarded;;                         
+		
+			->rrel_set_1: rrel_assign: rrel_scp_var: _new_set;; 
+			=> nrel_then: ..proc_2;;                          
+		 	=> nrel_else: ..proc_run_testcase_operator_return;;	
+		*);;
+
+
+		-> ..proc_2
+		(*
+			<-searchElStr3;;
+			->rrel_1:rrel_fixed: rrel_scp_var: _new_set;;
+			->rrel_2:rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			->rrel_3:rrel_assign: rrel_scp_var:_actor;;
+
+			=>nrel_then: ..proc_erace_arc1;;
+			=>nrel_else: ..proc_run_testcase_operator_return;;
+		*);;
+
+			-> ..proc_erace_arc1
+			(*
+			<-eraseEl;;
+			->rrel_1: rrel_fixed: rrel_erase: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			=>nrel_goto: ..proc3;;
+			*);;
+
+			-> ..proc3
+			(*
+			 <- searchSetStr5;; 
+			-> rrel_1: rrel_assign: rrel_scp_var: _film_node;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc3;;
+			-> rrel_3: rrel_fixed: rrel_node: rrel_scp_var: _actor;;                          
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc5;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_actor;;                         
+		
+			->rrel_set_1: rrel_fixed: rrel_scp_var: _result;; 
+			=> nrel_then: ..proc_2;;                          
+		 	=> nrel_else: ..proc_2;;	
+			*);;
+
+
+		-> ..proc_run_testcase_operator_return (*
+			<- return;;
+		*);;
+	*);;
+*);;

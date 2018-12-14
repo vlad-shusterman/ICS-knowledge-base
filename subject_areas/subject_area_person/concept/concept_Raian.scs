@@ -1,0 +1,70 @@
+concept_Raian <- rrel_key_sc_element:
+    ...
+    (*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ФИО: Райан Родни Рейнольдс](* <- lang_ru;; 	*);;
+		*);;
+	*); 
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Дата рождения: 23 октября 1976](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Место рождения:Ванкувер](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возраст:42 года](* <- lang_ru;; 	*);;
+		*);;
+	*);
+=>nrel_be_awarded: concept_oscar;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ канадский актёр кино и телевидения, кинопродюсер. Наиболее известен по ролям в ситкоме «Два парня, девушка и пиццерия», а также в фильмах «Король вечеринок», «Просто друзья», «Да, нет, наверное», «Предложение», «Ужас Амитивилля», «Большая жратва», «Люди Икс: Начало. Росомаха», «Погребённый заживо», «Блэйд: Троица», «Зелёный Фонарь», «Дэдпул», «Дэдпул 2», «Телохранитель киллера». Обладатель премии «Молодой Голливуд» в 2003 году.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+-> rrel_key_sc_element: ...(*
+		<- illustration;;
+		=>nrel_main_idtf:
+		    [Рис. (Райан Рейнольдс)](*<-lang_ru;;*);
+		    [Pic. (Ryan Reynolds)](*<-lang_en;;*);;
+	    <=nrel_sc_text_translation:...
+	    (*
+		->"file://IMG/Ryan.jpg"(*=>nrel_format:format_jpg;;*);;
+	    *);;
+*);
+
+=> nrel_main_idtf:
+    [Ryan Reynolds](*<- lang_en;;*);
+    [Райан Рейнольдс](*<- lang_ru;;*);;
+
+
