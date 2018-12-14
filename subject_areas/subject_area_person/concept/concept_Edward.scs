@@ -1,0 +1,83 @@
+concept_Edward <- rrel_key_sc_element:
+    ...
+    (*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ФИО: Эдвард Джон Дэвид Редмэйн](* <- lang_ru;; 	*);;
+		*);;
+	*); 
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Дата рождения: 6 июля 1982](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Место рождения:Великобритания](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возраст:36 года](* <- lang_ru;; 	*);;
+		*);;
+	*);
+        	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Карьера:1998 — наст. время.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+        
+=>nrel_be_awarded: concept_oscar;concept_golden_globe;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ английский актёр. Лауреат премий «Оскар», «Золотой глобус», «Тони», BAFTA и премии Лоренса Оливье.
+Прославился благодаря роли физика-теоретика Стивена Хокинга в фильме «Вселенная Стивена Хокинга», за эту роль Редмэйн получил мировое признание и высокие оценки от авторитетных мировых кинокритиков.
+В 2015 году был произведен в офицеры Ордена Британской империи за вклад в развитие театра.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+-> rrel_key_sc_element: ...(*
+		<- illustration;;
+		=>nrel_main_idtf:
+		    [Рис. (Эдвард Редиэйн)](*<-lang_ru;;*);
+		    [Pic. (Edward Redmayen)](*<-lang_en;;*);;
+	    <=nrel_sc_text_translation:...
+	    (*
+		->"file://IMG/Eddie.jpg"(*=>nrel_format:format_jpg;;*);;
+	    *);;
+*);
+
+=> nrel_main_idtf:
+    [Edward Redmayen](*<- lang_en;;*);
+    [Эдвард Редиэйн](*<- lang_ru;;*);;
+
+
