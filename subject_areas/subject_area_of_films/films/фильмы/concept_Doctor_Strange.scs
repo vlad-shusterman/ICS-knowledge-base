@@ -23,7 +23,7 @@ concept_Doctor_Strange
 	*);;
 *);	
 	
-	=>nrel_actor:concept_Benedict;	
+	
 
 =>nrel_keywords: concept_antihero;
 =>nrel_keywords: concept_ambiguous_villain;

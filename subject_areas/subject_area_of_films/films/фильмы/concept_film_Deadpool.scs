@@ -23,7 +23,7 @@ concept_film_Deadpool
 	*);;
 *);	
 	
-	=>nrel_actor:concept_Raian;
+	
 
 =>nrel_keywords: concept_antihero;
 =>nrel_keywords: concept_violence;

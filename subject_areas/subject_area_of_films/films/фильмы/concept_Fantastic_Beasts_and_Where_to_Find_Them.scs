@@ -23,8 +23,7 @@ concept_Fantastic_Beasts_and_Where_to_Find_Them
 	*);;
 *);	
 	
-
-	=>nrel_actor:concept_Edward;	
+	
 
 =>nrel_keywords: concept_magic;
 =>nrel_keywords: concept_violence;

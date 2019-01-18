@@ -23,7 +23,7 @@ concept_film_The_Imitation_Game
 	*);;
 *);	
 	
-	=>nrel_actor:concept_Benedict;	
+	
 
 =>nrel_keywords: concept_world_war_two;
 =>nrel_keywords: concept_cryptography;
