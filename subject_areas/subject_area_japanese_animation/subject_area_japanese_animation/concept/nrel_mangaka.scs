@@ -23,7 +23,7 @@ nrel_mangaka <- sc_node_norole_relation;
 	*);;
 	<= nrel_sc_text_translation:...
 		(*
-			-> rrel_example:[<b><sc_element sys_idtf="nrel_mangaka">Оригинал</sc_element></b> это автор <sc_element sys_idtf="concept_manga">манги</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="nrel_mangaka">Мангака</sc_element></b> это автор <sc_element sys_idtf="concept_manga">манги</sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
 			-> rrel_example:[<b><sc_element sys_idtf="nrel_mangaka">Mangaka</sc_element></b> is a author of <sc_element sys_idtf="concept_manga">manga</sc_element>.](* <- lang_en;; => nrel_format: format_html;;*);;
 		*);;
 *);
