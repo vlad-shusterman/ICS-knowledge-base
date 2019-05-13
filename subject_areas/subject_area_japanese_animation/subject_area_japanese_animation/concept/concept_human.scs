@@ -1,0 +1,22 @@
+concept_human <- sc_node_not_relation;
+
+=> nrel_main_idtf:[человек] (* <- lang_ru;; *);
+=> nrel_idtf:[human] (* <- lang_en;; *);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр. (человек)](* <- lang_ru;; *);
+		[Def. (human)](* <- lang_en;; *);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_human;;
+	*);;
+	<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example:[<b><sc_element sys_idtf="concept_human">Человек</sc_element></b> - общественное существо, обладающее разумом и сознанием, а также субъект общественно-исторической деятельности и культуры.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[<b><sc_element sys_idtf="concept_human">Human/sc_element></b> is a social being with a mind and consciousness, as well as a subject of social history and culture.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);;
+
+
