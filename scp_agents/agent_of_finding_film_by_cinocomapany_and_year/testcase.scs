@@ -12,7 +12,7 @@ The_Star_Is_Born => nrel_world_premiere: ...(*-> rrel_number_of_year: 2018;;*);;
 
 hollywood <- concept_film_studio;;
 
-
 nrel_manufacturer => nrel_main_idtf:
     [производитель*](*<- lang_en;;*);
     [manufacturer](*<- lang_ru;;*);;
+

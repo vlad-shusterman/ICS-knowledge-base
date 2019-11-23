@@ -28,6 +28,7 @@ concept_subj_cartoons
 ->rrel_not_maximum_studied_object_class: concept_modern_cartoon;
 ->rrel_not_maximum_studied_object_class:  concept_soviet_cartoon;
 ->rrel_not_maximum_studied_object_class:  concept_cartoon_for_adult;
+->rrel_not_maximum_studied_object_class:  concept_cartoon_about_russian_warriors;
 
 <-sc_node_not_relation;	
 <-sc_const;;
