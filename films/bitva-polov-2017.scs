@@ -1,0 +1,67 @@
+concept_film_bitva_polov_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Битва полов]
+(* <- lang_ru;;    *);
+[Battle of the Sexes]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Битва полов)](*<-lang_ru;;*);
+[Description (Battle of the Sexes)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/bitva-polov-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/bitva-polov-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Битва полов)](*<-lang_ru;;*);
+		[Pic. (Battle of the Sexes)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/bitva-polov-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [He made a bet. She made history.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [28.09.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [28.09.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H1M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H1M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_bitva_polov_2017 =>nrel_keywords: film;;
+
+concept_film_bitva_polov_2017 <- concept_biography;concept_comedy;concept_drama;concept_sport;;
+
+concept_film_bitva_polov_2017 => nrel_main_actor : concept_emma_stone;concept_steve_carell;concept_andrea_riseborough;concept_sarah_silverman;;
+concept_film_bitva_polov_2017 => nrel_producer : concept_jonathan_dayton;concept_valerie_faris;;

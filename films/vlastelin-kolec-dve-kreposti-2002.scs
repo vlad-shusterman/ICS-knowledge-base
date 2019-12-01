@@ -1,0 +1,67 @@
+concept_film_vlastelin_kolec_dve_kreposti_2002
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Властелин колец: Две крепости]
+(* <- lang_ru;;    *);
+[The Lord of the Rings: The Two Towers]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Властелин колец: Две крепости)](*<-lang_ru;;*);
+[Description (The Lord of the Rings: The Two Towers)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vlastelin-kolec-dve-kreposti-2002_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vlastelin-kolec-dve-kreposti-2002_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Властелин колец: Две крепости)](*<-lang_ru;;*);
+		[Pic. (The Lord of the Rings: The Two Towers)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vlastelin-kolec-dve-kreposti-2002.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_new_zealand;concept_usa;
+
+=> nrel_film_critic_rating : 9;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [All will be sacrificed... All will be lost... Unless all unite against evil. (Trailer) See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [18.12.2002](*<-lang_ru;;*);;
+    => nrel_main_idtf : [18.12.2002](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H59M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H59M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_vlastelin_kolec_dve_kreposti_2002 =>nrel_keywords: film;;
+
+concept_film_vlastelin_kolec_dve_kreposti_2002 <- concept_adventure;concept_drama;concept_fantasy;;
+
+concept_film_vlastelin_kolec_dve_kreposti_2002 => nrel_main_actor : concept_elijah_wood;concept_ian_mckellen;concept_viggo_mortensen;concept_orlando_bloom;;
+concept_film_vlastelin_kolec_dve_kreposti_2002 => nrel_producer : concept_peter_jackson;;

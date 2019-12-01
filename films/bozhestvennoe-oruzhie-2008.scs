@@ -1,0 +1,67 @@
+concept_film_bozhestvennoe_oruzhie_2008
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Божественное оружие]
+(* <- lang_ru;;    *);
+[Shin-gi-jeon / The Divine Weapon]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Божественное оружие)](*<-lang_ru;;*);
+[Description (Shin-gi-jeon / The Divine Weapon)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/bozhestvennoe-oruzhie-2008_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/bozhestvennoe-oruzhie-2008_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Божественное оружие)](*<-lang_ru;;*);
+		[Pic. (Shin-gi-jeon / The Divine Weapon)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/bozhestvennoe-oruzhie-2008.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_south_korea;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Shin-gi-jeon / The Divine Weapon](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [04.09.2008](*<-lang_ru;;*);;
+    => nrel_main_idtf : [04.09.2008](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H14M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H14M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_bozhestvennoe_oruzhie_2008 =>nrel_keywords: film;;
+
+concept_film_bozhestvennoe_oruzhie_2008 <- concept_adventure;concept_drama;;
+
+concept_film_bozhestvennoe_oruzhie_2008 => nrel_main_actor : concept_jae_yeong_jeong;concept_eun_jeong_han;concept_jun_ho_heo;concept_sung_ki_ahn;;
+concept_film_bozhestvennoe_oruzhie_2008 => nrel_producer : concept_yoo_jin_kim;;

@@ -1,0 +1,67 @@
+concept_film_dzhon_uik_3_2019
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Джон Уик 3]
+(* <- lang_ru;;    *);
+[John Wick: Chapter 3 - Parabellum]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Джон Уик 3)](*<-lang_ru;;*);
+[Description (John Wick: Chapter 3 - Parabellum)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dzhon-uik-3-2019_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dzhon-uik-3-2019_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Джон Уик 3)](*<-lang_ru;;*);
+		[Pic. (John Wick: Chapter 3 - Parabellum)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dzhon-uik-3-2019.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Every Action Has Consequences. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.05.2019](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.05.2019](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H11M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H11M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_dzhon_uik_3_2019 =>nrel_keywords: film;;
+
+concept_film_dzhon_uik_3_2019 <- concept_action;concept_crime;concept_thriller;;
+
+concept_film_dzhon_uik_3_2019 => nrel_main_actor : concept_keanu_reeves;concept_halle_berry;concept_ian_mcshane;concept_laurence_fishburne;;
+concept_film_dzhon_uik_3_2019 => nrel_producer : concept_chad_stahelski;;

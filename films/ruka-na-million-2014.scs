@@ -1,0 +1,67 @@
+concept_film_ruka_na_million_2014
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Рука на миллион]
+(* <- lang_ru;;    *);
+[Million Dollar Arm]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Рука на миллион)](*<-lang_ru;;*);
+[Description (Million Dollar Arm)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ruka-na-million-2014_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ruka-na-million-2014_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Рука на миллион)](*<-lang_ru;;*);
+		[Pic. (Million Dollar Arm)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ruka-na-million-2014.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Sometimes to win, you have to change the game. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [09.05.2014](*<-lang_ru;;*);;
+    => nrel_main_idtf : [09.05.2014](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H4M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H4M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_ruka_na_million_2014 =>nrel_keywords: film;;
+
+concept_film_ruka_na_million_2014 <- concept_biography;concept_drama;concept_sport;;
+
+concept_film_ruka_na_million_2014 => nrel_main_actor : concept_jon_hamm;concept_aasif_mandvi;concept_alan_arkin;concept_suraj_sharma;;
+concept_film_ruka_na_million_2014 => nrel_producer : concept_craig_gillespie;;

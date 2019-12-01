@@ -1,0 +1,67 @@
+concept_film_chernoe_rozhdestvo_1974
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Черное Рождество]
+(* <- lang_ru;;    *);
+[Black Christmas]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Черное Рождество)](*<-lang_ru;;*);
+[Description (Black Christmas)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/chernoe-rozhdestvo-1974_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/chernoe-rozhdestvo-1974_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Черное Рождество)](*<-lang_ru;;*);
+		[Pic. (Black Christmas)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/chernoe-rozhdestvo-1974.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_canada;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Twas the night before Christmas, and all through the house, a creature was stirring...The stockings were hung by the chimney with care, but it was hard to say that St. Nick would be there. This year, a Christmas of another color brings a killer on the loose. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [11.10.1974](*<-lang_ru;;*);;
+    => nrel_main_idtf : [11.10.1974](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H38M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H38M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_chernoe_rozhdestvo_1974 =>nrel_keywords: film;;
+
+concept_film_chernoe_rozhdestvo_1974 <- concept_horror;concept_mystery;concept_thriller;;
+
+concept_film_chernoe_rozhdestvo_1974 => nrel_main_actor : concept_olivia_hussey;concept_keir_dullea;concept_margot_kidder;concept_john_saxon;;
+concept_film_chernoe_rozhdestvo_1974 => nrel_producer : concept_bob_clark;;

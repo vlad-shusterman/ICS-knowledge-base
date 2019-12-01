@@ -1,0 +1,67 @@
+concept_film_klyuch_ot_vseh_dverey_2005
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Ключ от всех дверей]
+(* <- lang_ru;;    *);
+[The Skeleton Key]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Ключ от всех дверей)](*<-lang_ru;;*);
+[Description (The Skeleton Key)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/klyuch-ot-vseh-dverey-2005_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/klyuch-ot-vseh-dverey-2005_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ключ от всех дверей)](*<-lang_ru;;*);
+		[Pic. (The Skeleton Key)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/klyuch-ot-vseh-dverey-2005.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_germany;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [It can open any door. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.07.2005](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.07.2005](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H44M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H44M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_klyuch_ot_vseh_dverey_2005 =>nrel_keywords: film;;
+
+concept_film_klyuch_ot_vseh_dverey_2005 <- concept_drama;concept_horror;concept_mystery;concept_thriller;;
+
+concept_film_klyuch_ot_vseh_dverey_2005 => nrel_main_actor : concept_kate_hudson;concept_peter_sarsgaard;concept_joy_bryant;concept_gena_rowlands;;
+concept_film_klyuch_ot_vseh_dverey_2005 => nrel_producer : concept_iain_softley;;

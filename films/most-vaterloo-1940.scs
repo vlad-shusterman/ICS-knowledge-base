@@ -1,0 +1,67 @@
+concept_film_most_vaterloo_1940
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Мост Ватерлоо]
+(* <- lang_ru;;    *);
+[Waterloo Bridge]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Мост Ватерлоо)](*<-lang_ru;;*);
+[Description (Waterloo Bridge)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/most-vaterloo-1940_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/most-vaterloo-1940_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Мост Ватерлоо)](*<-lang_ru;;*);
+		[Pic. (Waterloo Bridge)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/most-vaterloo-1940.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : ["Gone With the Wind's" Tempestuous "Scarlett O'Hara"! Romantic Robert Taylor! Exciting Together! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [17.05.1940](*<-lang_ru;;*);;
+    => nrel_main_idtf : [17.05.1940](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H48M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H48M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Passed;;
+
+concept_film_most_vaterloo_1940 =>nrel_keywords: film;;
+
+concept_film_most_vaterloo_1940 <- concept_drama;concept_romance;concept_war;;
+
+concept_film_most_vaterloo_1940 => nrel_main_actor : concept_vivien_leigh;concept_robert_taylor;concept_lucile_watson;concept_virginia_field;;
+concept_film_most_vaterloo_1940 => nrel_producer : concept_mervyn_leroy;;

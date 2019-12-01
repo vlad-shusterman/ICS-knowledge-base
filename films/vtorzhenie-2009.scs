@@ -1,0 +1,67 @@
+concept_film_vtorzhenie_2009
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Вторжение]
+(* <- lang_ru;;    *);
+[Infestation]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Вторжение)](*<-lang_ru;;*);
+[Description (Infestation)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vtorzhenie-2009_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vtorzhenie-2009_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Вторжение)](*<-lang_ru;;*);
+		[Pic. (Infestation)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vtorzhenie-2009.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [You will be infected. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [28.11.2009](*<-lang_ru;;*);;
+    => nrel_main_idtf : [28.11.2009](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H31M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H31M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_vtorzhenie_2009 =>nrel_keywords: film;;
+
+concept_film_vtorzhenie_2009 <- concept_action;concept_adventure;concept_comedy;concept_horror;concept_sci_fi;concept_thriller;;
+
+concept_film_vtorzhenie_2009 => nrel_main_actor : concept_chris_marquette;concept_brooke_nevin;concept_kinsey_packard;concept_e._quincy_sloan;;
+concept_film_vtorzhenie_2009 => nrel_producer : concept_kyle_rankin;;

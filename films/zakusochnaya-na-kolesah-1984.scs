@@ -1,0 +1,67 @@
+concept_film_zakusochnaya_na_kolesah_1984
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Закусочная на колесах]
+(* <- lang_ru;;    *);
+[Kuai can che / Wheels on Meals]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Закусочная на колесах)](*<-lang_ru;;*);
+[Description (Kuai can che / Wheels on Meals)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zakusochnaya-na-kolesah-1984_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zakusochnaya-na-kolesah-1984_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Закусочная на колесах)](*<-lang_ru;;*);
+		[Pic. (Kuai can che / Wheels on Meals)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zakusochnaya-na-kolesah-1984.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_hong_kong;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Not since Don Quixote has Spain had so much fun!](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [17.08.1984](*<-lang_ru;;*);;
+    => nrel_main_idtf : [17.08.1984](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H40M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_14;;
+
+concept_film_zakusochnaya_na_kolesah_1984 =>nrel_keywords: film;;
+
+concept_film_zakusochnaya_na_kolesah_1984 <- concept_action;concept_comedy;concept_crime;concept_romance;;
+
+concept_film_zakusochnaya_na_kolesah_1984 => nrel_main_actor : concept_jackie_chan;concept_biao_yuen;concept_sammo_kam_bo_hung;concept_benny_urquidez;;
+concept_film_zakusochnaya_na_kolesah_1984 => nrel_producer : concept_sammo_kam_bo_hung;;

@@ -1,0 +1,67 @@
+concept_film_za_granyu_tishiny_1996
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[За гранью тишины]
+(* <- lang_ru;;    *);
+[Jenseits der Stille]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (За гранью тишины)](*<-lang_ru;;*);
+[Description (Jenseits der Stille)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/za-granyu-tishiny-1996_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/za-granyu-tishiny-1996_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (За гранью тишины)](*<-lang_ru;;*);
+		[Pic. (Jenseits der Stille)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/za-granyu-tishiny-1996.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_germany;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Über das Leben, die Liebe und den Klang des Schnees. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [19.12.1996](*<-lang_ru;;*);;
+    => nrel_main_idtf : [19.12.1996](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H49M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H49M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_za_granyu_tishiny_1996 =>nrel_keywords: film;;
+
+concept_film_za_granyu_tishiny_1996 <- concept_drama;concept_music;;
+
+concept_film_za_granyu_tishiny_1996 => nrel_main_actor : concept_sylvie_testud;concept_tatjana_trieb;concept_howie_seago;concept_emmanuelle_laborit;;
+concept_film_za_granyu_tishiny_1996 => nrel_producer : concept_caroline_link;;

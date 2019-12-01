@@ -1,0 +1,67 @@
+concept_film_pobeg_iz_los_andzhelesa_1996
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Побег из Лос-Анджелеса]
+(* <- lang_ru;;    *);
+[Escape from L.A.]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Побег из Лос-Анджелеса)](*<-lang_ru;;*);
+[Description (Escape from L.A.)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/pobeg-iz-los-andzhelesa-1996_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/pobeg-iz-los-andzhelesa-1996_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Побег из Лос-Анджелеса)](*<-lang_ru;;*);
+		[Pic. (Escape from L.A.)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/pobeg-iz-los-andzhelesa-1996.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Plan Your Escape.['LA' from 'Plan' and 'Escape' are highlighted] See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [09.08.1996](*<-lang_ru;;*);;
+    => nrel_main_idtf : [09.08.1996](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H41M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H41M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_pobeg_iz_los_andzhelesa_1996 =>nrel_keywords: film;;
+
+concept_film_pobeg_iz_los_andzhelesa_1996 <- concept_action;concept_adventure;concept_sci_fi;concept_thriller;;
+
+concept_film_pobeg_iz_los_andzhelesa_1996 => nrel_main_actor : concept_kurt_russell;concept_steve_buscemi;concept_stacy_keach;concept_peter_fonda;;
+concept_film_pobeg_iz_los_andzhelesa_1996 => nrel_producer : concept_john_carpenter;;

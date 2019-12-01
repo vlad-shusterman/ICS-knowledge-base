@@ -1,0 +1,67 @@
+concept_film_dyunkerk_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Дюнкерк]
+(* <- lang_ru;;    *);
+[Dunkirk]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Дюнкерк)](*<-lang_ru;;*);
+[Description (Dunkirk)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dyunkerk-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dyunkerk-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Дюнкерк)](*<-lang_ru;;*);
+		[Pic. (Dunkirk)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dyunkerk-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_netherlands;concept_france;concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [When 400,000 men couldn't get home, home came for them. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [19.07.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [19.07.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H46M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H46M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_dyunkerk_2017 =>nrel_keywords: film;;
+
+concept_film_dyunkerk_2017 <- concept_action;concept_drama;concept_history;concept_thriller;concept_war;;
+
+concept_film_dyunkerk_2017 => nrel_main_actor : concept_fionn_whitehead;concept_barry_keoghan;concept_mark_rylance;concept_tom_hardy;;
+concept_film_dyunkerk_2017 => nrel_producer : concept_christopher_nolan;;

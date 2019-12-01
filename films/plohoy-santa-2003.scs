@@ -1,0 +1,67 @@
+concept_film_plohoy_santa_2003
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Плохой Санта]
+(* <- lang_ru;;    *);
+[Bad Santa]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Плохой Санта)](*<-lang_ru;;*);
+[Description (Bad Santa)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/plohoy-santa-2003_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/plohoy-santa-2003_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Плохой Санта)](*<-lang_ru;;*);
+		[Pic. (Bad Santa)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/plohoy-santa-2003.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_germany;concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Get Naughty this Holiday Season. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [26.11.2003](*<-lang_ru;;*);;
+    => nrel_main_idtf : [26.11.2003](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H32M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H32M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_plohoy_santa_2003 =>nrel_keywords: film;;
+
+concept_film_plohoy_santa_2003 <- concept_comedy;concept_crime;concept_drama;;
+
+concept_film_plohoy_santa_2003 => nrel_main_actor : concept_billy_bob_thornton;concept_bernie_mac;concept_lauren_graham;concept_john_ritter;;
+concept_film_plohoy_santa_2003 => nrel_producer : concept_terry_zwigoff;;

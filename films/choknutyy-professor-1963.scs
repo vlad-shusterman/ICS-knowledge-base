@@ -1,0 +1,67 @@
+concept_film_choknutyy_professor_1963
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Чокнутый профессор]
+(* <- lang_ru;;    *);
+[The Nutty Professor]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Чокнутый профессор)](*<-lang_ru;;*);
+[Description (The Nutty Professor)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/choknutyy-professor-1963_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/choknutyy-professor-1963_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Чокнутый профессор)](*<-lang_ru;;*);
+		[Pic. (The Nutty Professor)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/choknutyy-professor-1963.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Well, any scientist who makes a girl like this can't be all mad. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.07.1963](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.07.1963](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H47M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H47M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_choknutyy_professor_1963 =>nrel_keywords: film;;
+
+concept_film_choknutyy_professor_1963 <- concept_comedy;concept_romance;concept_sci_fi;;
+
+concept_film_choknutyy_professor_1963 => nrel_main_actor : concept_jerry_lewis;concept_stella_stevens;concept_del_moore;concept_kathleen_freeman;;
+concept_film_choknutyy_professor_1963 => nrel_producer : concept_jerry_lewis;;

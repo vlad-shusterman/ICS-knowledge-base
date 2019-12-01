@@ -1,0 +1,67 @@
+concept_film_mertvaya_zyb_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Мертвая зыбь]
+(* <- lang_ru;;    *);
+[Skumtimmen / Echoes from the Dead]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Мертвая зыбь)](*<-lang_ru;;*);
+[Description (Skumtimmen / Echoes from the Dead)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/mertvaya-zyb-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/mertvaya-zyb-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Мертвая зыбь)](*<-lang_ru;;*);
+		[Pic. (Skumtimmen / Echoes from the Dead)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/mertvaya-zyb-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_sweden;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Skumtimmen / Echoes from the Dead](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [27.09.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [27.09.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H39M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H39M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_mertvaya_zyb_2013 =>nrel_keywords: film;;
+
+concept_film_mertvaya_zyb_2013 <- concept_drama;concept_mystery;concept_thriller;;
+
+concept_film_mertvaya_zyb_2013 => nrel_main_actor : concept_lena_endre;concept_tord_peterson;concept_thomas_w._gabrielsson;concept_iggy_malmborg;;
+concept_film_mertvaya_zyb_2013 => nrel_producer : concept_daniel_alfredson;;

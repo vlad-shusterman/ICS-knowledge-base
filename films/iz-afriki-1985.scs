@@ -1,0 +1,67 @@
+concept_film_iz_afriki_1985
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Из Африки]
+(* <- lang_ru;;    *);
+[Out of Africa]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Из Африки)](*<-lang_ru;;*);
+[Description (Out of Africa)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/iz-afriki-1985_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/iz-afriki-1985_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Из Африки)](*<-lang_ru;;*);
+		[Pic. (Out of Africa)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/iz-afriki-1985.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_uk;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Based on a true story.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [20.12.1985](*<-lang_ru;;*);;
+    => nrel_main_idtf : [20.12.1985](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H41M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H41M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_iz_afriki_1985 =>nrel_keywords: film;;
+
+concept_film_iz_afriki_1985 <- concept_biography;concept_drama;concept_romance;;
+
+concept_film_iz_afriki_1985 => nrel_main_actor : concept_meryl_streep;concept_robert_redford;concept_klaus_maria_brandauer;concept_michael_kitchen;;
+concept_film_iz_afriki_1985 => nrel_producer : concept_sydney_pollack;;

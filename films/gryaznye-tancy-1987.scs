@@ -1,0 +1,67 @@
+concept_film_gryaznye_tancy_1987
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Грязные танцы]
+(* <- lang_ru;;    *);
+[Dirty Dancing]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Грязные танцы)](*<-lang_ru;;*);
+[Description (Dirty Dancing)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/gryaznye-tancy-1987_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/gryaznye-tancy-1987_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Грязные танцы)](*<-lang_ru;;*);
+		[Pic. (Dirty Dancing)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/gryaznye-tancy-1987.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Have the time of your life See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.08.1987](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.08.1987](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H40M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_gryaznye_tancy_1987 =>nrel_keywords: film;;
+
+concept_film_gryaznye_tancy_1987 <- concept_drama;concept_music;concept_romance;;
+
+concept_film_gryaznye_tancy_1987 => nrel_main_actor : concept_patrick_swayze;concept_jennifer_grey;concept_jerry_orbach;concept_cynthia_rhodes;;
+concept_film_gryaznye_tancy_1987 => nrel_producer : concept_emile_ardolino;;

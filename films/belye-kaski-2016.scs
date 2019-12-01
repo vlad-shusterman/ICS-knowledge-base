@@ -1,0 +1,67 @@
+concept_film_belye_kaski_2016
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Белые каски]
+(* <- lang_ru;;    *);
+[The White Helmets]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Белые каски)](*<-lang_ru;;*);
+[Description (The White Helmets)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/belye-kaski-2016_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/belye-kaski-2016_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Белые каски)](*<-lang_ru;;*);
+		[Pic. (The White Helmets)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/belye-kaski-2016.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [To save a life is to save all of humanity](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [16.09.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [16.09.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT41M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT41M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_14;;
+
+concept_film_belye_kaski_2016 =>nrel_keywords: film;;
+
+concept_film_belye_kaski_2016 <- concept_documentary;concept_short;concept_crime;concept_war;;
+
+concept_film_belye_kaski_2016 => nrel_main_actor : concept_khalid_farah;concept_mohammed_farah;concept_abu_omar;concept_raed_saleh;;
+concept_film_belye_kaski_2016 => nrel_producer : concept_orlando_von_einsiedel;;

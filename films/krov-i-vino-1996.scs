@@ -1,0 +1,67 @@
+concept_film_krov_i_vino_1996
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Кровь и вино]
+(* <- lang_ru;;    *);
+[Blood and Wine]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Кровь и вино)](*<-lang_ru;;*);
+[Description (Blood and Wine)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/krov-i-vino-1996_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/krov-i-vino-1996_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Кровь и вино)](*<-lang_ru;;*);
+		[Pic. (Blood and Wine)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/krov-i-vino-1996.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_uk;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [There is no honour amongst thieves.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [30.01.1997](*<-lang_ru;;*);;
+    => nrel_main_idtf : [30.01.1997](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H41M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H41M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_krov_i_vino_1996 =>nrel_keywords: film;;
+
+concept_film_krov_i_vino_1996 <- concept_crime;concept_drama;concept_thriller;;
+
+concept_film_krov_i_vino_1996 => nrel_main_actor : concept_jack_nicholson;concept_michael_caine;concept_stephen_dorff;concept_jennifer_lopez;;
+concept_film_krov_i_vino_1996 => nrel_producer : concept_bob_rafelson;;

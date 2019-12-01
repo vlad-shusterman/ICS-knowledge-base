@@ -1,0 +1,67 @@
+concept_film_tayny_avrory_tigarden_igra_v_pryatki_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Тайны Авроры Тигарден: Игра в прятки]
+(* <- lang_ru;;    *);
+[Aurora Teagarden Mysteries: The Disappearing Game]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Тайны Авроры Тигарден: Игра в прятки)](*<-lang_ru;;*);
+[Description (Aurora Teagarden Mysteries: The Disappearing Game)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/tayny-avrory-tigarden-igra-v-pryatki-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/tayny-avrory-tigarden-igra-v-pryatki-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Тайны Авроры Тигарден: Игра в прятки)](*<-lang_ru;;*);
+		[Pic. (Aurora Teagarden Mysteries: The Disappearing Game)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/tayny-avrory-tigarden-igra-v-pryatki-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Aurora Teagarden Mysteries: The Disappearing Game](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.07.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.07.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H23M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H23M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_tayny_avrory_tigarden_igra_v_pryatki_2018 =>nrel_keywords: film;;
+
+concept_film_tayny_avrory_tigarden_igra_v_pryatki_2018 <- concept_crime;concept_drama;concept_mystery;;
+
+concept_film_tayny_avrory_tigarden_igra_v_pryatki_2018 => nrel_main_actor : concept_candace_cameron_bure;concept_lexa_doig;concept_marilu_henner;concept_peter_benson;;
+concept_film_tayny_avrory_tigarden_igra_v_pryatki_2018 => nrel_producer : concept_terry_ingram;;

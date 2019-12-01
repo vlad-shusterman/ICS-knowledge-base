@@ -1,0 +1,67 @@
+concept_film_gordost_i_predubezhdenie_2005
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Гордость и предубеждение]
+(* <- lang_ru;;    *);
+[Pride & Prejudice]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Гордость и предубеждение)](*<-lang_ru;;*);
+[Description (Pride & Prejudice)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/gordost-i-predubezhdenie-2005_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/gordost-i-predubezhdenie-2005_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гордость и предубеждение)](*<-lang_ru;;*);
+		[Pic. (Pride & Prejudice)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/gordost-i-predubezhdenie-2005.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_france;concept_uk;concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A romance ahead of its time. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [16.09.2005](*<-lang_ru;;*);;
+    => nrel_main_idtf : [16.09.2005](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H9M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H9M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_gordost_i_predubezhdenie_2005 =>nrel_keywords: film;;
+
+concept_film_gordost_i_predubezhdenie_2005 <- concept_drama;concept_romance;;
+
+concept_film_gordost_i_predubezhdenie_2005 => nrel_main_actor : concept_keira_knightley;concept_matthew_macfadyen;concept_brenda_blethyn;concept_donald_sutherland;;
+concept_film_gordost_i_predubezhdenie_2005 => nrel_producer : concept_joe_wright;;

@@ -1,0 +1,67 @@
+concept_film_camp_rock_muzykalnye_kanikuly_2008
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Camp Rock: Музыкальные каникулы]
+(* <- lang_ru;;    *);
+[Camp Rock]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Camp Rock: Музыкальные каникулы)](*<-lang_ru;;*);
+[Description (Camp Rock)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/camp-rock-muzykalnye-kanikuly-2008_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/camp-rock-muzykalnye-kanikuly-2008_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Camp Rock: Музыкальные каникулы)](*<-lang_ru;;*);
+		[Pic. (Camp Rock)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/camp-rock-muzykalnye-kanikuly-2008.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Don't fit in. Stand out. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [20.06.2008](*<-lang_ru;;*);;
+    => nrel_main_idtf : [20.06.2008](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H34M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H34M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_G;;
+
+concept_film_camp_rock_muzykalnye_kanikuly_2008 =>nrel_keywords: film;;
+
+concept_film_camp_rock_muzykalnye_kanikuly_2008 <- concept_comedy;concept_family;concept_music;concept_musical;concept_romance;;
+
+concept_film_camp_rock_muzykalnye_kanikuly_2008 => nrel_main_actor : concept_demi_lovato;concept_joe_jonas;concept_meaghan_martin;concept_maria_canals_barrera;;
+concept_film_camp_rock_muzykalnye_kanikuly_2008 => nrel_producer : concept_matthew_diamond;;

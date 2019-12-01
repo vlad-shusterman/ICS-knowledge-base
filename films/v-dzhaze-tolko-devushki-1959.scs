@@ -1,0 +1,67 @@
+concept_film_v_dzhaze_tolko_devushki_1959
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[В джазе только девушки]
+(* <- lang_ru;;    *);
+[Some Like It Hot]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (В джазе только девушки)](*<-lang_ru;;*);
+[Description (Some Like It Hot)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/v-dzhaze-tolko-devushki-1959_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/v-dzhaze-tolko-devushki-1959_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (В джазе только девушки)](*<-lang_ru;;*);
+		[Pic. (Some Like It Hot)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/v-dzhaze-tolko-devushki-1959.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Marilyn Monroe and her bosom companions See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [19.03.1959](*<-lang_ru;;*);;
+    => nrel_main_idtf : [19.03.1959](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H1M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H1M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_v_dzhaze_tolko_devushki_1959 =>nrel_keywords: film;;
+
+concept_film_v_dzhaze_tolko_devushki_1959 <- concept_comedy;concept_music;concept_romance;;
+
+concept_film_v_dzhaze_tolko_devushki_1959 => nrel_main_actor : concept_marilyn_monroe;concept_tony_curtis;concept_jack_lemmon;concept_george_raft;;
+concept_film_v_dzhaze_tolko_devushki_1959 => nrel_producer : concept_billy_wilder;;

@@ -1,0 +1,67 @@
+concept_film_ocepenevshiy_na_krayu_konca_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Оцепеневший: На краю конца]
+(* <- lang_ru;;    *);
+[The Last Man]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Оцепеневший: На краю конца)](*<-lang_ru;;*);
+[Description (The Last Man)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ocepenevshiy-na-krayu-konca-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ocepenevshiy-na-krayu-konca-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Оцепеневший: На краю конца)](*<-lang_ru;;*);
+		[Pic. (The Last Man)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ocepenevshiy-na-krayu-konca-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_argentina;concept_canada;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [He planned to survive when the world wouldn't See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [06.09.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [06.09.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H40M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_ocepenevshiy_na_krayu_konca_2018 =>nrel_keywords: film;;
+
+concept_film_ocepenevshiy_na_krayu_konca_2018 <- concept_action;concept_drama;concept_sci_fi;concept_thriller;;
+
+concept_film_ocepenevshiy_na_krayu_konca_2018 => nrel_main_actor : concept_hayden_christensen;concept_harvey_keitel;concept_marco_leonardi;concept_liz_solari;;
+concept_film_ocepenevshiy_na_krayu_konca_2018 => nrel_producer : concept_rodrigo_h._vila;;

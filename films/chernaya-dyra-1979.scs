@@ -1,0 +1,67 @@
+concept_film_chernaya_dyra_1979
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Черная дыра]
+(* <- lang_ru;;    *);
+[The Black Hole]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Черная дыра)](*<-lang_ru;;*);
+[Description (The Black Hole)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/chernaya-dyra-1979_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/chernaya-dyra-1979_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Черная дыра)](*<-lang_ru;;*);
+		[Pic. (The Black Hole)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/chernaya-dyra-1979.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A journey that takes you where no man has been before See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [19.12.1979](*<-lang_ru;;*);;
+    => nrel_main_idtf : [19.12.1979](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H38M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H38M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_chernaya_dyra_1979 =>nrel_keywords: film;;
+
+concept_film_chernaya_dyra_1979 <- concept_action;concept_sci_fi;;
+
+concept_film_chernaya_dyra_1979 => nrel_main_actor : concept_maximilian_schell;concept_anthony_perkins;concept_robert_forster;concept_joseph_bottoms;;
+concept_film_chernaya_dyra_1979 => nrel_producer : concept_gary_nelson;;

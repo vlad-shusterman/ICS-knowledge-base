@@ -1,0 +1,67 @@
+concept_film_gorilly_v_tumane_1988
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Гориллы в тумане]
+(* <- lang_ru;;    *);
+[Gorillas in the Mist: The Story of Dian Fossey]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Гориллы в тумане)](*<-lang_ru;;*);
+[Description (Gorillas in the Mist: The Story of Dian Fossey)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/gorilly-v-tumane-1988_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/gorilly-v-tumane-1988_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гориллы в тумане)](*<-lang_ru;;*);
+		[Pic. (Gorillas in the Mist: The Story of Dian Fossey)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/gorilly-v-tumane-1988.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [In a land of beauty, wonder and danger, she would follow a dream, fall in love and risk her life to save the mountain gorillas from extinction. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [07.10.1988](*<-lang_ru;;*);;
+    => nrel_main_idtf : [07.10.1988](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H9M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H9M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_gorilly_v_tumane_1988 =>nrel_keywords: film;;
+
+concept_film_gorilly_v_tumane_1988 <- concept_biography;concept_drama;;
+
+concept_film_gorilly_v_tumane_1988 => nrel_main_actor : concept_sigourney_weaver;concept_bryan_brown;concept_julie_harris;concept_john_omirah_miluwi;;
+concept_film_gorilly_v_tumane_1988 => nrel_producer : concept_michael_apted;;

@@ -1,0 +1,67 @@
+concept_film_taynoe_okno_2004
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Тайное окно]
+(* <- lang_ru;;    *);
+[Secret Window]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Тайное окно)](*<-lang_ru;;*);
+[Description (Secret Window)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/taynoe-okno-2004_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/taynoe-okno-2004_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Тайное окно)](*<-lang_ru;;*);
+		[Pic. (Secret Window)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/taynoe-okno-2004.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The most important part of a story is the ending. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.03.2004](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.03.2004](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H36M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H36M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_taynoe_okno_2004 =>nrel_keywords: film;;
+
+concept_film_taynoe_okno_2004 <- concept_drama;concept_mystery;concept_thriller;;
+
+concept_film_taynoe_okno_2004 => nrel_main_actor : concept_johnny_depp;concept_maria_bello;concept_john_turturro;concept_timothy_hutton;;
+concept_film_taynoe_okno_2004 => nrel_producer : concept_david_koepp;;

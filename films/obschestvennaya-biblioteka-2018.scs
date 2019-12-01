@@ -1,0 +1,67 @@
+concept_film_obschestvennaya_biblioteka_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Общественная библиотека]
+(* <- lang_ru;;    *);
+[The Public]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Общественная библиотека)](*<-lang_ru;;*);
+[Description (The Public)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/obschestvennaya-biblioteka-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/obschestvennaya-biblioteka-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Общественная библиотека)](*<-lang_ru;;*);
+		[Pic. (The Public)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/obschestvennaya-biblioteka-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Every Story Matters.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.07.2019](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.07.2019](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H59M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H59M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_obschestvennaya_biblioteka_2018 =>nrel_keywords: film;;
+
+concept_film_obschestvennaya_biblioteka_2018 <- concept_drama;;
+
+concept_film_obschestvennaya_biblioteka_2018 => nrel_main_actor : concept_alec_baldwin;concept_taylor_schilling;concept_emilio_estevez;concept_jena_malone;;
+concept_film_obschestvennaya_biblioteka_2018 => nrel_producer : concept_emilio_estevez;;

@@ -1,0 +1,67 @@
+concept_film_bolshe_chem_med_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Больше чем мед]
+(* <- lang_ru;;    *);
+[More Than Honey]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Больше чем мед)](*<-lang_ru;;*);
+[Description (More Than Honey)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/bolshe-chem-med-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/bolshe-chem-med-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Больше чем мед)](*<-lang_ru;;*);
+		[Pic. (More Than Honey)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/bolshe-chem-med-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_switzerland;concept_germany;concept_austria;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [More Than Honey](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [08.11.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [08.11.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H35M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H35M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Unrated;;
+
+concept_film_bolshe_chem_med_2012 =>nrel_keywords: film;;
+
+concept_film_bolshe_chem_med_2012 <- concept_documentary;;
+
+concept_film_bolshe_chem_med_2012 => nrel_main_actor : concept_fred_jaggi;concept_randolf_menzel;concept_john_miller;concept_liane_singer;;
+concept_film_bolshe_chem_med_2012 => nrel_producer : concept_markus_imhoof;;

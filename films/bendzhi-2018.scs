@@ -1,0 +1,67 @@
+concept_film_bendzhi_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Бенджи]
+(* <- lang_ru;;    *);
+[Benji]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Бенджи)](*<-lang_ru;;*);
+[Description (Benji)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/bendzhi-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/bendzhi-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Бенджи)](*<-lang_ru;;*);
+		[Pic. (Benji)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/bendzhi-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_united_arab_emirates;concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A Hero Comes Home](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [16.03.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [16.03.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H27M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H27M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_PG;;
+
+concept_film_bendzhi_2018 =>nrel_keywords: film;;
+
+concept_film_bendzhi_2018 <- concept_crime;concept_drama;concept_family;;
+
+concept_film_bendzhi_2018 => nrel_main_actor : concept_gabriel_bateman;concept_darby_camp;concept_kiele_sanchez;concept_gralen_bryant_banks;;
+concept_film_bendzhi_2018 => nrel_producer : concept_brandon_camp;;

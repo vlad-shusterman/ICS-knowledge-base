@@ -1,0 +1,67 @@
+concept_film_zvezdnye_voyny_epizod_1_skrytaya_ugroza_1999
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Звездные войны: Эпизод 1 – Скрытая угроза]
+(* <- lang_ru;;    *);
+[Star Wars: Episode I - The Phantom Menace]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Звездные войны: Эпизод 1 – Скрытая угроза)](*<-lang_ru;;*);
+[Description (Star Wars: Episode I - The Phantom Menace)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zvezdnye-voyny-epizod-1-skrytaya-ugroza-1999_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zvezdnye-voyny-epizod-1-skrytaya-ugroza-1999_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Звездные войны: Эпизод 1 – Скрытая угроза)](*<-lang_ru;;*);
+		[Pic. (Star Wars: Episode I - The Phantom Menace)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zvezdnye-voyny-epizod-1-skrytaya-ugroza-1999.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [One Race. One Adventure. The One to Own. (2000 North American VHS advertising) See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [19.05.1999](*<-lang_ru;;*);;
+    => nrel_main_idtf : [19.05.1999](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H16M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H16M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_zvezdnye_voyny_epizod_1_skrytaya_ugroza_1999 =>nrel_keywords: film;;
+
+concept_film_zvezdnye_voyny_epizod_1_skrytaya_ugroza_1999 <- concept_action;concept_adventure;concept_fantasy;concept_sci_fi;;
+
+concept_film_zvezdnye_voyny_epizod_1_skrytaya_ugroza_1999 => nrel_main_actor : concept_ewan_mcgregor;concept_liam_neeson;concept_natalie_portman;concept_jake_lloyd;;
+concept_film_zvezdnye_voyny_epizod_1_skrytaya_ugroza_1999 => nrel_producer : concept_george_lucas;;

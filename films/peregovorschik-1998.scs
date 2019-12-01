@@ -1,0 +1,67 @@
+concept_film_peregovorschik_1998
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Переговорщик]
+(* <- lang_ru;;    *);
+[The Negotiator]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Переговорщик)](*<-lang_ru;;*);
+[Description (The Negotiator)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/peregovorschik-1998_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/peregovorschik-1998_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Переговорщик)](*<-lang_ru;;*);
+		[Pic. (The Negotiator)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/peregovorschik-1998.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_germany;concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [He frees hostages for a living. Now he's taking hostages to survive. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.07.1998](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.07.1998](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H20M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H20M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_peregovorschik_1998 =>nrel_keywords: film;;
+
+concept_film_peregovorschik_1998 <- concept_action;concept_crime;concept_drama;concept_mystery;concept_thriller;;
+
+concept_film_peregovorschik_1998 => nrel_main_actor : concept_samuel_l._jackson;concept_kevin_spacey;concept_david_morse;concept_ron_rifkin;;
+concept_film_peregovorschik_1998 => nrel_producer : concept_f._gary_gray;;

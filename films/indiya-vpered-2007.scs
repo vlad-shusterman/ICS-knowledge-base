@@ -1,0 +1,67 @@
+concept_film_indiya_vpered_2007
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Индия, вперед!]
+(* <- lang_ru;;    *);
+[Chak De! India]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Индия, вперед!)](*<-lang_ru;;*);
+[Description (Chak De! India)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/indiya-vpered-2007_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/indiya-vpered-2007_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Индия, вперед!)](*<-lang_ru;;*);
+		[Pic. (Chak De! India)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/indiya-vpered-2007.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_india;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Sometimes Winning is Everything](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [10.08.2007](*<-lang_ru;;*);;
+    => nrel_main_idtf : [10.08.2007](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H33M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H33M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_indiya_vpered_2007 =>nrel_keywords: film;;
+
+concept_film_indiya_vpered_2007 <- concept_drama;concept_family;concept_sport;;
+
+concept_film_indiya_vpered_2007 => nrel_main_actor : concept_shah_rukh_khan;concept_vidya_malvade;concept_sagarika_ghatge;concept_shilpa_shukla;;
+concept_film_indiya_vpered_2007 => nrel_producer : concept_shimit_amin;;

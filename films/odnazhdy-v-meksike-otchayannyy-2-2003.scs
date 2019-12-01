@@ -1,0 +1,67 @@
+concept_film_odnazhdy_v_meksike_otchayannyy_2_2003
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Однажды в Мексике: Отчаянный 2]
+(* <- lang_ru;;    *);
+[Once Upon a Time in Mexico]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Однажды в Мексике: Отчаянный 2)](*<-lang_ru;;*);
+[Description (Once Upon a Time in Mexico)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/odnazhdy-v-meksike-otchayannyy-2-2003_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/odnazhdy-v-meksike-otchayannyy-2-2003_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Однажды в Мексике: Отчаянный 2)](*<-lang_ru;;*);
+		[Pic. (Once Upon a Time in Mexico)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/odnazhdy-v-meksike-otchayannyy-2-2003.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_mexico;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The Time Has Come.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.09.2003](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.09.2003](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H42M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H42M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_odnazhdy_v_meksike_otchayannyy_2_2003 =>nrel_keywords: film;;
+
+concept_film_odnazhdy_v_meksike_otchayannyy_2_2003 <- concept_action;concept_crime;concept_thriller;;
+
+concept_film_odnazhdy_v_meksike_otchayannyy_2_2003 => nrel_main_actor : concept_antonio_banderas;concept_salma_hayek;concept_johnny_depp;concept_willem_dafoe;;
+concept_film_odnazhdy_v_meksike_otchayannyy_2_2003 => nrel_producer : concept_robert_rodriguez;;

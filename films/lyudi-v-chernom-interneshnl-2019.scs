@@ -1,0 +1,67 @@
+concept_film_lyudi_v_chernom_interneshnl_2019
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Люди в черном: Интернэшнл]
+(* <- lang_ru;;    *);
+[Men in Black International]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Люди в черном: Интернэшнл)](*<-lang_ru;;*);
+[Description (Men in Black International)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/lyudi-v-chernom-interneshnl-2019_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/lyudi-v-chernom-interneshnl-2019_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Люди в черном: Интернэшнл)](*<-lang_ru;;*);
+		[Pic. (Men in Black International)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/lyudi-v-chernom-interneshnl-2019.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The world's not going to save itself See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.06.2019](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.06.2019](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H54M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H54M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_lyudi_v_chernom_interneshnl_2019 =>nrel_keywords: film;;
+
+concept_film_lyudi_v_chernom_interneshnl_2019 <- concept_action;concept_adventure;concept_comedy;concept_sci_fi;;
+
+concept_film_lyudi_v_chernom_interneshnl_2019 => nrel_main_actor : concept_chris_hemsworth;concept_tessa_thompson;concept_kumail_nanjiani;concept_rebecca_ferguson;;
+concept_film_lyudi_v_chernom_interneshnl_2019 => nrel_producer : concept_f._gary_gray;;

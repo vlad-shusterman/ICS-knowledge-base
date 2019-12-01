@@ -1,0 +1,67 @@
+concept_film_speshi_lyubit_2002
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Спеши любить / Памятная прогулка]
+(* <- lang_ru;;    *);
+[A Walk to Remember]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Спеши любить / Памятная прогулка)](*<-lang_ru;;*);
+[Description (A Walk to Remember)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/speshi-lyubit-2002_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/speshi-lyubit-2002_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Спеши любить / Памятная прогулка)](*<-lang_ru;;*);
+		[Pic. (A Walk to Remember)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/speshi-lyubit-2002.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [There's more to attraction than meets the eye. (UK) See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.01.2002](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.01.2002](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H41M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H41M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_speshi_lyubit_2002 =>nrel_keywords: film;;
+
+concept_film_speshi_lyubit_2002 <- concept_drama;concept_romance;;
+
+concept_film_speshi_lyubit_2002 => nrel_main_actor : concept_mandy_moore;concept_shane_west;concept_peter_coyote;concept_daryl_hannah;;
+concept_film_speshi_lyubit_2002 => nrel_producer : concept_adam_shankman;;

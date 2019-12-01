@@ -1,0 +1,67 @@
+concept_film_ip_man_rozhdenie_legendy_2010
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Ип Ман: Рождение легенды]
+(* <- lang_ru;;    *);
+[Yip Man chinchyun / The Legend Is Born: Ip Man]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Ип Ман: Рождение легенды)](*<-lang_ru;;*);
+[Description (Yip Man chinchyun / The Legend Is Born: Ip Man)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ip-man-rozhdenie-legendy-2010_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ip-man-rozhdenie-legendy-2010_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ип Ман: Рождение легенды)](*<-lang_ru;;*);
+		[Pic. (Yip Man chinchyun / The Legend Is Born: Ip Man)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ip-man-rozhdenie-legendy-2010.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_hong_kong;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Yip Man chinchyun / The Legend Is Born: Ip Man](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [24.06.2010](*<-lang_ru;;*);;
+    => nrel_main_idtf : [24.06.2010](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H40M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_ip_man_rozhdenie_legendy_2010 =>nrel_keywords: film;;
+
+concept_film_ip_man_rozhdenie_legendy_2010 <- concept_action;concept_biography;concept_drama;concept_history;concept_sport;;
+
+concept_film_ip_man_rozhdenie_legendy_2010 => nrel_main_actor : concept_yu_hang_to;concept_yi_huang;concept_biao_yuen;concept_siu_wong_fan;;
+concept_film_ip_man_rozhdenie_legendy_2010 => nrel_producer : concept_herman_yau;;

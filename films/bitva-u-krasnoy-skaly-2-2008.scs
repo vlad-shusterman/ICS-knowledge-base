@@ -1,0 +1,67 @@
+concept_film_bitva_u_krasnoy_skaly_2_2008
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Битва у Красной скалы 2]
+(* <- lang_ru;;    *);
+[Chi bi Part II: Jue zhan tian xia / Red Cliff: Part II]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Битва у Красной скалы 2)](*<-lang_ru;;*);
+[Description (Chi bi Part II: Jue zhan tian xia / Red Cliff: Part II)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/bitva-u-krasnoy-skaly-2-2008_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/bitva-u-krasnoy-skaly-2-2008_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Битва у Красной скалы 2)](*<-lang_ru;;*);
+		[Pic. (Chi bi Part II: Jue zhan tian xia / Red Cliff: Part II)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/bitva-u-krasnoy-skaly-2-2008.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_china;concept_hong_kong;concept_japan;concept_taiwan;concept_south_korea;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Chi bi Part II: Jue zhan tian xia / Red Cliff: Part II](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [08.01.2009](*<-lang_ru;;*);;
+    => nrel_main_idtf : [08.01.2009](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H22M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H22M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_bitva_u_krasnoy_skaly_2_2008 =>nrel_keywords: film;;
+
+concept_film_bitva_u_krasnoy_skaly_2_2008 <- concept_action;concept_drama;concept_history;concept_war;;
+
+concept_film_bitva_u_krasnoy_skaly_2_2008 => nrel_main_actor : concept_tony_chiu_wai_leung;concept_takeshi_kaneshiro;concept_fengyi_zhang;concept_chen_chang;;
+concept_film_bitva_u_krasnoy_skaly_2_2008 => nrel_producer : concept_john_woo;;

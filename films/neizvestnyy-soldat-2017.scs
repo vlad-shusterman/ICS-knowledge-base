@@ -1,0 +1,67 @@
+concept_film_neizvestnyy_soldat_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Неизвестный солдат]
+(* <- lang_ru;;    *);
+[Tuntematon sotilas]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Неизвестный солдат)](*<-lang_ru;;*);
+[Description (Tuntematon sotilas)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/neizvestnyy-soldat-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/neizvestnyy-soldat-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Неизвестный солдат)](*<-lang_ru;;*);
+		[Pic. (Tuntematon sotilas)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/neizvestnyy-soldat-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_finland;concept_belgium;concept_iceland;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Finland, behold, thy daylight now is dawning.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [27.10.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [27.10.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H12M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H12M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_neizvestnyy_soldat_2017 =>nrel_keywords: film;;
+
+concept_film_neizvestnyy_soldat_2017 <- concept_drama;concept_war;;
+
+concept_film_neizvestnyy_soldat_2017 => nrel_main_actor : concept_eero_aho;concept_johannes_holopainen;concept_jussi_vatanen;concept_aku_hirviniemi;;
+concept_film_neizvestnyy_soldat_2017 => nrel_producer : concept_aku_louhimies;;

@@ -1,0 +1,67 @@
+concept_film_pod_planetoy_obezyan_1970
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Под планетой обезьян]
+(* <- lang_ru;;    *);
+[Beneath the Planet of the Apes]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Под планетой обезьян)](*<-lang_ru;;*);
+[Description (Beneath the Planet of the Apes)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/pod-planetoy-obezyan-1970_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/pod-planetoy-obezyan-1970_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Под планетой обезьян)](*<-lang_ru;;*);
+		[Pic. (Beneath the Planet of the Apes)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/pod-planetoy-obezyan-1970.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [An army of civilized apes...A fortress of radiation-crazed super humans...Earth's final battle is about to begin - Beneath the atomic rubble of what was once the city of New York! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [23.04.1970](*<-lang_ru;;*);;
+    => nrel_main_idtf : [23.04.1970](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H35M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H35M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_G;;
+
+concept_film_pod_planetoy_obezyan_1970 =>nrel_keywords: film;;
+
+concept_film_pod_planetoy_obezyan_1970 <- concept_action;concept_adventure;concept_sci_fi;;
+
+concept_film_pod_planetoy_obezyan_1970 => nrel_main_actor : concept_james_franciscus;concept_kim_hunter;concept_maurice_evans;concept_linda_harrison;;
+concept_film_pod_planetoy_obezyan_1970 => nrel_producer : concept_ted_post;;

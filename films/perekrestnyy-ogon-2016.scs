@@ -1,0 +1,67 @@
+concept_film_perekrestnyy_ogon_2016
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Перекрестный огонь]
+(* <- lang_ru;;    *);
+[Crossfire]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Перекрестный огонь)](*<-lang_ru;;*);
+[Description (Crossfire)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/perekrestnyy-ogon-2016_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/perekrestnyy-ogon-2016_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Перекрестный огонь)](*<-lang_ru;;*);
+		[Pic. (Crossfire)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/perekrestnyy-ogon-2016.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_canada;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Crossfire](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [31.01.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [31.01.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H28M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H28M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_perekrestnyy_ogon_2016 =>nrel_keywords: film;;
+
+concept_film_perekrestnyy_ogon_2016 <- concept_drama;concept_thriller;;
+
+concept_film_perekrestnyy_ogon_2016 => nrel_main_actor : concept_roxanne_mckee;concept_steve_lund;concept_tim_rozon;concept_stacey_farber;;
+concept_film_perekrestnyy_ogon_2016 => nrel_producer : concept_claude_desrosiers;;

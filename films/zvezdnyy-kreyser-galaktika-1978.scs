@@ -1,0 +1,67 @@
+concept_film_zvezdnyy_kreyser_galaktika_1978
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Звездный крейсер Галактика]
+(* <- lang_ru;;    *);
+[Battlestar Galactica]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Звездный крейсер Галактика)](*<-lang_ru;;*);
+[Description (Battlestar Galactica)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zvezdnyy-kreyser-galaktika-1978_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zvezdnyy-kreyser-galaktika-1978_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Звездный крейсер Галактика)](*<-lang_ru;;*);
+		[Pic. (Battlestar Galactica)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zvezdnyy-kreyser-galaktika-1978.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The last Battlestar Galactica leads a ragtag fugitive fleet on a lonely quest...for a shining planet known as Earth. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [07.07.1978](*<-lang_ru;;*);;
+    => nrel_main_idtf : [07.07.1978](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H28M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H28M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_zvezdnyy_kreyser_galaktika_1978 =>nrel_keywords: film;;
+
+concept_film_zvezdnyy_kreyser_galaktika_1978 <- concept_action;concept_adventure;concept_sci_fi;;
+
+concept_film_zvezdnyy_kreyser_galaktika_1978 => nrel_main_actor : concept_richard_hatch;concept_dirk_benedict;concept_lorne_greene;concept_herbert_jefferson_jr.;;
+concept_film_zvezdnyy_kreyser_galaktika_1978 => nrel_producer : concept_richard_a._colla;concept_alan_j._levi;;

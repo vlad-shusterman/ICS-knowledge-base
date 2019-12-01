@@ -1,0 +1,67 @@
+concept_film_vse_govoryat_chto_ya_lyublyu_tebya_1996
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Все говорят, что я люблю тебя]
+(* <- lang_ru;;    *);
+[Everyone Says I Love You]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Все говорят, что я люблю тебя)](*<-lang_ru;;*);
+[Description (Everyone Says I Love You)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vse-govoryat-chto-ya-lyublyu-tebya-1996_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vse-govoryat-chto-ya-lyublyu-tebya-1996_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Все говорят, что я люблю тебя)](*<-lang_ru;;*);
+		[Pic. (Everyone Says I Love You)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vse-govoryat-chto-ya-lyublyu-tebya-1996.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Everyone Says I Love You](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [17.01.1997](*<-lang_ru;;*);;
+    => nrel_main_idtf : [17.01.1997](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H41M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H41M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_vse_govoryat_chto_ya_lyublyu_tebya_1996 =>nrel_keywords: film;;
+
+concept_film_vse_govoryat_chto_ya_lyublyu_tebya_1996 <- concept_comedy;concept_musical;concept_romance;;
+
+concept_film_vse_govoryat_chto_ya_lyublyu_tebya_1996 => nrel_main_actor : concept_woody_allen;concept_goldie_hawn;concept_julia_roberts;concept_edward_norton;;
+concept_film_vse_govoryat_chto_ya_lyublyu_tebya_1996 => nrel_producer : concept_woody_allen;;

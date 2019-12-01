@@ -1,0 +1,67 @@
+concept_film_pesnya_o_svey_leyk_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Песня о Свэй-Лэйк]
+(* <- lang_ru;;    *);
+[The Song of Sway Lake]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Песня о Свэй-Лэйк)](*<-lang_ru;;*);
+[Description (The Song of Sway Lake)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/pesnya-o-svey-leyk-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/pesnya-o-svey-leyk-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Песня о Свэй-Лэйк)](*<-lang_ru;;*);
+		[Pic. (The Song of Sway Lake)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/pesnya-o-svey-leyk-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The Song of Sway Lake](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.06.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.06.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H34M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H34M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_pesnya_o_svey_leyk_2017 =>nrel_keywords: film;;
+
+concept_film_pesnya_o_svey_leyk_2017 <- concept_drama;concept_music;concept_romance;;
+
+concept_film_pesnya_o_svey_leyk_2017 => nrel_main_actor : concept_rory_culkin;concept_robert_sheehan;concept_isabelle_mcnally;concept_mary_beth_peil;;
+concept_film_pesnya_o_svey_leyk_2017 => nrel_producer : concept_ari_gold;;

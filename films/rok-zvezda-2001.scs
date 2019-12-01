@@ -1,0 +1,67 @@
+concept_film_rok_zvezda_2001
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Рок-звезда]
+(* <- lang_ru;;    *);
+[Rock Star]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Рок-звезда)](*<-lang_ru;;*);
+[Description (Rock Star)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/rok-zvezda-2001_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/rok-zvezda-2001_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Рок-звезда)](*<-lang_ru;;*);
+		[Pic. (Rock Star)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/rok-zvezda-2001.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The story of a wanna be who got to be. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [07.09.2001](*<-lang_ru;;*);;
+    => nrel_main_idtf : [07.09.2001](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H45M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_rok_zvezda_2001 =>nrel_keywords: film;;
+
+concept_film_rok_zvezda_2001 <- concept_drama;concept_music;;
+
+concept_film_rok_zvezda_2001 => nrel_main_actor : concept_mark_wahlberg;concept_jennifer_aniston;concept_dominic_west;concept_jason_bonham;;
+concept_film_rok_zvezda_2001 => nrel_producer : concept_stephen_herek;;

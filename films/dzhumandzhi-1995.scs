@@ -1,0 +1,67 @@
+concept_film_dzhumandzhi_1995
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Джуманджи]
+(* <- lang_ru;;    *);
+[Jumanji]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Джуманджи)](*<-lang_ru;;*);
+[Description (Jumanji)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dzhumandzhi-1995_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dzhumandzhi-1995_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Джуманджи)](*<-lang_ru;;*);
+		[Pic. (Jumanji)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dzhumandzhi-1995.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Roll the dice and unleash the excitement! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.12.1995](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.12.1995](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H44M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H44M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_dzhumandzhi_1995 =>nrel_keywords: film;;
+
+concept_film_dzhumandzhi_1995 <- concept_adventure;concept_comedy;concept_family;concept_fantasy;;
+
+concept_film_dzhumandzhi_1995 => nrel_main_actor : concept_robin_williams;concept_kirsten_dunst;concept_bonnie_hunt;concept_jonathan_hyde;;
+concept_film_dzhumandzhi_1995 => nrel_producer : concept_joe_johnston;;

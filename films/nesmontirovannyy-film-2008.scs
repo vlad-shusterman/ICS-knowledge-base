@@ -1,0 +1,67 @@
+concept_film_nesmontirovannyy_film_2008
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Несмонтированный фильм]
+(* <- lang_ru;;    *);
+[Yeong-hwa-neun yeong-hwa-da / Rough Cut]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Несмонтированный фильм)](*<-lang_ru;;*);
+[Description (Yeong-hwa-neun yeong-hwa-da / Rough Cut)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/nesmontirovannyy-film-2008_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/nesmontirovannyy-film-2008_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Несмонтированный фильм)](*<-lang_ru;;*);
+		[Pic. (Yeong-hwa-neun yeong-hwa-da / Rough Cut)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/nesmontirovannyy-film-2008.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_south_korea;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Yeong-hwa-neun yeong-hwa-da / Rough Cut](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [11.09.2008](*<-lang_ru;;*);;
+    => nrel_main_idtf : [11.09.2008](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H53M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H53M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_nesmontirovannyy_film_2008 =>nrel_keywords: film;;
+
+concept_film_nesmontirovannyy_film_2008 <- concept_action;concept_drama;;
+
+concept_film_nesmontirovannyy_film_2008 => nrel_main_actor : concept_ji_seob_so;concept_soo_hyun_hong;concept_hie_jin_jang;concept_man_sik_jeong;;
+concept_film_nesmontirovannyy_film_2008 => nrel_producer : concept_hun_jang;;

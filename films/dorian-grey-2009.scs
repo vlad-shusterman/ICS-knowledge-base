@@ -1,0 +1,67 @@
+concept_film_dorian_grey_2009
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Дориан Грей]
+(* <- lang_ru;;    *);
+[Dorian Gray]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Дориан Грей)](*<-lang_ru;;*);
+[Description (Dorian Gray)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dorian-grey-2009_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dorian-grey-2009_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Дориан Грей)](*<-lang_ru;;*);
+		[Pic. (Dorian Gray)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dorian-grey-2009.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Forever Young. Forever Cursed. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [09.09.2009](*<-lang_ru;;*);;
+    => nrel_main_idtf : [09.09.2009](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H52M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H52M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_dorian_grey_2009 =>nrel_keywords: film;;
+
+concept_film_dorian_grey_2009 <- concept_drama;concept_fantasy;concept_thriller;;
+
+concept_film_dorian_grey_2009 => nrel_main_actor : concept_ben_barnes;concept_colin_firth;concept_rebecca_hall;concept_john_hollingworth;;
+concept_film_dorian_grey_2009 => nrel_producer : concept_oliver_parker;;

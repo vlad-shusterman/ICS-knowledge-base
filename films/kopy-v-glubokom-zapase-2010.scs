@@ -1,0 +1,67 @@
+concept_film_kopy_v_glubokom_zapase_2010
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Копы в глубоком запасе]
+(* <- lang_ru;;    *);
+[The Other Guys]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Копы в глубоком запасе)](*<-lang_ru;;*);
+[Description (The Other Guys)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/kopy-v-glubokom-zapase-2010_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/kopy-v-glubokom-zapase-2010_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Копы в глубоком запасе)](*<-lang_ru;;*);
+		[Pic. (The Other Guys)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/kopy-v-glubokom-zapase-2010.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [When the cops are busy... Our only hope is... See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [06.08.2010](*<-lang_ru;;*);;
+    => nrel_main_idtf : [06.08.2010](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H47M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H47M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_kopy_v_glubokom_zapase_2010 =>nrel_keywords: film;;
+
+concept_film_kopy_v_glubokom_zapase_2010 <- concept_action;concept_comedy;concept_crime;;
+
+concept_film_kopy_v_glubokom_zapase_2010 => nrel_main_actor : concept_will_ferrell;concept_mark_wahlberg;concept_derek_jeter;concept_eva_mendes;;
+concept_film_kopy_v_glubokom_zapase_2010 => nrel_producer : concept_adam_mckay;;

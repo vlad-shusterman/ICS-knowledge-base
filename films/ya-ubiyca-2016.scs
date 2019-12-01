@@ -1,0 +1,67 @@
+concept_film_ya_ubiyca_2016
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Я – убийца]
+(* <- lang_ru;;    *);
+[Jestem morderca]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Я – убийца)](*<-lang_ru;;*);
+[Description (Jestem morderca)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ya-ubiyca-2016_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ya-ubiyca-2016_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Я – убийца)](*<-lang_ru;;*);
+		[Pic. (Jestem morderca)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ya-ubiyca-2016.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_poland;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Jestem morderca](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [04.11.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [04.11.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H57M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H57M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_ya_ubiyca_2016 =>nrel_keywords: film;;
+
+concept_film_ya_ubiyca_2016 <- concept_crime;concept_drama;concept_thriller;;
+
+concept_film_ya_ubiyca_2016 => nrel_main_actor : concept_miroslaw_haniszewski;concept_arkadiusz_jakubik;concept_agata_kulesza;concept_magdalena_poplawska;;
+concept_film_ya_ubiyca_2016 => nrel_producer : concept_maciej_pieprzyca;;

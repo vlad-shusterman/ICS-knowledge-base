@@ -1,0 +1,67 @@
+concept_film_zdravstvuy_papa_novyy_god_2_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Здравствуй, папа, Новый год! 2]
+(* <- lang_ru;;    *);
+[Daddy's Home 2]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Здравствуй, папа, Новый год! 2)](*<-lang_ru;;*);
+[Description (Daddy's Home 2)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zdravstvuy-papa-novyy-god-2-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zdravstvuy-papa-novyy-god-2-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Здравствуй, папа, Новый год! 2)](*<-lang_ru;;*);
+		[Pic. (Daddy's Home 2)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zdravstvuy-papa-novyy-god-2-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [They thought they had Christmas all wrapped up... See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [08.11.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [08.11.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H40M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_zdravstvuy_papa_novyy_god_2_2017 =>nrel_keywords: film;;
+
+concept_film_zdravstvuy_papa_novyy_god_2_2017 <- concept_comedy;;
+
+concept_film_zdravstvuy_papa_novyy_god_2_2017 => nrel_main_actor : concept_will_ferrell;concept_mark_wahlberg;concept_mel_gibson;concept_john_lithgow;;
+concept_film_zdravstvuy_papa_novyy_god_2_2017 => nrel_producer : concept_sean_anders;;

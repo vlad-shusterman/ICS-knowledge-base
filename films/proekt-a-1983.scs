@@ -1,0 +1,67 @@
+concept_film_proekt_a_1983
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Проект А]
+(* <- lang_ru;;    *);
+[A gai wak / Project A]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Проект А)](*<-lang_ru;;*);
+[Description (A gai wak / Project A)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/proekt-a-1983_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/proekt-a-1983_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Проект А)](*<-lang_ru;;*);
+		[Pic. (A gai wak / Project A)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/proekt-a-1983.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_hong_kong;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A rip-roaring adventure on the old china coast... See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [22.12.1983](*<-lang_ru;;*);;
+    => nrel_main_idtf : [22.12.1983](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H45M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_proekt_a_1983 =>nrel_keywords: film;;
+
+concept_film_proekt_a_1983 <- concept_action;concept_comedy;;
+
+concept_film_proekt_a_1983 => nrel_main_actor : concept_jackie_chan;concept_sammo_kam_bo_hung;concept_biao_yuen;concept_dick_wei;;
+concept_film_proekt_a_1983 => nrel_producer : concept_jackie_chan;concept_sammo_kam_bo_hung;;

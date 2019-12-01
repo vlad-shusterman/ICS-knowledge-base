@@ -1,0 +1,67 @@
+concept_film_kurt_kobeyn_rasskaz_o_syne_2006
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Курт Кобейн: Рассказ о сыне]
+(* <- lang_ru;;    *);
+[Kurt Cobain About a Son]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Курт Кобейн: Рассказ о сыне)](*<-lang_ru;;*);
+[Description (Kurt Cobain About a Son)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/kurt-kobeyn-rasskaz-o-syne-2006_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/kurt-kobeyn-rasskaz-o-syne-2006_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Курт Кобейн: Рассказ о сыне)](*<-lang_ru;;*);
+		[Pic. (Kurt Cobain About a Son)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/kurt-kobeyn-rasskaz-o-syne-2006.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A revealing and intimate portrait of a misunderstood genius. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [04.08.2007](*<-lang_ru;;*);;
+    => nrel_main_idtf : [04.08.2007](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H36M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H36M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_kurt_kobeyn_rasskaz_o_syne_2006 =>nrel_keywords: film;;
+
+concept_film_kurt_kobeyn_rasskaz_o_syne_2006 <- concept_documentary;concept_music;;
+
+concept_film_kurt_kobeyn_rasskaz_o_syne_2006 => nrel_main_actor : concept_kurt_cobain;concept_nathan_streifel;concept_michael_azerrad;concept_courtney_love;;
+concept_film_kurt_kobeyn_rasskaz_o_syne_2006 => nrel_producer : concept_aj_schnack;;

@@ -1,0 +1,67 @@
+concept_film_glavnaya_mishen_2000
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Главная мишень]
+(* <- lang_ru;;    *);
+[First Target]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Главная мишень)](*<-lang_ru;;*);
+[Description (First Target)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/glavnaya-mishen-2000_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/glavnaya-mishen-2000_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Главная мишень)](*<-lang_ru;;*);
+		[Pic. (First Target)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/glavnaya-mishen-2000.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_canada;concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [First Target](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.10.2000](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.10.2000](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H40M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_glavnaya_mishen_2000 =>nrel_keywords: film;;
+
+concept_film_glavnaya_mishen_2000 <- concept_action;;
+
+concept_film_glavnaya_mishen_2000 => nrel_main_actor : concept_daryl_hannah;concept_doug_savant;concept_brandy_ledford;concept_peter_flemming;;
+concept_film_glavnaya_mishen_2000 => nrel_producer : concept_armand_mastroianni;;

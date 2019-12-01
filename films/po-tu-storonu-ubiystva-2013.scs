@@ -1,0 +1,67 @@
+concept_film_po_tu_storonu_ubiystva_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[По ту сторону убийства]
+(* <- lang_ru;;    *);
+[Murder on the Home Front]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (По ту сторону убийства)](*<-lang_ru;;*);
+[Description (Murder on the Home Front)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/po-tu-storonu-ubiystva-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/po-tu-storonu-ubiystva-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (По ту сторону убийства)](*<-lang_ru;;*);
+		[Pic. (Murder on the Home Front)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/po-tu-storonu-ubiystva-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [London 1940. The Blitz. Murder, mayhem and the birth of modern forensics.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [09.05.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [09.05.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H31M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H31M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_po_tu_storonu_ubiystva_2013 =>nrel_keywords: film;;
+
+concept_film_po_tu_storonu_ubiystva_2013 <- concept_crime;concept_mystery;concept_thriller;;
+
+concept_film_po_tu_storonu_ubiystva_2013 => nrel_main_actor : concept_patrick_kennedy;concept_tamzin_merchant;concept_emerald_fennell;concept_james_fleet;;
+concept_film_po_tu_storonu_ubiystva_2013 => nrel_producer : concept_geoffrey_sax;;

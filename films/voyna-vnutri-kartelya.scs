@@ -1,0 +1,67 @@
+concept_film_voyna_vnutri_kartelya
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Война внутри картеля]
+(* <- lang_ru;;    *);
+[Tom Clancy's Ghost Recon Wildlands: War Within the Cartel]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Война внутри картеля)](*<-lang_ru;;*);
+[Description (Tom Clancy's Ghost Recon Wildlands: War Within the Cartel)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/voyna-vnutri-kartelya_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/voyna-vnutri-kartelya_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Война внутри картеля)](*<-lang_ru;;*);
+		[Pic. (Tom Clancy's Ghost Recon Wildlands: War Within the Cartel)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/voyna-vnutri-kartelya.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_uk;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The most brutal wars are fought from within](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [16.02.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [16.02.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT30M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT30M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_voyna_vnutri_kartelya =>nrel_keywords: film;;
+
+concept_film_voyna_vnutri_kartelya <- concept_action;concept_drama;concept_sci_fi;;
+
+concept_film_voyna_vnutri_kartelya => nrel_main_actor : concept_d.j._cotrona;concept_jose_rosete;concept_esteban_cueto;concept_kesia_elwin;;
+concept_film_voyna_vnutri_kartelya => nrel_producer : concept_avi_youabian;;

@@ -1,0 +1,67 @@
+concept_film_shanhayskie_rycari_2003
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Шанхайские рыцари]
+(* <- lang_ru;;    *);
+[Shanghai Knights]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Шанхайские рыцари)](*<-lang_ru;;*);
+[Description (Shanghai Knights)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/shanhayskie-rycari-2003_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/shanhayskie-rycari-2003_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Шанхайские рыцари)](*<-lang_ru;;*);
+		[Pic. (Shanghai Knights)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/shanhayskie-rycari-2003.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_hong_kong;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A Royal Kick In The Arse](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [30.01.2003](*<-lang_ru;;*);;
+    => nrel_main_idtf : [30.01.2003](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H54M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H54M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_shanhayskie_rycari_2003 =>nrel_keywords: film;;
+
+concept_film_shanhayskie_rycari_2003 <- concept_action;concept_adventure;concept_comedy;;
+
+concept_film_shanhayskie_rycari_2003 => nrel_main_actor : concept_jackie_chan;concept_owen_wilson;concept_fann_wong;concept_aaron_taylor_johnson;;
+concept_film_shanhayskie_rycari_2003 => nrel_producer : concept_david_dobkin;;

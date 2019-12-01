@@ -1,0 +1,67 @@
+concept_film_poteryannaya_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Потерянная]
+(* <- lang_ru;;    *);
+[Verlorene / Lost Ones]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Потерянная)](*<-lang_ru;;*);
+[Description (Verlorene / Lost Ones)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/poteryannaya-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/poteryannaya-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Потерянная)](*<-lang_ru;;*);
+		[Pic. (Verlorene / Lost Ones)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/poteryannaya-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_germany;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Verlorene / Lost Ones](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [17.01.2019](*<-lang_ru;;*);;
+    => nrel_main_idtf : [17.01.2019](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H31M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H31M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_poteryannaya_2018 =>nrel_keywords: film;;
+
+concept_film_poteryannaya_2018 <- concept_drama;;
+
+concept_film_poteryannaya_2018 => nrel_main_actor : concept_maria_dragus;concept_anna_bachmann;concept_clemens_schick;concept_enno_trebs;;
+concept_film_poteryannaya_2018 => nrel_producer : concept_felix_hassenfratz;;

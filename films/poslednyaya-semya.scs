@@ -1,0 +1,67 @@
+concept_film_poslednyaya_semya
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Последняя семья]
+(* <- lang_ru;;    *);
+[Ostatnia rodzina]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Последняя семья)](*<-lang_ru;;*);
+[Description (Ostatnia rodzina)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/poslednyaya-semya_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/poslednyaya-semya_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Последняя семья)](*<-lang_ru;;*);
+		[Pic. (Ostatnia rodzina)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/poslednyaya-semya.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_poland;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Family life isn't always sunshine and rainbows.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [30.09.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [30.09.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H3M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H3M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_poslednyaya_semya =>nrel_keywords: film;;
+
+concept_film_poslednyaya_semya <- concept_biography;concept_drama;;
+
+concept_film_poslednyaya_semya => nrel_main_actor : concept_andrzej_seweryn;concept_dawid_ogrodnik;concept_aleksandra_konieczna;concept_andrzej_chyra;;
+concept_film_poslednyaya_semya => nrel_producer : concept_jan_p._matuszynski;;

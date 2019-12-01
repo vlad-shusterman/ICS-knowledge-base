@@ -1,0 +1,67 @@
+concept_film_zk_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[З.К.]
+(* <- lang_ru;;    *);
+[O.G.]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (З.К.)](*<-lang_ru;;*);
+[Description (O.G.)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zk-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zk-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (З.К.)](*<-lang_ru;;*);
+		[Pic. (O.G.)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zk-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [After 24 years in prison, Louis is five weeks away from being released when he is jumped by a young man, who Louis ultimately befriends at his own risk.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [23.02.2019](*<-lang_ru;;*);;
+    => nrel_main_idtf : [23.02.2019](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H53M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H53M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_MA;;
+
+concept_film_zk_2018 =>nrel_keywords: film;;
+
+concept_film_zk_2018 <- concept_drama;;
+
+concept_film_zk_2018 => nrel_main_actor : concept_jeffrey_wright;concept_theothus_carter;concept_william_fichtner;concept_boyd_holbrook;;
+concept_film_zk_2018 => nrel_producer : concept_madeleine_sackler;;

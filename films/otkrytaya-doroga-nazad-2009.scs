@@ -1,0 +1,67 @@
+concept_film_otkrytaya_doroga_nazad_2009
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Открытая дорога назад]
+(* <- lang_ru;;    *);
+[The Open Road]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Открытая дорога назад)](*<-lang_ru;;*);
+[Description (The Open Road)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/otkrytaya-doroga-nazad-2009_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/otkrytaya-doroga-nazad-2009_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Открытая дорога назад)](*<-lang_ru;;*);
+		[Pic. (The Open Road)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/otkrytaya-doroga-nazad-2009.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [they've got a long way to go.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [28.08.2009](*<-lang_ru;;*);;
+    => nrel_main_idtf : [28.08.2009](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H30M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H30M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_otkrytaya_doroga_nazad_2009 =>nrel_keywords: film;;
+
+concept_film_otkrytaya_doroga_nazad_2009 <- concept_comedy;concept_drama;;
+
+concept_film_otkrytaya_doroga_nazad_2009 => nrel_main_actor : concept_justin_timberlake;concept_ted_danson;concept_harry_dean_stanton;concept_mary_steenburgen;;
+concept_film_otkrytaya_doroga_nazad_2009 => nrel_producer : concept_michael_meredith;;

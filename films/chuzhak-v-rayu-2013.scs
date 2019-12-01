@@ -1,0 +1,67 @@
+concept_film_chuzhak_v_rayu_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Чужак в раю]
+(* <- lang_ru;;    *);
+[A Stranger in Paradise]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Чужак в раю)](*<-lang_ru;;*);
+[Description (A Stranger in Paradise)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/chuzhak-v-rayu-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/chuzhak-v-rayu-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Чужак в раю)](*<-lang_ru;;*);
+		[Pic. (A Stranger in Paradise)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/chuzhak-v-rayu-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_thailand;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A Stranger in Paradise](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [01.05.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [01.05.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H23M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H23M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_chuzhak_v_rayu_2013 =>nrel_keywords: film;;
+
+concept_film_chuzhak_v_rayu_2013 <- concept_thriller;;
+
+concept_film_chuzhak_v_rayu_2013 => nrel_main_actor : concept_colin_egglesfield;concept_catalina_sandino_moreno;concept_byron_mann;concept_stuart_townsend;;
+concept_film_chuzhak_v_rayu_2013 => nrel_producer : concept_corrado_boccia;;

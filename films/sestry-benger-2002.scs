@@ -1,0 +1,67 @@
+concept_film_sestry_benger_2002
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Сестры Бэнгер / Боевые сёстры / Сестрички-зажигалки]
+(* <- lang_ru;;    *);
+[The Banger Sisters]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Сестры Бэнгер / Боевые сёстры / Сестрички-зажигалки)](*<-lang_ru;;*);
+[Description (The Banger Sisters)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/sestry-benger-2002_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/sestry-benger-2002_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Сестры Бэнгер / Боевые сёстры / Сестрички-зажигалки)](*<-lang_ru;;*);
+		[Pic. (The Banger Sisters)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/sestry-benger-2002.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Some friendships last forever... like it or not.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [20.09.2002](*<-lang_ru;;*);;
+    => nrel_main_idtf : [20.09.2002](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H38M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H38M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_sestry_benger_2002 =>nrel_keywords: film;;
+
+concept_film_sestry_benger_2002 <- concept_comedy;concept_drama;;
+
+concept_film_sestry_benger_2002 => nrel_main_actor : concept_susan_sarandon;concept_goldie_hawn;concept_geoffrey_rush;concept_erika_christensen;;
+concept_film_sestry_benger_2002 => nrel_producer : concept_bob_dolman;;

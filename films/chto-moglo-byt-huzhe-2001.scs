@@ -1,0 +1,67 @@
+concept_film_chto_moglo_byt_huzhe_2001
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Что могло быть хуже?]
+(* <- lang_ru;;    *);
+[What's the Worst That Could Happen?]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Что могло быть хуже?)](*<-lang_ru;;*);
+[Description (What's the Worst That Could Happen?)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/chto-moglo-byt-huzhe-2001_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/chto-moglo-byt-huzhe-2001_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Что могло быть хуже?)](*<-lang_ru;;*);
+		[Pic. (What's the Worst That Could Happen?)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/chto-moglo-byt-huzhe-2001.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [It takes a thief to nail a crook.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [01.06.2001](*<-lang_ru;;*);;
+    => nrel_main_idtf : [01.06.2001](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H34M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H34M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_chto_moglo_byt_huzhe_2001 =>nrel_keywords: film;;
+
+concept_film_chto_moglo_byt_huzhe_2001 <- concept_comedy;concept_crime;;
+
+concept_film_chto_moglo_byt_huzhe_2001 => nrel_main_actor : concept_martin_lawrence;concept_danny_devito;concept_john_leguizamo;concept_glenne_headly;;
+concept_film_chto_moglo_byt_huzhe_2001 => nrel_producer : concept_sam_weisman;;

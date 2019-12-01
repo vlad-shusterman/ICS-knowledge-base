@@ -1,0 +1,67 @@
+concept_film_vam_nravitsya_hichkok_2005
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Вам нравится Хичкок?]
+(* <- lang_ru;;    *);
+[Ti piace Hitchcock? / Do You Like Hitchcock?]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Вам нравится Хичкок?)](*<-lang_ru;;*);
+[Description (Ti piace Hitchcock? / Do You Like Hitchcock?)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vam-nravitsya-hichkok-2005_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vam-nravitsya-hichkok-2005_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Вам нравится Хичкок?)](*<-lang_ru;;*);
+		[Pic. (Ti piace Hitchcock? / Do You Like Hitchcock?)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vam-nravitsya-hichkok-2005.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_italy;concept_spain;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Bloody suspense à la Argento, spiced with a pinch of Hitchcock. [Scandinavian DVD.] See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [01.07.2005](*<-lang_ru;;*);;
+    => nrel_main_idtf : [01.07.2005](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H33M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H33M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Unrated;;
+
+concept_film_vam_nravitsya_hichkok_2005 =>nrel_keywords: film;;
+
+concept_film_vam_nravitsya_hichkok_2005 <- concept_mystery;concept_thriller;;
+
+concept_film_vam_nravitsya_hichkok_2005 => nrel_main_actor : concept_elio_germano;concept_chiara_conti;concept_elisabetta_rocchetti;concept_cristina_brondo;;
+concept_film_vam_nravitsya_hichkok_2005 => nrel_producer : concept_dario_argento;;

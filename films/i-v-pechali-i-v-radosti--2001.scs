@@ -1,0 +1,67 @@
+concept_film_i_v_pechali_i_v_radosti__2001
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[И в печали, и в радости ...]
+(* <- lang_ru;;    *);
+[Kabhi Khushi Kabhie Gham...]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (И в печали, и в радости ...)](*<-lang_ru;;*);
+[Description (Kabhi Khushi Kabhie Gham...)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/i-v-pechali-i-v-radosti--2001_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/i-v-pechali-i-v-radosti--2001_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (И в печали, и в радости ...)](*<-lang_ru;;*);
+		[Pic. (Kabhi Khushi Kabhie Gham...)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/i-v-pechali-i-v-radosti--2001.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_india;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Any weak man can say he's sorry. It takes a strong heart to forgive. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [14.12.2001](*<-lang_ru;;*);;
+    => nrel_main_idtf : [14.12.2001](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT3H30M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT3H30M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_i_v_pechali_i_v_radosti__2001 =>nrel_keywords: film;;
+
+concept_film_i_v_pechali_i_v_radosti__2001 <- concept_drama;concept_musical;concept_romance;;
+
+concept_film_i_v_pechali_i_v_radosti__2001 => nrel_main_actor : concept_shah_rukh_khan;concept_kajol;concept_amitabh_bachchan;concept_hrithik_roshan;;
+concept_film_i_v_pechali_i_v_radosti__2001 => nrel_producer : concept_karan_johar;;

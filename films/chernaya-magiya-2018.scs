@@ -1,0 +1,67 @@
+concept_film_chernaya_magiya_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Чёрная магия]
+(* <- lang_ru;;    *);
+[Santet / Black Magic]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Чёрная магия)](*<-lang_ru;;*);
+[Description (Santet / Black Magic)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/chernaya-magiya-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/chernaya-magiya-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Чёрная магия)](*<-lang_ru;;*);
+		[Pic. (Santet / Black Magic)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/chernaya-magiya-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_indonesia;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Santet / Black Magic](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [04.10.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [04.10.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H25M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H25M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_chernaya_magiya_2018 =>nrel_keywords: film;;
+
+concept_film_chernaya_magiya_2018 <- concept_horror;;
+
+concept_film_chernaya_magiya_2018 => nrel_main_actor : concept_kelly_brook;concept_marcellino_lafrand;concept_ayu_dyah_pasha;concept_ray_sahetapy;;
+concept_film_chernaya_magiya_2018 => nrel_producer : concept_helfi_c.h._kardit;;

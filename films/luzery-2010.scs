@@ -1,0 +1,67 @@
+concept_film_luzery_2010
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Лузеры]
+(* <- lang_ru;;    *);
+[The Losers]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Лузеры)](*<-lang_ru;;*);
+[Description (The Losers)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/luzery-2010_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/luzery-2010_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Лузеры)](*<-lang_ru;;*);
+		[Pic. (The Losers)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/luzery-2010.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Aisha - Search And Destroy See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [22.04.2010](*<-lang_ru;;*);;
+    => nrel_main_idtf : [22.04.2010](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H37M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H37M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_luzery_2010 =>nrel_keywords: film;;
+
+concept_film_luzery_2010 <- concept_action;concept_adventure;concept_crime;concept_mystery;concept_thriller;;
+
+concept_film_luzery_2010 => nrel_main_actor : concept_idris_elba;concept_zoe_saldana;concept_jeffrey_dean_morgan;concept_chris_evans;;
+concept_film_luzery_2010 => nrel_producer : concept_sylvain_white;;

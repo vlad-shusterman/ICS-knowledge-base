@@ -1,0 +1,67 @@
+concept_film_ostrov_golovorezov_1995
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Остров головорезов]
+(* <- lang_ru;;    *);
+[Cutthroat Island]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Остров головорезов)](*<-lang_ru;;*);
+[Description (Cutthroat Island)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ostrov-golovorezov-1995_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ostrov-golovorezov-1995_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Остров головорезов)](*<-lang_ru;;*);
+		[Pic. (Cutthroat Island)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ostrov-golovorezov-1995.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_france;concept_italy;concept_germany;concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The Course Has Been Set. There Is No Turning Back. Prepare Your Weapons. Summon Your Courage. Discover the Adventure of a Lifetime!](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [22.12.1995](*<-lang_ru;;*);;
+    => nrel_main_idtf : [22.12.1995](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H4M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H4M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_ostrov_golovorezov_1995 =>nrel_keywords: film;;
+
+concept_film_ostrov_golovorezov_1995 <- concept_action;concept_adventure;concept_comedy;;
+
+concept_film_ostrov_golovorezov_1995 => nrel_main_actor : concept_geena_davis;concept_matthew_modine;concept_frank_langella;concept_maury_chaykin;;
+concept_film_ostrov_golovorezov_1995 => nrel_producer : concept_renny_harlin;;

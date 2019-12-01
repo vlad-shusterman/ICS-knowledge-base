@@ -1,0 +1,67 @@
+concept_film_vse_lyubyat_kitov_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Все любят китов]
+(* <- lang_ru;;    *);
+[Big Miracle]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Все любят китов)](*<-lang_ru;;*);
+[Description (Big Miracle)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vse-lyubyat-kitov-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vse-lyubyat-kitov-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Все любят китов)](*<-lang_ru;;*);
+		[Pic. (Big Miracle)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vse-lyubyat-kitov-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_uk;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Big Miracle](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [02.02.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [02.02.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H47M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H47M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_vse_lyubyat_kitov_2012 =>nrel_keywords: film;;
+
+concept_film_vse_lyubyat_kitov_2012 <- concept_biography;concept_drama;concept_family;concept_romance;;
+
+concept_film_vse_lyubyat_kitov_2012 => nrel_main_actor : concept_drew_barrymore;concept_john_krasinski;concept_john_pingayak;concept_ahmaogak_sweeney;;
+concept_film_vse_lyubyat_kitov_2012 => nrel_producer : concept_ken_kwapis;;

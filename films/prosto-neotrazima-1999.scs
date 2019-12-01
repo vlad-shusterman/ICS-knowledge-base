@@ -1,0 +1,67 @@
+concept_film_prosto_neotrazima_1999
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Просто неотразима]
+(* <- lang_ru;;    *);
+[Simply Irresistible]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Просто неотразима)](*<-lang_ru;;*);
+[Description (Simply Irresistible)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/prosto-neotrazima-1999_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/prosto-neotrazima-1999_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Просто неотразима)](*<-lang_ru;;*);
+		[Pic. (Simply Irresistible)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/prosto-neotrazima-1999.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_germany;concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Magic opened up their hearts... Love did the rest. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [05.02.1999](*<-lang_ru;;*);;
+    => nrel_main_idtf : [05.02.1999](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H36M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H36M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_prosto_neotrazima_1999 =>nrel_keywords: film;;
+
+concept_film_prosto_neotrazima_1999 <- concept_comedy;concept_drama;concept_fantasy;concept_romance;;
+
+concept_film_prosto_neotrazima_1999 => nrel_main_actor : concept_sarah_michelle_gellar;concept_sean_patrick_flanery;concept_patricia_clarkson;concept_dylan_baker;;
+concept_film_prosto_neotrazima_1999 => nrel_producer : concept_mark_tarlov;;

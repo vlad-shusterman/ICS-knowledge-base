@@ -1,0 +1,67 @@
+concept_film_dnevnik_slabaka_4_dolgoe_puteshestvie
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Дневник слабака 4: Долгое путешествие]
+(* <- lang_ru;;    *);
+[Diary of a Wimpy Kid: The Long Haul]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Дневник слабака 4: Долгое путешествие)](*<-lang_ru;;*);
+[Description (Diary of a Wimpy Kid: The Long Haul)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dnevnik-slabaka-4-dolgoe-puteshestvie_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dnevnik-slabaka-4-dolgoe-puteshestvie_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Дневник слабака 4: Долгое путешествие)](*<-lang_ru;;*);
+		[Pic. (Diary of a Wimpy Kid: The Long Haul)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dnevnik-slabaka-4-dolgoe-puteshestvie.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A Wimp will rise See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [17.05.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [17.05.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H31M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H31M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_dnevnik_slabaka_4_dolgoe_puteshestvie =>nrel_keywords: film;;
+
+concept_film_dnevnik_slabaka_4_dolgoe_puteshestvie <- concept_comedy;concept_family;;
+
+concept_film_dnevnik_slabaka_4_dolgoe_puteshestvie => nrel_main_actor : concept_jason_drucker;concept_alicia_silverstone;concept_tom_everett_scott;concept_charlie_wright;;
+concept_film_dnevnik_slabaka_4_dolgoe_puteshestvie => nrel_producer : concept_david_bowers;;

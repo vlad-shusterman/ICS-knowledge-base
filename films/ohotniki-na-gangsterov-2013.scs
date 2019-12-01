@@ -1,0 +1,67 @@
+concept_film_ohotniki_na_gangsterov_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Охотники на гангстеров]
+(* <- lang_ru;;    *);
+[Gangster Squad]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Охотники на гангстеров)](*<-lang_ru;;*);
+[Description (Gangster Squad)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ohotniki-na-gangsterov-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ohotniki-na-gangsterov-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Охотники на гангстеров)](*<-lang_ru;;*);
+		[Pic. (Gangster Squad)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ohotniki-na-gangsterov-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [No names. No badges. No mercy.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [09.01.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [09.01.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H53M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H53M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_ohotniki_na_gangsterov_2013 =>nrel_keywords: film;;
+
+concept_film_ohotniki_na_gangsterov_2013 <- concept_action;concept_crime;concept_drama;concept_thriller;;
+
+concept_film_ohotniki_na_gangsterov_2013 => nrel_main_actor : concept_sean_penn;concept_ryan_gosling;concept_emma_stone;concept_giovanni_ribisi;;
+concept_film_ohotniki_na_gangsterov_2013 => nrel_producer : concept_ruben_fleischer;;

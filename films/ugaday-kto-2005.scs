@@ -1,0 +1,67 @@
+concept_film_ugaday_kto_2005
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Угадай, кто?]
+(* <- lang_ru;;    *);
+[Guess Who]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Угадай, кто?)](*<-lang_ru;;*);
+[Description (Guess Who)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ugaday-kto-2005_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ugaday-kto-2005_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Угадай, кто?)](*<-lang_ru;;*);
+		[Pic. (Guess Who)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ugaday-kto-2005.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Some in-laws were made to be broken. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.03.2005](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.03.2005](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H45M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_ugaday_kto_2005 =>nrel_keywords: film;;
+
+concept_film_ugaday_kto_2005 <- concept_comedy;concept_romance;;
+
+concept_film_ugaday_kto_2005 => nrel_main_actor : concept_ashton_kutcher;concept_bernie_mac;concept_zoe_saldana;concept_judith_scott;;
+concept_film_ugaday_kto_2005 => nrel_producer : concept_kevin_rodney_sullivan;;

@@ -1,0 +1,67 @@
+concept_film_voshozhdenie_2002
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Восхождение]
+(* <- lang_ru;;    *);
+[The Climb]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Восхождение)](*<-lang_ru;;*);
+[Description (The Climb)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/voshozhdenie-2002_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/voshozhdenie-2002_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Восхождение)](*<-lang_ru;;*);
+		[Pic. (The Climb)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/voshozhdenie-2002.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [2 Men 2 Goals 1 Mountain](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [22.02.2002](*<-lang_ru;;*);;
+    => nrel_main_idtf : [22.02.2002](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H38M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H38M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_voshozhdenie_2002 =>nrel_keywords: film;;
+
+concept_film_voshozhdenie_2002 <- concept_action;concept_adventure;concept_drama;concept_family;;
+
+concept_film_voshozhdenie_2002 => nrel_main_actor : concept_jason_george;concept_ned_vaughn;concept_dabney_coleman;concept_kyli_santiago;;
+concept_film_voshozhdenie_2002 => nrel_producer : concept_john_schmidt;;

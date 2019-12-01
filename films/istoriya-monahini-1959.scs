@@ -1,0 +1,67 @@
+concept_film_istoriya_monahini_1959
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[История монахини]
+(* <- lang_ru;;    *);
+[The Nun's Story]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (История монахини)](*<-lang_ru;;*);
+[Description (The Nun's Story)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/istoriya-monahini-1959_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/istoriya-monahini-1959_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (История монахини)](*<-lang_ru;;*);
+		[Pic. (The Nun's Story)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/istoriya-monahini-1959.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The most gripping and dramatic personal story of this decade is on the screen! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [18.07.1959](*<-lang_ru;;*);;
+    => nrel_main_idtf : [18.07.1959](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H29M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H29M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_istoriya_monahini_1959 =>nrel_keywords: film;;
+
+concept_film_istoriya_monahini_1959 <- concept_drama;;
+
+concept_film_istoriya_monahini_1959 => nrel_main_actor : concept_audrey_hepburn;concept_peter_finch;concept_edith_evans;concept_peggy_ashcroft;;
+concept_film_istoriya_monahini_1959 => nrel_producer : concept_fred_zinnemann;;

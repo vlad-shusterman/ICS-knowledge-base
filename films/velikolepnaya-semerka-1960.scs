@@ -1,0 +1,67 @@
+concept_film_velikolepnaya_semerka_1960
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Великолепная семерка]
+(* <- lang_ru;;    *);
+[The Magnificent Seven]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Великолепная семерка)](*<-lang_ru;;*);
+[Description (The Magnificent Seven)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/velikolepnaya-semerka-1960_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/velikolepnaya-semerka-1960_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Великолепная семерка)](*<-lang_ru;;*);
+		[Pic. (The Magnificent Seven)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/velikolepnaya-semerka-1960.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_philippines;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [They were seven - And they fought like seven hundred! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.10.1960](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.10.1960](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H8M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H8M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Approved;;
+
+concept_film_velikolepnaya_semerka_1960 =>nrel_keywords: film;;
+
+concept_film_velikolepnaya_semerka_1960 <- concept_action;concept_adventure;concept_western;;
+
+concept_film_velikolepnaya_semerka_1960 => nrel_main_actor : concept_yul_brynner;concept_steve_mcqueen;concept_charles_bronson;concept_eli_wallach;;
+concept_film_velikolepnaya_semerka_1960 => nrel_producer : concept_john_sturges;;

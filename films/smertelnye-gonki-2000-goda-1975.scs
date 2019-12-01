@@ -1,0 +1,67 @@
+concept_film_smertelnye_gonki_2000_goda_1975
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Смертельные гонки 2000 года]
+(* <- lang_ru;;    *);
+[Death Race 2000]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Смертельные гонки 2000 года)](*<-lang_ru;;*);
+[Description (Death Race 2000)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/smertelnye-gonki-2000-goda-1975_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/smertelnye-gonki-2000-goda-1975_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Смертельные гонки 2000 года)](*<-lang_ru;;*);
+		[Pic. (Death Race 2000)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/smertelnye-gonki-2000-goda-1975.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Across the town the traffic is MURDER See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [28.11.1975](*<-lang_ru;;*);;
+    => nrel_main_idtf : [28.11.1975](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H20M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H20M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_smertelnye_gonki_2000_goda_1975 =>nrel_keywords: film;;
+
+concept_film_smertelnye_gonki_2000_goda_1975 <- concept_action;concept_comedy;concept_sci_fi;concept_sport;;
+
+concept_film_smertelnye_gonki_2000_goda_1975 => nrel_main_actor : concept_david_carradine;concept_sylvester_stallone;concept_simone_griffeth;concept_mary_woronov;;
+concept_film_smertelnye_gonki_2000_goda_1975 => nrel_producer : concept_paul_bartel;;

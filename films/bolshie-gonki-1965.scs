@@ -1,0 +1,67 @@
+concept_film_bolshie_gonki_1965
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Большие гонки]
+(* <- lang_ru;;    *);
+[The Great Race]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Большие гонки)](*<-lang_ru;;*);
+[Description (The Great Race)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/bolshie-gonki-1965_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/bolshie-gonki-1965_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Большие гонки)](*<-lang_ru;;*);
+		[Pic. (The Great Race)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/bolshie-gonki-1965.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [with the music of HENRY MANCINI including "The Sweetheat Tree" "Pie in the Face Polka" and many more See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [14.10.1965](*<-lang_ru;;*);;
+    => nrel_main_idtf : [14.10.1965](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H40M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Passed;;
+
+concept_film_bolshie_gonki_1965 =>nrel_keywords: film;;
+
+concept_film_bolshie_gonki_1965 <- concept_action;concept_adventure;concept_comedy;concept_family;concept_romance;concept_sport;concept_western;;
+
+concept_film_bolshie_gonki_1965 => nrel_main_actor : concept_tony_curtis;concept_natalie_wood;concept_jack_lemmon;concept_peter_falk;;
+concept_film_bolshie_gonki_1965 => nrel_producer : concept_blake_edwards;;

@@ -1,0 +1,67 @@
+concept_film_novye_muravi_v_shtanah_2002
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Новые муравьи в штанах]
+(* <- lang_ru;;    *);
+[Knallharte Jungs / More Ants in the Pants]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Новые муравьи в штанах)](*<-lang_ru;;*);
+[Description (Knallharte Jungs / More Ants in the Pants)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/novye-muravi-v-shtanah-2002_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/novye-muravi-v-shtanah-2002_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Новые муравьи в штанах)](*<-lang_ru;;*);
+		[Pic. (Knallharte Jungs / More Ants in the Pants)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/novye-muravi-v-shtanah-2002.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_germany;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : ["Hey Mädels, ich bin wieder da!" ("Hey girls, I am back")](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [14.03.2002](*<-lang_ru;;*);;
+    => nrel_main_idtf : [14.03.2002](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H25M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H25M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_novye_muravi_v_shtanah_2002 =>nrel_keywords: film;;
+
+concept_film_novye_muravi_v_shtanah_2002 <- concept_comedy;concept_fantasy;concept_romance;;
+
+concept_film_novye_muravi_v_shtanah_2002 => nrel_main_actor : concept_tobias_schenke;concept_axel_stein;concept_diana_amft;concept_rebecca_von_mitzlaff;;
+concept_film_novye_muravi_v_shtanah_2002 => nrel_producer : concept_granz_henman;;

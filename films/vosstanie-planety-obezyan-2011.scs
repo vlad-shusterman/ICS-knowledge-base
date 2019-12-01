@@ -1,0 +1,67 @@
+concept_film_vosstanie_planety_obezyan_2011
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Восстание планеты обезьян]
+(* <- lang_ru;;    *);
+[Rise of the Planet of the Apes]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Восстание планеты обезьян)](*<-lang_ru;;*);
+[Description (Rise of the Planet of the Apes)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vosstanie-planety-obezyan-2011_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vosstanie-planety-obezyan-2011_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Восстание планеты обезьян)](*<-lang_ru;;*);
+		[Pic. (Rise of the Planet of the Apes)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vosstanie-planety-obezyan-2011.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_uk;concept_canada;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Evolution Becomes Revolution](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [03.08.2011](*<-lang_ru;;*);;
+    => nrel_main_idtf : [03.08.2011](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H45M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_vosstanie_planety_obezyan_2011 =>nrel_keywords: film;;
+
+concept_film_vosstanie_planety_obezyan_2011 <- concept_action;concept_drama;concept_sci_fi;concept_thriller;;
+
+concept_film_vosstanie_planety_obezyan_2011 => nrel_main_actor : concept_james_franco;concept_andy_serkis;concept_freida_pinto;concept_karin_konoval;;
+concept_film_vosstanie_planety_obezyan_2011 => nrel_producer : concept_rupert_wyatt;;

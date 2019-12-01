@@ -1,0 +1,67 @@
+concept_film_samyy_pyanyy_okrug_v_mire_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Самый пьяный округ в мире]
+(* <- lang_ru;;    *);
+[Lawless]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Самый пьяный округ в мире)](*<-lang_ru;;*);
+[Description (Lawless)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/samyy-pyanyy-okrug-v-mire-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/samyy-pyanyy-okrug-v-mire-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Самый пьяный округ в мире)](*<-lang_ru;;*);
+		[Pic. (Lawless)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/samyy-pyanyy-okrug-v-mire-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [When the law became corrupt, outlaws became heroes.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.08.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.08.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H56M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H56M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_samyy_pyanyy_okrug_v_mire_2012 =>nrel_keywords: film;;
+
+concept_film_samyy_pyanyy_okrug_v_mire_2012 <- concept_crime;concept_drama;;
+
+concept_film_samyy_pyanyy_okrug_v_mire_2012 => nrel_main_actor : concept_tom_hardy;concept_shia_labeouf;concept_guy_pearce;concept_jason_clarke;;
+concept_film_samyy_pyanyy_okrug_v_mire_2012 => nrel_producer : concept_john_hillcoat;;

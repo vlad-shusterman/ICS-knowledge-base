@@ -1,0 +1,67 @@
+concept_film_poceluy_na_udachu_2006
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Поцелуй на удачу]
+(* <- lang_ru;;    *);
+[Just My Luck]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Поцелуй на удачу)](*<-lang_ru;;*);
+[Description (Just My Luck)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/poceluy-na-udachu-2006_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/poceluy-na-udachu-2006_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Поцелуй на удачу)](*<-lang_ru;;*);
+		[Pic. (Just My Luck)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/poceluy-na-udachu-2006.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Everything can change with a kiss. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.05.2006](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.05.2006](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H43M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H43M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_poceluy_na_udachu_2006 =>nrel_keywords: film;;
+
+concept_film_poceluy_na_udachu_2006 <- concept_comedy;concept_fantasy;concept_romance;;
+
+concept_film_poceluy_na_udachu_2006 => nrel_main_actor : concept_lindsay_lohan;concept_chris_pine;concept_samaire_armstrong;concept_bree_turner;;
+concept_film_poceluy_na_udachu_2006 => nrel_producer : concept_donald_petrie;;

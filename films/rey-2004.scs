@@ -1,0 +1,67 @@
+concept_film_rey_2004
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Рэй]
+(* <- lang_ru;;    *);
+[Ray]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Рэй)](*<-lang_ru;;*);
+[Description (Ray)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/rey-2004_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/rey-2004_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Рэй)](*<-lang_ru;;*);
+		[Pic. (Ray)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/rey-2004.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The only thing more extraordinary than the music is the man behind it: Ray Charles. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.10.2004](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.10.2004](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H32M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H32M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_rey_2004 =>nrel_keywords: film;;
+
+concept_film_rey_2004 <- concept_biography;concept_drama;concept_music;;
+
+concept_film_rey_2004 => nrel_main_actor : concept_jamie_foxx;concept_regina_king;concept_kerry_washington;concept_clifton_powell;;
+concept_film_rey_2004 => nrel_producer : concept_taylor_hackford;;

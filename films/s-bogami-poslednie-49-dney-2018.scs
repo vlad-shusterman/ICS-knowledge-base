@@ -1,0 +1,67 @@
+concept_film_s_bogami_poslednie_49_dney_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[С Богами: Последние 49 дней]
+(* <- lang_ru;;    *);
+[Singwa hamkke: ingwa yeon / Along with the Gods: The Last 49 Days]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (С Богами: Последние 49 дней)](*<-lang_ru;;*);
+[Description (Singwa hamkke: ingwa yeon / Along with the Gods: The Last 49 Days)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/s-bogami-poslednie-49-dney-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/s-bogami-poslednie-49-dney-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (С Богами: Последние 49 дней)](*<-lang_ru;;*);
+		[Pic. (Singwa hamkke: ingwa yeon / Along with the Gods: The Last 49 Days)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/s-bogami-poslednie-49-dney-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_south_korea;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Singwa hamkke: ingwa yeon / Along with the Gods: The Last 49 Days](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [01.08.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [01.08.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H22M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H22M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_s_bogami_poslednie_49_dney_2018 =>nrel_keywords: film;;
+
+concept_film_s_bogami_poslednie_49_dney_2018 <- concept_action;concept_drama;concept_fantasy;;
+
+concept_film_s_bogami_poslednie_49_dney_2018 => nrel_main_actor : concept_jung_woo_ha;concept_ji_hoon_ju;concept_hyang_gi_kim;concept_dong_seok_ma;;
+concept_film_s_bogami_poslednie_49_dney_2018 => nrel_producer : concept_yong_hwa_kim;;

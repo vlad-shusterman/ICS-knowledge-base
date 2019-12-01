@@ -1,0 +1,67 @@
+concept_film_odnazhdy_v_stokgolme_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Однажды в Стокгольме]
+(* <- lang_ru;;    *);
+[Stockholm]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Однажды в Стокгольме)](*<-lang_ru;;*);
+[Description (Stockholm)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/odnazhdy-v-stokgolme-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/odnazhdy-v-stokgolme-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Однажды в Стокгольме)](*<-lang_ru;;*);
+		[Pic. (Stockholm)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/odnazhdy-v-stokgolme-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_canada;concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Based On An Absurd But True Story](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.04.2019](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.04.2019](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H32M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H32M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_odnazhdy_v_stokgolme_2018 =>nrel_keywords: film;;
+
+concept_film_odnazhdy_v_stokgolme_2018 <- concept_biography;concept_comedy;concept_crime;concept_drama;concept_history;;
+
+concept_film_odnazhdy_v_stokgolme_2018 => nrel_main_actor : concept_ethan_hawke;concept_noomi_rapace;concept_mark_strong;concept_christopher_heyerdahl;;
+concept_film_odnazhdy_v_stokgolme_2018 => nrel_producer : concept_robert_budreau;;

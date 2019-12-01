@@ -1,0 +1,67 @@
+concept_film_zabytaya_rota_2001
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Забытая рота]
+(* <- lang_ru;;    *);
+[The Lost Battalion]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Забытая рота)](*<-lang_ru;;*);
+[Description (The Lost Battalion)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zabytaya-rota-2001_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zabytaya-rota-2001_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Забытая рота)](*<-lang_ru;;*);
+		[Pic. (The Lost Battalion)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zabytaya-rota-2001.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_luxembourg;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Caught between two lines of fire, the Germans gave them two options: surrender or die. They chose a third.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [02.12.2001](*<-lang_ru;;*);;
+    => nrel_main_idtf : [02.12.2001](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H32M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H32M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_14;;
+
+concept_film_zabytaya_rota_2001 =>nrel_keywords: film;;
+
+concept_film_zabytaya_rota_2001 <- concept_action;concept_drama;concept_war;;
+
+concept_film_zabytaya_rota_2001 => nrel_main_actor : concept_ricky_schroder;concept_phil_mckee;concept_jamie_harris;concept_jay_rodan;;
+concept_film_zabytaya_rota_2001 => nrel_producer : concept_russell_mulcahy;;

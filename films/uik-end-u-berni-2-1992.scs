@@ -1,0 +1,67 @@
+concept_film_uik_end_u_berni_2_1992
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Уик-энд у Берни 2]
+(* <- lang_ru;;    *);
+[Weekend at Bernie's II]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Уик-энд у Берни 2)](*<-lang_ru;;*);
+[Description (Weekend at Bernie's II)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/uik-end-u-berni-2-1992_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/uik-end-u-berni-2-1992_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Уик-энд у Берни 2)](*<-lang_ru;;*);
+		[Pic. (Weekend at Bernie's II)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/uik-end-u-berni-2-1992.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Bernie's back... and he's still dead! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [09.07.1993](*<-lang_ru;;*);;
+    => nrel_main_idtf : [09.07.1993](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H37M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H37M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_uik_end_u_berni_2_1992 =>nrel_keywords: film;;
+
+concept_film_uik_end_u_berni_2_1992 <- concept_adventure;concept_comedy;concept_fantasy;;
+
+concept_film_uik_end_u_berni_2_1992 => nrel_main_actor : concept_andrew_mccarthy;concept_jonathan_silverman;concept_terry_kiser;concept_troy_byer;;
+concept_film_uik_end_u_berni_2_1992 => nrel_producer : concept_robert_klane;;

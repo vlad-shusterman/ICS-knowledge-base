@@ -1,0 +1,67 @@
+concept_film_ofisnoe_prostranstvo_1999
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Офисное пространство]
+(* <- lang_ru;;    *);
+[Office Space]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Офисное пространство)](*<-lang_ru;;*);
+[Description (Office Space)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ofisnoe-prostranstvo-1999_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ofisnoe-prostranstvo-1999_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Офисное пространство)](*<-lang_ru;;*);
+		[Pic. (Office Space)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ofisnoe-prostranstvo-1999.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Work Sucks. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [19.02.1999](*<-lang_ru;;*);;
+    => nrel_main_idtf : [19.02.1999](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H29M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H29M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_ofisnoe_prostranstvo_1999 =>nrel_keywords: film;;
+
+concept_film_ofisnoe_prostranstvo_1999 <- concept_comedy;;
+
+concept_film_ofisnoe_prostranstvo_1999 => nrel_main_actor : concept_ron_livingston;concept_jennifer_aniston;concept_david_herman;concept_ajay_naidu;;
+concept_film_ofisnoe_prostranstvo_1999 => nrel_producer : concept_mike_judge;;

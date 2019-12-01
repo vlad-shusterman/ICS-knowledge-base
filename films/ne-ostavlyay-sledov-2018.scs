@@ -1,0 +1,67 @@
+concept_film_ne_ostavlyay_sledov_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Не оставляй следов]
+(* <- lang_ru;;    *);
+[Leave No Trace]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Не оставляй следов)](*<-lang_ru;;*);
+[Description (Leave No Trace)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ne-ostavlyay-sledov-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ne-ostavlyay-sledov-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Не оставляй следов)](*<-lang_ru;;*);
+		[Pic. (Leave No Trace)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ne-ostavlyay-sledov-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_canada;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Leave No Trace](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.06.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.06.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H49M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H49M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_ne_ostavlyay_sledov_2018 =>nrel_keywords: film;;
+
+concept_film_ne_ostavlyay_sledov_2018 <- concept_drama;;
+
+concept_film_ne_ostavlyay_sledov_2018 => nrel_main_actor : concept_thomasin_mckenzie;concept_ben_foster;concept_jeffery_rifflard;concept_derek_john_drescher;;
+concept_film_ne_ostavlyay_sledov_2018 => nrel_producer : concept_debra_granik;;

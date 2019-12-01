@@ -1,0 +1,67 @@
+concept_film_tayna_volshebnoy_tykvy_2007
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Тайна волшебной Тыквы]
+(* <- lang_ru;;    *);
+[Bao hu lu de mi mi / The Secret of the Magic Gourd]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Тайна волшебной Тыквы)](*<-lang_ru;;*);
+[Description (Bao hu lu de mi mi / The Secret of the Magic Gourd)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/tayna-volshebnoy-tykvy-2007_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/tayna-volshebnoy-tykvy-2007_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Тайна волшебной Тыквы)](*<-lang_ru;;*);
+		[Pic. (Bao hu lu de mi mi / The Secret of the Magic Gourd)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/tayna-volshebnoy-tykvy-2007.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_china;concept_hong_kong;concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Bao hu lu de mi mi / The Secret of the Magic Gourd](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.06.2007](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.06.2007](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H24M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H24M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_G;;
+
+concept_film_tayna_volshebnoy_tykvy_2007 =>nrel_keywords: film;;
+
+concept_film_tayna_volshebnoy_tykvy_2007 <- concept_drama;concept_family;;
+
+concept_film_tayna_volshebnoy_tykvy_2007 => nrel_main_actor : concept_corbin_bleu;concept_peisi_chen;concept_aaron_michael_drozin;concept_drake_johnston;;
+concept_film_tayna_volshebnoy_tykvy_2007 => nrel_producer : concept_frankie_chung;;

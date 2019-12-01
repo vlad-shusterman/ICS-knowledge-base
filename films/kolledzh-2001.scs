@@ -1,0 +1,67 @@
+concept_film_kolledzh_2001
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Колледж]
+(* <- lang_ru;;    *);
+[Tart]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Колледж)](*<-lang_ru;;*);
+[Description (Tart)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/kolledzh-2001_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/kolledzh-2001_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Колледж)](*<-lang_ru;;*);
+		[Pic. (Tart)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/kolledzh-2001.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_canada;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Sex, Drugs and Study Hall. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.06.2001](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.06.2001](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H34M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H34M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_kolledzh_2001 =>nrel_keywords: film;;
+
+concept_film_kolledzh_2001 <- concept_crime;concept_drama;concept_romance;;
+
+concept_film_kolledzh_2001 => nrel_main_actor : concept_dominique_swain;concept_brad_renfro;concept_bijou_phillips;concept_mischa_barton;;
+concept_film_kolledzh_2001 => nrel_producer : concept_christina_wayne;;
