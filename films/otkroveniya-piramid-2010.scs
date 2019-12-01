@@ -1,0 +1,67 @@
+concept_film_otkroveniya_piramid_2010
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Откровения пирамид]
+(* <- lang_ru;;    *);
+[La révélation des pyramides / The Revelation of the Pyramids]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Откровения пирамид)](*<-lang_ru;;*);
+[Description (La révélation des pyramides / The Revelation of the Pyramids)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/otkroveniya-piramid-2010_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/otkroveniya-piramid-2010_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Откровения пирамид)](*<-lang_ru;;*);
+		[Pic. (La révélation des pyramides / The Revelation of the Pyramids)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/otkroveniya-piramid-2010.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_france;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The discovery that changed the world. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [10.02.2010](*<-lang_ru;;*);;
+    => nrel_main_idtf : [10.02.2010](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H46M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H46M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_otkroveniya_piramid_2010 =>nrel_keywords: film;;
+
+concept_film_otkroveniya_piramid_2010 <- concept_documentary;;
+
+concept_film_otkroveniya_piramid_2010 => nrel_main_actor : concept_alika_del_sol;concept_jean_pierre_adam;concept_guillemette_andreu;concept_arlan_andrews;;
+concept_film_otkroveniya_piramid_2010 => nrel_producer : concept_patrice_pooyard;;

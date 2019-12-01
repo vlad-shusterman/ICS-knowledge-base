@@ -1,0 +1,67 @@
+concept_film_shtorm_na_500_mil_v_chas_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Шторм на 500 миль в час]
+(* <- lang_ru;;    *);
+[500 MPH Storm]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Шторм на 500 миль в час)](*<-lang_ru;;*);
+[Description (500 MPH Storm)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/shtorm-na-500-mil-v-chas-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/shtorm-na-500-mil-v-chas-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Шторм на 500 миль в час)](*<-lang_ru;;*);
+		[Pic. (500 MPH Storm)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/shtorm-na-500-mil-v-chas-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 2;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [500 MPH Storm](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [01.11.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [01.11.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H26M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H26M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_PG;;
+
+concept_film_shtorm_na_500_mil_v_chas_2013 =>nrel_keywords: film;;
+
+concept_film_shtorm_na_500_mil_v_chas_2013 <- concept_action;concept_adventure;concept_drama;concept_sci_fi;concept_thriller;;
+
+concept_film_shtorm_na_500_mil_v_chas_2013 => nrel_main_actor : concept_casper_van_dien;concept_michael_beach;concept_sarah_lieving;concept_bryan_head;;
+concept_film_shtorm_na_500_mil_v_chas_2013 => nrel_producer : concept_daniel_lusko;;

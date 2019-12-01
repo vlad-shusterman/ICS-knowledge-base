@@ -1,0 +1,67 @@
+concept_film_bezumnaya_svadba_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Безумная свадьба]
+(* <- lang_ru;;    *);
+[Skazhene vesillya / Crazy Wedding]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Безумная свадьба)](*<-lang_ru;;*);
+[Description (Skazhene vesillya / Crazy Wedding)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/bezumnaya-svadba-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/bezumnaya-svadba-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Безумная свадьба)](*<-lang_ru;;*);
+		[Pic. (Skazhene vesillya / Crazy Wedding)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/bezumnaya-svadba-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_ukraine;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Skazhene vesillya / Crazy Wedding](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [04.10.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [04.10.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H30M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H30M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_bezumnaya_svadba_2018 =>nrel_keywords: film;;
+
+concept_film_bezumnaya_svadba_2018 <- concept_comedy;;
+
+concept_film_bezumnaya_svadba_2018 => nrel_main_actor : concept_aram_arzumanyan;concept_yuriy_horbunov;concept_aleksandr_kobzar;concept_vera_kobzar;;
+concept_film_bezumnaya_svadba_2018 => nrel_producer : concept_vladyslav_klimchuk;;

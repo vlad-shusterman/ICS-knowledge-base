@@ -1,0 +1,67 @@
+concept_film_chernaya_smert_2010
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Черная смерть]
+(* <- lang_ru;;    *);
+[Black Death]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Черная смерть)](*<-lang_ru;;*);
+[Description (Black Death)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/chernaya-smert-2010_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/chernaya-smert-2010_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Черная смерть)](*<-lang_ru;;*);
+		[Pic. (Black Death)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/chernaya-smert-2010.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_germany;concept_uk;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Repent See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [11.06.2010](*<-lang_ru;;*);;
+    => nrel_main_idtf : [11.06.2010](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H42M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H42M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_chernaya_smert_2010 =>nrel_keywords: film;;
+
+concept_film_chernaya_smert_2010 <- concept_action;concept_drama;concept_history;concept_horror;concept_mystery;;
+
+concept_film_chernaya_smert_2010 => nrel_main_actor : concept_eddie_redmayne;concept_sean_bean;concept_carice_van_houten;concept_kimberley_nixon;;
+concept_film_chernaya_smert_2010 => nrel_producer : concept_christopher_smith;;

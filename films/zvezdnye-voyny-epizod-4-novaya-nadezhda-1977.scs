@@ -1,0 +1,67 @@
+concept_film_zvezdnye_voyny_epizod_4_novaya_nadezhda_1977
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Звездные войны: Эпизод 4 – Новая надежда]
+(* <- lang_ru;;    *);
+[Star Wars / Star Wars Episode IV - A New Hope]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Звездные войны: Эпизод 4 – Новая надежда)](*<-lang_ru;;*);
+[Description (Star Wars / Star Wars Episode IV - A New Hope)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zvezdnye-voyny-epizod-4-novaya-nadezhda-1977_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zvezdnye-voyny-epizod-4-novaya-nadezhda-1977_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Звездные войны: Эпизод 4 – Новая надежда)](*<-lang_ru;;*);
+		[Pic. (Star Wars / Star Wars Episode IV - A New Hope)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zvezdnye-voyny-epizod-4-novaya-nadezhda-1977.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 9;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The original is back. (1982 Reissue) See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.05.1977](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.05.1977](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H1M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H1M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_zvezdnye_voyny_epizod_4_novaya_nadezhda_1977 =>nrel_keywords: film;;
+
+concept_film_zvezdnye_voyny_epizod_4_novaya_nadezhda_1977 <- concept_action;concept_adventure;concept_fantasy;concept_sci_fi;;
+
+concept_film_zvezdnye_voyny_epizod_4_novaya_nadezhda_1977 => nrel_main_actor : concept_mark_hamill;concept_harrison_ford;concept_carrie_fisher;concept_alec_guinness;;
+concept_film_zvezdnye_voyny_epizod_4_novaya_nadezhda_1977 => nrel_producer : concept_george_lucas;;

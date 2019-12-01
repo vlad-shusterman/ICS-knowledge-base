@@ -1,0 +1,67 @@
+concept_film_stena_1982
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Стена]
+(* <- lang_ru;;    *);
+[Pink Floyd: The Wall]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Стена)](*<-lang_ru;;*);
+[Description (Pink Floyd: The Wall)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/stena-1982_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/stena-1982_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Стена)](*<-lang_ru;;*);
+		[Pic. (Pink Floyd: The Wall)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/stena-1982.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The Music, The Nightmares, The Motion Picture See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [14.07.1982](*<-lang_ru;;*);;
+    => nrel_main_idtf : [14.07.1982](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H35M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H35M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_stena_1982 =>nrel_keywords: film;;
+
+concept_film_stena_1982 <- concept_animation;concept_drama;concept_fantasy;concept_music;concept_musical;;
+
+concept_film_stena_1982 => nrel_main_actor : concept_bob_geldof;concept_christine_hargreaves;concept_james_laurenson;concept_eleanor_david;;
+concept_film_stena_1982 => nrel_producer : concept_alan_parker;;

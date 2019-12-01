@@ -1,0 +1,67 @@
+concept_film_ubey_menya_nezhno_2001
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Убей меня нежно]
+(* <- lang_ru;;    *);
+[Killing Me Softly]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Убей меня нежно)](*<-lang_ru;;*);
+[Description (Killing Me Softly)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ubey-menya-nezhno-2001_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ubey-menya-nezhno-2001_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Убей меня нежно)](*<-lang_ru;;*);
+		[Pic. (Killing Me Softly)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ubey-menya-nezhno-2001.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_uk;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [How do you escape... what you can't resist? (UK DVD) See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [23.02.2002](*<-lang_ru;;*);;
+    => nrel_main_idtf : [23.02.2002](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H40M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_ubey_menya_nezhno_2001 =>nrel_keywords: film;;
+
+concept_film_ubey_menya_nezhno_2001 <- concept_drama;concept_mystery;concept_romance;concept_thriller;;
+
+concept_film_ubey_menya_nezhno_2001 => nrel_main_actor : concept_heather_graham;concept_joseph_fiennes;concept_natascha_mcelhone;concept_ulrich_thomsen;;
+concept_film_ubey_menya_nezhno_2001 => nrel_producer : concept_kaige_chen;;

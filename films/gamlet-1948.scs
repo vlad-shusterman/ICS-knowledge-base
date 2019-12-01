@@ -1,0 +1,67 @@
+concept_film_gamlet_1948
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Гамлет]
+(* <- lang_ru;;    *);
+[Hamlet]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Гамлет)](*<-lang_ru;;*);
+[Description (Hamlet)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/gamlet-1948_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/gamlet-1948_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гамлет)](*<-lang_ru;;*);
+		[Pic. (Hamlet)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/gamlet-1948.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Best Picture of the Year! Best Actor of the Year! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.08.1948](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.08.1948](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H34M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H34M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_gamlet_1948 =>nrel_keywords: film;;
+
+concept_film_gamlet_1948 <- concept_drama;;
+
+concept_film_gamlet_1948 => nrel_main_actor : concept_laurence_olivier;concept_jean_simmons;concept_john_laurie;concept_esmond_knight;;
+concept_film_gamlet_1948 => nrel_producer : concept_laurence_olivier;;

@@ -1,0 +1,67 @@
+concept_film_la_la_lend_2016
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Ла-Ла Ленд]
+(* <- lang_ru;;    *);
+[La La Land]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Ла-Ла Ленд)](*<-lang_ru;;*);
+[Description (La La Land)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/la-la-lend-2016_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/la-la-lend-2016_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ла-Ла Ленд)](*<-lang_ru;;*);
+		[Pic. (La La Land)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/la-la-lend-2016.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_hong_kong;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Here's to the fools who dream.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [07.12.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [07.12.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H8M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H8M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_la_la_lend_2016 =>nrel_keywords: film;;
+
+concept_film_la_la_lend_2016 <- concept_comedy;concept_drama;concept_music;concept_musical;concept_romance;;
+
+concept_film_la_la_lend_2016 => nrel_main_actor : concept_ryan_gosling;concept_emma_stone;concept_rosemarie_dewitt;concept_j.k._simmons;;
+concept_film_la_la_lend_2016 => nrel_producer : concept_damien_chazelle;;

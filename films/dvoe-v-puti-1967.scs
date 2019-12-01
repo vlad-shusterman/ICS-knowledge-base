@@ -1,0 +1,67 @@
+concept_film_dvoe_v_puti_1967
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Двое в пути]
+(* <- lang_ru;;    *);
+[Two for the Road]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Двое в пути)](*<-lang_ru;;*);
+[Description (Two for the Road)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dvoe-v-puti-1967_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dvoe-v-puti-1967_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Двое в пути)](*<-lang_ru;;*);
+		[Pic. (Two for the Road)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dvoe-v-puti-1967.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [They make something wonderful out of being alive!](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [22.06.1967](*<-lang_ru;;*);;
+    => nrel_main_idtf : [22.06.1967](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H51M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H51M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_dvoe_v_puti_1967 =>nrel_keywords: film;;
+
+concept_film_dvoe_v_puti_1967 <- concept_comedy;concept_drama;concept_romance;;
+
+concept_film_dvoe_v_puti_1967 => nrel_main_actor : concept_audrey_hepburn;concept_albert_finney;concept_eleanor_bron;concept_william_daniels;;
+concept_film_dvoe_v_puti_1967 => nrel_producer : concept_stanley_donen;;

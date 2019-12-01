@@ -1,0 +1,67 @@
+concept_film_koroli_afery_2007
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Короли аферы]
+(* <- lang_ru;;    *);
+[Save Angel Hope]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Короли аферы)](*<-lang_ru;;*);
+[Description (Save Angel Hope)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/koroli-afery-2007_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/koroli-afery-2007_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Короли аферы)](*<-lang_ru;;*);
+		[Pic. (Save Angel Hope)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/koroli-afery-2007.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_luxembourg;concept_switzerland;concept_uk;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Save Angel Hope](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [24.06.2009](*<-lang_ru;;*);;
+    => nrel_main_idtf : [24.06.2009](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H36M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H36M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_koroli_afery_2007 =>nrel_keywords: film;;
+
+concept_film_koroli_afery_2007 <- concept_comedy;;
+
+concept_film_koroli_afery_2007 => nrel_main_actor : concept_billy_boyd;concept_luke_mably;concept_eva_birthistle;concept_bernard_hill;;
+concept_film_koroli_afery_2007 => nrel_producer : concept_lukas_erni;;

@@ -1,0 +1,67 @@
+concept_film_bezopasnost_ne_garantiruetsya_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Безопасность не гарантируется]
+(* <- lang_ru;;    *);
+[Safety Not Guaranteed]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Безопасность не гарантируется)](*<-lang_ru;;*);
+[Description (Safety Not Guaranteed)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/bezopasnost-ne-garantiruetsya-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/bezopasnost-ne-garantiruetsya-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Безопасность не гарантируется)](*<-lang_ru;;*);
+		[Pic. (Safety Not Guaranteed)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/bezopasnost-ne-garantiruetsya-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [WANTED Someone to go back in time with me. This is not a joke. You'll get paid when we get back. Must bring your own weapons. Safety not guaranteed. I have only done this once before. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [18.10.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [18.10.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H26M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H26M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_bezopasnost_ne_garantiruetsya_2012 =>nrel_keywords: film;;
+
+concept_film_bezopasnost_ne_garantiruetsya_2012 <- concept_comedy;concept_drama;concept_romance;;
+
+concept_film_bezopasnost_ne_garantiruetsya_2012 => nrel_main_actor : concept_aubrey_plaza;concept_mark_duplass;concept_jake_johnson;concept_karan_soni;;
+concept_film_bezopasnost_ne_garantiruetsya_2012 => nrel_producer : concept_colin_trevorrow;;

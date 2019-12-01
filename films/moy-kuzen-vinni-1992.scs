@@ -1,0 +1,67 @@
+concept_film_moy_kuzen_vinni_1992
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Мой кузен Винни]
+(* <- lang_ru;;    *);
+[My Cousin Vinny]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Мой кузен Винни)](*<-lang_ru;;*);
+[Description (My Cousin Vinny)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/moy-kuzen-vinni-1992_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/moy-kuzen-vinni-1992_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Мой кузен Винни)](*<-lang_ru;;*);
+		[Pic. (My Cousin Vinny)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/moy-kuzen-vinni-1992.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Truth, Justice And The Gambini Way. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [13.03.1992](*<-lang_ru;;*);;
+    => nrel_main_idtf : [13.03.1992](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_moy_kuzen_vinni_1992 =>nrel_keywords: film;;
+
+concept_film_moy_kuzen_vinni_1992 <- concept_comedy;concept_crime;;
+
+concept_film_moy_kuzen_vinni_1992 => nrel_main_actor : concept_joe_pesci;concept_marisa_tomei;concept_ralph_macchio;concept_mitchell_whitfield;;
+concept_film_moy_kuzen_vinni_1992 => nrel_producer : concept_jonathan_lynn;;

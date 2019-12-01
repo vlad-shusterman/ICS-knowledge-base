@@ -1,0 +1,67 @@
+concept_film_red_2010
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[РЭД]
+(* <- lang_ru;;    *);
+[Red]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (РЭД)](*<-lang_ru;;*);
+[Description (Red)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/red-2010_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/red-2010_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (РЭД)](*<-lang_ru;;*);
+		[Pic. (Red)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/red-2010.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [He's Got Time To Kill. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [14.10.2010](*<-lang_ru;;*);;
+    => nrel_main_idtf : [14.10.2010](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H51M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H51M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_red_2010 =>nrel_keywords: film;;
+
+concept_film_red_2010 <- concept_action;concept_comedy;concept_crime;concept_thriller;;
+
+concept_film_red_2010 => nrel_main_actor : concept_bruce_willis;concept_helen_mirren;concept_morgan_freeman;concept_mary_louise_parker;;
+concept_film_red_2010 => nrel_producer : concept_robert_schwentke;;

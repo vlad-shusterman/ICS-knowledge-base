@@ -1,0 +1,67 @@
+concept_film_belyy_lebed_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Белый лебедь]
+(* <- lang_ru;;    *);
+[Sonja: The White Swan]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Белый лебедь)](*<-lang_ru;;*);
+[Description (Sonja: The White Swan)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/belyy-lebed-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/belyy-lebed-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Белый лебедь)](*<-lang_ru;;*);
+		[Pic. (Sonja: The White Swan)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/belyy-lebed-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_norway;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Sonja: The White Swan](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.12.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.12.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H53M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H53M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_belyy_lebed_2018 =>nrel_keywords: film;;
+
+concept_film_belyy_lebed_2018 <- concept_biography;concept_drama;concept_history;;
+
+concept_film_belyy_lebed_2018 => nrel_main_actor : concept_ine_marie_wilmann;concept_valene_kane;concept_eldar_skar;concept_anders_mordal;;
+concept_film_belyy_lebed_2018 => nrel_producer : concept_anne_sewitsky;;

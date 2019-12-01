@@ -1,0 +1,67 @@
+concept_film_ubrat_kartera_2000
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Убрать Картера]
+(* <- lang_ru;;    *);
+[Get Carter]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Убрать Картера)](*<-lang_ru;;*);
+[Description (Get Carter)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ubrat-kartera-2000_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ubrat-kartera-2000_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Убрать Картера)](*<-lang_ru;;*);
+		[Pic. (Get Carter)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ubrat-kartera-2000.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The Truth Hurts](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [06.10.2000](*<-lang_ru;;*);;
+    => nrel_main_idtf : [06.10.2000](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H42M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H42M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_ubrat_kartera_2000 =>nrel_keywords: film;;
+
+concept_film_ubrat_kartera_2000 <- concept_action;concept_crime;concept_drama;concept_thriller;;
+
+concept_film_ubrat_kartera_2000 => nrel_main_actor : concept_sylvester_stallone;concept_rachael_leigh_cook;concept_miranda_richardson;concept_rhona_mitra;;
+concept_film_ubrat_kartera_2000 => nrel_producer : concept_stephen_kay;;

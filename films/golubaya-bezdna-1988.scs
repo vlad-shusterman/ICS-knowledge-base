@@ -1,0 +1,67 @@
+concept_film_golubaya_bezdna_1988
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Голубая бездна]
+(* <- lang_ru;;    *);
+[Le grand bleu / The Big Blue]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Голубая бездна)](*<-lang_ru;;*);
+[Description (Le grand bleu / The Big Blue)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/golubaya-bezdna-1988_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/golubaya-bezdna-1988_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Голубая бездна)](*<-lang_ru;;*);
+		[Pic. (Le grand bleu / The Big Blue)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/golubaya-bezdna-1988.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_france;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Between what you know and what you wish, lies the secret of... [The Big Blue] See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [11.05.1988](*<-lang_ru;;*);;
+    => nrel_main_idtf : [11.05.1988](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H48M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H48M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_golubaya_bezdna_1988 =>nrel_keywords: film;;
+
+concept_film_golubaya_bezdna_1988 <- concept_adventure;concept_drama;concept_sport;;
+
+concept_film_golubaya_bezdna_1988 => nrel_main_actor : concept_jean_marc_barr;concept_jean_reno;concept_rosanna_arquette;concept_paul_shenar;;
+concept_film_golubaya_bezdna_1988 => nrel_producer : concept_luc_besson;;

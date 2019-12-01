@@ -1,0 +1,67 @@
+concept_film_ohotnik_na_ubiyc_2004
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Охотник на убийц]
+(* <- lang_ru;;    *);
+[Suspect Zero]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Охотник на убийц)](*<-lang_ru;;*);
+[Description (Suspect Zero)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ohotnik-na-ubiyc-2004_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ohotnik-na-ubiyc-2004_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Охотник на убийц)](*<-lang_ru;;*);
+		[Pic. (Suspect Zero)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ohotnik-na-ubiyc-2004.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_germany;concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Who's next? See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [27.08.2004](*<-lang_ru;;*);;
+    => nrel_main_idtf : [27.08.2004](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H39M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H39M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_ohotnik_na_ubiyc_2004 =>nrel_keywords: film;;
+
+concept_film_ohotnik_na_ubiyc_2004 <- concept_crime;concept_horror;concept_mystery;concept_thriller;;
+
+concept_film_ohotnik_na_ubiyc_2004 => nrel_main_actor : concept_aaron_eckhart;concept_ben_kingsley;concept_carrie_anne_moss;concept_harry_lennix;;
+concept_film_ohotnik_na_ubiyc_2004 => nrel_producer : concept_e._elias_merhige;;

@@ -1,0 +1,67 @@
+concept_film_kak_byt_muzhikom_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Как быть мужиком]
+(* <- lang_ru;;    *);
+[How to Be a Man]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Как быть мужиком)](*<-lang_ru;;*);
+[Description (How to Be a Man)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/kak-byt-muzhikom-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/kak-byt-muzhikom-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Как быть мужиком)](*<-lang_ru;;*);
+		[Pic. (How to Be a Man)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/kak-byt-muzhikom-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [How to Be a Man](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.03.2014](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.03.2014](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H25M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H25M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_kak_byt_muzhikom_2013 =>nrel_keywords: film;;
+
+concept_film_kak_byt_muzhikom_2013 <- concept_comedy;;
+
+concept_film_kak_byt_muzhikom_2013 => nrel_main_actor : concept_gavin_mcinnes;concept_liam_aiken;concept_megan_neuringer;concept_marisa_redanty;;
+concept_film_kak_byt_muzhikom_2013 => nrel_producer : concept_chadd_harbold;;

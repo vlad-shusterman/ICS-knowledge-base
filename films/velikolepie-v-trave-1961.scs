@@ -1,0 +1,67 @@
+concept_film_velikolepie_v_trave_1961
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Великолепие в траве]
+(* <- lang_ru;;    *);
+[Splendor in the Grass]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Великолепие в траве)](*<-lang_ru;;*);
+[Description (Splendor in the Grass)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/velikolepie-v-trave-1961_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/velikolepie-v-trave-1961_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Великолепие в траве)](*<-lang_ru;;*);
+		[Pic. (Splendor in the Grass)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/velikolepie-v-trave-1961.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [It's unrelenting moments, Its tragedies and splendors! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [17.11.1961](*<-lang_ru;;*);;
+    => nrel_main_idtf : [17.11.1961](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H4M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H4M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_velikolepie_v_trave_1961 =>nrel_keywords: film;;
+
+concept_film_velikolepie_v_trave_1961 <- concept_drama;concept_romance;;
+
+concept_film_velikolepie_v_trave_1961 => nrel_main_actor : concept_natalie_wood;concept_warren_beatty;concept_pat_hingle;concept_audrey_christie;;
+concept_film_velikolepie_v_trave_1961 => nrel_producer : concept_elia_kazan;;

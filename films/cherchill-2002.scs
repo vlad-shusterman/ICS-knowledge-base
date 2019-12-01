@@ -1,0 +1,67 @@
+concept_film_cherchill_2002
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Черчилль]
+(* <- lang_ru;;    *);
+[The Gathering Storm]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Черчилль)](*<-lang_ru;;*);
+[Description (The Gathering Storm)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/cherchill-2002_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/cherchill-2002_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Черчилль)](*<-lang_ru;;*);
+		[Pic. (The Gathering Storm)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/cherchill-2002.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Germany was arming itself for war. But they didn't count on one man.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [27.04.2002](*<-lang_ru;;*);;
+    => nrel_main_idtf : [27.04.2002](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H36M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H36M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_G;;
+
+concept_film_cherchill_2002 =>nrel_keywords: film;;
+
+concept_film_cherchill_2002 <- concept_biography;concept_drama;concept_history;;
+
+concept_film_cherchill_2002 => nrel_main_actor : concept_albert_finney;concept_vanessa_redgrave;concept_jim_broadbent;concept_linus_roache;;
+concept_film_cherchill_2002 => nrel_producer : concept_richard_loncraine;;

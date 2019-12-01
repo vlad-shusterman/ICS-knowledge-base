@@ -1,0 +1,67 @@
+concept_film_zhestyanoy_kubok_1996
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Жестяной кубок]
+(* <- lang_ru;;    *);
+[Tin Cup]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Жестяной кубок)](*<-lang_ru;;*);
+[Description (Tin Cup)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zhestyanoy-kubok-1996_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zhestyanoy-kubok-1996_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Жестяной кубок)](*<-lang_ru;;*);
+		[Pic. (Tin Cup)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zhestyanoy-kubok-1996.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Golf pro. Love amateur.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [16.08.1996](*<-lang_ru;;*);;
+    => nrel_main_idtf : [16.08.1996](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H15M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H15M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_zhestyanoy_kubok_1996 =>nrel_keywords: film;;
+
+concept_film_zhestyanoy_kubok_1996 <- concept_comedy;concept_drama;concept_romance;concept_sport;;
+
+concept_film_zhestyanoy_kubok_1996 => nrel_main_actor : concept_kevin_costner;concept_rene_russo;concept_don_johnson;concept_cheech_marin;;
+concept_film_zhestyanoy_kubok_1996 => nrel_producer : concept_ron_shelton;;

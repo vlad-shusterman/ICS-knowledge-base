@@ -1,0 +1,67 @@
+concept_film_korol_vecherinok_2_2006
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Король вечеринок 2]
+(* <- lang_ru;;    *);
+[Van Wilder 2: The Rise of Taj]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Король вечеринок 2)](*<-lang_ru;;*);
+[Description (Van Wilder 2: The Rise of Taj)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/korol-vecherinok-2-2006_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/korol-vecherinok-2-2006_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Король вечеринок 2)](*<-lang_ru;;*);
+		[Pic. (Van Wilder 2: The Rise of Taj)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/korol-vecherinok-2-2006.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The Legend is Growing.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [01.12.2006](*<-lang_ru;;*);;
+    => nrel_main_idtf : [01.12.2006](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H37M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H37M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_korol_vecherinok_2_2006 =>nrel_keywords: film;;
+
+concept_film_korol_vecherinok_2_2006 <- concept_comedy;concept_romance;;
+
+concept_film_korol_vecherinok_2_2006 => nrel_main_actor : concept_kal_penn;concept_lauren_cohan;concept_daniel_percival;concept_glen_barry;;
+concept_film_korol_vecherinok_2_2006 => nrel_producer : concept_mort_nathan;;

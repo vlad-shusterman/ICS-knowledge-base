@@ -1,0 +1,67 @@
+concept_film_narod_kotoromu_horosho_2014
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Народ, которому хорошо]
+(* <- lang_ru;;    *);
+[La gente che sta bene / People Who Are Well]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Народ, которому хорошо)](*<-lang_ru;;*);
+[Description (La gente che sta bene / People Who Are Well)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/narod-kotoromu-horosho-2014_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/narod-kotoromu-horosho-2014_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Народ, которому хорошо)](*<-lang_ru;;*);
+		[Pic. (La gente che sta bene / People Who Are Well)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/narod-kotoromu-horosho-2014.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_italy;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [La gente che sta bene / People Who Are Well](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [30.01.2014](*<-lang_ru;;*);;
+    => nrel_main_idtf : [30.01.2014](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H45M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_narod_kotoromu_horosho_2014 =>nrel_keywords: film;;
+
+concept_film_narod_kotoromu_horosho_2014 <- concept_comedy;concept_drama;;
+
+concept_film_narod_kotoromu_horosho_2014 => nrel_main_actor : concept_claudio_bisio;concept_margherita_buy;concept_diego_abatantuono;concept_jennipher_rodriguez;;
+concept_film_narod_kotoromu_horosho_2014 => nrel_producer : concept_francesco_patierno;;

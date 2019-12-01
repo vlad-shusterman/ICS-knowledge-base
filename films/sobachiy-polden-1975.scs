@@ -1,0 +1,67 @@
+concept_film_sobachiy_polden_1975
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Собачий полдень]
+(* <- lang_ru;;    *);
+[Dog Day Afternoon]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Собачий полдень)](*<-lang_ru;;*);
+[Description (Dog Day Afternoon)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/sobachiy-polden-1975_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/sobachiy-polden-1975_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Собачий полдень)](*<-lang_ru;;*);
+		[Pic. (Dog Day Afternoon)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/sobachiy-polden-1975.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Anything can happen during the dog days of summer. On August 22nd, 1972, everything did See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [18.12.1975](*<-lang_ru;;*);;
+    => nrel_main_idtf : [18.12.1975](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H5M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H5M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_sobachiy_polden_1975 =>nrel_keywords: film;;
+
+concept_film_sobachiy_polden_1975 <- concept_biography;concept_crime;concept_drama;concept_thriller;;
+
+concept_film_sobachiy_polden_1975 => nrel_main_actor : concept_al_pacino;concept_john_cazale;concept_penelope_allen;concept_sully_boyar;;
+concept_film_sobachiy_polden_1975 => nrel_producer : concept_sidney_lumet;;

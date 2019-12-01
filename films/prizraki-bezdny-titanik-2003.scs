@@ -1,0 +1,67 @@
+concept_film_prizraki_bezdny_titanik_2003
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Призраки бездны: Титаник]
+(* <- lang_ru;;    *);
+[Ghosts of the Abyss]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Призраки бездны: Титаник)](*<-lang_ru;;*);
+[Description (Ghosts of the Abyss)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/prizraki-bezdny-titanik-2003_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/prizraki-bezdny-titanik-2003_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Призраки бездны: Титаник)](*<-lang_ru;;*);
+		[Pic. (Ghosts of the Abyss)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/prizraki-bezdny-titanik-2003.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The legend no one can forget has become the greatest 3D adventure ever filmed.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [18.04.2003](*<-lang_ru;;*);;
+    => nrel_main_idtf : [18.04.2003](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H1M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H1M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_G;;
+
+concept_film_prizraki_bezdny_titanik_2003 =>nrel_keywords: film;;
+
+concept_film_prizraki_bezdny_titanik_2003 <- concept_documentary;concept_family;;
+
+concept_film_prizraki_bezdny_titanik_2003 => nrel_main_actor : concept_bill_paxton;concept_lori_johnston;concept_lewis_abernathy;concept_john_broadwater;;
+concept_film_prizraki_bezdny_titanik_2003 => nrel_producer : concept_james_cameron;;

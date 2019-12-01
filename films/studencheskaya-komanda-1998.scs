@@ -1,0 +1,67 @@
+concept_film_studencheskaya_komanda_1998
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Студенческая команда]
+(* <- lang_ru;;    *);
+[Varsity Blues]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Студенческая команда)](*<-lang_ru;;*);
+[Description (Varsity Blues)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/studencheskaya-komanda-1998_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/studencheskaya-komanda-1998_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Студенческая команда)](*<-lang_ru;;*);
+		[Pic. (Varsity Blues)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/studencheskaya-komanda-1998.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Make your own rules. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.01.1999](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.01.1999](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H46M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H46M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_studencheskaya_komanda_1998 =>nrel_keywords: film;;
+
+concept_film_studencheskaya_komanda_1998 <- concept_comedy;concept_drama;concept_romance;concept_sport;;
+
+concept_film_studencheskaya_komanda_1998 => nrel_main_actor : concept_james_van_der_beek;concept_jon_voight;concept_paul_walker;concept_ron_lester;;
+concept_film_studencheskaya_komanda_1998 => nrel_producer : concept_brian_robbins;;

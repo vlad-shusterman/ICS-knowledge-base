@@ -1,0 +1,67 @@
+concept_film_horoshie_deti_ne_plachut_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Хорошие дети не плачут]
+(* <- lang_ru;;    *);
+[Achtste Groepers Huilen Niet / Cool Kids Don't Cry]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Хорошие дети не плачут)](*<-lang_ru;;*);
+[Description (Achtste Groepers Huilen Niet / Cool Kids Don't Cry)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/horoshie-deti-ne-plachut-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/horoshie-deti-ne-plachut-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Хорошие дети не плачут)](*<-lang_ru;;*);
+		[Pic. (Achtste Groepers Huilen Niet / Cool Kids Don't Cry)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/horoshie-deti-ne-plachut-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_netherlands;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Achtste Groepers Huilen Niet / Cool Kids Don't Cry](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.02.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.02.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H36M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H36M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_horoshie_deti_ne_plachut_2012 =>nrel_keywords: film;;
+
+concept_film_horoshie_deti_ne_plachut_2012 <- concept_drama;concept_family;;
+
+concept_film_horoshie_deti_ne_plachut_2012 => nrel_main_actor : concept_hanna_obbeek;concept_nils_verkooijen;concept_fiona_livingston;concept_bram_flick;;
+concept_film_horoshie_deti_ne_plachut_2012 => nrel_producer : concept_dennis_bots;;

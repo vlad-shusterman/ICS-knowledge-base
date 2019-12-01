@@ -1,0 +1,67 @@
+concept_film_voy_1981
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Вой]
+(* <- lang_ru;;    *);
+[The Howling]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Вой)](*<-lang_ru;;*);
+[Description (The Howling)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/voy-1981_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/voy-1981_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Вой)](*<-lang_ru;;*);
+		[Pic. (The Howling)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/voy-1981.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Imagine your worst fear a reality. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.01.1981](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.01.1981](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H31M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H31M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_voy_1981 =>nrel_keywords: film;;
+
+concept_film_voy_1981 <- concept_horror;;
+
+concept_film_voy_1981 => nrel_main_actor : concept_dee_wallace;concept_patrick_macnee;concept_dennis_dugan;concept_christopher_stone;;
+concept_film_voy_1981 => nrel_producer : concept_joe_dante;;

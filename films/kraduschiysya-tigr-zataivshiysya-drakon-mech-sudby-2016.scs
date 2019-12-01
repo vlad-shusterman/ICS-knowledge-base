@@ -1,0 +1,67 @@
+concept_film_kraduschiysya_tigr_zataivshiysya_drakon_mech_sudby_2016
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Крадущийся тигр, затаившийся дракон: Меч судьбы]
+(* <- lang_ru;;    *);
+[Crouching Tiger, Hidden Dragon: Sword of Destiny]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Крадущийся тигр, затаившийся дракон: Меч судьбы)](*<-lang_ru;;*);
+[Description (Crouching Tiger, Hidden Dragon: Sword of Destiny)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/kraduschiysya-tigr-zataivshiysya-drakon-mech-sudby-2016_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/kraduschiysya-tigr-zataivshiysya-drakon-mech-sudby-2016_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Крадущийся тигр, затаившийся дракон: Меч судьбы)](*<-lang_ru;;*);
+		[Pic. (Crouching Tiger, Hidden Dragon: Sword of Destiny)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/kraduschiysya-tigr-zataivshiysya-drakon-mech-sudby-2016.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_china;concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The past returns with a vengeance.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [18.02.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [18.02.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H36M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H36M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_kraduschiysya_tigr_zataivshiysya_drakon_mech_sudby_2016 =>nrel_keywords: film;;
+
+concept_film_kraduschiysya_tigr_zataivshiysya_drakon_mech_sudby_2016 <- concept_action;concept_adventure;concept_drama;concept_fantasy;;
+
+concept_film_kraduschiysya_tigr_zataivshiysya_drakon_mech_sudby_2016 => nrel_main_actor : concept_donnie_yen;concept_michelle_yeoh;concept_harry_shum_jr.;concept_natasha_liu_bordizzo;;
+concept_film_kraduschiysya_tigr_zataivshiysya_drakon_mech_sudby_2016 => nrel_producer : concept_woo_ping_yuen;;

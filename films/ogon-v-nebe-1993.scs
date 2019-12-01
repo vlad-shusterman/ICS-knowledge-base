@@ -1,0 +1,67 @@
+concept_film_ogon_v_nebe_1993
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Огонь в небе]
+(* <- lang_ru;;    *);
+[Fire in the Sky]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Огонь в небе)](*<-lang_ru;;*);
+[Description (Fire in the Sky)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ogon-v-nebe-1993_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ogon-v-nebe-1993_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Огонь в небе)](*<-lang_ru;;*);
+		[Pic. (Fire in the Sky)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ogon-v-nebe-1993.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Alien abduction. November 5, 1975. White Mountains, Northeastern Arizona. Based on the true story. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.03.1993](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.03.1993](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H49M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H49M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_ogon_v_nebe_1993 =>nrel_keywords: film;;
+
+concept_film_ogon_v_nebe_1993 <- concept_biography;concept_drama;concept_fantasy;concept_mystery;concept_sci_fi;;
+
+concept_film_ogon_v_nebe_1993 => nrel_main_actor : concept_d.b._sweeney;concept_robert_patrick;concept_craig_sheffer;concept_peter_berg;;
+concept_film_ogon_v_nebe_1993 => nrel_producer : concept_robert_lieberman;;

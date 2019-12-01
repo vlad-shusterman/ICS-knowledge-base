@@ -1,0 +1,67 @@
+concept_film_pero_markiza_de_sada_2000
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Перо маркиза де Сада]
+(* <- lang_ru;;    *);
+[Quills]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Перо маркиза де Сада)](*<-lang_ru;;*);
+[Description (Quills)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/pero-markiza-de-sada-2000_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/pero-markiza-de-sada-2000_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Перо маркиза де Сада)](*<-lang_ru;;*);
+		[Pic. (Quills)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/pero-markiza-de-sada-2000.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_germany;concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Meet the Marquis de Sade. The pleasure is all his. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.12.2000](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.12.2000](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H4M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H4M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_pero_markiza_de_sada_2000 =>nrel_keywords: film;;
+
+concept_film_pero_markiza_de_sada_2000 <- concept_biography;concept_drama;;
+
+concept_film_pero_markiza_de_sada_2000 => nrel_main_actor : concept_geoffrey_rush;concept_kate_winslet;concept_joaquin_phoenix;concept_michael_caine;;
+concept_film_pero_markiza_de_sada_2000 => nrel_producer : concept_philip_kaufman;;

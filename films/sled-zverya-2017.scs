@@ -1,0 +1,67 @@
+concept_film_sled_zverya_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[След зверя]
+(* <- lang_ru;;    *);
+[Pokot]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (След зверя)](*<-lang_ru;;*);
+[Description (Pokot)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/sled-zverya-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/sled-zverya-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (След зверя)](*<-lang_ru;;*);
+		[Pic. (Pokot)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/sled-zverya-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_poland;concept_germany;concept_czech_republic;concept_sweden;concept_slovakia;concept_france;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Pokot](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [24.02.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [24.02.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H8M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H8M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_sled_zverya_2017 =>nrel_keywords: film;;
+
+concept_film_sled_zverya_2017 <- concept_crime;concept_drama;concept_mystery;concept_thriller;;
+
+concept_film_sled_zverya_2017 => nrel_main_actor : concept_agnieszka_mandat;concept_wiktor_zborowski;concept_jakub_gierszal;concept_patricia_volny;;
+concept_film_sled_zverya_2017 => nrel_producer : concept_agnieszka_holland;concept_kasia_adamik;;

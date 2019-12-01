@@ -1,0 +1,67 @@
+concept_film_vip_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[V.I.P.]
+(* <- lang_ru;;    *);
+[V.I.P.]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (V.I.P.)](*<-lang_ru;;*);
+[Description (V.I.P.)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vip-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vip-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (V.I.P.)](*<-lang_ru;;*);
+		[Pic. (V.I.P.)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vip-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_south_korea;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [V.I.P.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [24.08.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [24.08.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H8M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H8M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_vip_2017 =>nrel_keywords: film;;
+
+concept_film_vip_2017 <- concept_action;concept_crime;concept_thriller;;
+
+concept_film_vip_2017 => nrel_main_actor : concept_dong_gun_jang;concept_myung_min_kim;concept_jong_suk_lee;concept_hee_soon_park;;
+concept_film_vip_2017 => nrel_producer : concept_hoon_jung_park;;

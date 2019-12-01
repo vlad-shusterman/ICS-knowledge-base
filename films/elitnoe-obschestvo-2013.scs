@@ -1,0 +1,67 @@
+concept_film_elitnoe_obschestvo_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Элитное общество]
+(* <- lang_ru;;    *);
+[The Bling Ring]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Элитное общество)](*<-lang_ru;;*);
+[Description (The Bling Ring)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/elitnoe-obschestvo-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/elitnoe-obschestvo-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Элитное общество)](*<-lang_ru;;*);
+		[Pic. (The Bling Ring)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/elitnoe-obschestvo-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_uk;concept_france;concept_germany;concept_japan;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Living the Dream, One Heist at a Time See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.06.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.06.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H30M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H30M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_elitnoe_obschestvo_2013 =>nrel_keywords: film;;
+
+concept_film_elitnoe_obschestvo_2013 <- concept_biography;concept_crime;concept_drama;;
+
+concept_film_elitnoe_obschestvo_2013 => nrel_main_actor : concept_katie_chang;concept_israel_broussard;concept_emma_watson;concept_claire_julien;;
+concept_film_elitnoe_obschestvo_2013 => nrel_producer : concept_sofia_coppola;;

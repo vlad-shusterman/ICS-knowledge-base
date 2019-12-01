@@ -1,0 +1,67 @@
+concept_film_skaylayn_2010
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Скайлайн]
+(* <- lang_ru;;    *);
+[Skyline]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Скайлайн)](*<-lang_ru;;*);
+[Description (Skyline)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/skaylayn-2010_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/skaylayn-2010_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Скайлайн)](*<-lang_ru;;*);
+		[Pic. (Skyline)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/skaylayn-2010.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Soon, our first encounter will become our last stand. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [11.11.2010](*<-lang_ru;;*);;
+    => nrel_main_idtf : [11.11.2010](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H32M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H32M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_skaylayn_2010 =>nrel_keywords: film;;
+
+concept_film_skaylayn_2010 <- concept_action;concept_sci_fi;concept_thriller;;
+
+concept_film_skaylayn_2010 => nrel_main_actor : concept_eric_balfour;concept_donald_faison;concept_scottie_thompson;concept_brittany_daniel;;
+concept_film_skaylayn_2010 => nrel_producer : concept_colin_strause;concept_greg_strause;;

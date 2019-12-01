@@ -1,0 +1,67 @@
+concept_film_poslednee_tango_v_parizhe_1972
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Последнее танго в Париже]
+(* <- lang_ru;;    *);
+[Ultimo tango a Parigi / Last Tango in Paris]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Последнее танго в Париже)](*<-lang_ru;;*);
+[Description (Ultimo tango a Parigi / Last Tango in Paris)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/poslednee-tango-v-parizhe-1972_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/poslednee-tango-v-parizhe-1972_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Последнее танго в Париже)](*<-lang_ru;;*);
+		[Pic. (Ultimo tango a Parigi / Last Tango in Paris)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/poslednee-tango-v-parizhe-1972.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_france;concept_italy;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [You will never see the most highly acclaimed film of our time on television. This may be your last chance to see it in a theater. (1975)](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.12.1972](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.12.1972](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H9M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H9M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_NC_17;;
+
+concept_film_poslednee_tango_v_parizhe_1972 =>nrel_keywords: film;;
+
+concept_film_poslednee_tango_v_parizhe_1972 <- concept_drama;concept_romance;;
+
+concept_film_poslednee_tango_v_parizhe_1972 => nrel_main_actor : concept_marlon_brando;concept_maria_schneider;concept_maria_michi;concept_giovanna_galletti;;
+concept_film_poslednee_tango_v_parizhe_1972 => nrel_producer : concept_bernardo_bertolucci;;

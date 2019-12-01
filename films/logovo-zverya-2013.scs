@@ -1,0 +1,67 @@
+concept_film_logovo_zverya_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Логово зверя]
+(* <- lang_ru;;    *);
+[Haunt]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Логово зверя)](*<-lang_ru;;*);
+[Description (Haunt)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/logovo-zverya-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/logovo-zverya-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Логово зверя)](*<-lang_ru;;*);
+		[Pic. (Haunt)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/logovo-zverya-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Haunt](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [20.03.2014](*<-lang_ru;;*);;
+    => nrel_main_idtf : [20.03.2014](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H26M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H26M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_logovo_zverya_2013 =>nrel_keywords: film;;
+
+concept_film_logovo_zverya_2013 <- concept_horror;concept_mystery;concept_romance;;
+
+concept_film_logovo_zverya_2013 => nrel_main_actor : concept_jacki_weaver;concept_liana_liberato;concept_harrison_gilbertson;concept_ione_skye;;
+concept_film_logovo_zverya_2013 => nrel_producer : concept_mac_carter;;

@@ -1,0 +1,67 @@
+concept_film_dilizhans_1939
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Дилижанс]
+(* <- lang_ru;;    *);
+[Stagecoach]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Дилижанс)](*<-lang_ru;;*);
+[Description (Stagecoach)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dilizhans-1939_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dilizhans-1939_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Дилижанс)](*<-lang_ru;;*);
+		[Pic. (Stagecoach)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dilizhans-1939.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Thrills! Thrills! Thrills! See - The Apache Attack! Charge of the Cavalry! Fight to the Death On the Last Frontier of Wickedness! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [03.03.1939](*<-lang_ru;;*);;
+    => nrel_main_idtf : [03.03.1939](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H36M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H36M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Passed;;
+
+concept_film_dilizhans_1939 =>nrel_keywords: film;;
+
+concept_film_dilizhans_1939 <- concept_adventure;concept_drama;concept_western;;
+
+concept_film_dilizhans_1939 => nrel_main_actor : concept_john_wayne;concept_claire_trevor;concept_andy_devine;concept_john_carradine;;
+concept_film_dilizhans_1939 => nrel_producer : concept_john_ford;;

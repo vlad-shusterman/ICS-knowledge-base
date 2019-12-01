@@ -1,0 +1,67 @@
+concept_film_ptichka_na_provode_1990
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Птичка на проводе]
+(* <- lang_ru;;    *);
+[Bird on a Wire]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Птичка на проводе)](*<-lang_ru;;*);
+[Description (Bird on a Wire)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ptichka-na-provode-1990_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ptichka-na-provode-1990_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Птичка на проводе)](*<-lang_ru;;*);
+		[Pic. (Bird on a Wire)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ptichka-na-provode-1990.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [He's every woman's dream and one woman's nightmare](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [18.05.1990](*<-lang_ru;;*);;
+    => nrel_main_idtf : [18.05.1990](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H50M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H50M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_ptichka_na_provode_1990 =>nrel_keywords: film;;
+
+concept_film_ptichka_na_provode_1990 <- concept_action;concept_comedy;;
+
+concept_film_ptichka_na_provode_1990 => nrel_main_actor : concept_mel_gibson;concept_goldie_hawn;concept_david_carradine;concept_bill_duke;;
+concept_film_ptichka_na_provode_1990 => nrel_producer : concept_john_badham;;

@@ -1,0 +1,67 @@
+concept_film_vypusknoy_2008
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Выпускной]
+(* <- lang_ru;;    *);
+[Prom Night]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Выпускной)](*<-lang_ru;;*);
+[Description (Prom Night)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vypusknoy-2008_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vypusknoy-2008_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Выпускной)](*<-lang_ru;;*);
+		[Pic. (Prom Night)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vypusknoy-2008.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_canada;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [It's Midnight Everyone's Ready To Go Home...But Someone Has Other Plans. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [10.04.2008](*<-lang_ru;;*);;
+    => nrel_main_idtf : [10.04.2008](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H28M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H28M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_vypusknoy_2008 =>nrel_keywords: film;;
+
+concept_film_vypusknoy_2008 <- concept_horror;concept_mystery;;
+
+concept_film_vypusknoy_2008 => nrel_main_actor : concept_brittany_snow;concept_scott_porter;concept_jessica_stroup;concept_dana_davis;;
+concept_film_vypusknoy_2008 => nrel_producer : concept_nelson_mccormick;;

@@ -1,0 +1,67 @@
+concept_film_henkok_2008
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Хэнкок]
+(* <- lang_ru;;    *);
+[Hancock]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Хэнкок)](*<-lang_ru;;*);
+[Description (Hancock)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/henkok-2008_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/henkok-2008_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Хэнкок)](*<-lang_ru;;*);
+		[Pic. (Hancock)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/henkok-2008.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [There are heroes. There are superheroes. And then there's... See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [01.07.2008](*<-lang_ru;;*);;
+    => nrel_main_idtf : [01.07.2008](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H32M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H32M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_henkok_2008 =>nrel_keywords: film;;
+
+concept_film_henkok_2008 <- concept_action;concept_fantasy;;
+
+concept_film_henkok_2008 => nrel_main_actor : concept_will_smith;concept_charlize_theron;concept_jason_bateman;concept_jae_head;;
+concept_film_henkok_2008 => nrel_producer : concept_peter_berg;;

@@ -1,0 +1,67 @@
+concept_film_bolshe_chem_papa
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Больше, чем папа]
+(* <- lang_ru;;    *);
+[Auf Augenhöhe]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Больше, чем папа)](*<-lang_ru;;*);
+[Description (Auf Augenhöhe)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/bolshe-chem-papa_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/bolshe-chem-papa_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Больше, чем папа)](*<-lang_ru;;*);
+		[Pic. (Auf Augenhöhe)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/bolshe-chem-papa.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_germany;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Auf Augenhöhe](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.09.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.09.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H38M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H38M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_bolshe_chem_papa =>nrel_keywords: film;;
+
+concept_film_bolshe_chem_papa <- concept_comedy;concept_drama;concept_family;;
+
+concept_film_bolshe_chem_papa => nrel_main_actor : concept_luis_vorbach;concept_jordan_prentice;concept_ella_frey;concept_marco_licht;;
+concept_film_bolshe_chem_papa => nrel_producer : concept_joachim_dollhopf;concept_evi_goldbrunner;;

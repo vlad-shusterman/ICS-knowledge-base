@@ -1,0 +1,67 @@
+concept_film_dumay_kak_muzhchina_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Думай, как мужчина]
+(* <- lang_ru;;    *);
+[Think Like a Man]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Думай, как мужчина)](*<-lang_ru;;*);
+[Description (Think Like a Man)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dumay-kak-muzhchina-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dumay-kak-muzhchina-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Думай, как мужчина)](*<-lang_ru;;*);
+		[Pic. (Think Like a Man)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dumay-kak-muzhchina-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Let the mind games begin.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [23.03.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [23.03.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H2M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H2M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_dumay_kak_muzhchina_2012 =>nrel_keywords: film;;
+
+concept_film_dumay_kak_muzhchina_2012 <- concept_comedy;concept_romance;;
+
+concept_film_dumay_kak_muzhchina_2012 => nrel_main_actor : concept_chris_brown;concept_gabrielle_union;concept_kevin_hart;concept_michael_ealy;;
+concept_film_dumay_kak_muzhchina_2012 => nrel_producer : concept_tim_story;;

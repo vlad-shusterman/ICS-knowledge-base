@@ -1,0 +1,67 @@
+concept_film_uchitel_angliyskogo_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Учитель английского]
+(* <- lang_ru;;    *);
+[The English Teacher]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Учитель английского)](*<-lang_ru;;*);
+[Description (The English Teacher)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/uchitel-angliyskogo-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/uchitel-angliyskogo-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Учитель английского)](*<-lang_ru;;*);
+		[Pic. (The English Teacher)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/uchitel-angliyskogo-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Refuse to live life by the book. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [01.08.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [01.08.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H33M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H33M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_uchitel_angliyskogo_2012 =>nrel_keywords: film;;
+
+concept_film_uchitel_angliyskogo_2012 <- concept_comedy;concept_drama;;
+
+concept_film_uchitel_angliyskogo_2012 => nrel_main_actor : concept_julianne_moore;concept_michael_angarano;concept_greg_kinnear;concept_lily_collins;;
+concept_film_uchitel_angliyskogo_2012 => nrel_producer : concept_craig_zisk;;

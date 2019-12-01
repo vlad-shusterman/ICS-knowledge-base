@@ -1,0 +1,67 @@
+concept_film_gorodskoy_ohotnik_1992
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Городской охотник]
+(* <- lang_ru;;    *);
+[Sing si lip yan / City Hunter]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Городской охотник)](*<-lang_ru;;*);
+[Description (Sing si lip yan / City Hunter)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/gorodskoy-ohotnik-1992_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/gorodskoy-ohotnik-1992_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Городской охотник)](*<-lang_ru;;*);
+		[Pic. (Sing si lip yan / City Hunter)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/gorodskoy-ohotnik-1992.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_hong_kong;concept_japan;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [He's out of town, out of time and out of his depth!](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [16.01.1993](*<-lang_ru;;*);;
+    => nrel_main_idtf : [16.01.1993](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H45M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_gorodskoy_ohotnik_1992 =>nrel_keywords: film;;
+
+concept_film_gorodskoy_ohotnik_1992 <- concept_action;concept_comedy;concept_crime;;
+
+concept_film_gorodskoy_ohotnik_1992 => nrel_main_actor : concept_jackie_chan;concept_richard_norton;concept_joey_wang;concept_kumiko_goto;;
+concept_film_gorodskoy_ohotnik_1992 => nrel_producer : concept_jing_wong;;

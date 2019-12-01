@@ -1,0 +1,67 @@
+concept_film_terminator_3_vosstanie_mashin_2003
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Терминатор 3: Восстание машин]
+(* <- lang_ru;;    *);
+[Terminator 3: Rise of the Machines]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Терминатор 3: Восстание машин)](*<-lang_ru;;*);
+[Description (Terminator 3: Rise of the Machines)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/terminator-3-vosstanie-mashin-2003_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/terminator-3-vosstanie-mashin-2003_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Терминатор 3: Восстание машин)](*<-lang_ru;;*);
+		[Pic. (Terminator 3: Rise of the Machines)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/terminator-3-vosstanie-mashin-2003.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_germany;concept_uk;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Experience the 3rd time in IMAX! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [02.07.2003](*<-lang_ru;;*);;
+    => nrel_main_idtf : [02.07.2003](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H49M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H49M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_terminator_3_vosstanie_mashin_2003 =>nrel_keywords: film;;
+
+concept_film_terminator_3_vosstanie_mashin_2003 <- concept_action;concept_sci_fi;;
+
+concept_film_terminator_3_vosstanie_mashin_2003 => nrel_main_actor : concept_arnold_schwarzenegger;concept_nick_stahl;concept_kristanna_loken;concept_claire_danes;;
+concept_film_terminator_3_vosstanie_mashin_2003 => nrel_producer : concept_jonathan_mostow;;

@@ -1,0 +1,67 @@
+concept_film_zvezdnyy_put_6_neotkrytaya_strana_1991
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Звездный путь 6: Неоткрытая страна]
+(* <- lang_ru;;    *);
+[Star Trek VI: The Undiscovered Country]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Звездный путь 6: Неоткрытая страна)](*<-lang_ru;;*);
+[Description (Star Trek VI: The Undiscovered Country)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zvezdnyy-put-6-neotkrytaya-strana-1991_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zvezdnyy-put-6-neotkrytaya-strana-1991_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Звездный путь 6: Неоткрытая страна)](*<-lang_ru;;*);
+		[Pic. (Star Trek VI: The Undiscovered Country)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zvezdnyy-put-6-neotkrytaya-strana-1991.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [On the verge of peace. On the brink of war. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [06.12.1991](*<-lang_ru;;*);;
+    => nrel_main_idtf : [06.12.1991](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H50M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H50M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_zvezdnyy_put_6_neotkrytaya_strana_1991 =>nrel_keywords: film;;
+
+concept_film_zvezdnyy_put_6_neotkrytaya_strana_1991 <- concept_action;concept_adventure;concept_sci_fi;concept_thriller;;
+
+concept_film_zvezdnyy_put_6_neotkrytaya_strana_1991 => nrel_main_actor : concept_william_shatner;concept_leonard_nimoy;concept_deforest_kelley;concept_james_doohan;;
+concept_film_zvezdnyy_put_6_neotkrytaya_strana_1991 => nrel_producer : concept_nicholas_meyer;;

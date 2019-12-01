@@ -1,0 +1,67 @@
+concept_film_mendi_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Мэнди]
+(* <- lang_ru;;    *);
+[Mandy]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Мэнди)](*<-lang_ru;;*);
+[Description (Mandy)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/mendi-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/mendi-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Мэнди)](*<-lang_ru;;*);
+		[Pic. (Mandy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/mendi-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_belgium;concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Mandy](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [13.09.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [13.09.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H1M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H1M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_mendi_2017 =>nrel_keywords: film;;
+
+concept_film_mendi_2017 <- concept_action;concept_fantasy;concept_horror;concept_mystery;concept_thriller;;
+
+concept_film_mendi_2017 => nrel_main_actor : concept_nicolas_cage;concept_andrea_riseborough;concept_linus_roache;concept_ned_dennehy;;
+concept_film_mendi_2017 => nrel_producer : concept_panos_cosmatos;;

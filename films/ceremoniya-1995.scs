@@ -1,0 +1,67 @@
+concept_film_ceremoniya_1995
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Церемония]
+(* <- lang_ru;;    *);
+[La Cérémonie / A Judgement in Stone]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Церемония)](*<-lang_ru;;*);
+[Description (La Cérémonie / A Judgement in Stone)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ceremoniya-1995_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ceremoniya-1995_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Церемония)](*<-lang_ru;;*);
+		[Pic. (La Cérémonie / A Judgement in Stone)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ceremoniya-1995.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_france;concept_germany;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [La Cérémonie / A Judgement in Stone](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [30.08.1995](*<-lang_ru;;*);;
+    => nrel_main_idtf : [30.08.1995](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H52M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H52M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_ceremoniya_1995 =>nrel_keywords: film;;
+
+concept_film_ceremoniya_1995 <- concept_crime;concept_drama;concept_mystery;concept_thriller;;
+
+concept_film_ceremoniya_1995 => nrel_main_actor : concept_isabelle_huppert;concept_sandrine_bonnaire;concept_jacqueline_bisset;concept_jean_pierre_cassel;;
+concept_film_ceremoniya_1995 => nrel_producer : concept_claude_chabrol;;

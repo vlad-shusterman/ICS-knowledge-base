@@ -1,0 +1,67 @@
+concept_film_pes_kupidon_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Пес-купидон]
+(* <- lang_ru;;    *);
+[Gabe the Cupid Dog]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Пес-купидон)](*<-lang_ru;;*);
+[Description (Gabe the Cupid Dog)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/pes-kupidon-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/pes-kupidon-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Пес-купидон)](*<-lang_ru;;*);
+		[Pic. (Gabe the Cupid Dog)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/pes-kupidon-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Gabe the Cupid Dog](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [23.08.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [23.08.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H30M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H30M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Unrated;;
+
+concept_film_pes_kupidon_2012 =>nrel_keywords: film;;
+
+concept_film_pes_kupidon_2012 <- concept_comedy;concept_family;;
+
+concept_film_pes_kupidon_2012 => nrel_main_actor : concept_brian_krause;concept_boti_bliss;concept_linden_ashby;concept_michael_woods;;
+concept_film_pes_kupidon_2012 => nrel_producer : concept_michael_feifer;;

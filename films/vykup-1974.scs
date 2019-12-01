@@ -1,0 +1,67 @@
+concept_film_vykup_1974
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Выкуп]
+(* <- lang_ru;;    *);
+[Ransom / The Terrorists]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Выкуп)](*<-lang_ru;;*);
+[Description (Ransom / The Terrorists)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vykup-1974_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vykup-1974_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Выкуп)](*<-lang_ru;;*);
+		[Pic. (Ransom / The Terrorists)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vykup-1974.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [SKYJACK. KIDNAP. A time-bomb of suspense has started ticking. Two nations are being held for ransom and... Sean Connery is the agent who takes on The Terrorists See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [27.02.1975](*<-lang_ru;;*);;
+    => nrel_main_idtf : [27.02.1975](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H29M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H29M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_vykup_1974 =>nrel_keywords: film;;
+
+concept_film_vykup_1974 <- concept_crime;concept_drama;concept_thriller;;
+
+concept_film_vykup_1974 => nrel_main_actor : concept_sean_connery;concept_ian_mcshane;concept_jeffry_wickham;concept_isabel_dean;;
+concept_film_vykup_1974 => nrel_producer : concept_casper_wrede;;

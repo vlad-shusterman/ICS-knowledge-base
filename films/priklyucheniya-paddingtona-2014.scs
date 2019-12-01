@@ -1,0 +1,67 @@
+concept_film_priklyucheniya_paddingtona_2014
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Приключения Паддингтона]
+(* <- lang_ru;;    *);
+[Paddington]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Приключения Паддингтона)](*<-lang_ru;;*);
+[Description (Paddington)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/priklyucheniya-paddingtona-2014_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/priklyucheniya-paddingtona-2014_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Приключения Паддингтона)](*<-lang_ru;;*);
+		[Pic. (Paddington)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/priklyucheniya-paddingtona-2014.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_france;concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The Adventure Begins See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [27.11.2014](*<-lang_ru;;*);;
+    => nrel_main_idtf : [27.11.2014](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H35M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H35M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_priklyucheniya_paddingtona_2014 =>nrel_keywords: film;;
+
+concept_film_priklyucheniya_paddingtona_2014 <- concept_adventure;concept_comedy;concept_family;concept_fantasy;;
+
+concept_film_priklyucheniya_paddingtona_2014 => nrel_main_actor : concept_hugh_bonneville;concept_sally_hawkins;concept_julie_walters;concept_jim_broadbent;;
+concept_film_priklyucheniya_paddingtona_2014 => nrel_producer : concept_paul_king;;

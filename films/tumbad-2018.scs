@@ -1,0 +1,67 @@
+concept_film_tumbad_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Тумбад]
+(* <- lang_ru;;    *);
+[Tumbbad]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Тумбад)](*<-lang_ru;;*);
+[Description (Tumbbad)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/tumbad-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/tumbad-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Тумбад)](*<-lang_ru;;*);
+		[Pic. (Tumbbad)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/tumbad-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_india;concept_sweden;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Tumbbad](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.10.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.10.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H44M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H44M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_tumbad_2018 =>nrel_keywords: film;;
+
+concept_film_tumbad_2018 <- concept_drama;concept_fantasy;concept_horror;concept_thriller;;
+
+concept_film_tumbad_2018 => nrel_main_actor : concept_sohum_shah;concept_jyoti_malshe;concept_anita_date;concept_ronjini_chakraborty;;
+concept_film_tumbad_2018 => nrel_producer : concept_rahi_anil_barve;concept_anand_gandhi;concept_adesh_prasad;;

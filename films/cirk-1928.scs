@@ -1,0 +1,67 @@
+concept_film_cirk_1928
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Цирк]
+(* <- lang_ru;;    *);
+[The Circus]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Цирк)](*<-lang_ru;;*);
+[Description (The Circus)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/cirk-1928_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/cirk-1928_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Цирк)](*<-lang_ru;;*);
+		[Pic. (The Circus)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/cirk-1928.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [FREAKS, FUN, FROLIC OF THE SMALL TOWN CIRCUS, WITH CHARLIE AS A TIGHT ROPE WALKER. (Print Ad- Steuben Courier,((Bath, NY)) 22 march 1929) See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [17.02.1928](*<-lang_ru;;*);;
+    => nrel_main_idtf : [17.02.1928](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H12M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H12M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Passed;;
+
+concept_film_cirk_1928 =>nrel_keywords: film;;
+
+concept_film_cirk_1928 <- concept_comedy;concept_romance;;
+
+concept_film_cirk_1928 => nrel_main_actor : concept_charles_chaplin;concept_merna_kennedy;concept_al_ernest_garcia;concept_harry_crocker;;
+concept_film_cirk_1928 => nrel_producer : concept_charles_chaplin;;

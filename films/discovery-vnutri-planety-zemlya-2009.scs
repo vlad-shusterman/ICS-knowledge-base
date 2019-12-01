@@ -1,0 +1,67 @@
+concept_film_discovery_vnutri_planety_zemlya_2009
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Discovery: Внутри планеты Земля]
+(* <- lang_ru;;    *);
+[Inside Planet Earth]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Discovery: Внутри планеты Земля)](*<-lang_ru;;*);
+[Description (Inside Planet Earth)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/discovery-vnutri-planety-zemlya-2009_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/discovery-vnutri-planety-zemlya-2009_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Discovery: Внутри планеты Земля)](*<-lang_ru;;*);
+		[Pic. (Inside Planet Earth)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/discovery-vnutri-planety-zemlya-2009.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Inside Planet Earth](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [07.06.2009](*<-lang_ru;;*);;
+    => nrel_main_idtf : [07.06.2009](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_discovery_vnutri_planety_zemlya_2009 =>nrel_keywords: film;;
+
+concept_film_discovery_vnutri_planety_zemlya_2009 <- concept_documentary;;
+
+concept_film_discovery_vnutri_planety_zemlya_2009 => nrel_main_actor : concept_richard_lintern;concept_patrick_stewart;;
+concept_film_discovery_vnutri_planety_zemlya_2009 => nrel_producer : concept_martin_williams;;

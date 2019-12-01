@@ -1,0 +1,67 @@
+concept_film_trener_2001
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Тренер]
+(* <- lang_ru;;    *);
+[Mike Bassett: England Manager]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Тренер)](*<-lang_ru;;*);
+[Description (Mike Bassett: England Manager)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/trener-2001_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/trener-2001_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Тренер)](*<-lang_ru;;*);
+		[Pic. (Mike Bassett: England Manager)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/trener-2001.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The ever changing face of football has a got new mug... See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [28.09.2001](*<-lang_ru;;*);;
+    => nrel_main_idtf : [28.09.2001](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H29M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H29M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_trener_2001 =>nrel_keywords: film;;
+
+concept_film_trener_2001 <- concept_comedy;concept_sport;;
+
+concept_film_trener_2001 => nrel_main_actor : concept_ricky_tomlinson;concept_amanda_redman;concept_bradley_walsh;concept_philip_jackson;;
+concept_film_trener_2001 => nrel_producer : concept_steve_barron;;

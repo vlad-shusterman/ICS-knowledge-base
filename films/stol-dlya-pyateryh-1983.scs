@@ -1,0 +1,67 @@
+concept_film_stol_dlya_pyateryh_1983
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Стол для пятерых]
+(* <- lang_ru;;    *);
+[Table for Five]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Стол для пятерых)](*<-lang_ru;;*);
+[Description (Table for Five)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/stol-dlya-pyateryh-1983_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/stol-dlya-pyateryh-1983_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Стол для пятерых)](*<-lang_ru;;*);
+		[Pic. (Table for Five)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/stol-dlya-pyateryh-1983.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [He wants a second chance to love his children...but someone else has learned how. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [10.03.1983](*<-lang_ru;;*);;
+    => nrel_main_idtf : [10.03.1983](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H2M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H2M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_stol_dlya_pyateryh_1983 =>nrel_keywords: film;;
+
+concept_film_stol_dlya_pyateryh_1983 <- concept_drama;concept_romance;;
+
+concept_film_stol_dlya_pyateryh_1983 => nrel_main_actor : concept_jon_voight;concept_richard_crenna;concept_marie_christine_barrault;concept_millie_perkins;;
+concept_film_stol_dlya_pyateryh_1983 => nrel_producer : concept_robert_lieberman;;

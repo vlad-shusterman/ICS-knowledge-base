@@ -1,0 +1,67 @@
+concept_film_schastlivogo_novogo_dnya_smerti_2019
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Счастливого нового дня смерти]
+(* <- lang_ru;;    *);
+[Happy Death Day 2U]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Счастливого нового дня смерти)](*<-lang_ru;;*);
+[Description (Happy Death Day 2U)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/schastlivogo-novogo-dnya-smerti-2019_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/schastlivogo-novogo-dnya-smerti-2019_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Счастливого нового дня смерти)](*<-lang_ru;;*);
+		[Pic. (Happy Death Day 2U)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/schastlivogo-novogo-dnya-smerti-2019.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_japan;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Same Day, New Killer. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [13.02.2019](*<-lang_ru;;*);;
+    => nrel_main_idtf : [13.02.2019](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H40M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_schastlivogo_novogo_dnya_smerti_2019 =>nrel_keywords: film;;
+
+concept_film_schastlivogo_novogo_dnya_smerti_2019 <- concept_comedy;concept_horror;concept_mystery;concept_sci_fi;concept_thriller;;
+
+concept_film_schastlivogo_novogo_dnya_smerti_2019 => nrel_main_actor : concept_jessica_rothe;concept_israel_broussard;concept_phi_vu;concept_suraj_sharma;;
+concept_film_schastlivogo_novogo_dnya_smerti_2019 => nrel_producer : concept_christopher_landon;;

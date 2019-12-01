@@ -1,0 +1,67 @@
+concept_film_dolgonosik_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Долгоносик]
+(* <- lang_ru;;    *);
+[Weevil]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Долгоносик)](*<-lang_ru;;*);
+[Description (Weevil)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dolgonosik-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dolgonosik-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Долгоносик)](*<-lang_ru;;*);
+		[Pic. (Weevil)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dolgonosik-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_australia;
+
+=> nrel_film_critic_rating : 3;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [How loud can you scream when all life has been sucked out?](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [11.08.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [11.08.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H27M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H27M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_dolgonosik_2018 =>nrel_keywords: film;;
+
+concept_film_dolgonosik_2018 <- concept_horror;;
+
+concept_film_dolgonosik_2018 => nrel_main_actor : concept_joshua_charles_dawe;concept_sheridan_morris_flynn;concept_alex_given;concept_alan_ashby;;
+concept_film_dolgonosik_2018 => nrel_producer : concept_mark_lipkin;;

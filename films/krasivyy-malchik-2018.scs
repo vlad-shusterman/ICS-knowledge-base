@@ -1,0 +1,67 @@
+concept_film_krasivyy_malchik_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Красивый мальчик]
+(* <- lang_ru;;    *);
+[Beautiful Boy]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Красивый мальчик)](*<-lang_ru;;*);
+[Description (Beautiful Boy)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/krasivyy-malchik-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/krasivyy-malchik-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Красивый мальчик)](*<-lang_ru;;*);
+		[Pic. (Beautiful Boy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/krasivyy-malchik-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A true story of addiction, survival and family. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.10.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.10.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_krasivyy_malchik_2018 =>nrel_keywords: film;;
+
+concept_film_krasivyy_malchik_2018 <- concept_biography;concept_drama;;
+
+concept_film_krasivyy_malchik_2018 => nrel_main_actor : concept_steve_carell;concept_maura_tierney;concept_jack_dylan_grazer;concept_oakley_bull;;
+concept_film_krasivyy_malchik_2018 => nrel_producer : concept_felix_van_groeningen;;

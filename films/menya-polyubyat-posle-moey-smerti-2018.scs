@@ -1,0 +1,67 @@
+concept_film_menya_polyubyat_posle_moey_smerti_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Меня полюбят после моей смерти]
+(* <- lang_ru;;    *);
+[They'll Love Me When I'm Dead]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Меня полюбят после моей смерти)](*<-lang_ru;;*);
+[Description (They'll Love Me When I'm Dead)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/menya-polyubyat-posle-moey-smerti-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/menya-polyubyat-posle-moey-smerti-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Меня полюбят после моей смерти)](*<-lang_ru;;*);
+		[Pic. (They'll Love Me When I'm Dead)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/menya-polyubyat-posle-moey-smerti-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The True Story of the Last Film From Orson Welles](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [02.11.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [02.11.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H38M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H38M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_MA;;
+
+concept_film_menya_polyubyat_posle_moey_smerti_2018 =>nrel_keywords: film;;
+
+concept_film_menya_polyubyat_posle_moey_smerti_2018 <- concept_documentary;;
+
+concept_film_menya_polyubyat_posle_moey_smerti_2018 => nrel_main_actor : concept_alan_cumming;concept_peter_bogdanovich;concept_oja_kodar;concept_orson_welles;;
+concept_film_menya_polyubyat_posle_moey_smerti_2018 => nrel_producer : concept_morgan_neville;;

@@ -1,0 +1,67 @@
+concept_film_poceluy_u_kostra_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Поцелуй у костра]
+(* <- lang_ru;;    *);
+[Campfire Kiss]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Поцелуй у костра)](*<-lang_ru;;*);
+[Description (Campfire Kiss)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/poceluy-u-kostra-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/poceluy-u-kostra-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Поцелуй у костра)](*<-lang_ru;;*);
+		[Pic. (Campfire Kiss)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/poceluy-u-kostra-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Campfire Kiss](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [18.03.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [18.03.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H28M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H28M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_G;;
+
+concept_film_poceluy_u_kostra_2017 =>nrel_keywords: film;;
+
+concept_film_poceluy_u_kostra_2017 <- concept_comedy;concept_romance;;
+
+concept_film_poceluy_u_kostra_2017 => nrel_main_actor : concept_danica_mckellar;concept_paul_greene;concept_ali_skovbye;concept_kendall_cross;;
+concept_film_poceluy_u_kostra_2017 => nrel_producer : concept_james_head;;

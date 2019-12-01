@@ -1,0 +1,67 @@
+concept_film_pervyy_mstitel_drugaya_voyna_2014
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Первый мститель: Другая война]
+(* <- lang_ru;;    *);
+[Captain America: The Winter Soldier]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Первый мститель: Другая война)](*<-lang_ru;;*);
+[Description (Captain America: The Winter Soldier)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/pervyy-mstitel-drugaya-voyna-2014_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/pervyy-mstitel-drugaya-voyna-2014_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Первый мститель: Другая война)](*<-lang_ru;;*);
+		[Pic. (Captain America: The Winter Soldier)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/pervyy-mstitel-drugaya-voyna-2014.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [In heroes we trust.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [26.03.2014](*<-lang_ru;;*);;
+    => nrel_main_idtf : [26.03.2014](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H16M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H16M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_pervyy_mstitel_drugaya_voyna_2014 =>nrel_keywords: film;;
+
+concept_film_pervyy_mstitel_drugaya_voyna_2014 <- concept_action;concept_adventure;concept_sci_fi;;
+
+concept_film_pervyy_mstitel_drugaya_voyna_2014 => nrel_main_actor : concept_chris_evans;concept_samuel_l._jackson;concept_scarlett_johansson;concept_robert_redford;;
+concept_film_pervyy_mstitel_drugaya_voyna_2014 => nrel_producer : concept_anthony_russo;concept_joe_russo;;

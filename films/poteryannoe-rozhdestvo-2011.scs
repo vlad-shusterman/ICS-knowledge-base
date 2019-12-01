@@ -1,0 +1,67 @@
+concept_film_poteryannoe_rozhdestvo_2011
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Потерянное Рождество]
+(* <- lang_ru;;    *);
+[Lost Christmas]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Потерянное Рождество)](*<-lang_ru;;*);
+[Description (Lost Christmas)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/poteryannoe-rozhdestvo-2011_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/poteryannoe-rozhdestvo-2011_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Потерянное Рождество)](*<-lang_ru;;*);
+		[Pic. (Lost Christmas)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/poteryannoe-rozhdestvo-2011.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Lost Christmas](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [11.12.2011](*<-lang_ru;;*);;
+    => nrel_main_idtf : [11.12.2011](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H29M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H29M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_poteryannoe_rozhdestvo_2011 =>nrel_keywords: film;;
+
+concept_film_poteryannoe_rozhdestvo_2011 <- concept_drama;;
+
+concept_film_poteryannoe_rozhdestvo_2011 => nrel_main_actor : concept_eddie_izzard;concept_larry_mills;concept_jason_flemyng;concept_geoffrey_palmer;;
+concept_film_poteryannoe_rozhdestvo_2011 => nrel_producer : concept_john_hay;;

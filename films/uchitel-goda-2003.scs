@@ -1,0 +1,67 @@
+concept_film_uchitel_goda_2003
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Учитель года]
+(* <- lang_ru;;    *);
+[School of Life]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Учитель года)](*<-lang_ru;;*);
+[Description (School of Life)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/uchitel-goda-2003_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/uchitel-goda-2003_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Учитель года)](*<-lang_ru;;*);
+		[Pic. (School of Life)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/uchitel-goda-2003.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_canada;concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Life's greatest lessons are taught outside the classroom. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [19.02.2005](*<-lang_ru;;*);;
+    => nrel_main_idtf : [19.02.2005](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H51M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H51M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_uchitel_goda_2003 =>nrel_keywords: film;;
+
+concept_film_uchitel_goda_2003 <- concept_comedy;concept_drama;concept_family;concept_sport;;
+
+concept_film_uchitel_goda_2003 => nrel_main_actor : concept_david_paymer;concept_ryan_reynolds;concept_john_astin;concept_andrew_robb;;
+concept_film_uchitel_goda_2003 => nrel_producer : concept_william_dear;;

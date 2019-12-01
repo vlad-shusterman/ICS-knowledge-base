@@ -1,0 +1,67 @@
+concept_film_luzervill
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Лузервилль]
+(* <- lang_ru;;    *);
+[Loserville]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Лузервилль)](*<-lang_ru;;*);
+[Description (Loserville)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/luzervill_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/luzervill_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Лузервилль)](*<-lang_ru;;*);
+		[Pic. (Loserville)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/luzervill.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Loserville](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [30.09.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [30.09.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H36M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H36M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Unrated;;
+
+concept_film_luzervill =>nrel_keywords: film;;
+
+concept_film_luzervill <- concept_comedy;concept_drama;concept_family;concept_romance;;
+
+concept_film_luzervill => nrel_main_actor : concept_jamie_lynn_sigler;concept_jonathan_lipnicki;concept_matt_mcgorry;concept_darby_stanchfield;;
+concept_film_luzervill => nrel_producer : concept_lovell_holder;;

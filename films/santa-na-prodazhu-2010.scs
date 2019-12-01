@@ -1,0 +1,67 @@
+concept_film_santa_na_prodazhu_2010
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Санта на продажу]
+(* <- lang_ru;;    *);
+[Rare Exports]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Санта на продажу)](*<-lang_ru;;*);
+[Description (Rare Exports)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/santa-na-prodazhu-2010_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/santa-na-prodazhu-2010_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Санта на продажу)](*<-lang_ru;;*);
+		[Pic. (Rare Exports)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/santa-na-prodazhu-2010.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_finland;concept_norway;concept_france;concept_sweden;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [falling-into-a-pit See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [02.12.2010](*<-lang_ru;;*);;
+    => nrel_main_idtf : [02.12.2010](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H24M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H24M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_santa_na_prodazhu_2010 =>nrel_keywords: film;;
+
+concept_film_santa_na_prodazhu_2010 <- concept_adventure;concept_fantasy;concept_horror;;
+
+concept_film_santa_na_prodazhu_2010 => nrel_main_actor : concept_jorma_tommila;concept_onni_tommila;concept_peeter_jakobi;concept_tommi_korpela;;
+concept_film_santa_na_prodazhu_2010 => nrel_producer : concept_jalmari_helander;;

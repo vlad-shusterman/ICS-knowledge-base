@@ -1,0 +1,67 @@
+concept_film_rok_volna_2009
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Рок-волна]
+(* <- lang_ru;;    *);
+[The Boat That Rocked / Pirate Radio]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Рок-волна)](*<-lang_ru;;*);
+[Description (The Boat That Rocked / Pirate Radio)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/rok-volna-2009_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/rok-volna-2009_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Рок-волна)](*<-lang_ru;;*);
+		[Pic. (The Boat That Rocked / Pirate Radio)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/rok-volna-2009.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_france;concept_germany;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [They rocked. They rolled. Then they sank. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [01.04.2009](*<-lang_ru;;*);;
+    => nrel_main_idtf : [01.04.2009](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H57M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H57M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_rok_volna_2009 =>nrel_keywords: film;;
+
+concept_film_rok_volna_2009 <- concept_comedy;concept_drama;concept_music;;
+
+concept_film_rok_volna_2009 => nrel_main_actor : concept_philip_seymour_hoffman;concept_bill_nighy;concept_nick_frost;concept_michael_hadley;;
+concept_film_rok_volna_2009 => nrel_producer : concept_richard_curtis;;

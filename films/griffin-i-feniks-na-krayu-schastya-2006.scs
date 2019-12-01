@@ -1,0 +1,67 @@
+concept_film_griffin_i_feniks_na_krayu_schastya_2006
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Гриффин и Феникс: На краю счастья]
+(* <- lang_ru;;    *);
+[Griffin & Phoenix]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Гриффин и Феникс: На краю счастья)](*<-lang_ru;;*);
+[Description (Griffin & Phoenix)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/griffin-i-feniks-na-krayu-schastya-2006_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/griffin-i-feniks-na-krayu-schastya-2006_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гриффин и Феникс: На краю счастья)](*<-lang_ru;;*);
+		[Pic. (Griffin & Phoenix)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/griffin-i-feniks-na-krayu-schastya-2006.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A love story with no expectations.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [18.01.2007](*<-lang_ru;;*);;
+    => nrel_main_idtf : [18.01.2007](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H42M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H42M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_griffin_i_feniks_na_krayu_schastya_2006 =>nrel_keywords: film;;
+
+concept_film_griffin_i_feniks_na_krayu_schastya_2006 <- concept_comedy;concept_drama;concept_romance;;
+
+concept_film_griffin_i_feniks_na_krayu_schastya_2006 => nrel_main_actor : concept_amanda_peet;concept_dermot_mulroney;concept_sarah_paulson;concept_blair_brown;;
+concept_film_griffin_i_feniks_na_krayu_schastya_2006 => nrel_producer : concept_ed_stone;;

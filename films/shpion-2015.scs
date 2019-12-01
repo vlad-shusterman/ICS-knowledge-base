@@ -1,0 +1,67 @@
+concept_film_shpion_2015
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Шпион]
+(* <- lang_ru;;    *);
+[Spy]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Шпион)](*<-lang_ru;;*);
+[Description (Spy)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/shpion-2015_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/shpion-2015_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Шпион)](*<-lang_ru;;*);
+		[Pic. (Spy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/shpion-2015.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_uk;concept_france;concept_hungary;concept_germany;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [She's finally getting some action. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [20.05.2015](*<-lang_ru;;*);;
+    => nrel_main_idtf : [20.05.2015](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_shpion_2015 =>nrel_keywords: film;;
+
+concept_film_shpion_2015 <- concept_action;concept_comedy;concept_crime;;
+
+concept_film_shpion_2015 => nrel_main_actor : concept_melissa_mccarthy;concept_rose_byrne;concept_jude_law;concept_jason_statham;;
+concept_film_shpion_2015 => nrel_producer : concept_paul_feig;;

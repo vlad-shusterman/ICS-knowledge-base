@@ -1,0 +1,67 @@
+concept_film_zhizn_pod_strahom_1993
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Жизнь под страхом / Страх]
+(* <- lang_ru;;    *);
+[Darr]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Жизнь под страхом / Страх)](*<-lang_ru;;*);
+[Description (Darr)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zhizn-pod-strahom-1993_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zhizn-pod-strahom-1993_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Жизнь под страхом / Страх)](*<-lang_ru;;*);
+		[Pic. (Darr)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zhizn-pod-strahom-1993.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_india;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A violent love story. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [24.12.1993](*<-lang_ru;;*);;
+    => nrel_main_idtf : [24.12.1993](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H58M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H58M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_zhizn_pod_strahom_1993 =>nrel_keywords: film;;
+
+concept_film_zhizn_pod_strahom_1993 <- concept_drama;concept_romance;concept_thriller;;
+
+concept_film_zhizn_pod_strahom_1993 => nrel_main_actor : concept_juhi_chawla;concept_sunny_deol;concept_shah_rukh_khan;concept_anupam_kher;;
+concept_film_zhizn_pod_strahom_1993 => nrel_producer : concept_yash_chopra;;

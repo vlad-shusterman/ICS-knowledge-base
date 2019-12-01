@@ -1,0 +1,67 @@
+concept_film_poceluy_smerti_1994
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Поцелуй смерти]
+(* <- lang_ru;;    *);
+[Kiss of Death]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Поцелуй смерти)](*<-lang_ru;;*);
+[Description (Kiss of Death)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/poceluy-smerti-1994_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/poceluy-smerti-1994_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Поцелуй смерти)](*<-lang_ru;;*);
+		[Pic. (Kiss of Death)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/poceluy-smerti-1994.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Little Junior Brown. He rules the streets. He owns the game. But he doesn't own all of the players.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.04.1995](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.04.1995](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H41M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H41M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_poceluy_smerti_1994 =>nrel_keywords: film;;
+
+concept_film_poceluy_smerti_1994 <- concept_action;concept_crime;concept_thriller;;
+
+concept_film_poceluy_smerti_1994 => nrel_main_actor : concept_david_caruso;concept_samuel_l._jackson;concept_nicolas_cage;concept_helen_hunt;;
+concept_film_poceluy_smerti_1994 => nrel_producer : concept_barbet_schroeder;;

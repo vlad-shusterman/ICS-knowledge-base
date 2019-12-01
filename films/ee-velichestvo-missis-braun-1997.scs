@@ -1,0 +1,67 @@
+concept_film_ee_velichestvo_missis_braun_1997
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Ее величество Миссис Браун]
+(* <- lang_ru;;    *);
+[Mrs Brown]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Ее величество Миссис Браун)](*<-lang_ru;;*);
+[Description (Mrs Brown)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ee-velichestvo-missis-braun-1997_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ee-velichestvo-missis-braun-1997_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ее величество Миссис Браун)](*<-lang_ru;;*);
+		[Pic. (Mrs Brown)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ee-velichestvo-missis-braun-1997.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_ireland;concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Queen Victoria, the world's most powerful woman. John Brown, a simple Scottish Highlander. Their extraordinary friendship transformed an empire.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [05.09.1997](*<-lang_ru;;*);;
+    => nrel_main_idtf : [05.09.1997](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H41M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H41M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_ee_velichestvo_missis_braun_1997 =>nrel_keywords: film;;
+
+concept_film_ee_velichestvo_missis_braun_1997 <- concept_biography;concept_drama;concept_history;concept_romance;;
+
+concept_film_ee_velichestvo_missis_braun_1997 => nrel_main_actor : concept_judi_dench;concept_billy_connolly;concept_geoffrey_palmer;concept_antony_sher;;
+concept_film_ee_velichestvo_missis_braun_1997 => nrel_producer : concept_john_madden;;

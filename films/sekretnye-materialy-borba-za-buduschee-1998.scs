@@ -1,0 +1,67 @@
+concept_film_sekretnye_materialy_borba_za_buduschee_1998
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Секретные материалы: Борьба за будущее]
+(* <- lang_ru;;    *);
+[The X Files / The X-Files: Fight the Future]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Секретные материалы: Борьба за будущее)](*<-lang_ru;;*);
+[Description (The X Files / The X-Files: Fight the Future)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/sekretnye-materialy-borba-za-buduschee-1998_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/sekretnye-materialy-borba-za-buduschee-1998_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Секретные материалы: Борьба за будущее)](*<-lang_ru;;*);
+		[Pic. (The X Files / The X-Files: Fight the Future)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/sekretnye-materialy-borba-za-buduschee-1998.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Fight the Future See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [19.06.1998](*<-lang_ru;;*);;
+    => nrel_main_idtf : [19.06.1998](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H1M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H1M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_sekretnye_materialy_borba_za_buduschee_1998 =>nrel_keywords: film;;
+
+concept_film_sekretnye_materialy_borba_za_buduschee_1998 <- concept_drama;concept_mystery;concept_sci_fi;concept_thriller;;
+
+concept_film_sekretnye_materialy_borba_za_buduschee_1998 => nrel_main_actor : concept_david_duchovny;concept_gillian_anderson;concept_john_neville;concept_william_b._davis;;
+concept_film_sekretnye_materialy_borba_za_buduschee_1998 => nrel_producer : concept_rob_bowman;;

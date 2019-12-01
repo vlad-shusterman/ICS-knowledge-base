@@ -1,0 +1,67 @@
+concept_film_igra_2011
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Игра]
+(* <- lang_ru;;    *);
+[Game]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Игра)](*<-lang_ru;;*);
+[Description (Game)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/igra-2011_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/igra-2011_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Игра)](*<-lang_ru;;*);
+		[Pic. (Game)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/igra-2011.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_india;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [It's not Over till its Over](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [31.03.2011](*<-lang_ru;;*);;
+    => nrel_main_idtf : [31.03.2011](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H15M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H15M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_igra_2011 =>nrel_keywords: film;;
+
+concept_film_igra_2011 <- concept_action;concept_crime;concept_drama;concept_mystery;concept_thriller;;
+
+concept_film_igra_2011 => nrel_main_actor : concept_abhishek_bachchan;concept_kangana_ranaut;concept_anupam_kher;concept_boman_irani;;
+concept_film_igra_2011 => nrel_producer : concept_abhinay_deo;;

@@ -1,0 +1,67 @@
+concept_film_roksana_1987
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Роксана]
+(* <- lang_ru;;    *);
+[Roxanne]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Роксана)](*<-lang_ru;;*);
+[Description (Roxanne)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/roksana-1987_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/roksana-1987_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Роксана)](*<-lang_ru;;*);
+		[Pic. (Roxanne)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/roksana-1987.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Roxanne dreamed of a handsome, intelligent, romantic man. C.D. Bales is two out of three... but looks aren't everything!](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [19.06.1987](*<-lang_ru;;*);;
+    => nrel_main_idtf : [19.06.1987](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H47M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H47M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_roksana_1987 =>nrel_keywords: film;;
+
+concept_film_roksana_1987 <- concept_comedy;concept_romance;;
+
+concept_film_roksana_1987 => nrel_main_actor : concept_steve_martin;concept_daryl_hannah;concept_rick_rossovich;concept_shelley_duvall;;
+concept_film_roksana_1987 => nrel_producer : concept_fred_schepisi;;

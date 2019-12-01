@@ -1,0 +1,67 @@
+concept_film_mat_2009
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Мать]
+(* <- lang_ru;;    *);
+[Madeo / Mother]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Мать)](*<-lang_ru;;*);
+[Description (Madeo / Mother)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/mat-2009_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/mat-2009_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Мать)](*<-lang_ru;;*);
+		[Pic. (Madeo / Mother)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/mat-2009.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_south_korea;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [She'll stop at nothing.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [28.05.2009](*<-lang_ru;;*);;
+    => nrel_main_idtf : [28.05.2009](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H9M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H9M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_mat_2009 =>nrel_keywords: film;;
+
+concept_film_mat_2009 <- concept_crime;concept_drama;concept_thriller;;
+
+concept_film_mat_2009 => nrel_main_actor : concept_hye_ja_kim;concept_won_bin;concept_goo_jin;concept_je_mun_yun;;
+concept_film_mat_2009 => nrel_producer : concept_bong_joon_ho;;

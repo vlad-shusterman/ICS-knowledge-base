@@ -1,0 +1,67 @@
+concept_film_ya_hochu_konfetku_2007
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Я хочу конфетку]
+(* <- lang_ru;;    *);
+[I Want Candy]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Я хочу конфетку)](*<-lang_ru;;*);
+[Description (I Want Candy)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ya-hochu-konfetku-2007_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ya-hochu-konfetku-2007_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Я хочу конфетку)](*<-lang_ru;;*);
+		[Pic. (I Want Candy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ya-hochu-konfetku-2007.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [They're making a movie... And it's gone pear-shaped! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [23.03.2007](*<-lang_ru;;*);;
+    => nrel_main_idtf : [23.03.2007](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H27M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H27M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_ya_hochu_konfetku_2007 =>nrel_keywords: film;;
+
+concept_film_ya_hochu_konfetku_2007 <- concept_comedy;;
+
+concept_film_ya_hochu_konfetku_2007 => nrel_main_actor : concept_tom_riley;concept_tom_burke;concept_carmen_electra;concept_eddie_marsan;;
+concept_film_ya_hochu_konfetku_2007 => nrel_producer : concept_stephen_surjik;;

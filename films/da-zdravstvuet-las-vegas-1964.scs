@@ -1,0 +1,67 @@
+concept_film_da_zdravstvuet_las_vegas_1964
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Да здравствует Лас-Вегас]
+(* <- lang_ru;;    *);
+[Viva Las Vegas]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Да здравствует Лас-Вегас)](*<-lang_ru;;*);
+[Description (Viva Las Vegas)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/da-zdravstvuet-las-vegas-1964_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/da-zdravstvuet-las-vegas-1964_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Да здравствует Лас-Вегас)](*<-lang_ru;;*);
+		[Pic. (Viva Las Vegas)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/da-zdravstvuet-las-vegas-1964.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Elvis is at the wheel but Ann-Margret drives him wild! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [08.02.1964](*<-lang_ru;;*);;
+    => nrel_main_idtf : [08.02.1964](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H25M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H25M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Approved;;
+
+concept_film_da_zdravstvuet_las_vegas_1964 =>nrel_keywords: film;;
+
+concept_film_da_zdravstvuet_las_vegas_1964 <- concept_comedy;concept_musical;;
+
+concept_film_da_zdravstvuet_las_vegas_1964 => nrel_main_actor : concept_elvis_presley;concept_ann_margret;concept_cesare_danova;concept_william_demarest;;
+concept_film_da_zdravstvuet_las_vegas_1964 => nrel_producer : concept_george_sidney;;

@@ -1,0 +1,67 @@
+concept_film_predannost_1969
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Преданность]
+(* <- lang_ru;;    *);
+[Aradhana]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Преданность)](*<-lang_ru;;*);
+[Description (Aradhana)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/predannost-1969_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/predannost-1969_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Преданность)](*<-lang_ru;;*);
+		[Pic. (Aradhana)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/predannost-1969.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_india;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Aradhana](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [27.09.1969](*<-lang_ru;;*);;
+    => nrel_main_idtf : [27.09.1969](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H49M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H49M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_predannost_1969 =>nrel_keywords: film;;
+
+concept_film_predannost_1969 <- concept_drama;concept_musical;concept_romance;;
+
+concept_film_predannost_1969 => nrel_main_actor : concept_rajesh_khanna;concept_sharmila_tagore;concept_sujit_kumar;concept_farida_jalal;;
+concept_film_predannost_1969 => nrel_producer : concept_shakti_samanta;;

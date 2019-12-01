@@ -1,0 +1,67 @@
+concept_film_krepkiy_oreshek_horoshiy_den_chtoby_umeret_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Крепкий орешек: Хороший день, чтобы умереть]
+(* <- lang_ru;;    *);
+[A Good Day to Die Hard]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Крепкий орешек: Хороший день, чтобы умереть)](*<-lang_ru;;*);
+[Description (A Good Day to Die Hard)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/krepkiy-oreshek-horoshiy-den-chtoby-umeret-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/krepkiy-oreshek-horoshiy-den-chtoby-umeret-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Крепкий орешек: Хороший день, чтобы умереть)](*<-lang_ru;;*);
+		[Pic. (A Good Day to Die Hard)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/krepkiy-oreshek-horoshiy-den-chtoby-umeret-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_russia;concept_hungary;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Yippee Ki-Yay Mother Russia See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [07.02.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [07.02.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H38M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H38M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_krepkiy_oreshek_horoshiy_den_chtoby_umeret_2013 =>nrel_keywords: film;;
+
+concept_film_krepkiy_oreshek_horoshiy_den_chtoby_umeret_2013 <- concept_action;concept_thriller;;
+
+concept_film_krepkiy_oreshek_horoshiy_den_chtoby_umeret_2013 => nrel_main_actor : concept_bruce_willis;concept_jai_courtney;concept_sebastian_koch;concept_mary_elizabeth_winstead;;
+concept_film_krepkiy_oreshek_horoshiy_den_chtoby_umeret_2013 => nrel_producer : concept_john_moore;;

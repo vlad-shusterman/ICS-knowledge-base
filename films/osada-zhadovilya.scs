@@ -1,0 +1,67 @@
+concept_film_osada_zhadovilya
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Осада Жадовиля]
+(* <- lang_ru;;    *);
+[The Siege of Jadotville]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Осада Жадовиля)](*<-lang_ru;;*);
+[Description (The Siege of Jadotville)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/osada-zhadovilya_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/osada-zhadovilya_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Осада Жадовиля)](*<-lang_ru;;*);
+		[Pic. (The Siege of Jadotville)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/osada-zhadovilya.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_ireland;concept_south_africa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The Siege of Jadotville](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [19.09.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [19.09.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H48M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H48M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_MA;;
+
+concept_film_osada_zhadovilya =>nrel_keywords: film;;
+
+concept_film_osada_zhadovilya <- concept_action;concept_biography;concept_drama;concept_thriller;concept_war;;
+
+concept_film_osada_zhadovilya => nrel_main_actor : concept_richard_lukunku;concept_danny_sapani;concept_andrew_stock;concept_mark_strong;;
+concept_film_osada_zhadovilya => nrel_producer : concept_richie_smyth;;

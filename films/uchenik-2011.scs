@@ -1,0 +1,67 @@
+concept_film_uchenik_2011
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Ученик]
+(* <- lang_ru;;    *);
+[Shagird]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Ученик)](*<-lang_ru;;*);
+[Description (Shagird)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/uchenik-2011_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/uchenik-2011_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ученик)](*<-lang_ru;;*);
+		[Pic. (Shagird)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/uchenik-2011.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_india;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [When Desire Gets Dangerous...](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [13.05.2011](*<-lang_ru;;*);;
+    => nrel_main_idtf : [13.05.2011](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H23M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H23M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_uchenik_2011 =>nrel_keywords: film;;
+
+concept_film_uchenik_2011 <- concept_action;concept_crime;concept_drama;concept_thriller;;
+
+concept_film_uchenik_2011 => nrel_main_actor : concept_nana_patekar;concept_mohit_ahlawat;concept_rimi_sen;concept_anurag_kashyap;;
+concept_film_uchenik_2011 => nrel_producer : concept_tigmanshu_dhulia;;

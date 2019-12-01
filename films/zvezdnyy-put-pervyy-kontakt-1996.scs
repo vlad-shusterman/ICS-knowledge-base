@@ -1,0 +1,67 @@
+concept_film_zvezdnyy_put_pervyy_kontakt_1996
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Звездный путь: Первый контакт]
+(* <- lang_ru;;    *);
+[Star Trek: First Contact]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Звездный путь: Первый контакт)](*<-lang_ru;;*);
+[Description (Star Trek: First Contact)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zvezdnyy-put-pervyy-kontakt-1996_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zvezdnyy-put-pervyy-kontakt-1996_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Звездный путь: Первый контакт)](*<-lang_ru;;*);
+		[Pic. (Star Trek: First Contact)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zvezdnyy-put-pervyy-kontakt-1996.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The battle to save the future has begun See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [22.11.1996](*<-lang_ru;;*);;
+    => nrel_main_idtf : [22.11.1996](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H51M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H51M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_zvezdnyy_put_pervyy_kontakt_1996 =>nrel_keywords: film;;
+
+concept_film_zvezdnyy_put_pervyy_kontakt_1996 <- concept_action;concept_adventure;concept_drama;concept_sci_fi;concept_thriller;;
+
+concept_film_zvezdnyy_put_pervyy_kontakt_1996 => nrel_main_actor : concept_patrick_stewart;concept_jonathan_frakes;concept_brent_spiner;concept_levar_burton;;
+concept_film_zvezdnyy_put_pervyy_kontakt_1996 => nrel_producer : concept_jonathan_frakes;;

@@ -1,0 +1,67 @@
+concept_film_povodyr_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Поводырь]
+(* <- lang_ru;;    *);
+[Povodir]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Поводырь)](*<-lang_ru;;*);
+[Description (Povodir)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/povodyr-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/povodyr-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Поводырь)](*<-lang_ru;;*);
+		[Pic. (Povodir)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/povodyr-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_ukraine;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Povodir](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.11.2014](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.11.2014](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H2M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H2M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_povodyr_2013 =>nrel_keywords: film;;
+
+concept_film_povodyr_2013 <- concept_drama;concept_history;;
+
+concept_film_povodyr_2013 => nrel_main_actor : concept_stanislav_boklan;concept_jeff_burrell;concept_anton_sviatoslav_greene;concept_andriy_haddad;;
+concept_film_povodyr_2013 => nrel_producer : concept_oles_sanin;;

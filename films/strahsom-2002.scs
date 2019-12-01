@@ -1,0 +1,67 @@
+concept_film_strahsom_2002
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Страх.сом]
+(* <- lang_ru;;    *);
+[Feardotcom]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Страх.сом)](*<-lang_ru;;*);
+[Description (Feardotcom)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/strahsom-2002_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/strahsom-2002_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Страх.сом)](*<-lang_ru;;*);
+		[Pic. (Feardotcom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/strahsom-2002.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_germany;concept_luxembourg;concept_usa;concept_canada;
+
+=> nrel_film_critic_rating : 3;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Abandon all hope.....Access all evil......Enter Feardot.com See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [09.08.2002](*<-lang_ru;;*);;
+    => nrel_main_idtf : [09.08.2002](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H41M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H41M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_strahsom_2002 =>nrel_keywords: film;;
+
+concept_film_strahsom_2002 <- concept_crime;concept_horror;concept_thriller;;
+
+concept_film_strahsom_2002 => nrel_main_actor : concept_stephen_dorff;concept_natascha_mcelhone;concept_stephen_rea;concept_udo_kier;;
+concept_film_strahsom_2002 => nrel_producer : concept_william_malone;;

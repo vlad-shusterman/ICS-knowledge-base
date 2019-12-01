@@ -1,0 +1,67 @@
+concept_film_lyubov_v_rayu_2016
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Любовь в раю]
+(* <- lang_ru;;    *);
+[Love in Paradise]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Любовь в раю)](*<-lang_ru;;*);
+[Description (Love in Paradise)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/lyubov-v-rayu-2016_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/lyubov-v-rayu-2016_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Любовь в раю)](*<-lang_ru;;*);
+		[Pic. (Love in Paradise)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/lyubov-v-rayu-2016.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Love in Paradise](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [02.01.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [02.01.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H24M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H24M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_G;;
+
+concept_film_lyubov_v_rayu_2016 =>nrel_keywords: film;;
+
+concept_film_lyubov_v_rayu_2016 <- concept_comedy;concept_drama;;
+
+concept_film_lyubov_v_rayu_2016 => nrel_main_actor : concept_luke_perry;concept_emmanuelle_vaugier;concept_tom_butler;concept_matt_frewer;;
+concept_film_lyubov_v_rayu_2016 => nrel_producer : concept_sean_mcnamara;;

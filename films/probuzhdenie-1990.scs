@@ -1,0 +1,67 @@
+concept_film_probuzhdenie_1990
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Пробуждение]
+(* <- lang_ru;;    *);
+[Awakenings]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Пробуждение)](*<-lang_ru;;*);
+[Description (Awakenings)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/probuzhdenie-1990_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/probuzhdenie-1990_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Пробуждение)](*<-lang_ru;;*);
+		[Pic. (Awakenings)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/probuzhdenie-1990.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [There is no such thing as a simple miracle.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [11.01.1991](*<-lang_ru;;*);;
+    => nrel_main_idtf : [11.01.1991](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H1M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H1M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_probuzhdenie_1990 =>nrel_keywords: film;;
+
+concept_film_probuzhdenie_1990 <- concept_biography;concept_drama;;
+
+concept_film_probuzhdenie_1990 => nrel_main_actor : concept_robert_de_niro;concept_robin_williams;concept_julie_kavner;concept_ruth_nelson;;
+concept_film_probuzhdenie_1990 => nrel_producer : concept_penny_marshall;;

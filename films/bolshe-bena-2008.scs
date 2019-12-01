@@ -1,0 +1,67 @@
+concept_film_bolshe_bena_2008
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Больше Бена]
+(* <- lang_ru;;    *);
+[Bigga Than Ben]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Больше Бена)](*<-lang_ru;;*);
+[Description (Bigga Than Ben)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/bolshe-bena-2008_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/bolshe-bena-2008_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Больше Бена)](*<-lang_ru;;*);
+		[Pic. (Bigga Than Ben)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/bolshe-bena-2008.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Beat the system, before it beats you](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [24.07.2008](*<-lang_ru;;*);;
+    => nrel_main_idtf : [24.07.2008](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H22M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H22M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_bolshe_bena_2008 =>nrel_keywords: film;;
+
+concept_film_bolshe_bena_2008 <- concept_drama;;
+
+concept_film_bolshe_bena_2008 => nrel_main_actor : concept_ben_barnes;concept_andrey_chadov;concept_ovidiu_matesan;concept_terence_anderson;;
+concept_film_bolshe_bena_2008 => nrel_producer : concept_s.a._halewood;;

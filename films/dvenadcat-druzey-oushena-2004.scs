@@ -1,0 +1,67 @@
+concept_film_dvenadcat_druzey_oushena_2004
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Двенадцать друзей Оушена]
+(* <- lang_ru;;    *);
+[Ocean's Twelve]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Двенадцать друзей Оушена)](*<-lang_ru;;*);
+[Description (Ocean's Twelve)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dvenadcat-druzey-oushena-2004_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dvenadcat-druzey-oushena-2004_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Двенадцать друзей Оушена)](*<-lang_ru;;*);
+		[Pic. (Ocean's Twelve)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dvenadcat-druzey-oushena-2004.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Twelve is the new eleven See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [09.12.2004](*<-lang_ru;;*);;
+    => nrel_main_idtf : [09.12.2004](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H5M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H5M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_dvenadcat_druzey_oushena_2004 =>nrel_keywords: film;;
+
+concept_film_dvenadcat_druzey_oushena_2004 <- concept_crime;concept_thriller;;
+
+concept_film_dvenadcat_druzey_oushena_2004 => nrel_main_actor : concept_george_clooney;concept_brad_pitt;concept_julia_roberts;concept_catherine_zeta_jones;;
+concept_film_dvenadcat_druzey_oushena_2004 => nrel_producer : concept_steven_soderbergh;;

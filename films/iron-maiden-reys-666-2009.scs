@@ -1,0 +1,67 @@
+concept_film_iron_maiden_reys_666_2009
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Iron Maiden – рейс 666]
+(* <- lang_ru;;    *);
+[Iron Maiden: Flight 666]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Iron Maiden – рейс 666)](*<-lang_ru;;*);
+[Description (Iron Maiden: Flight 666)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/iron-maiden-reys-666-2009_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/iron-maiden-reys-666-2009_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Iron Maiden – рейс 666)](*<-lang_ru;;*);
+		[Pic. (Iron Maiden: Flight 666)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/iron-maiden-reys-666-2009.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_canada;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [50,000 miles. 5 Continents. 23 Concerts in just 45 Days.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.04.2009](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.04.2009](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H52M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H52M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_iron_maiden_reys_666_2009 =>nrel_keywords: film;;
+
+concept_film_iron_maiden_reys_666_2009 <- concept_documentary;concept_music;;
+
+concept_film_iron_maiden_reys_666_2009 => nrel_main_actor : concept_iron_maiden;concept_vinny_appice;concept_pat_cash;concept_bruce_dickinson;;
+concept_film_iron_maiden_reys_666_2009 => nrel_producer : concept_sam_dunn;concept_scot_mcfadyen;;

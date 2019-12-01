@@ -1,0 +1,67 @@
+concept_film_pan_volodyevskiy_1969
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Пан Володыевский]
+(* <- lang_ru;;    *);
+[Pan Wolodyjowski / Colonel Wolodyjowski]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Пан Володыевский)](*<-lang_ru;;*);
+[Description (Pan Wolodyjowski / Colonel Wolodyjowski)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/pan-volodyevskiy-1969_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/pan-volodyevskiy-1969_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Пан Володыевский)](*<-lang_ru;;*);
+		[Pic. (Pan Wolodyjowski / Colonel Wolodyjowski)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/pan-volodyevskiy-1969.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_poland;concept_soviet_union;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Based on a novel by Henryk Sienkiewicz.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [28.03.1969](*<-lang_ru;;*);;
+    => nrel_main_idtf : [28.03.1969](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H40M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_pan_volodyevskiy_1969 =>nrel_keywords: film;;
+
+concept_film_pan_volodyevskiy_1969 <- concept_adventure;concept_history;concept_war;;
+
+concept_film_pan_volodyevskiy_1969 => nrel_main_actor : concept_tadeusz_lomnicki;concept_magdalena_zawadzka;concept_mieczyslaw_pawlikowski;concept_hanka_bielicka;;
+concept_film_pan_volodyevskiy_1969 => nrel_producer : concept_jerzy_hoffman;;

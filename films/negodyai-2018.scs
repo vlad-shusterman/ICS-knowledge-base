@@ -1,0 +1,67 @@
+concept_film_negodyai_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Негодяи]
+(* <- lang_ru;;    *);
+[Kuang tu / The Scoundrels]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Негодяи)](*<-lang_ru;;*);
+[Description (Kuang tu / The Scoundrels)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/negodyai-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/negodyai-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Негодяи)](*<-lang_ru;;*);
+		[Pic. (Kuang tu / The Scoundrels)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/negodyai-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_taiwan;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Kuang tu / The Scoundrels](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [26.10.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [26.10.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H45M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_negodyai_2018 =>nrel_keywords: film;;
+
+concept_film_negodyai_2018 <- concept_action;;
+
+concept_film_negodyai_2018 => nrel_main_actor : concept_kang_ren_wu;concept_j.c._lin;concept_nikki_hsieh;concept_chien_na_lee;;
+concept_film_negodyai_2018 => nrel_producer : concept_tzu_hsuan_hung;;

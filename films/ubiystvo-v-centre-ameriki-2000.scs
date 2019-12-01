@@ -1,0 +1,67 @@
+concept_film_ubiystvo_v_centre_ameriki_2000
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Убийство в «Центре Америки»]
+(* <- lang_ru;;    *);
+[Viva Las Nowhere]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Убийство в «Центре Америки»)](*<-lang_ru;;*);
+[Description (Viva Las Nowhere)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ubiystvo-v-centre-ameriki-2000_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ubiystvo-v-centre-ameriki-2000_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Убийство в «Центре Америки»)](*<-lang_ru;;*);
+		[Pic. (Viva Las Nowhere)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ubiystvo-v-centre-ameriki-2000.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_canada;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Viva Las Nowhere](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.06.2001](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.06.2001](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H37M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H37M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_ubiystvo_v_centre_ameriki_2000 =>nrel_keywords: film;;
+
+concept_film_ubiystvo_v_centre_ameriki_2000 <- concept_comedy;concept_crime;concept_drama;concept_music;;
+
+concept_film_ubiystvo_v_centre_ameriki_2000 => nrel_main_actor : concept_daniel_stern;concept_james_caan;concept_patricia_richardson;concept_lacey_kohl;;
+concept_film_ubiystvo_v_centre_ameriki_2000 => nrel_producer : concept_jason_bloom;;

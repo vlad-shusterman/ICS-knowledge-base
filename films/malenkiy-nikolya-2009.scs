@@ -1,0 +1,67 @@
+concept_film_malenkiy_nikolya_2009
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Маленький Николя]
+(* <- lang_ru;;    *);
+[Le petit Nicolas / Little Nicholas]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Маленький Николя)](*<-lang_ru;;*);
+[Description (Le petit Nicolas / Little Nicholas)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/malenkiy-nikolya-2009_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/malenkiy-nikolya-2009_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Маленький Николя)](*<-lang_ru;;*);
+		[Pic. (Le petit Nicolas / Little Nicholas)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/malenkiy-nikolya-2009.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_france;concept_belgium;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Going Back To School Is Great!](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [30.09.2009](*<-lang_ru;;*);;
+    => nrel_main_idtf : [30.09.2009](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H31M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H31M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_malenkiy_nikolya_2009 =>nrel_keywords: film;;
+
+concept_film_malenkiy_nikolya_2009 <- concept_comedy;concept_family;;
+
+concept_film_malenkiy_nikolya_2009 => nrel_main_actor : concept_maxime_godart;concept_vincent_claude;concept_charles_vaillant;concept_victor_carles;;
+concept_film_malenkiy_nikolya_2009 => nrel_producer : concept_laurent_tirard;;

@@ -1,0 +1,67 @@
+concept_film_vsya_korolevskaya_rat_2006
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Вся королевская рать]
+(* <- lang_ru;;    *);
+[All the King's Men]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Вся королевская рать)](*<-lang_ru;;*);
+[Description (All the King's Men)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vsya-korolevskaya-rat-2006_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vsya-korolevskaya-rat-2006_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Вся королевская рать)](*<-lang_ru;;*);
+		[Pic. (All the King's Men)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vsya-korolevskaya-rat-2006.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_germany;concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Some people will do anything to gain power. Some will do anything to keep it. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.09.2006](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.09.2006](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H8M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H8M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_vsya_korolevskaya_rat_2006 =>nrel_keywords: film;;
+
+concept_film_vsya_korolevskaya_rat_2006 <- concept_drama;concept_thriller;;
+
+concept_film_vsya_korolevskaya_rat_2006 => nrel_main_actor : concept_sean_penn;concept_jude_law;concept_kate_winslet;concept_anthony_hopkins;;
+concept_film_vsya_korolevskaya_rat_2006 => nrel_producer : concept_steven_zaillian;;

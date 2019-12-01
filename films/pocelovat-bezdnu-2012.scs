@@ -1,0 +1,67 @@
+concept_film_pocelovat_bezdnu_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Поцеловать бездну]
+(* <- lang_ru;;    *);
+[Kiss the Abyss]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Поцеловать бездну)](*<-lang_ru;;*);
+[Description (Kiss the Abyss)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/pocelovat-bezdnu-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/pocelovat-bezdnu-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Поцеловать бездну)](*<-lang_ru;;*);
+		[Pic. (Kiss the Abyss)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/pocelovat-bezdnu-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Kiss the Abyss](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [05.01.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [05.01.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H28M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H28M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_pocelovat_bezdnu_2012 =>nrel_keywords: film;;
+
+concept_film_pocelovat_bezdnu_2012 <- concept_horror;;
+
+concept_film_pocelovat_bezdnu_2012 => nrel_main_actor : concept_nikki_moore;concept_scott_wilson;concept_scott_mitchell_nelson;concept_james_mathers;;
+concept_film_pocelovat_bezdnu_2012 => nrel_producer : concept_ken_winkler;;

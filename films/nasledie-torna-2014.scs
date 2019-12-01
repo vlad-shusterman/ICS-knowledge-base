@@ -1,0 +1,67 @@
+concept_film_nasledie_torna_2014
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Наследие Торна]
+(* <- lang_ru;;    *);
+[Legacy of Thorn]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Наследие Торна)](*<-lang_ru;;*);
+[Description (Legacy of Thorn)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/nasledie-torna-2014_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/nasledie-torna-2014_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Наследие Торна)](*<-lang_ru;;*);
+		[Pic. (Legacy of Thorn)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/nasledie-torna-2014.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [He Cannot Be stopped.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [27.10.2014](*<-lang_ru;;*);;
+    => nrel_main_idtf : [27.10.2014](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H37M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H37M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_nasledie_torna_2014 =>nrel_keywords: film;;
+
+concept_film_nasledie_torna_2014 <- concept_action;concept_horror;;
+
+concept_film_nasledie_torna_2014 => nrel_main_actor : concept_jade_wallis;concept_mem_ferda;concept_paris_rivers;concept_craig_canning;;
+concept_film_nasledie_torna_2014 => nrel_producer : concept_mj_dixon;;

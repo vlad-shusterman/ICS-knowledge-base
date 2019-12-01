@@ -1,0 +1,67 @@
+concept_film_akuly_malibu_2009
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Акулы Малибу]
+(* <- lang_ru;;    *);
+[Malibu Shark Attack]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Акулы Малибу)](*<-lang_ru;;*);
+[Description (Malibu Shark Attack)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/akuly-malibu-2009_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/akuly-malibu-2009_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Акулы Малибу)](*<-lang_ru;;*);
+		[Pic. (Malibu Shark Attack)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/akuly-malibu-2009.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_australia;concept_canada;
+
+=> nrel_film_critic_rating : 3;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The Tsunami was just the beginning of the terror See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.07.2009](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.07.2009](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H28M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H28M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_14;;
+
+concept_film_akuly_malibu_2009 =>nrel_keywords: film;;
+
+concept_film_akuly_malibu_2009 <- concept_action;concept_adventure;concept_comedy;concept_drama;concept_horror;concept_sci_fi;concept_thriller;;
+
+concept_film_akuly_malibu_2009 => nrel_main_actor : concept_renee_bowen;concept_remi_broadway;concept_joel_amos_byrnes;concept_warren_christie;;
+concept_film_akuly_malibu_2009 => nrel_producer : concept_david_lister;;

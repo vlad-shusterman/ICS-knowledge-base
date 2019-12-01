@@ -1,0 +1,67 @@
+concept_film_planeta_okean_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Планета-океан]
+(* <- lang_ru;;    *);
+[Planet Ocean]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Планета-океан)](*<-lang_ru;;*);
+[Description (Planet Ocean)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/planeta-okean-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/planeta-okean-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Планета-океан)](*<-lang_ru;;*);
+		[Pic. (Planet Ocean)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/planeta-okean-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_france;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Planet Ocean](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [26.06.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [26.06.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H34M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H34M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_planeta_okean_2012 =>nrel_keywords: film;;
+
+concept_film_planeta_okean_2012 <- concept_documentary;;
+
+concept_film_planeta_okean_2012 => nrel_main_actor : concept_josh_duhamel;;
+concept_film_planeta_okean_2012 => nrel_producer : concept_yann_arthus_bertrand;concept_michael_pitiot;;

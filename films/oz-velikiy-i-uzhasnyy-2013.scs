@@ -1,0 +1,67 @@
+concept_film_oz_velikiy_i_uzhasnyy_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Оз: Великий и Ужасный]
+(* <- lang_ru;;    *);
+[Oz the Great and Powerful]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Оз: Великий и Ужасный)](*<-lang_ru;;*);
+[Description (Oz the Great and Powerful)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/oz-velikiy-i-uzhasnyy-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/oz-velikiy-i-uzhasnyy-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Оз: Великий и Ужасный)](*<-lang_ru;;*);
+		[Pic. (Oz the Great and Powerful)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/oz-velikiy-i-uzhasnyy-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [In Oz, nothing is what it seems See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [07.03.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [07.03.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H10M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H10M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_oz_velikiy_i_uzhasnyy_2013 =>nrel_keywords: film;;
+
+concept_film_oz_velikiy_i_uzhasnyy_2013 <- concept_adventure;concept_family;concept_fantasy;;
+
+concept_film_oz_velikiy_i_uzhasnyy_2013 => nrel_main_actor : concept_james_franco;concept_michelle_williams;concept_rachel_weisz;concept_mila_kunis;;
+concept_film_oz_velikiy_i_uzhasnyy_2013 => nrel_producer : concept_sam_raimi;;

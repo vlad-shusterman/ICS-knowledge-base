@@ -1,0 +1,67 @@
+concept_film_otvazhnaya_2007
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Отважная]
+(* <- lang_ru;;    *);
+[The Brave One]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Отважная)](*<-lang_ru;;*);
+[Description (The Brave One)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/otvazhnaya-2007_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/otvazhnaya-2007_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Отважная)](*<-lang_ru;;*);
+		[Pic. (The Brave One)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/otvazhnaya-2007.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [How many wrongs to make it right?](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.09.2007](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.09.2007](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H2M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H2M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_otvazhnaya_2007 =>nrel_keywords: film;;
+
+concept_film_otvazhnaya_2007 <- concept_action;concept_crime;concept_drama;concept_thriller;;
+
+concept_film_otvazhnaya_2007 => nrel_main_actor : concept_jodie_foster;concept_terrence_howard;concept_naveen_andrews;concept_nicky_katt;;
+concept_film_otvazhnaya_2007 => nrel_producer : concept_neil_jordan;;

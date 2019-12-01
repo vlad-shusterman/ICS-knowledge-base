@@ -1,0 +1,67 @@
+concept_film_transformery_3_temnaya_storona_luny_2011
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Трансформеры 3: Тёмная сторона Луны]
+(* <- lang_ru;;    *);
+[Transformers: Dark of the Moon]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Трансформеры 3: Тёмная сторона Луны)](*<-lang_ru;;*);
+[Description (Transformers: Dark of the Moon)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/transformery-3-temnaya-storona-luny-2011_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/transformery-3-temnaya-storona-luny-2011_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Трансформеры 3: Тёмная сторона Луны)](*<-lang_ru;;*);
+		[Pic. (Transformers: Dark of the Moon)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/transformery-3-temnaya-storona-luny-2011.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Earth goes dark See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [28.06.2011](*<-lang_ru;;*);;
+    => nrel_main_idtf : [28.06.2011](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H34M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H34M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_transformery_3_temnaya_storona_luny_2011 =>nrel_keywords: film;;
+
+concept_film_transformery_3_temnaya_storona_luny_2011 <- concept_action;concept_adventure;concept_sci_fi;;
+
+concept_film_transformery_3_temnaya_storona_luny_2011 => nrel_main_actor : concept_shia_labeouf;concept_rosie_huntington_whiteley;concept_tyrese_gibson;concept_josh_duhamel;;
+concept_film_transformery_3_temnaya_storona_luny_2011 => nrel_producer : concept_michael_bay;;
