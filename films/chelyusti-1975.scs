@@ -1,0 +1,67 @@
+concept_film_chelyusti_1975
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Челюсти]
+(* <- lang_ru;;    *);
+[Jaws]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Челюсти)](*<-lang_ru;;*);
+[Description (Jaws)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/chelyusti-1975_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/chelyusti-1975_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Челюсти)](*<-lang_ru;;*);
+		[Pic. (Jaws)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/chelyusti-1975.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [On the Fourth of July, Fishing Season will open...on you. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [20.06.1975](*<-lang_ru;;*);;
+    => nrel_main_idtf : [20.06.1975](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H4M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H4M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_chelyusti_1975 =>nrel_keywords: film;;
+
+concept_film_chelyusti_1975 <- concept_adventure;concept_drama;concept_thriller;;
+
+concept_film_chelyusti_1975 => nrel_main_actor : concept_roy_scheider;concept_robert_shaw;concept_richard_dreyfuss;concept_lorraine_gary;;
+concept_film_chelyusti_1975 => nrel_producer : concept_steven_spielberg;;

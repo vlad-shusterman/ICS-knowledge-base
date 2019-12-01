@@ -1,0 +1,67 @@
+concept_film_moya_levaya_noga_1989
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Моя левая нога]
+(* <- lang_ru;;    *);
+[My Left Foot: The Story of Christy Brown]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Моя левая нога)](*<-lang_ru;;*);
+[Description (My Left Foot: The Story of Christy Brown)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/moya-levaya-noga-1989_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/moya-levaya-noga-1989_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Моя левая нога)](*<-lang_ru;;*);
+		[Pic. (My Left Foot: The Story of Christy Brown)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/moya-levaya-noga-1989.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_ireland;concept_uk;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A film about life, laughter, and the occasional miracle.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [07.04.1989](*<-lang_ru;;*);;
+    => nrel_main_idtf : [07.04.1989](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H43M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H43M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_moya_levaya_noga_1989 =>nrel_keywords: film;;
+
+concept_film_moya_levaya_noga_1989 <- concept_biography;concept_drama;;
+
+concept_film_moya_levaya_noga_1989 => nrel_main_actor : concept_daniel_day_lewis;concept_brenda_fricker;concept_alison_whelan;concept_kirsten_sheridan;;
+concept_film_moya_levaya_noga_1989 => nrel_producer : concept_jim_sheridan;;

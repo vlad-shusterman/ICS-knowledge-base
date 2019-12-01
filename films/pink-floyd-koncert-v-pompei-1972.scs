@@ -1,0 +1,67 @@
+concept_film_pink_floyd_koncert_v_pompei_1972
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Пинк Флойд: Концерт в Помпеи]
+(* <- lang_ru;;    *);
+[Pink Floyd: Live at Pompeii / Echoes: Pink Floyd]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Пинк Флойд: Концерт в Помпеи)](*<-lang_ru;;*);
+[Description (Pink Floyd: Live at Pompeii / Echoes: Pink Floyd)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/pink-floyd-koncert-v-pompei-1972_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/pink-floyd-koncert-v-pompei-1972_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Пинк Флойд: Концерт в Помпеи)](*<-lang_ru;;*);
+		[Pic. (Pink Floyd: Live at Pompeii / Echoes: Pink Floyd)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/pink-floyd-koncert-v-pompei-1972.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_belgium;concept_west_germany;concept_france;
+
+=> nrel_film_critic_rating : 9;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [More Than a Movie! An Explosive Cinema Concert! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.10.1972](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.10.1972](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H32M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H32M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_G;;
+
+concept_film_pink_floyd_koncert_v_pompei_1972 =>nrel_keywords: film;;
+
+concept_film_pink_floyd_koncert_v_pompei_1972 <- concept_documentary;concept_music;;
+
+concept_film_pink_floyd_koncert_v_pompei_1972 => nrel_main_actor : concept_david_gilmour;concept_roger_waters;concept_richard_wright;concept_nick_mason;;
+concept_film_pink_floyd_koncert_v_pompei_1972 => nrel_producer : concept_adrian_maben;;

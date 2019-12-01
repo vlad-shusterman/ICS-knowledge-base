@@ -1,0 +1,67 @@
+concept_film_chingiz_han_1965
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Чингиз Хан]
+(* <- lang_ru;;    *);
+[Genghis Khan]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Чингиз Хан)](*<-lang_ru;;*);
+[Description (Genghis Khan)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/chingiz-han-1965_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/chingiz-han-1965_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Чингиз Хан)](*<-lang_ru;;*);
+		[Pic. (Genghis Khan)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/chingiz-han-1965.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_west_germany;concept_yugoslavia;concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Conqueror Of The World's Mightiest Empire! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.04.1965](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.04.1965](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Approved;;
+
+concept_film_chingiz_han_1965 =>nrel_keywords: film;;
+
+concept_film_chingiz_han_1965 <- concept_adventure;concept_drama;concept_history;concept_war;;
+
+concept_film_chingiz_han_1965 => nrel_main_actor : concept_stephen_boyd;concept_omar_sharif;concept_james_mason;concept_eli_wallach;;
+concept_film_chingiz_han_1965 => nrel_producer : concept_henry_levin;;

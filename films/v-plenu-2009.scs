@@ -1,0 +1,67 @@
+concept_film_v_plenu_2009
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[В плену]
+(* <- lang_ru;;    *);
+[Last Day of Summer]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (В плену)](*<-lang_ru;;*);
+[Description (Last Day of Summer)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/v-plenu-2009_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/v-plenu-2009_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (В плену)](*<-lang_ru;;*);
+		[Pic. (Last Day of Summer)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/v-plenu-2009.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Everybody has a bad day See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [24.10.2009](*<-lang_ru;;*);;
+    => nrel_main_idtf : [24.10.2009](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H25M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H25M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_v_plenu_2009 =>nrel_keywords: film;;
+
+concept_film_v_plenu_2009 <- concept_comedy;concept_drama;;
+
+concept_film_v_plenu_2009 => nrel_main_actor : concept_dj_qualls;concept_nikki_reed;concept_william_sadler;concept_chris_bashinelli;;
+concept_film_v_plenu_2009 => nrel_producer : concept_vlad_yudin;;

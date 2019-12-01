@@ -1,0 +1,67 @@
+concept_film_v_sluchae_ubiystva_nabirayte_m_1954
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[В случае убийства набирайте «М»]
+(* <- lang_ru;;    *);
+[Dial M for Murder]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (В случае убийства набирайте «М»)](*<-lang_ru;;*);
+[Description (Dial M for Murder)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/v-sluchae-ubiystva-nabirayte-m-1954_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/v-sluchae-ubiystva-nabirayte-m-1954_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (В случае убийства набирайте «М»)](*<-lang_ru;;*);
+		[Pic. (Dial M for Murder)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/v-sluchae-ubiystva-nabirayte-m-1954.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Kiss By Kiss...Supreme Suspense Unfurls! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.05.1954](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.05.1954](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H45M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_v_sluchae_ubiystva_nabirayte_m_1954 =>nrel_keywords: film;;
+
+concept_film_v_sluchae_ubiystva_nabirayte_m_1954 <- concept_crime;concept_thriller;;
+
+concept_film_v_sluchae_ubiystva_nabirayte_m_1954 => nrel_main_actor : concept_ray_milland;concept_grace_kelly;concept_robert_cummings;concept_john_williams;;
+concept_film_v_sluchae_ubiystva_nabirayte_m_1954 => nrel_producer : concept_alfred_hitchcock;;

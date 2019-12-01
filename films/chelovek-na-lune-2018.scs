@@ -1,0 +1,67 @@
+concept_film_chelovek_na_lune_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Человек на Луне]
+(* <- lang_ru;;    *);
+[First Man]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Человек на Луне)](*<-lang_ru;;*);
+[Description (First Man)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/chelovek-na-lune-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/chelovek-na-lune-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Человек на Луне)](*<-lang_ru;;*);
+		[Pic. (First Man)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/chelovek-na-lune-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_japan;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [One giant leap into the unknown. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [10.10.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [10.10.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H21M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H21M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_chelovek_na_lune_2018 =>nrel_keywords: film;;
+
+concept_film_chelovek_na_lune_2018 <- concept_biography;concept_drama;concept_history;;
+
+concept_film_chelovek_na_lune_2018 => nrel_main_actor : concept_ryan_gosling;concept_claire_foy;concept_jason_clarke;concept_kyle_chandler;;
+concept_film_chelovek_na_lune_2018 => nrel_producer : concept_damien_chazelle;;

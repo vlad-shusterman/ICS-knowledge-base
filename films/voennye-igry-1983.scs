@@ -1,0 +1,67 @@
+concept_film_voennye_igry_1983
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Военные игры]
+(* <- lang_ru;;    *);
+[WarGames]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Военные игры)](*<-lang_ru;;*);
+[Description (WarGames)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/voennye-igry-1983_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/voennye-igry-1983_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Военные игры)](*<-lang_ru;;*);
+		[Pic. (WarGames)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/voennye-igry-1983.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : ["Global Thermonuclear War." You may think it's one hell of a game. You couldn't be more right. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [03.06.1983](*<-lang_ru;;*);;
+    => nrel_main_idtf : [03.06.1983](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H54M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H54M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_voennye_igry_1983 =>nrel_keywords: film;;
+
+concept_film_voennye_igry_1983 <- concept_sci_fi;concept_thriller;;
+
+concept_film_voennye_igry_1983 => nrel_main_actor : concept_matthew_broderick;concept_ally_sheedy;concept_john_wood;concept_dabney_coleman;;
+concept_film_voennye_igry_1983 => nrel_producer : concept_john_badham;;

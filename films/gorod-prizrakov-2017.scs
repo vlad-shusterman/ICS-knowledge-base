@@ -1,0 +1,67 @@
+concept_film_gorod_prizrakov_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Город призраков]
+(* <- lang_ru;;    *);
+[City of Ghosts]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Город призраков)](*<-lang_ru;;*);
+[Description (City of Ghosts)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/gorod-prizrakov-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/gorod-prizrakov-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Город призраков)](*<-lang_ru;;*);
+		[Pic. (City of Ghosts)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/gorod-prizrakov-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Our words are stronger than their weapons](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.07.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.07.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H32M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H32M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_gorod_prizrakov_2017 =>nrel_keywords: film;;
+
+concept_film_gorod_prizrakov_2017 <- concept_documentary;concept_war;;
+
+concept_film_gorod_prizrakov_2017 => nrel_main_actor : concept_abdelaziz_alhamza;concept_mohamad_almusari;concept_hamoud_almousa;concept_abu_bakr_al_baghdadi;;
+concept_film_gorod_prizrakov_2017 => nrel_producer : concept_matthew_heineman;;

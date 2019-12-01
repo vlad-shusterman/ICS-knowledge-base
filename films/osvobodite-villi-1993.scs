@@ -1,0 +1,67 @@
+concept_film_osvobodite_villi_1993
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Освободите Вилли]
+(* <- lang_ru;;    *);
+[Free Willy]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Освободите Вилли)](*<-lang_ru;;*);
+[Description (Free Willy)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/osvobodite-villi-1993_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/osvobodite-villi-1993_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Освободите Вилли)](*<-lang_ru;;*);
+		[Pic. (Free Willy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/osvobodite-villi-1993.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_france;concept_mexico;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [How far would you go for a friend? See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [16.07.1993](*<-lang_ru;;*);;
+    => nrel_main_idtf : [16.07.1993](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H52M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H52M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_osvobodite_villi_1993 =>nrel_keywords: film;;
+
+concept_film_osvobodite_villi_1993 <- concept_adventure;concept_drama;concept_family;;
+
+concept_film_osvobodite_villi_1993 => nrel_main_actor : concept_jason_james_richter;concept_lori_petty;concept_michael_madsen;concept_jayne_atkinson;;
+concept_film_osvobodite_villi_1993 => nrel_producer : concept_simon_wincer;;

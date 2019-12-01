@@ -1,0 +1,67 @@
+concept_film_dorian_grey_dyavolskiy_portret_2004
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Дориан Грей. Дьявольский портрет]
+(* <- lang_ru;;    *);
+[Dorian]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Дориан Грей. Дьявольский портрет)](*<-lang_ru;;*);
+[Description (Dorian)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dorian-grey-dyavolskiy-portret-2004_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dorian-grey-dyavolskiy-portret-2004_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Дориан Грей. Дьявольский портрет)](*<-lang_ru;;*);
+		[Pic. (Dorian)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dorian-grey-dyavolskiy-portret-2004.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_canada;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Beauty is only skin deep.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [23.04.2003](*<-lang_ru;;*);;
+    => nrel_main_idtf : [23.04.2003](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H29M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H29M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_dorian_grey_dyavolskiy_portret_2004 =>nrel_keywords: film;;
+
+concept_film_dorian_grey_dyavolskiy_portret_2004 <- concept_horror;concept_thriller;;
+
+concept_film_dorian_grey_dyavolskiy_portret_2004 => nrel_main_actor : concept_malcolm_mcdowell;concept_ethan_erickson;concept_victoria_sanchez;concept_ron_lea;;
+concept_film_dorian_grey_dyavolskiy_portret_2004 => nrel_producer : concept_allan_a._goldstein;;

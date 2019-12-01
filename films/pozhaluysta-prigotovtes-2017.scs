@@ -1,0 +1,67 @@
+concept_film_pozhaluysta_prigotovtes_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Пожалуйста, успокойся / Пожалуйста, приготовьтесь]
+(* <- lang_ru;;    *);
+[Please Stand By]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Пожалуйста, успокойся / Пожалуйста, приготовьтесь)](*<-lang_ru;;*);
+[Description (Please Stand By)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/pozhaluysta-prigotovtes-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/pozhaluysta-prigotovtes-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Пожалуйста, успокойся / Пожалуйста, приготовьтесь)](*<-lang_ru;;*);
+		[Pic. (Please Stand By)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/pozhaluysta-prigotovtes-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [You can't blend in when you were born to stand out. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [26.01.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [26.01.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H33M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H33M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_pozhaluysta_prigotovtes_2017 =>nrel_keywords: film;;
+
+concept_film_pozhaluysta_prigotovtes_2017 <- concept_comedy;concept_drama;;
+
+concept_film_pozhaluysta_prigotovtes_2017 => nrel_main_actor : concept_dakota_fanning;concept_alice_eve;concept_toni_collette;concept_lexi_aaron;;
+concept_film_pozhaluysta_prigotovtes_2017 => nrel_producer : concept_ben_lewin;;

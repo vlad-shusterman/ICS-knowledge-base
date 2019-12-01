@@ -1,0 +1,67 @@
+concept_film_gonzo_strah_i_nenavist_hantera_s_tompsona_2008
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Гонзо: Страх и ненависть Хантера С. Томпсона]
+(* <- lang_ru;;    *);
+[Gonzo: The Life and Work of Dr. Hunter S. Thompson]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Гонзо: Страх и ненависть Хантера С. Томпсона)](*<-lang_ru;;*);
+[Description (Gonzo: The Life and Work of Dr. Hunter S. Thompson)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/gonzo-strah-i-nenavist-hantera-s-tompsona-2008_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/gonzo-strah-i-nenavist-hantera-s-tompsona-2008_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гонзо: Страх и ненависть Хантера С. Томпсона)](*<-lang_ru;;*);
+		[Pic. (Gonzo: The Life and Work of Dr. Hunter S. Thompson)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/gonzo-strah-i-nenavist-hantera-s-tompsona-2008.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Gonzo: The Life and Work of Dr. Hunter S. Thompson](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [18.07.2008](*<-lang_ru;;*);;
+    => nrel_main_idtf : [18.07.2008](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_gonzo_strah_i_nenavist_hantera_s_tompsona_2008 =>nrel_keywords: film;;
+
+concept_film_gonzo_strah_i_nenavist_hantera_s_tompsona_2008 <- concept_documentary;concept_biography;concept_music;;
+
+concept_film_gonzo_strah_i_nenavist_hantera_s_tompsona_2008 => nrel_main_actor : concept_hunter_s._thompson;concept_johnny_depp;concept_joe_cairo;concept_david_carlo;;
+concept_film_gonzo_strah_i_nenavist_hantera_s_tompsona_2008 => nrel_producer : concept_alex_gibney;;

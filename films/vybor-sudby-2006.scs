@@ -1,0 +1,67 @@
+concept_film_vybor_sudby_2006
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Выбор судьбы]
+(* <- lang_ru;;    *);
+[Tenacious D in The Pick of Destiny]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Выбор судьбы)](*<-lang_ru;;*);
+[Description (Tenacious D in The Pick of Destiny)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vybor-sudby-2006_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vybor-sudby-2006_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Выбор судьбы)](*<-lang_ru;;*);
+		[Pic. (Tenacious D in The Pick of Destiny)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vybor-sudby-2006.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_germany;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [An epic quest. A magical guitar pick. A chance to put the D in Destiny. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [22.11.2006](*<-lang_ru;;*);;
+    => nrel_main_idtf : [22.11.2006](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H33M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H33M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_vybor_sudby_2006 =>nrel_keywords: film;;
+
+concept_film_vybor_sudby_2006 <- concept_adventure;concept_comedy;concept_music;concept_musical;;
+
+concept_film_vybor_sudby_2006 => nrel_main_actor : concept_jack_black;concept_kyle_gass;concept_jr_reed;concept_ronnie_james_dio;;
+concept_film_vybor_sudby_2006 => nrel_producer : concept_liam_lynch;;

@@ -1,0 +1,67 @@
+concept_film_idealnyy_dom_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Идеальный дом]
+(* <- lang_ru;;    *);
+[Ideal Home]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Идеальный дом)](*<-lang_ru;;*);
+[Description (Ideal Home)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/idealnyy-dom-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/idealnyy-dom-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Идеальный дом)](*<-lang_ru;;*);
+		[Pic. (Ideal Home)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/idealnyy-dom-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [There's no recipe for a perfect family. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [06.07.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [06.07.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H31M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H31M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_idealnyy_dom_2018 =>nrel_keywords: film;;
+
+concept_film_idealnyy_dom_2018 <- concept_comedy;concept_drama;;
+
+concept_film_idealnyy_dom_2018 => nrel_main_actor : concept_steve_coogan;concept_paul_rudd;concept_jesse_luken;concept_evan_bittencourt;;
+concept_film_idealnyy_dom_2018 => nrel_producer : concept_andrew_fleming;;

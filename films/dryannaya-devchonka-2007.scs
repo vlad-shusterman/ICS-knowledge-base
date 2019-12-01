@@ -1,0 +1,67 @@
+concept_film_dryannaya_devchonka_2007
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Дрянная девчонка]
+(* <- lang_ru;;    *);
+[My Sassy Girl]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Дрянная девчонка)](*<-lang_ru;;*);
+[Description (My Sassy Girl)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dryannaya-devchonka-2007_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dryannaya-devchonka-2007_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Дрянная девчонка)](*<-lang_ru;;*);
+		[Pic. (My Sassy Girl)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dryannaya-devchonka-2007.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [She's Beautiful, Smart, Funny And Totally Crazy. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [26.06.2008](*<-lang_ru;;*);;
+    => nrel_main_idtf : [26.06.2008](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H32M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H32M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_dryannaya_devchonka_2007 =>nrel_keywords: film;;
+
+concept_film_dryannaya_devchonka_2007 <- concept_comedy;concept_drama;concept_romance;;
+
+concept_film_dryannaya_devchonka_2007 => nrel_main_actor : concept_elisha_cuthbert;concept_jesse_bradford;concept_austin_basis;concept_chris_sarandon;;
+concept_film_dryannaya_devchonka_2007 => nrel_producer : concept_yann_samuell;;

@@ -1,0 +1,67 @@
+concept_film_zavorozhennyy_1945
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Завороженный]
+(* <- lang_ru;;    *);
+[Spellbound]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Завороженный)](*<-lang_ru;;*);
+[Description (Spellbound)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zavorozhennyy-1945_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zavorozhennyy-1945_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Завороженный)](*<-lang_ru;;*);
+		[Pic. (Spellbound)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zavorozhennyy-1945.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Strange . . . Strange . . . Their Irresistible Love! Dark . . . Dark . . . Their Inescapable Fears ! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [28.12.1945](*<-lang_ru;;*);;
+    => nrel_main_idtf : [28.12.1945](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H51M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H51M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Approved;;
+
+concept_film_zavorozhennyy_1945 =>nrel_keywords: film;;
+
+concept_film_zavorozhennyy_1945 <- concept_film_noir;concept_mystery;concept_romance;concept_thriller;;
+
+concept_film_zavorozhennyy_1945 => nrel_main_actor : concept_ingrid_bergman;concept_gregory_peck;concept_michael_chekhov;concept_leo_g._carroll;;
+concept_film_zavorozhennyy_1945 => nrel_producer : concept_alfred_hitchcock;;

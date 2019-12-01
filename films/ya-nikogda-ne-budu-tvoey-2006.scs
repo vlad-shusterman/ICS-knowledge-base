@@ -1,0 +1,67 @@
+concept_film_ya_nikogda_ne_budu_tvoey_2006
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Я никогда не буду твоей]
+(* <- lang_ru;;    *);
+[I Could Never Be Your Woman]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Я никогда не буду твоей)](*<-lang_ru;;*);
+[Description (I Could Never Be Your Woman)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ya-nikogda-ne-budu-tvoey-2006_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ya-nikogda-ne-budu-tvoey-2006_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Я никогда не буду твоей)](*<-lang_ru;;*);
+		[Pic. (I Could Never Be Your Woman)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ya-nikogda-ne-budu-tvoey-2006.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Find Yourself. In Love.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [11.05.2007](*<-lang_ru;;*);;
+    => nrel_main_idtf : [11.05.2007](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H37M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H37M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_ya_nikogda_ne_budu_tvoey_2006 =>nrel_keywords: film;;
+
+concept_film_ya_nikogda_ne_budu_tvoey_2006 <- concept_comedy;concept_drama;concept_romance;;
+
+concept_film_ya_nikogda_ne_budu_tvoey_2006 => nrel_main_actor : concept_michelle_pfeiffer;concept_paul_rudd;concept_saoirse_ronan;concept_tracey_ullman;;
+concept_film_ya_nikogda_ne_budu_tvoey_2006 => nrel_producer : concept_amy_heckerling;;

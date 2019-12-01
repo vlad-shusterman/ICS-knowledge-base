@@ -1,0 +1,67 @@
+concept_film_vlastelin_legend_2003
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Властелин легенд]
+(* <- lang_ru;;    *);
+[DreamKeeper]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Властелин легенд)](*<-lang_ru;;*);
+[Description (DreamKeeper)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vlastelin-legend-2003_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vlastelin-legend-2003_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Властелин легенд)](*<-lang_ru;;*);
+		[Pic. (DreamKeeper)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vlastelin-legend-2003.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_canada;concept_germany;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A grandfather who believes in tradition. A teenager who believes in today.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [28.12.2003](*<-lang_ru;;*);;
+    => nrel_main_idtf : [28.12.2003](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H54M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H54M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_vlastelin_legend_2003 =>nrel_keywords: film;;
+
+concept_film_vlastelin_legend_2003 <- concept_drama;concept_fantasy;;
+
+concept_film_vlastelin_legend_2003 => nrel_main_actor : concept_august_schellenberg;concept_eddie_spears;concept_gary_farmer;concept_john_trudell;;
+concept_film_vlastelin_legend_2003 => nrel_producer : concept_steve_barron;;

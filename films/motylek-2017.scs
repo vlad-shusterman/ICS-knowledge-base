@@ -1,0 +1,67 @@
+concept_film_motylek_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Мотылек]
+(* <- lang_ru;;    *);
+[Papillon]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Мотылек)](*<-lang_ru;;*);
+[Description (Papillon)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/motylek-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/motylek-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Мотылек)](*<-lang_ru;;*);
+		[Pic. (Papillon)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/motylek-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_czech_republic;concept_spain;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The Greatest Escape Adventure Ever Told See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [27.06.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [27.06.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H13M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H13M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_motylek_2017 =>nrel_keywords: film;;
+
+concept_film_motylek_2017 <- concept_adventure;concept_biography;concept_crime;concept_drama;;
+
+concept_film_motylek_2017 => nrel_main_actor : concept_charlie_hunnam;concept_damijan_oklopdzic;concept_christopher_fairbank;concept_jason_ryan;;
+concept_film_motylek_2017 => nrel_producer : concept_michael_noer;;

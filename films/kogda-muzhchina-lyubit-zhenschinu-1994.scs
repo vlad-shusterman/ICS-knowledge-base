@@ -1,0 +1,67 @@
+concept_film_kogda_muzhchina_lyubit_zhenschinu_1994
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Когда мужчина любит женщину]
+(* <- lang_ru;;    *);
+[When a Man Loves a Woman]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Когда мужчина любит женщину)](*<-lang_ru;;*);
+[Description (When a Man Loves a Woman)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/kogda-muzhchina-lyubit-zhenschinu-1994_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/kogda-muzhchina-lyubit-zhenschinu-1994_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Когда мужчина любит женщину)](*<-lang_ru;;*);
+		[Pic. (When a Man Loves a Woman)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/kogda-muzhchina-lyubit-zhenschinu-1994.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Through the good times. Through the bad times. When a Man Loves a Woman it's for all times. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [13.05.1994](*<-lang_ru;;*);;
+    => nrel_main_idtf : [13.05.1994](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H6M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H6M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_kogda_muzhchina_lyubit_zhenschinu_1994 =>nrel_keywords: film;;
+
+concept_film_kogda_muzhchina_lyubit_zhenschinu_1994 <- concept_drama;concept_romance;;
+
+concept_film_kogda_muzhchina_lyubit_zhenschinu_1994 => nrel_main_actor : concept_meg_ryan;concept_andy_garcia;concept_ellen_burstyn;concept_tina_majorino;;
+concept_film_kogda_muzhchina_lyubit_zhenschinu_1994 => nrel_producer : concept_luis_mandoki;;

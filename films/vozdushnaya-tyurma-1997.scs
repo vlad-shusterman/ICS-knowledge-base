@@ -1,0 +1,67 @@
+concept_film_vozdushnaya_tyurma_1997
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Воздушная тюрьма]
+(* <- lang_ru;;    *);
+[Con Air]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Воздушная тюрьма)](*<-lang_ru;;*);
+[Description (Con Air)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vozdushnaya-tyurma-1997_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vozdushnaya-tyurma-1997_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Воздушная тюрьма)](*<-lang_ru;;*);
+		[Pic. (Con Air)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vozdushnaya-tyurma-1997.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Welcome to Con Air. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [05.06.1997](*<-lang_ru;;*);;
+    => nrel_main_idtf : [05.06.1997](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H55M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H55M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_vozdushnaya_tyurma_1997 =>nrel_keywords: film;;
+
+concept_film_vozdushnaya_tyurma_1997 <- concept_action;concept_crime;concept_thriller;;
+
+concept_film_vozdushnaya_tyurma_1997 => nrel_main_actor : concept_nicolas_cage;concept_john_cusack;concept_john_malkovich;concept_colm_meaney;;
+concept_film_vozdushnaya_tyurma_1997 => nrel_producer : concept_simon_west;;

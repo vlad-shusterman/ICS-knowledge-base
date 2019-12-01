@@ -1,0 +1,67 @@
+concept_film_dzheyn_eyr_1996
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Джейн Эйр]
+(* <- lang_ru;;    *);
+[Jane Eyre]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Джейн Эйр)](*<-lang_ru;;*);
+[Description (Jane Eyre)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dzheyn-eyr-1996_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dzheyn-eyr-1996_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Джейн Эйр)](*<-lang_ru;;*);
+		[Pic. (Jane Eyre)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dzheyn-eyr-1996.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_france;concept_italy;concept_uk;concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The passionate tale of forbidden secrets!](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [20.01.1996](*<-lang_ru;;*);;
+    => nrel_main_idtf : [20.01.1996](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H52M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H52M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_dzheyn_eyr_1996 =>nrel_keywords: film;;
+
+concept_film_dzheyn_eyr_1996 <- concept_drama;concept_romance;;
+
+concept_film_dzheyn_eyr_1996 => nrel_main_actor : concept_william_hurt;concept_charlotte_gainsbourg;concept_anna_paquin;concept_nic_knight;;
+concept_film_dzheyn_eyr_1996 => nrel_producer : concept_franco_zeffirelli;;

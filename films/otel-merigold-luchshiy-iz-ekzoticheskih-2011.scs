@@ -1,0 +1,67 @@
+concept_film_otel_merigold_luchshiy_iz_ekzoticheskih_2011
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Отель «Мэриголд»: Лучший из экзотических]
+(* <- lang_ru;;    *);
+[The Best Exotic Marigold Hotel]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Отель «Мэриголд»: Лучший из экзотических)](*<-lang_ru;;*);
+[Description (The Best Exotic Marigold Hotel)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/otel-merigold-luchshiy-iz-ekzoticheskih-2011_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/otel-merigold-luchshiy-iz-ekzoticheskih-2011_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Отель «Мэриголд»: Лучший из экзотических)](*<-lang_ru;;*);
+		[Pic. (The Best Exotic Marigold Hotel)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/otel-merigold-luchshiy-iz-ekzoticheskih-2011.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_usa;concept_united_arab_emirates;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [For seven strangers, this is just the beginning of an exotic adventure.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [24.02.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [24.02.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H4M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H4M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_otel_merigold_luchshiy_iz_ekzoticheskih_2011 =>nrel_keywords: film;;
+
+concept_film_otel_merigold_luchshiy_iz_ekzoticheskih_2011 <- concept_comedy;concept_drama;concept_romance;;
+
+concept_film_otel_merigold_luchshiy_iz_ekzoticheskih_2011 => nrel_main_actor : concept_judi_dench;concept_bill_nighy;concept_maggie_smith;concept_tom_wilkinson;;
+concept_film_otel_merigold_luchshiy_iz_ekzoticheskih_2011 => nrel_producer : concept_john_madden;;

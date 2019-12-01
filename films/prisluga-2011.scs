@@ -1,0 +1,67 @@
+concept_film_prisluga_2011
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Прислуга]
+(* <- lang_ru;;    *);
+[The Help]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Прислуга)](*<-lang_ru;;*);
+[Description (The Help)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/prisluga-2011_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/prisluga-2011_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Прислуга)](*<-lang_ru;;*);
+		[Pic. (The Help)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/prisluga-2011.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_india;concept_united_arab_emirates;concept_uk;concept_france;concept_canada;concept_germany;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Change begins with a whisper.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [10.08.2011](*<-lang_ru;;*);;
+    => nrel_main_idtf : [10.08.2011](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H26M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H26M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_prisluga_2011 =>nrel_keywords: film;;
+
+concept_film_prisluga_2011 <- concept_drama;;
+
+concept_film_prisluga_2011 => nrel_main_actor : concept_emma_stone;concept_viola_davis;concept_octavia_spencer;concept_bryce_dallas_howard;;
+concept_film_prisluga_2011 => nrel_producer : concept_tate_taylor;;

@@ -1,0 +1,67 @@
+concept_film_tainstvennyy_les_2004
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Таинственный лес]
+(* <- lang_ru;;    *);
+[The Village]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Таинственный лес)](*<-lang_ru;;*);
+[Description (The Village)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/tainstvennyy-les-2004_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/tainstvennyy-les-2004_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Таинственный лес)](*<-lang_ru;;*);
+		[Pic. (The Village)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/tainstvennyy-les-2004.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [I: Let the bad color not be seen. It attracts them. II: Never enter the woods. That is where they wait. III: Heed the warning bell, for they are coming. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [30.07.2004](*<-lang_ru;;*);;
+    => nrel_main_idtf : [30.07.2004](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H48M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H48M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_tainstvennyy_les_2004 =>nrel_keywords: film;;
+
+concept_film_tainstvennyy_les_2004 <- concept_drama;concept_mystery;concept_thriller;;
+
+concept_film_tainstvennyy_les_2004 => nrel_main_actor : concept_sigourney_weaver;concept_william_hurt;concept_joaquin_phoenix;concept_bryce_dallas_howard;;
+concept_film_tainstvennyy_les_2004 => nrel_producer : concept_m._night_shyamalan;;

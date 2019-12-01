@@ -1,0 +1,67 @@
+concept_film_krik_2_1997
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Крик 2]
+(* <- lang_ru;;    *);
+[Scream 2]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Крик 2)](*<-lang_ru;;*);
+[Description (Scream 2)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/krik-2-1997_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/krik-2-1997_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Крик 2)](*<-lang_ru;;*);
+		[Pic. (Scream 2)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/krik-2-1997.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Someone has taken their love of sequels one step too far! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.12.1997](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.12.1997](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_krik_2_1997 =>nrel_keywords: film;;
+
+concept_film_krik_2_1997 <- concept_horror;concept_mystery;;
+
+concept_film_krik_2_1997 => nrel_main_actor : concept_neve_campbell;concept_courteney_cox;concept_david_arquette;concept_jada_pinkett_smith;;
+concept_film_krik_2_1997 => nrel_producer : concept_wes_craven;;

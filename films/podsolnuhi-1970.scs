@@ -1,0 +1,67 @@
+concept_film_podsolnuhi_1970
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Подсолнухи]
+(* <- lang_ru;;    *);
+[I girasoli]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Подсолнухи)](*<-lang_ru;;*);
+[Description (I girasoli)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/podsolnuhi-1970_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/podsolnuhi-1970_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Подсолнухи)](*<-lang_ru;;*);
+		[Pic. (I girasoli)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/podsolnuhi-1970.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_italy;concept_france;concept_soviet_union;concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Filmed in Russia from the Kremlin to the Ukraine. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [14.03.1970](*<-lang_ru;;*);;
+    => nrel_main_idtf : [14.03.1970](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H47M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H47M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_G;;
+
+concept_film_podsolnuhi_1970 =>nrel_keywords: film;;
+
+concept_film_podsolnuhi_1970 <- concept_drama;concept_war;;
+
+concept_film_podsolnuhi_1970 => nrel_main_actor : concept_sophia_loren;concept_marcello_mastroianni;concept_lyudmila_saveleva;concept_galina_andreeva;;
+concept_film_podsolnuhi_1970 => nrel_producer : concept_vittorio_de_sica;;

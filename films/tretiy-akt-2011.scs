@@ -1,0 +1,67 @@
+concept_film_tretiy_akt_2011
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Третий акт]
+(* <- lang_ru;;    *);
+[The Magic of Belle Isle]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Третий акт)](*<-lang_ru;;*);
+[Description (The Magic of Belle Isle)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/tretiy-akt-2011_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/tretiy-akt-2011_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Третий акт)](*<-lang_ru;;*);
+		[Pic. (The Magic of Belle Isle)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/tretiy-akt-2011.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A Re-Coming of Age Story](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [06.07.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [06.07.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H49M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H49M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_tretiy_akt_2011 =>nrel_keywords: film;;
+
+concept_film_tretiy_akt_2011 <- concept_comedy;concept_drama;;
+
+concept_film_tretiy_akt_2011 => nrel_main_actor : concept_morgan_freeman;concept_virginia_madsen;concept_madeline_carroll;concept_emma_fuhrmann;;
+concept_film_tretiy_akt_2011 => nrel_producer : concept_rob_reiner;;

@@ -1,0 +1,67 @@
+concept_film_ip_man_2008
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Ип Ман]
+(* <- lang_ru;;    *);
+[Yip Man]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Ип Ман)](*<-lang_ru;;*);
+[Description (Yip Man)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ip-man-2008_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ip-man-2008_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ип Ман)](*<-lang_ru;;*);
+		[Pic. (Yip Man)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ip-man-2008.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_hong_kong;concept_china;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Mentor of iconic legend Bruce Lee See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.12.2008](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.12.2008](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H46M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H46M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_ip_man_2008 =>nrel_keywords: film;;
+
+concept_film_ip_man_2008 <- concept_action;concept_biography;concept_drama;concept_history;;
+
+concept_film_ip_man_2008 => nrel_main_actor : concept_donnie_yen;concept_simon_yam;concept_siu_wong_fan;concept_ka_tung_lam;;
+concept_film_ip_man_2008 => nrel_producer : concept_wilson_yip;;

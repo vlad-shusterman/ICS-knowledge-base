@@ -1,0 +1,67 @@
+concept_film_ryadovoy_bendzhamin_1980
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Рядовой Бенджамин]
+(* <- lang_ru;;    *);
+[Private Benjamin]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Рядовой Бенджамин)](*<-lang_ru;;*);
+[Description (Private Benjamin)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ryadovoy-bendzhamin-1980_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ryadovoy-bendzhamin-1980_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Рядовой Бенджамин)](*<-lang_ru;;*);
+		[Pic. (Private Benjamin)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ryadovoy-bendzhamin-1980.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The Army was no laughing matter until Judy Benjamin joined it.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [10.10.1980](*<-lang_ru;;*);;
+    => nrel_main_idtf : [10.10.1980](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H49M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H49M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_ryadovoy_bendzhamin_1980 =>nrel_keywords: film;;
+
+concept_film_ryadovoy_bendzhamin_1980 <- concept_comedy;concept_war;;
+
+concept_film_ryadovoy_bendzhamin_1980 => nrel_main_actor : concept_goldie_hawn;concept_eileen_brennan;concept_armand_assante;concept_robert_webber;;
+concept_film_ryadovoy_bendzhamin_1980 => nrel_producer : concept_howard_zieff;;

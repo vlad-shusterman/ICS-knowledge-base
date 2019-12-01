@@ -1,0 +1,67 @@
+concept_film_blondinka_v_zakone_2_krasnoe_beloe_i_blondinka_2003
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Блондинка в законе 2: Красное, белое и блондинка]
+(* <- lang_ru;;    *);
+[Legally Blonde 2: Red, White & Blonde]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Блондинка в законе 2: Красное, белое и блондинка)](*<-lang_ru;;*);
+[Description (Legally Blonde 2: Red, White & Blonde)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/blondinka-v-zakone-2-krasnoe-beloe-i-blondinka-2003_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/blondinka-v-zakone-2-krasnoe-beloe-i-blondinka-2003_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Блондинка в законе 2: Красное, белое и блондинка)](*<-lang_ru;;*);
+		[Pic. (Legally Blonde 2: Red, White & Blonde)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/blondinka-v-zakone-2-krasnoe-beloe-i-blondinka-2003.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Bigger. Bolder. Blonder See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [02.07.2003](*<-lang_ru;;*);;
+    => nrel_main_idtf : [02.07.2003](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H35M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H35M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_blondinka_v_zakone_2_krasnoe_beloe_i_blondinka_2003 =>nrel_keywords: film;;
+
+concept_film_blondinka_v_zakone_2_krasnoe_beloe_i_blondinka_2003 <- concept_comedy;;
+
+concept_film_blondinka_v_zakone_2_krasnoe_beloe_i_blondinka_2003 => nrel_main_actor : concept_reese_witherspoon;concept_sally_field;concept_bob_newhart;concept_regina_king;;
+concept_film_blondinka_v_zakone_2_krasnoe_beloe_i_blondinka_2003 => nrel_producer : concept_charles_herman_wurmfeld;;

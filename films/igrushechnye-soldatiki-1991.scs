@@ -1,0 +1,67 @@
+concept_film_igrushechnye_soldatiki_1991
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Игрушечные солдатики]
+(* <- lang_ru;;    *);
+[Toy Soldiers]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Игрушечные солдатики)](*<-lang_ru;;*);
+[Description (Toy Soldiers)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/igrushechnye-soldatiki-1991_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/igrushechnye-soldatiki-1991_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Игрушечные солдатики)](*<-lang_ru;;*);
+		[Pic. (Toy Soldiers)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/igrushechnye-soldatiki-1991.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Terrorists have taken over Regis Academy...and they're about to receive a lesson they'll never forget. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [26.04.1991](*<-lang_ru;;*);;
+    => nrel_main_idtf : [26.04.1991](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H51M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H51M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_igrushechnye_soldatiki_1991 =>nrel_keywords: film;;
+
+concept_film_igrushechnye_soldatiki_1991 <- concept_action;concept_drama;concept_thriller;;
+
+concept_film_igrushechnye_soldatiki_1991 => nrel_main_actor : concept_sean_astin;concept_wil_wheaton;concept_keith_coogan;concept_andrew_divoff;;
+concept_film_igrushechnye_soldatiki_1991 => nrel_producer : concept_daniel_petrie_jr.;;

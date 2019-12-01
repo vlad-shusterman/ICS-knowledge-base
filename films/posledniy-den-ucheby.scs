@@ -1,0 +1,67 @@
+concept_film_posledniy_den_ucheby
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Последний день учёбы]
+(* <- lang_ru;;    *);
+[Last Day of School]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Последний день учёбы)](*<-lang_ru;;*);
+[Description (Last Day of School)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/posledniy-den-ucheby_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/posledniy-den-ucheby_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Последний день учёбы)](*<-lang_ru;;*);
+		[Pic. (Last Day of School)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/posledniy-den-ucheby.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 3;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Last Day of School](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [01.07.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [01.07.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H34M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H34M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_posledniy_den_ucheby =>nrel_keywords: film;;
+
+concept_film_posledniy_den_ucheby <- concept_comedy;;
+
+concept_film_posledniy_den_ucheby => nrel_main_actor : concept_lloyd_kaufman;concept_rachel_riley;concept_ben_stobber;concept_brace_land;;
+concept_film_posledniy_den_ucheby => nrel_producer : concept_michael_mahal;concept_sonny_mahal;;

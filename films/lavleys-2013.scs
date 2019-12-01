@@ -1,0 +1,67 @@
+concept_film_lavleys_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Лавлэйс]
+(* <- lang_ru;;    *);
+[Lovelace]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Лавлэйс)](*<-lang_ru;;*);
+[Description (Lovelace)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/lavleys-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/lavleys-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Лавлэйс)](*<-lang_ru;;*);
+		[Pic. (Lovelace)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/lavleys-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The truth goes deeper than you think. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [08.08.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [08.08.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H33M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H33M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_lavleys_2013 =>nrel_keywords: film;;
+
+concept_film_lavleys_2013 <- concept_biography;concept_drama;;
+
+concept_film_lavleys_2013 => nrel_main_actor : concept_amanda_seyfried;concept_james_franco;concept_peter_sarsgaard;concept_juno_temple;;
+concept_film_lavleys_2013 => nrel_producer : concept_rob_epstein;concept_jeffrey_friedman;;

@@ -1,0 +1,67 @@
+concept_film_srochnaya_dostavka_2011
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Срочная доставка]
+(* <- lang_ru;;    *);
+[Kwik / Quick]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Срочная доставка)](*<-lang_ru;;*);
+[Description (Kwik / Quick)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/srochnaya-dostavka-2011_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/srochnaya-dostavka-2011_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Срочная доставка)](*<-lang_ru;;*);
+		[Pic. (Kwik / Quick)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/srochnaya-dostavka-2011.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_south_korea;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Kwik / Quick](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [20.07.2011](*<-lang_ru;;*);;
+    => nrel_main_idtf : [20.07.2011](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H55M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H55M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_srochnaya_dostavka_2011 =>nrel_keywords: film;;
+
+concept_film_srochnaya_dostavka_2011 <- concept_action;concept_comedy;concept_crime;concept_thriller;;
+
+concept_film_srochnaya_dostavka_2011 => nrel_main_actor : concept_min_ki_lee;concept_ye_won_kang;concept_in_kwon_kim;concept_chang_seok_ko;;
+concept_film_srochnaya_dostavka_2011 => nrel_producer : concept_beom_gu_cho;;

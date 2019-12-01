@@ -1,0 +1,67 @@
+concept_film_vzdymayuschiysya_ad_1974
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Вздымающийся ад]
+(* <- lang_ru;;    *);
+[The Towering Inferno]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Вздымающийся ад)](*<-lang_ru;;*);
+[Description (The Towering Inferno)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vzdymayuschiysya-ad-1974_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vzdymayuschiysya-ad-1974_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Вздымающийся ад)](*<-lang_ru;;*);
+		[Pic. (The Towering Inferno)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vzdymayuschiysya-ad-1974.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : ["The Towering Inferno" Is Not Just The Story Of The World's Tallest Building In Flames, It's The Story Of People... See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [01.01.1975](*<-lang_ru;;*);;
+    => nrel_main_idtf : [01.01.1975](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H45M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_vzdymayuschiysya_ad_1974 =>nrel_keywords: film;;
+
+concept_film_vzdymayuschiysya_ad_1974 <- concept_action;concept_drama;concept_thriller;;
+
+concept_film_vzdymayuschiysya_ad_1974 => nrel_main_actor : concept_paul_newman;concept_steve_mcqueen;concept_william_holden;concept_faye_dunaway;;
+concept_film_vzdymayuschiysya_ad_1974 => nrel_producer : concept_john_guillermin;;

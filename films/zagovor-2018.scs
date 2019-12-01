@@ -1,0 +1,67 @@
+concept_film_zagovor_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Заговор]
+(* <- lang_ru;;    *);
+[Raazi]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Заговор)](*<-lang_ru;;*);
+[Description (Raazi)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zagovor-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zagovor-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Заговор)](*<-lang_ru;;*);
+		[Pic. (Raazi)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zagovor-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_india;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [An incredible true story](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [10.05.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [10.05.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H18M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H18M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_zagovor_2018 =>nrel_keywords: film;;
+
+concept_film_zagovor_2018 <- concept_action;concept_drama;concept_thriller;;
+
+concept_film_zagovor_2018 => nrel_main_actor : concept_alia_bhatt;concept_vicky_kaushal;concept_rajit_kapoor;concept_shishir_sharma;;
+concept_film_zagovor_2018 => nrel_producer : concept_meghna_gulzar;;

@@ -1,0 +1,67 @@
+concept_film_sluzhanka_2010
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Служанка]
+(* <- lang_ru;;    *);
+[Hanyo / The Housemaid]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Служанка)](*<-lang_ru;;*);
+[Description (Hanyo / The Housemaid)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/sluzhanka-2010_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/sluzhanka-2010_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Служанка)](*<-lang_ru;;*);
+		[Pic. (Hanyo / The Housemaid)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/sluzhanka-2010.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_south_korea;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [When opportunity knocks, answer at your own risk. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [13.05.2010](*<-lang_ru;;*);;
+    => nrel_main_idtf : [13.05.2010](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H47M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H47M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_sluzhanka_2010 =>nrel_keywords: film;;
+
+concept_film_sluzhanka_2010 <- concept_drama;concept_thriller;;
+
+concept_film_sluzhanka_2010 => nrel_main_actor : concept_do_yeon_jeon;concept_jung_jae_lee;concept_yuh_jung_youn;concept_woo_seo;;
+concept_film_sluzhanka_2010 => nrel_producer : concept_sang_soo_im;;

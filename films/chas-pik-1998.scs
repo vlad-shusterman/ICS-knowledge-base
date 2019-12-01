@@ -1,0 +1,67 @@
+concept_film_chas_pik_1998
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Час пик]
+(* <- lang_ru;;    *);
+[Rush Hour]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Час пик)](*<-lang_ru;;*);
+[Description (Rush Hour)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/chas-pik-1998_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/chas-pik-1998_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Час пик)](*<-lang_ru;;*);
+		[Pic. (Rush Hour)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/chas-pik-1998.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The fastest hands in the East versus the biggest mouth in the West. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [18.09.1998](*<-lang_ru;;*);;
+    => nrel_main_idtf : [18.09.1998](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H38M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H38M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_chas_pik_1998 =>nrel_keywords: film;;
+
+concept_film_chas_pik_1998 <- concept_action;concept_comedy;concept_crime;concept_thriller;;
+
+concept_film_chas_pik_1998 => nrel_main_actor : concept_jackie_chan;concept_chris_tucker;concept_ken_leung;concept_tom_wilkinson;;
+concept_film_chas_pik_1998 => nrel_producer : concept_brett_ratner;;

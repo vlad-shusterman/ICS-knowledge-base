@@ -1,0 +1,67 @@
+concept_film_s
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Сумасшедшее сердце]
+(* <- lang_ru;;    *);
+[Dil To Pagal Hai]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Сумасшедшее сердце)](*<-lang_ru;;*);
+[Description (Dil To Pagal Hai)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/s_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/s_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Сумасшедшее сердце)](*<-lang_ru;;*);
+		[Pic. (Dil To Pagal Hai)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/s.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_india;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Someone..... Somewhere..... is made for you. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [30.10.1997](*<-lang_ru;;*);;
+    => nrel_main_idtf : [30.10.1997](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H59M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H59M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_s =>nrel_keywords: film;;
+
+concept_film_s <- concept_comedy;concept_drama;concept_musical;concept_romance;;
+
+concept_film_s => nrel_main_actor : concept_shah_rukh_khan;concept_madhuri_dixit;concept_karisma_kapoor;concept_akshay_kumar;;
+concept_film_s => nrel_producer : concept_yash_chopra;;

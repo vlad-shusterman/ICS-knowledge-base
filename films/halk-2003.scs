@@ -1,0 +1,67 @@
+concept_film_halk_2003
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Халк]
+(* <- lang_ru;;    *);
+[Hulk]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Халк)](*<-lang_ru;;*);
+[Description (Hulk)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/halk-2003_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/halk-2003_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Халк)](*<-lang_ru;;*);
+		[Pic. (Hulk)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/halk-2003.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Unleash the fury! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [19.06.2003](*<-lang_ru;;*);;
+    => nrel_main_idtf : [19.06.2003](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H18M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H18M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_halk_2003 =>nrel_keywords: film;;
+
+concept_film_halk_2003 <- concept_action;concept_sci_fi;;
+
+concept_film_halk_2003 => nrel_main_actor : concept_eric_bana;concept_jennifer_connelly;concept_sam_elliott;concept_josh_lucas;;
+concept_film_halk_2003 => nrel_producer : concept_ang_lee;;

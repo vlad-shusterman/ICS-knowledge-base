@@ -1,0 +1,67 @@
+concept_film_grozovoy_ponedelnik_1988
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Грозовой понедельник]
+(* <- lang_ru;;    *);
+[Stormy Monday]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Грозовой понедельник)](*<-lang_ru;;*);
+[Description (Stormy Monday)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/grozovoy-ponedelnik-1988_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/grozovoy-ponedelnik-1988_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Грозовой понедельник)](*<-lang_ru;;*);
+		[Pic. (Stormy Monday)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/grozovoy-ponedelnik-1988.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The Most Dangerous Choices Are Made With The Heart](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [22.07.1988](*<-lang_ru;;*);;
+    => nrel_main_idtf : [22.07.1988](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H33M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H33M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_grozovoy_ponedelnik_1988 =>nrel_keywords: film;;
+
+concept_film_grozovoy_ponedelnik_1988 <- concept_crime;concept_drama;concept_music;concept_romance;;
+
+concept_film_grozovoy_ponedelnik_1988 => nrel_main_actor : concept_melanie_griffith;concept_tommy_lee_jones;concept_sting;concept_sean_bean;;
+concept_film_grozovoy_ponedelnik_1988 => nrel_producer : concept_mike_figgis;;

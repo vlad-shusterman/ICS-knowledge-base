@@ -1,0 +1,67 @@
+concept_film_braziliya_1985
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Бразилия]
+(* <- lang_ru;;    *);
+[Brazil]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Бразилия)](*<-lang_ru;;*);
+[Description (Brazil)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/braziliya-1985_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/braziliya-1985_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Бразилия)](*<-lang_ru;;*);
+		[Pic. (Brazil)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/braziliya-1985.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Suspicion breeds confidence. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [20.02.1985](*<-lang_ru;;*);;
+    => nrel_main_idtf : [20.02.1985](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H12M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H12M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_braziliya_1985 =>nrel_keywords: film;;
+
+concept_film_braziliya_1985 <- concept_drama;concept_sci_fi;;
+
+concept_film_braziliya_1985 => nrel_main_actor : concept_jonathan_pryce;concept_kim_greist;concept_robert_de_niro;concept_katherine_helmond;;
+concept_film_braziliya_1985 => nrel_producer : concept_terry_gilliam;;

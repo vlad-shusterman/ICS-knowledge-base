@@ -1,0 +1,67 @@
+concept_film_gorod_klounov_2016
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Город клоунов]
+(* <- lang_ru;;    *);
+[ClownTown]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Город клоунов)](*<-lang_ru;;*);
+[Description (ClownTown)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/gorod-klounov-2016_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/gorod-klounov-2016_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Город клоунов)](*<-lang_ru;;*);
+		[Pic. (ClownTown)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/gorod-klounov-2016.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [ClownTown](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [04.10.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [04.10.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H26M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H26M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_gorod_klounov_2016 =>nrel_keywords: film;;
+
+concept_film_gorod_klounov_2016 <- concept_horror;concept_thriller;;
+
+concept_film_gorod_klounov_2016 => nrel_main_actor : concept_brian_nagel;concept_lauren_compton;concept_andrew_staton;concept_katie_keene;;
+concept_film_gorod_klounov_2016 => nrel_producer : concept_tom_nagel;;

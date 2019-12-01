@@ -1,0 +1,67 @@
+concept_film_dostigaya_nevozmozhnogo_1989
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Достигая невозможного]
+(* <- lang_ru;;    *);
+[Gleaming the Cube]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Достигая невозможного)](*<-lang_ru;;*);
+[Description (Gleaming the Cube)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dostigaya-nevozmozhnogo-1989_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dostigaya-nevozmozhnogo-1989_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Достигая невозможного)](*<-lang_ru;;*);
+		[Pic. (Gleaming the Cube)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dostigaya-nevozmozhnogo-1989.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [When getting even means risking it all See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [13.01.1989](*<-lang_ru;;*);;
+    => nrel_main_idtf : [13.01.1989](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H40M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_dostigaya_nevozmozhnogo_1989 =>nrel_keywords: film;;
+
+concept_film_dostigaya_nevozmozhnogo_1989 <- concept_action;concept_drama;concept_mystery;;
+
+concept_film_dostigaya_nevozmozhnogo_1989 => nrel_main_actor : concept_christian_slater;concept_steven_bauer;concept_richard_herd;concept_le_tuan;;
+concept_film_dostigaya_nevozmozhnogo_1989 => nrel_producer : concept_graeme_clifford;;

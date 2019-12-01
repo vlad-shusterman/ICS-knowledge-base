@@ -1,0 +1,67 @@
+concept_film_strah_1996
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Страх]
+(* <- lang_ru;;    *);
+[Fear]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Страх)](*<-lang_ru;;*);
+[Description (Fear)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/strah-1996_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/strah-1996_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Страх)](*<-lang_ru;;*);
+		[Pic. (Fear)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/strah-1996.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_canada;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Lie down with dogs, and you'll get up with fleas. Lie down with David, and you'll be lucky if you get up at all. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.04.1996](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.04.1996](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H37M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H37M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_strah_1996 =>nrel_keywords: film;;
+
+concept_film_strah_1996 <- concept_drama;concept_thriller;;
+
+concept_film_strah_1996 => nrel_main_actor : concept_mark_wahlberg;concept_reese_witherspoon;concept_william_petersen;concept_amy_brenneman;;
+concept_film_strah_1996 => nrel_producer : concept_james_foley;;

@@ -1,0 +1,67 @@
+concept_film_besstrashnaya_giena_1979
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Бесстрашная гиена]
+(* <- lang_ru;;    *);
+[Xiao quan guai zhao / The Fearless Hyena]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Бесстрашная гиена)](*<-lang_ru;;*);
+[Description (Xiao quan guai zhao / The Fearless Hyena)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/besstrashnaya-giena-1979_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/besstrashnaya-giena-1979_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Бесстрашная гиена)](*<-lang_ru;;*);
+		[Pic. (Xiao quan guai zhao / The Fearless Hyena)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/besstrashnaya-giena-1979.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_hong_kong;concept_south_korea;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Xiao quan guai zhao / The Fearless Hyena](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [17.02.1979](*<-lang_ru;;*);;
+    => nrel_main_idtf : [17.02.1979](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H38M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H38M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_besstrashnaya_giena_1979 =>nrel_keywords: film;;
+
+concept_film_besstrashnaya_giena_1979 <- concept_comedy;concept_action;;
+
+concept_film_besstrashnaya_giena_1979 => nrel_main_actor : concept_jackie_chan;concept_james_tien;concept_dean_shek;concept_hui_lou_chen;;
+concept_film_besstrashnaya_giena_1979 => nrel_producer : concept_jackie_chan;;

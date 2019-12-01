@@ -1,0 +1,67 @@
+concept_film_prosti_za_lyubov_2008
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Прости за любовь]
+(* <- lang_ru;;    *);
+[Scusa ma ti chiamo amore / Sorry, If I Love You]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Прости за любовь)](*<-lang_ru;;*);
+[Description (Scusa ma ti chiamo amore / Sorry, If I Love You)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/prosti-za-lyubov-2008_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/prosti-za-lyubov-2008_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Прости за любовь)](*<-lang_ru;;*);
+		[Pic. (Scusa ma ti chiamo amore / Sorry, If I Love You)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/prosti-za-lyubov-2008.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_italy;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Scusa ma ti chiamo amore / Sorry, If I Love You](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.01.2008](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.01.2008](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H43M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H43M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_prosti_za_lyubov_2008 =>nrel_keywords: film;;
+
+concept_film_prosti_za_lyubov_2008 <- concept_romance;;
+
+concept_film_prosti_za_lyubov_2008 => nrel_main_actor : concept_raoul_bova;concept_michela_quattrociocche;concept_michelle_carpente;concept_luca_angeletti;;
+concept_film_prosti_za_lyubov_2008 => nrel_producer : concept_federico_moccia;;

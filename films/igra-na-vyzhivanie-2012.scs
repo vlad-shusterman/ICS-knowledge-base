@@ -1,0 +1,67 @@
+concept_film_igra_na_vyzhivanie_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Игра на выживание]
+(* <- lang_ru;;    *);
+[Gone]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Игра на выживание)](*<-lang_ru;;*);
+[Description (Gone)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/igra-na-vyzhivanie-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/igra-na-vyzhivanie-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Игра на выживание)](*<-lang_ru;;*);
+		[Pic. (Gone)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/igra-na-vyzhivanie-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [No one believes her. Nothing will stop her.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [23.02.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [23.02.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H34M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H34M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_igra_na_vyzhivanie_2012 =>nrel_keywords: film;;
+
+concept_film_igra_na_vyzhivanie_2012 <- concept_action;concept_mystery;concept_thriller;;
+
+concept_film_igra_na_vyzhivanie_2012 => nrel_main_actor : concept_amanda_seyfried;concept_jennifer_carpenter;concept_wes_bentley;concept_daniel_sunjata;;
+concept_film_igra_na_vyzhivanie_2012 => nrel_producer : concept_heitor_dhalia;;

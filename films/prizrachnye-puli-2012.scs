@@ -1,0 +1,67 @@
+concept_film_prizrachnye_puli_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Призрачные пули]
+(* <- lang_ru;;    *);
+[Xiao shi de zi dan]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Призрачные пули)](*<-lang_ru;;*);
+[Description (Xiao shi de zi dan)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/prizrachnye-puli-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/prizrachnye-puli-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Призрачные пули)](*<-lang_ru;;*);
+		[Pic. (Xiao shi de zi dan)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/prizrachnye-puli-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_china;concept_hong_kong;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Xiao shi de zi dan](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [14.08.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [14.08.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H48M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H48M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_prizrachnye_puli_2012 =>nrel_keywords: film;;
+
+concept_film_prizrachnye_puli_2012 <- concept_action;concept_drama;concept_mystery;;
+
+concept_film_prizrachnye_puli_2012 => nrel_main_actor : concept_nicholas_tse;concept_ching_wan_lau;concept_mi_yang;concept_boran_jing;;
+concept_film_prizrachnye_puli_2012 => nrel_producer : concept_chi_leung_law;;

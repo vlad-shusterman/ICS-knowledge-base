@@ -1,0 +1,67 @@
+concept_film_otel_dlya_sobak_2009
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Отель для собак]
+(* <- lang_ru;;    *);
+[Hotel for Dogs]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Отель для собак)](*<-lang_ru;;*);
+[Description (Hotel for Dogs)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/otel-dlya-sobak-2009_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/otel-dlya-sobak-2009_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Отель для собак)](*<-lang_ru;;*);
+		[Pic. (Hotel for Dogs)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/otel-dlya-sobak-2009.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_germany;concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [No stray gets turned away See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.01.2009](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.01.2009](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H40M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_otel_dlya_sobak_2009 =>nrel_keywords: film;;
+
+concept_film_otel_dlya_sobak_2009 <- concept_comedy;concept_family;;
+
+concept_film_otel_dlya_sobak_2009 => nrel_main_actor : concept_emma_roberts;concept_jake_t._austin;concept_lisa_kudrow;concept_don_cheadle;;
+concept_film_otel_dlya_sobak_2009 => nrel_producer : concept_thor_freudenthal;;

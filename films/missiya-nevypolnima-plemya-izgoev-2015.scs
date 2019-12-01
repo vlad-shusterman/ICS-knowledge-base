@@ -1,0 +1,67 @@
+concept_film_missiya_nevypolnima_plemya_izgoev_2015
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Миссия невыполнима: Племя изгоев]
+(* <- lang_ru;;    *);
+[Mission: Impossible - Rogue Nation]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Миссия невыполнима: Племя изгоев)](*<-lang_ru;;*);
+[Description (Mission: Impossible - Rogue Nation)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/missiya-nevypolnima-plemya-izgoev-2015_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/missiya-nevypolnima-plemya-izgoev-2015_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Миссия невыполнима: Племя изгоев)](*<-lang_ru;;*);
+		[Pic. (Mission: Impossible - Rogue Nation)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/missiya-nevypolnima-plemya-izgoev-2015.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_china;concept_hong_kong;concept_austria;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Desperate Times. Desperate Measures. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [28.07.2015](*<-lang_ru;;*);;
+    => nrel_main_idtf : [28.07.2015](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H11M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H11M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_missiya_nevypolnima_plemya_izgoev_2015 =>nrel_keywords: film;;
+
+concept_film_missiya_nevypolnima_plemya_izgoev_2015 <- concept_action;concept_adventure;concept_thriller;;
+
+concept_film_missiya_nevypolnima_plemya_izgoev_2015 => nrel_main_actor : concept_tom_cruise;concept_rebecca_ferguson;concept_jeremy_renner;concept_simon_pegg;;
+concept_film_missiya_nevypolnima_plemya_izgoev_2015 => nrel_producer : concept_christopher_mcquarrie;;

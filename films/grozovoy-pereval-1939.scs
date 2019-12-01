@@ -1,0 +1,67 @@
+concept_film_grozovoy_pereval_1939
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Грозовой перевал]
+(* <- lang_ru;;    *);
+[Wuthering Heights]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Грозовой перевал)](*<-lang_ru;;*);
+[Description (Wuthering Heights)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/grozovoy-pereval-1939_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/grozovoy-pereval-1939_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Грозовой перевал)](*<-lang_ru;;*);
+		[Pic. (Wuthering Heights)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/grozovoy-pereval-1939.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [I KNOW..HE LOATHES ME AND DESPISES ME. I KNOW..HE MARRIED ME TO SPITE THE WOMAN HE REALLY LOVES! (original print ad - all caps) See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [07.04.1939](*<-lang_ru;;*);;
+    => nrel_main_idtf : [07.04.1939](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H44M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H44M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_grozovoy_pereval_1939 =>nrel_keywords: film;;
+
+concept_film_grozovoy_pereval_1939 <- concept_drama;concept_romance;;
+
+concept_film_grozovoy_pereval_1939 => nrel_main_actor : concept_merle_oberon;concept_laurence_olivier;concept_david_niven;concept_flora_robson;;
+concept_film_grozovoy_pereval_1939 => nrel_producer : concept_william_wyler;;

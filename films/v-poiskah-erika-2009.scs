@@ -1,0 +1,67 @@
+concept_film_v_poiskah_erika_2009
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[В поисках Эрика]
+(* <- lang_ru;;    *);
+[Looking for Eric]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (В поисках Эрика)](*<-lang_ru;;*);
+[Description (Looking for Eric)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/v-poiskah-erika-2009_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/v-poiskah-erika-2009_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (В поисках Эрика)](*<-lang_ru;;*);
+		[Pic. (Looking for Eric)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/v-poiskah-erika-2009.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_france;concept_italy;concept_belgium;concept_spain;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [To win back the love of his life, Eric's going to need a little training.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [27.05.2009](*<-lang_ru;;*);;
+    => nrel_main_idtf : [27.05.2009](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H56M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H56M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_v_poiskah_erika_2009 =>nrel_keywords: film;;
+
+concept_film_v_poiskah_erika_2009 <- concept_comedy;concept_drama;concept_fantasy;concept_sport;;
+
+concept_film_v_poiskah_erika_2009 => nrel_main_actor : concept_steve_evets;concept_eric_cantona;concept_stephanie_bishop;concept_gerard_kearns;;
+concept_film_v_poiskah_erika_2009 => nrel_producer : concept_ken_loach;;

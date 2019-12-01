@@ -1,0 +1,67 @@
+concept_film_lyubov_gusche_vody_2016
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Любовь гуще воды]
+(* <- lang_ru;;    *);
+[Love Is Thicker Than Water]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Любовь гуще воды)](*<-lang_ru;;*);
+[Description (Love Is Thicker Than Water)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/lyubov-gusche-vody-2016_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/lyubov-gusche-vody-2016_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Любовь гуще воды)](*<-lang_ru;;*);
+		[Pic. (Love Is Thicker Than Water)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/lyubov-gusche-vody-2016.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_netherlands;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Love Is Thicker Than Water](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.06.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.06.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H45M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_lyubov_gusche_vody_2016 =>nrel_keywords: film;;
+
+concept_film_lyubov_gusche_vody_2016 <- concept_comedy;concept_romance;;
+
+concept_film_lyubov_gusche_vody_2016 => nrel_main_actor : concept_lydia_wilson;concept_johnny_flynn;concept_al_weaver;concept_ellie_kendrick;;
+concept_film_lyubov_gusche_vody_2016 => nrel_producer : concept_ate_de_jong;concept_emily_harris;;

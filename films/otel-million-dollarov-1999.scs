@@ -1,0 +1,67 @@
+concept_film_otel_million_dollarov_1999
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Отель Миллион долларов]
+(* <- lang_ru;;    *);
+[The Million Dollar Hotel]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Отель Миллион долларов)](*<-lang_ru;;*);
+[Description (The Million Dollar Hotel)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/otel-million-dollarov-1999_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/otel-million-dollarov-1999_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Отель Миллион долларов)](*<-lang_ru;;*);
+		[Pic. (The Million Dollar Hotel)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/otel-million-dollarov-1999.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_germany;concept_uk;concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Everyone has something to hide.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [10.02.2000](*<-lang_ru;;*);;
+    => nrel_main_idtf : [10.02.2000](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H2M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H2M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_otel_million_dollarov_1999 =>nrel_keywords: film;;
+
+concept_film_otel_million_dollarov_1999 <- concept_drama;concept_mystery;concept_thriller;;
+
+concept_film_otel_million_dollarov_1999 => nrel_main_actor : concept_jeremy_davies;concept_milla_jovovich;concept_mel_gibson;concept_jimmy_smits;;
+concept_film_otel_million_dollarov_1999 => nrel_producer : concept_wim_wenders;;

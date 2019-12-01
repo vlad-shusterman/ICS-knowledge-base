@@ -1,0 +1,67 @@
+concept_film_ne_v_seti_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Не в сети]
+(* <- lang_ru;;    *);
+[Cyberstalker]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Не в сети)](*<-lang_ru;;*);
+[Description (Cyberstalker)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ne-v-seti-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ne-v-seti-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Не в сети)](*<-lang_ru;;*);
+		[Pic. (Cyberstalker)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ne-v-seti-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_canada;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [There is nowhere to hide when someone wants to love you to death.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [14.09.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [14.09.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H32M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H32M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_14;;
+
+concept_film_ne_v_seti_2012 =>nrel_keywords: film;;
+
+concept_film_ne_v_seti_2012 <- concept_drama;concept_mystery;concept_thriller;;
+
+concept_film_ne_v_seti_2012 => nrel_main_actor : concept_mischa_barton;concept_ron_lea;concept_marco_grazzini;concept_dan_levy;;
+concept_film_ne_v_seti_2012 => nrel_producer : concept_curtis_crawford;;

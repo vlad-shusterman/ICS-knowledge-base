@@ -1,0 +1,67 @@
+concept_film_evolyuciya_borna_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Эволюция Борна]
+(* <- lang_ru;;    *);
+[The Bourne Legacy]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Эволюция Борна)](*<-lang_ru;;*);
+[Description (The Bourne Legacy)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/evolyuciya-borna-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/evolyuciya-borna-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Эволюция Борна)](*<-lang_ru;;*);
+		[Pic. (The Bourne Legacy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/evolyuciya-borna-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_japan;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [There Was Never Just One](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [08.08.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [08.08.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H15M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H15M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_evolyuciya_borna_2012 =>nrel_keywords: film;;
+
+concept_film_evolyuciya_borna_2012 <- concept_action;concept_adventure;concept_thriller;;
+
+concept_film_evolyuciya_borna_2012 => nrel_main_actor : concept_jeremy_renner;concept_rachel_weisz;concept_edward_norton;concept_scott_glenn;;
+concept_film_evolyuciya_borna_2012 => nrel_producer : concept_tony_gilroy;;

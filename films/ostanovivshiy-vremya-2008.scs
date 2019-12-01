@@ -1,0 +1,67 @@
+concept_film_ostanovivshiy_vremya_2008
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Остановивший время]
+(* <- lang_ru;;    *);
+[Suspension]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Остановивший время)](*<-lang_ru;;*);
+[Description (Suspension)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ostanovivshiy-vremya-2008_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ostanovivshiy-vremya-2008_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Остановивший время)](*<-lang_ru;;*);
+		[Pic. (Suspension)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ostanovivshiy-vremya-2008.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A man loses his family in an accident but gains an extraordinary power: The power to stop time. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [02.05.2008](*<-lang_ru;;*);;
+    => nrel_main_idtf : [02.05.2008](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H35M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H35M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_ostanovivshiy_vremya_2008 =>nrel_keywords: film;;
+
+concept_film_ostanovivshiy_vremya_2008 <- concept_action;concept_drama;concept_fantasy;concept_sci_fi;concept_thriller;;
+
+concept_film_ostanovivshiy_vremya_2008 => nrel_main_actor : concept_scott_cordes;concept_annie_tedesco;concept_caroline_vinciguerra;concept_dan_nichols;;
+concept_film_ostanovivshiy_vremya_2008 => nrel_producer : concept_alec_joler;concept_ethan_shaftel;;

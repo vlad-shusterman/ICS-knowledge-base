@@ -1,0 +1,67 @@
+concept_film_makbet_2006
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Макбет]
+(* <- lang_ru;;    *);
+[Macbeth]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Макбет)](*<-lang_ru;;*);
+[Description (Macbeth)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/makbet-2006_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/makbet-2006_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Макбет)](*<-lang_ru;;*);
+		[Pic. (Macbeth)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/makbet-2006.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_australia;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The Melbourne underworld. The present time. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.09.2006](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.09.2006](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H49M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H49M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_makbet_2006 =>nrel_keywords: film;;
+
+concept_film_makbet_2006 <- concept_crime;concept_drama;concept_fantasy;concept_mystery;concept_thriller;;
+
+concept_film_makbet_2006 => nrel_main_actor : concept_chloe_armstrong;concept_kate_bell;concept_miranda_nation;concept_sam_worthington;;
+concept_film_makbet_2006 => nrel_producer : concept_geoffrey_wright;;

@@ -1,0 +1,67 @@
+concept_film_macho_i_botan_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Мачо и ботан]
+(* <- lang_ru;;    *);
+[21 Jump Street]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Мачо и ботан)](*<-lang_ru;;*);
+[Description (21 Jump Street)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/macho-i-botan-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/macho-i-botan-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Мачо и ботан)](*<-lang_ru;;*);
+		[Pic. (21 Jump Street)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/macho-i-botan-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [They're too old for this shift. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [14.03.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [14.03.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H49M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H49M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_macho_i_botan_2012 =>nrel_keywords: film;;
+
+concept_film_macho_i_botan_2012 <- concept_action;concept_comedy;concept_crime;;
+
+concept_film_macho_i_botan_2012 => nrel_main_actor : concept_jonah_hill;concept_channing_tatum;concept_ice_cube;concept_brie_larson;;
+concept_film_macho_i_botan_2012 => nrel_producer : concept_phil_lord;concept_christopher_miller;;

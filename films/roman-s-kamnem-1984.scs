@@ -1,0 +1,67 @@
+concept_film_roman_s_kamnem_1984
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Роман с камнем]
+(* <- lang_ru;;    *);
+[Romancing the Stone]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Роман с камнем)](*<-lang_ru;;*);
+[Description (Romancing the Stone)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/roman-s-kamnem-1984_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/roman-s-kamnem-1984_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Роман с камнем)](*<-lang_ru;;*);
+		[Pic. (Romancing the Stone)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/roman-s-kamnem-1984.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_mexico;concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [She's a girl from the big city. He's a reckless soldier of fortune. For a fabulous treasure, they share an adventure no one could imagine... or survive.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [30.03.1984](*<-lang_ru;;*);;
+    => nrel_main_idtf : [30.03.1984](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H46M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H46M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_roman_s_kamnem_1984 =>nrel_keywords: film;;
+
+concept_film_roman_s_kamnem_1984 <- concept_action;concept_adventure;concept_comedy;concept_romance;;
+
+concept_film_roman_s_kamnem_1984 => nrel_main_actor : concept_michael_douglas;concept_kathleen_turner;concept_danny_devito;concept_zack_norman;;
+concept_film_roman_s_kamnem_1984 => nrel_producer : concept_robert_zemeckis;;

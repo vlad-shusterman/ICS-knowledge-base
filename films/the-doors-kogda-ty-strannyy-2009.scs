@@ -1,0 +1,67 @@
+concept_film_the_doors_kogda_ty_strannyy_2009
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[The Doors: Когда ты странный]
+(* <- lang_ru;;    *);
+[The Doors: When You're Strange]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (The Doors: Когда ты странный)](*<-lang_ru;;*);
+[Description (The Doors: When You're Strange)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/the-doors-kogda-ty-strannyy-2009_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/the-doors-kogda-ty-strannyy-2009_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (The Doors: Когда ты странный)](*<-lang_ru;;*);
+		[Pic. (The Doors: When You're Strange)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/the-doors-kogda-ty-strannyy-2009.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The Doors: When You're Strange](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.05.2010](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.05.2010](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H26M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H26M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_the_doors_kogda_ty_strannyy_2009 =>nrel_keywords: film;;
+
+concept_film_the_doors_kogda_ty_strannyy_2009 <- concept_documentary;concept_music;;
+
+concept_film_the_doors_kogda_ty_strannyy_2009 => nrel_main_actor : concept_johnny_depp;concept_john_densmore;concept_robby_krieger;concept_ray_manzarek;;
+concept_film_the_doors_kogda_ty_strannyy_2009 => nrel_producer : concept_tom_dicillo;;

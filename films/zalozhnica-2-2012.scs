@@ -1,0 +1,67 @@
+concept_film_zalozhnica_2_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Заложница 2]
+(* <- lang_ru;;    *);
+[Taken 2]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Заложница 2)](*<-lang_ru;;*);
+[Description (Taken 2)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zalozhnica-2-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zalozhnica-2-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Заложница 2)](*<-lang_ru;;*);
+		[Pic. (Taken 2)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zalozhnica-2-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_france;concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [First they took his daughter. Now they're coming for him. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.09.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.09.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H32M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H32M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_zalozhnica_2_2012 =>nrel_keywords: film;;
+
+concept_film_zalozhnica_2_2012 <- concept_action;concept_thriller;;
+
+concept_film_zalozhnica_2_2012 => nrel_main_actor : concept_liam_neeson;concept_famke_janssen;concept_maggie_grace;concept_leland_orser;;
+concept_film_zalozhnica_2_2012 => nrel_producer : concept_olivier_megaton;;

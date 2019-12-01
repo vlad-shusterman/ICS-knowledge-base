@@ -1,0 +1,67 @@
+concept_film_kniga_dzhungley_1994
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Книга джунглей]
+(* <- lang_ru;;    *);
+[The Jungle Book]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Книга джунглей)](*<-lang_ru;;*);
+[Description (The Jungle Book)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/kniga-dzhungley-1994_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/kniga-dzhungley-1994_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Книга джунглей)](*<-lang_ru;;*);
+		[Pic. (The Jungle Book)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/kniga-dzhungley-1994.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [From one of the greatest novels ever written comes a thrilling new motion picture classic. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.12.1994](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.12.1994](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H51M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H51M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_kniga_dzhungley_1994 =>nrel_keywords: film;;
+
+concept_film_kniga_dzhungley_1994 <- concept_adventure;concept_family;concept_romance;;
+
+concept_film_kniga_dzhungley_1994 => nrel_main_actor : concept_jason_scott_lee;concept_cary_elwes;concept_lena_headey;concept_sam_neill;;
+concept_film_kniga_dzhungley_1994 => nrel_producer : concept_stephen_sommers;;

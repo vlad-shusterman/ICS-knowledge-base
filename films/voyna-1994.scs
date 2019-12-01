@@ -1,0 +1,67 @@
+concept_film_voyna_1994
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Война]
+(* <- lang_ru;;    *);
+[The War]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Война)](*<-lang_ru;;*);
+[Description (The War)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/voyna-1994_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/voyna-1994_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Война)](*<-lang_ru;;*);
+		[Pic. (The War)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/voyna-1994.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [What's worth fighting for?](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [04.11.1994](*<-lang_ru;;*);;
+    => nrel_main_idtf : [04.11.1994](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H6M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H6M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_voyna_1994 =>nrel_keywords: film;;
+
+concept_film_voyna_1994 <- concept_drama;;
+
+concept_film_voyna_1994 => nrel_main_actor : concept_elijah_wood;concept_kevin_costner;concept_mare_winningham;concept_lexi_randall;;
+concept_film_voyna_1994 => nrel_producer : concept_jon_avnet;;

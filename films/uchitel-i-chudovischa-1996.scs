@@ -1,0 +1,67 @@
+concept_film_uchitel_i_chudovischa_1996
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Учитель и чудовища / Беспредел в средней школе]
+(* <- lang_ru;;    *);
+[High School High]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Учитель и чудовища / Беспредел в средней школе)](*<-lang_ru;;*);
+[Description (High School High)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/uchitel-i-chudovischa-1996_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/uchitel-i-chudovischa-1996_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Учитель и чудовища / Беспредел в средней школе)](*<-lang_ru;;*);
+		[Pic. (High School High)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/uchitel-i-chudovischa-1996.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [There's a new teacha in the hood! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.10.1996](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.10.1996](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H26M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H26M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_uchitel_i_chudovischa_1996 =>nrel_keywords: film;;
+
+concept_film_uchitel_i_chudovischa_1996 <- concept_comedy;concept_crime;concept_romance;;
+
+concept_film_uchitel_i_chudovischa_1996 => nrel_main_actor : concept_jon_lovitz;concept_tia_carrere;concept_louise_fletcher;concept_mekhi_phifer;;
+concept_film_uchitel_i_chudovischa_1996 => nrel_producer : concept_hart_bochner;;

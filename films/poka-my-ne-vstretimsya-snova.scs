@@ -1,0 +1,67 @@
+concept_film_poka_my_ne_vstretimsya_snova
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Пока мы не встретимся снова]
+(* <- lang_ru;;    *);
+[Till We Meet Again]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Пока мы не встретимся снова)](*<-lang_ru;;*);
+[Description (Till We Meet Again)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/poka-my-ne-vstretimsya-snova_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/poka-my-ne-vstretimsya-snova_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Пока мы не встретимся снова)](*<-lang_ru;;*);
+		[Pic. (Till We Meet Again)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/poka-my-ne-vstretimsya-snova.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_thailand;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [they have to find themselves before they can find each other See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.11.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.11.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H45M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_poka_my_ne_vstretimsya_snova =>nrel_keywords: film;;
+
+concept_film_poka_my_ne_vstretimsya_snova <- concept_adventure;concept_drama;concept_romance;;
+
+concept_film_poka_my_ne_vstretimsya_snova => nrel_main_actor : concept_johan_matton;concept_linnea_larsdotter;concept_emrhys_cooper;concept_astrea_campbell_cobb;;
+concept_film_poka_my_ne_vstretimsya_snova => nrel_producer : concept_bank_tangjaitrong;;

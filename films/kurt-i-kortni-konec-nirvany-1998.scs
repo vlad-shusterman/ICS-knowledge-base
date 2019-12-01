@@ -1,0 +1,67 @@
+concept_film_kurt_i_kortni_konec_nirvany_1998
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Курт и Кортни: Конец «Нирваны»]
+(* <- lang_ru;;    *);
+[Kurt & Courtney]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Курт и Кортни: Конец «Нирваны»)](*<-lang_ru;;*);
+[Description (Kurt & Courtney)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/kurt-i-kortni-konec-nirvany-1998_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/kurt-i-kortni-konec-nirvany-1998_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Курт и Кортни: Конец «Нирваны»)](*<-lang_ru;;*);
+		[Pic. (Kurt & Courtney)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/kurt-i-kortni-konec-nirvany-1998.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The film Courtney Love doesn't want to see.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [27.02.1998](*<-lang_ru;;*);;
+    => nrel_main_idtf : [27.02.1998](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H35M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H35M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_kurt_i_kortni_konec_nirvany_1998 =>nrel_keywords: film;;
+
+concept_film_kurt_i_kortni_konec_nirvany_1998 <- concept_documentary;concept_crime;concept_music;;
+
+concept_film_kurt_i_kortni_konec_nirvany_1998 => nrel_main_actor : concept_courtney_love;concept_nick_broomfield;concept_kurt_cobain;concept_mari_earle;;
+concept_film_kurt_i_kortni_konec_nirvany_1998 => nrel_producer : concept_nick_broomfield;;

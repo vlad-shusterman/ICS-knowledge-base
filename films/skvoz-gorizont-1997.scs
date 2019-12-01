@@ -1,0 +1,67 @@
+concept_film_skvoz_gorizont_1997
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Сквозь горизонт]
+(* <- lang_ru;;    *);
+[Event Horizon]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Сквозь горизонт)](*<-lang_ru;;*);
+[Description (Event Horizon)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/skvoz-gorizont-1997_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/skvoz-gorizont-1997_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Сквозь горизонт)](*<-lang_ru;;*);
+		[Pic. (Event Horizon)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/skvoz-gorizont-1997.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Infinite Space - Infinite Terror](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.08.1997](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.08.1997](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H36M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H36M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_skvoz_gorizont_1997 =>nrel_keywords: film;;
+
+concept_film_skvoz_gorizont_1997 <- concept_horror;concept_sci_fi;concept_thriller;;
+
+concept_film_skvoz_gorizont_1997 => nrel_main_actor : concept_laurence_fishburne;concept_sam_neill;concept_kathleen_quinlan;concept_joely_richardson;;
+concept_film_skvoz_gorizont_1997 => nrel_producer : concept_paul_w.s._anderson;;

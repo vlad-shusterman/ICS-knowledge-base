@@ -1,0 +1,67 @@
+concept_film_zabyt_palermo_1989
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Забыть Палермо]
+(* <- lang_ru;;    *);
+[Dimenticare Palermo]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Забыть Палермо)](*<-lang_ru;;*);
+[Description (Dimenticare Palermo)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zabyt-palermo-1989_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zabyt-palermo-1989_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Забыть Палермо)](*<-lang_ru;;*);
+		[Pic. (Dimenticare Palermo)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zabyt-palermo-1989.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_italy;concept_france;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Dimenticare Palermo](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [14.02.1990](*<-lang_ru;;*);;
+    => nrel_main_idtf : [14.02.1990](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H40M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_zabyt_palermo_1989 =>nrel_keywords: film;;
+
+concept_film_zabyt_palermo_1989 <- concept_thriller;;
+
+concept_film_zabyt_palermo_1989 => nrel_main_actor : concept_jim_belushi;concept_mimi_rogers;concept_joss_ackland;concept_philippe_noiret;;
+concept_film_zabyt_palermo_1989 => nrel_producer : concept_francesco_rosi;;

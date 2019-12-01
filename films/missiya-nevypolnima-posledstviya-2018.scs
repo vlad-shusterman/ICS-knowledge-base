@@ -1,0 +1,67 @@
+concept_film_missiya_nevypolnima_posledstviya_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Миссия невыполнима: Последствия]
+(* <- lang_ru;;    *);
+[Mission: Impossible - Fallout]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Миссия невыполнима: Последствия)](*<-lang_ru;;*);
+[Description (Mission: Impossible - Fallout)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/missiya-nevypolnima-posledstviya-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/missiya-nevypolnima-posledstviya-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Миссия невыполнима: Последствия)](*<-lang_ru;;*);
+		[Pic. (Mission: Impossible - Fallout)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/missiya-nevypolnima-posledstviya-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_china;concept_france;concept_norway;concept_uk;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Some missions are not a choice.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.07.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.07.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H27M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H27M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_missiya_nevypolnima_posledstviya_2018 =>nrel_keywords: film;;
+
+concept_film_missiya_nevypolnima_posledstviya_2018 <- concept_action;concept_adventure;concept_thriller;;
+
+concept_film_missiya_nevypolnima_posledstviya_2018 => nrel_main_actor : concept_tom_cruise;concept_henry_cavill;concept_ving_rhames;concept_simon_pegg;;
+concept_film_missiya_nevypolnima_posledstviya_2018 => nrel_producer : concept_christopher_mcquarrie;;

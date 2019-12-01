@@ -1,0 +1,67 @@
+concept_film_otmenit_rozhdestvo_2010
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Отменить Рождество]
+(* <- lang_ru;;    *);
+[Cancel Christmas]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Отменить Рождество)](*<-lang_ru;;*);
+[Description (Cancel Christmas)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/otmenit-rozhdestvo-2010_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/otmenit-rozhdestvo-2010_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Отменить Рождество)](*<-lang_ru;;*);
+		[Pic. (Cancel Christmas)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/otmenit-rozhdestvo-2010.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_canada;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Cancel Christmas](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [24.12.2010](*<-lang_ru;;*);;
+    => nrel_main_idtf : [24.12.2010](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H27M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H27M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_G;;
+
+concept_film_otmenit_rozhdestvo_2010 =>nrel_keywords: film;;
+
+concept_film_otmenit_rozhdestvo_2010 <- concept_comedy;concept_family;concept_fantasy;;
+
+concept_film_otmenit_rozhdestvo_2010 => nrel_main_actor : concept_judd_nelson;concept_justin_landry;concept_natalie_brown;concept_john_fleming;;
+concept_film_otmenit_rozhdestvo_2010 => nrel_producer : concept_john_bradshaw;;

@@ -1,0 +1,67 @@
+concept_film_gonchie_psy
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Гончие псы]
+(* <- lang_ru;;    *);
+[Car Dogs]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Гончие псы)](*<-lang_ru;;*);
+[Description (Car Dogs)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/gonchie-psy_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/gonchie-psy_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гончие псы)](*<-lang_ru;;*);
+		[Pic. (Car Dogs)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/gonchie-psy.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Car Dogs](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [17.04.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [17.04.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H44M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H44M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_gonchie_psy =>nrel_keywords: film;;
+
+concept_film_gonchie_psy <- concept_comedy;concept_drama;;
+
+concept_film_gonchie_psy => nrel_main_actor : concept_patrick_j._adams;concept_octavia_spencer;concept_alessandra_torresani;concept_dash_mihok;;
+concept_film_gonchie_psy => nrel_producer : concept_adam_collis;;

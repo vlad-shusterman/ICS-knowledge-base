@@ -1,0 +1,67 @@
+concept_film_kofe_i_sigarety_2003
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Кофе и сигареты]
+(* <- lang_ru;;    *);
+[Coffee and Cigarettes]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Кофе и сигареты)](*<-lang_ru;;*);
+[Description (Coffee and Cigarettes)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/kofe-i-sigarety-2003_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/kofe-i-sigarety-2003_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Кофе и сигареты)](*<-lang_ru;;*);
+		[Pic. (Coffee and Cigarettes)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/kofe-i-sigarety-2003.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_japan;concept_italy;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Coffee and Cigarettes](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.03.2004](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.03.2004](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H35M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H35M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_kofe_i_sigarety_2003 =>nrel_keywords: film;;
+
+concept_film_kofe_i_sigarety_2003 <- concept_comedy;concept_drama;concept_music;;
+
+concept_film_kofe_i_sigarety_2003 => nrel_main_actor : concept_bill_murray;concept_tom_waits;concept_roberto_benigni;concept_rza;;
+concept_film_kofe_i_sigarety_2003 => nrel_producer : concept_jim_jarmusch;;

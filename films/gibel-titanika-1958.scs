@@ -1,0 +1,67 @@
+concept_film_gibel_titanika_1958
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Гибель Титаника]
+(* <- lang_ru;;    *);
+[A Night to Remember]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Гибель Титаника)](*<-lang_ru;;*);
+[Description (A Night to Remember)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/gibel-titanika-1958_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/gibel-titanika-1958_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гибель Титаника)](*<-lang_ru;;*);
+		[Pic. (A Night to Remember)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/gibel-titanika-1958.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [TITANIC... The greatest sea drama in living memory told as it really happened! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [03.07.1958](*<-lang_ru;;*);;
+    => nrel_main_idtf : [03.07.1958](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H3M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H3M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_gibel_titanika_1958 =>nrel_keywords: film;;
+
+concept_film_gibel_titanika_1958 <- concept_biography;concept_drama;concept_history;;
+
+concept_film_gibel_titanika_1958 => nrel_main_actor : concept_kenneth_more;concept_ronald_allen;concept_robert_ayres;concept_honor_blackman;;
+concept_film_gibel_titanika_1958 => nrel_producer : concept_roy_ward_baker;;

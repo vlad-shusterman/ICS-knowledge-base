@@ -1,0 +1,67 @@
+concept_film_bez_greha_ne_vytaschish_i_rybku_iz_pruda_1979
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Без греха не вытащишь и рыбку из пруда?]
+(* <- lang_ru;;    *);
+[Dove vai se il vizietto non ce l'hai? / Where Can You Go Without the Little Vice?]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Без греха не вытащишь и рыбку из пруда?)](*<-lang_ru;;*);
+[Description (Dove vai se il vizietto non ce l'hai? / Where Can You Go Without the Little Vice?)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/bez-greha-ne-vytaschish-i-rybku-iz-pruda-1979_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/bez-greha-ne-vytaschish-i-rybku-iz-pruda-1979_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Без греха не вытащишь и рыбку из пруда?)](*<-lang_ru;;*);
+		[Pic. (Dove vai se il vizietto non ce l'hai? / Where Can You Go Without the Little Vice?)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/bez-greha-ne-vytaschish-i-rybku-iz-pruda-1979.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_italy;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Dove vai se il vizietto non ce l'hai? / Where Can You Go Without the Little Vice?](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [04.08.1979](*<-lang_ru;;*);;
+    => nrel_main_idtf : [04.08.1979](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H26M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H26M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_bez_greha_ne_vytaschish_i_rybku_iz_pruda_1979 =>nrel_keywords: film;;
+
+concept_film_bez_greha_ne_vytaschish_i_rybku_iz_pruda_1979 <- concept_comedy;;
+
+concept_film_bez_greha_ne_vytaschish_i_rybku_iz_pruda_1979 => nrel_main_actor : concept_renzo_montagnani;concept_paola_senatore;concept_alvaro_vitali;concept_mario_carotenuto;;
+concept_film_bez_greha_ne_vytaschish_i_rybku_iz_pruda_1979 => nrel_producer : concept_marino_girolami;;

@@ -1,0 +1,67 @@
+concept_film_ubit_billa_2003
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Убить Билла]
+(* <- lang_ru;;    *);
+[Kill Bill: Vol. 1]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Убить Билла)](*<-lang_ru;;*);
+[Description (Kill Bill: Vol. 1)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ubit-billa-2003_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ubit-billa-2003_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Убить Билла)](*<-lang_ru;;*);
+		[Pic. (Kill Bill: Vol. 1)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ubit-billa-2003.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_japan;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [On October 10th...a Quest for Revenge begins See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [10.10.2003](*<-lang_ru;;*);;
+    => nrel_main_idtf : [10.10.2003](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H51M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H51M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_ubit_billa_2003 =>nrel_keywords: film;;
+
+concept_film_ubit_billa_2003 <- concept_action;concept_crime;concept_thriller;;
+
+concept_film_ubit_billa_2003 => nrel_main_actor : concept_uma_thurman;concept_david_carradine;concept_daryl_hannah;concept_michael_madsen;;
+concept_film_ubit_billa_2003 => nrel_producer : concept_quentin_tarantino;;

@@ -1,0 +1,67 @@
+concept_film_tri_spalni_odin_trup_tayna_avrory_tigarden
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Три спальни, один труп: Тайна Авроры Тигарден]
+(* <- lang_ru;;    *);
+[Three Bedrooms, One Corpse: An Aurora Teagarden Mystery]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Три спальни, один труп: Тайна Авроры Тигарден)](*<-lang_ru;;*);
+[Description (Three Bedrooms, One Corpse: An Aurora Teagarden Mystery)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/tri-spalni-odin-trup-tayna-avrory-tigarden_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/tri-spalni-odin-trup-tayna-avrory-tigarden_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Три спальни, один труп: Тайна Авроры Тигарден)](*<-lang_ru;;*);
+		[Pic. (Three Bedrooms, One Corpse: An Aurora Teagarden Mystery)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/tri-spalni-odin-trup-tayna-avrory-tigarden.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_canada;concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Three Bedrooms, One Corpse: An Aurora Teagarden Mystery](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.06.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.06.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H24M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H24M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_tri_spalni_odin_trup_tayna_avrory_tigarden =>nrel_keywords: film;;
+
+concept_film_tri_spalni_odin_trup_tayna_avrory_tigarden <- concept_crime;concept_drama;concept_mystery;;
+
+concept_film_tri_spalni_odin_trup_tayna_avrory_tigarden => nrel_main_actor : concept_candace_cameron_bure;concept_lexa_doig;concept_marilu_henner;concept_yannick_bisson;;
+concept_film_tri_spalni_odin_trup_tayna_avrory_tigarden => nrel_producer : concept_lynne_stopkewich;;

@@ -1,0 +1,67 @@
+concept_film_belye_volki_1969
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Белые волки]
+(* <- lang_ru;;    *);
+[Weisse Wölfe / Weisse Wolfe]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Белые волки)](*<-lang_ru;;*);
+[Description (Weisse Wölfe / Weisse Wolfe)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/belye-volki-1969_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/belye-volki-1969_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Белые волки)](*<-lang_ru;;*);
+		[Pic. (Weisse Wölfe / Weisse Wolfe)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/belye-volki-1969.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_east_germany;concept_yugoslavia;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Weisse Wölfe / Weisse Wolfe](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.06.1969](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.06.1969](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H41M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H41M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_belye_volki_1969 =>nrel_keywords: film;;
+
+concept_film_belye_volki_1969 <- concept_drama;concept_history;concept_western;;
+
+concept_film_belye_volki_1969 => nrel_main_actor : concept_gojko_mitic;concept_horst_schulze;concept_barbara_brylska;concept_holger_mahlich;;
+concept_film_belye_volki_1969 => nrel_producer : concept_konrad_petzold;concept_bosko_boskovic;;

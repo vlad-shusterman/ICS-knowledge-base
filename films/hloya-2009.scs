@@ -1,0 +1,67 @@
+concept_film_hloya_2009
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Хлоя]
+(* <- lang_ru;;    *);
+[Chloe]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Хлоя)](*<-lang_ru;;*);
+[Description (Chloe)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/hloya-2009_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/hloya-2009_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Хлоя)](*<-lang_ru;;*);
+		[Pic. (Chloe)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/hloya-2009.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_canada;concept_france;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A gripping tale that will keep you on the edge of your seat! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.02.2010](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.02.2010](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H36M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H36M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_hloya_2009 =>nrel_keywords: film;;
+
+concept_film_hloya_2009 <- concept_drama;concept_mystery;concept_romance;concept_thriller;;
+
+concept_film_hloya_2009 => nrel_main_actor : concept_julianne_moore;concept_amanda_seyfried;concept_liam_neeson;concept_max_thieriot;;
+concept_film_hloya_2009 => nrel_producer : concept_atom_egoyan;;

@@ -1,0 +1,67 @@
+concept_film_koyaaniskatsi_1982
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Кояанискатси]
+(* <- lang_ru;;    *);
+[Koyaanisqatsi]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Кояанискатси)](*<-lang_ru;;*);
+[Description (Koyaanisqatsi)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/koyaaniskatsi-1982_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/koyaaniskatsi-1982_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Кояанискатси)](*<-lang_ru;;*);
+		[Pic. (Koyaanisqatsi)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/koyaaniskatsi-1982.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Until now, you've never really seen the world you live in. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [24.08.1983](*<-lang_ru;;*);;
+    => nrel_main_idtf : [24.08.1983](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H26M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H26M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_koyaaniskatsi_1982 =>nrel_keywords: film;;
+
+concept_film_koyaaniskatsi_1982 <- concept_documentary;concept_music;;
+
+concept_film_koyaaniskatsi_1982 => nrel_main_actor : concept_marilyn_chambers;concept_lou_dobbs;concept_ted_koppel;;
+concept_film_koyaaniskatsi_1982 => nrel_producer : concept_godfrey_reggio;;

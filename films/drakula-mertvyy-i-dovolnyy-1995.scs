@@ -1,0 +1,67 @@
+concept_film_drakula_mertvyy_i_dovolnyy_1995
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Дракула: Мертвый и довольный]
+(* <- lang_ru;;    *);
+[Dracula: Dead and Loving It]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Дракула: Мертвый и довольный)](*<-lang_ru;;*);
+[Description (Dracula: Dead and Loving It)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/drakula-mertvyy-i-dovolnyy-1995_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/drakula-mertvyy-i-dovolnyy-1995_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Дракула: Мертвый и довольный)](*<-lang_ru;;*);
+		[Pic. (Dracula: Dead and Loving It)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/drakula-mertvyy-i-dovolnyy-1995.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_france;concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Dracula: Dead and Loving It](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [22.12.1995](*<-lang_ru;;*);;
+    => nrel_main_idtf : [22.12.1995](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H28M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H28M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_drakula_mertvyy_i_dovolnyy_1995 =>nrel_keywords: film;;
+
+concept_film_drakula_mertvyy_i_dovolnyy_1995 <- concept_comedy;concept_fantasy;concept_horror;;
+
+concept_film_drakula_mertvyy_i_dovolnyy_1995 => nrel_main_actor : concept_leslie_nielsen;concept_mel_brooks;concept_peter_macnicol;concept_steven_weber;;
+concept_film_drakula_mertvyy_i_dovolnyy_1995 => nrel_producer : concept_mel_brooks;;

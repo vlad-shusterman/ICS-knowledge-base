@@ -1,0 +1,67 @@
+concept_film_gayd_park_na_gudzone_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Гайд-Парк на Гудзоне]
+(* <- lang_ru;;    *);
+[Hyde Park on Hudson]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Гайд-Парк на Гудзоне)](*<-lang_ru;;*);
+[Description (Hyde Park on Hudson)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/gayd-park-na-gudzone-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/gayd-park-na-gudzone-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гайд-Парк на Гудзоне)](*<-lang_ru;;*);
+		[Pic. (Hyde Park on Hudson)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/gayd-park-na-gudzone-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [One weekend will unite two great nations...after cocktails of course! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [10.01.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [10.01.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H34M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H34M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_gayd_park_na_gudzone_2012 =>nrel_keywords: film;;
+
+concept_film_gayd_park_na_gudzone_2012 <- concept_biography;concept_comedy;concept_drama;concept_history;;
+
+concept_film_gayd_park_na_gudzone_2012 => nrel_main_actor : concept_bill_murray;concept_laura_linney;concept_olivia_williams;concept_samuel_west;;
+concept_film_gayd_park_na_gudzone_2012 => nrel_producer : concept_roger_michell;;

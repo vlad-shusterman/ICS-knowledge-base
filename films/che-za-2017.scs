@@ -1,0 +1,67 @@
+concept_film_che_za_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Чё за..!]
+(* <- lang_ru;;    *);
+[Wtf!]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Чё за..!)](*<-lang_ru;;*);
+[Description (Wtf!)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/che-za-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/che-za-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Чё за..!)](*<-lang_ru;;*);
+		[Pic. (Wtf!)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/che-za-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Seven friends, one survivor... spring break has never been so bloody. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [01.08.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [01.08.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H20M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H20M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_che_za_2017 =>nrel_keywords: film;;
+
+concept_film_che_za_2017 <- concept_horror;;
+
+concept_film_che_za_2017 => nrel_main_actor : concept_callie_ott;concept_nicholas_james_reilly;concept_andrea_hunt;concept_benjamin_norris;;
+concept_film_che_za_2017 => nrel_producer : concept_peter_herro;;

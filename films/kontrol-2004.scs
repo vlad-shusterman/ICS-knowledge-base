@@ -1,0 +1,67 @@
+concept_film_kontrol_2004
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Контроль]
+(* <- lang_ru;;    *);
+[Control]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Контроль)](*<-lang_ru;;*);
+[Description (Control)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/kontrol-2004_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/kontrol-2004_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Контроль)](*<-lang_ru;;*);
+		[Pic. (Control)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/kontrol-2004.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_aruba;concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Old habits die hard... See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [31.03.2005](*<-lang_ru;;*);;
+    => nrel_main_idtf : [31.03.2005](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H44M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H44M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_kontrol_2004 =>nrel_keywords: film;;
+
+concept_film_kontrol_2004 <- concept_crime;concept_sci_fi;concept_thriller;;
+
+concept_film_kontrol_2004 => nrel_main_actor : concept_ray_liotta;concept_willem_dafoe;concept_michelle_rodriguez;concept_stephen_rea;;
+concept_film_kontrol_2004 => nrel_producer : concept_tim_hunter;;

@@ -1,0 +1,67 @@
+concept_film_bolshoy_soldat
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Большой солдат]
+(* <- lang_ru;;    *);
+[Da bing xiao jiang]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Большой солдат)](*<-lang_ru;;*);
+[Description (Da bing xiao jiang)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/bolshoy-soldat_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/bolshoy-soldat_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Большой солдат)](*<-lang_ru;;*);
+		[Pic. (Da bing xiao jiang)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/bolshoy-soldat.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_china;concept_hong_kong;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Da bing xiao jiang](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [11.02.2010](*<-lang_ru;;*);;
+    => nrel_main_idtf : [11.02.2010](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H36M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H36M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_bolshoy_soldat =>nrel_keywords: film;;
+
+concept_film_bolshoy_soldat <- concept_action;concept_adventure;concept_comedy;concept_history;concept_war;;
+
+concept_film_bolshoy_soldat => nrel_main_actor : concept_jackie_chan;concept_leehom_wang;concept_sung_jun_yoo;concept_peng_lin;;
+concept_film_bolshoy_soldat => nrel_producer : concept_sheng_ding;;
