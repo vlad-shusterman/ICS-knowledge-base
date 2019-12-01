@@ -1,0 +1,67 @@
+concept_film_chelovek_pauk_3_vrag_v_otrazhenii_2007
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Человек-паук 3: Враг в отражении]
+(* <- lang_ru;;    *);
+[Spider-Man 3]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Человек-паук 3: Враг в отражении)](*<-lang_ru;;*);
+[Description (Spider-Man 3)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/chelovek-pauk-3-vrag-v-otrazhenii-2007_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/chelovek-pauk-3-vrag-v-otrazhenii-2007_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Человек-паук 3: Враг в отражении)](*<-lang_ru;;*);
+		[Pic. (Spider-Man 3)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/chelovek-pauk-3-vrag-v-otrazhenii-2007.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Next summer, the greatest battle lies... within. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [03.04.2007](*<-lang_ru;;*);;
+    => nrel_main_idtf : [03.04.2007](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H19M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H19M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_chelovek_pauk_3_vrag_v_otrazhenii_2007 =>nrel_keywords: film;;
+
+concept_film_chelovek_pauk_3_vrag_v_otrazhenii_2007 <- concept_action;concept_sci_fi;;
+
+concept_film_chelovek_pauk_3_vrag_v_otrazhenii_2007 => nrel_main_actor : concept_tobey_maguire;concept_kirsten_dunst;concept_topher_grace;concept_thomas_haden_church;;
+concept_film_chelovek_pauk_3_vrag_v_otrazhenii_2007 => nrel_producer : concept_sam_raimi;;

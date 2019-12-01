@@ -1,0 +1,67 @@
+concept_film_chungkingskiy_ekspress_1994
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Чунгкингский экспресс]
+(* <- lang_ru;;    *);
+[Chung Hing sam lam]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Чунгкингский экспресс)](*<-lang_ru;;*);
+[Description (Chung Hing sam lam)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/chungkingskiy-ekspress-1994_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/chungkingskiy-ekspress-1994_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Чунгкингский экспресс)](*<-lang_ru;;*);
+		[Pic. (Chung Hing sam lam)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/chungkingskiy-ekspress-1994.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_hong_kong;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [If my memory of her has an expiration date, let it be 10,000 years...](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [14.07.1994](*<-lang_ru;;*);;
+    => nrel_main_idtf : [14.07.1994](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H42M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H42M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_chungkingskiy_ekspress_1994 =>nrel_keywords: film;;
+
+concept_film_chungkingskiy_ekspress_1994 <- concept_comedy;concept_crime;concept_drama;concept_mystery;concept_romance;;
+
+concept_film_chungkingskiy_ekspress_1994 => nrel_main_actor : concept_brigitte_lin;concept_takeshi_kaneshiro;concept_tony_chiu_wai_leung;concept_faye_wong;;
+concept_film_chungkingskiy_ekspress_1994 => nrel_producer : concept_kar_wai_wong;;

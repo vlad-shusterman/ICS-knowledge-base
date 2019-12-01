@@ -1,0 +1,67 @@
+concept_film_na_serebryanoy_planete_1987
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[На серебряной планете]
+(* <- lang_ru;;    *);
+[Na srebrnym globie / On the Silver Globe]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (На серебряной планете)](*<-lang_ru;;*);
+[Description (Na srebrnym globie / On the Silver Globe)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/na-serebryanoy-planete-1987_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/na-serebryanoy-planete-1987_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (На серебряной планете)](*<-lang_ru;;*);
+		[Pic. (Na srebrnym globie / On the Silver Globe)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/na-serebryanoy-planete-1987.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_poland;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Na srebrnym globie / On the Silver Globe](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [10.02.1989](*<-lang_ru;;*);;
+    => nrel_main_idtf : [10.02.1989](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H46M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H46M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Unrated;;
+
+concept_film_na_serebryanoy_planete_1987 =>nrel_keywords: film;;
+
+concept_film_na_serebryanoy_planete_1987 <- concept_adventure;concept_drama;concept_fantasy;concept_sci_fi;;
+
+concept_film_na_serebryanoy_planete_1987 => nrel_main_actor : concept_andrzej_seweryn;concept_jerzy_trela;concept_grazyna_dylag;concept_waldemar_kownacki;;
+concept_film_na_serebryanoy_planete_1987 => nrel_producer : concept_andrzej_zulawski;;

@@ -1,0 +1,67 @@
+concept_film_naveki_tvoya_1999
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Навеки твоя]
+(* <- lang_ru;;    *);
+[Hum Dil De Chuke Sanam / Straight from the Heart]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Навеки твоя)](*<-lang_ru;;*);
+[Description (Hum Dil De Chuke Sanam / Straight from the Heart)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/naveki-tvoya-1999_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/naveki-tvoya-1999_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Навеки твоя)](*<-lang_ru;;*);
+		[Pic. (Hum Dil De Chuke Sanam / Straight from the Heart)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/naveki-tvoya-1999.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_india;concept_hungary;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [In this world... where desire rules the heart, you will discover... love is the flame that lights up the soul See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [18.06.1999](*<-lang_ru;;*);;
+    => nrel_main_idtf : [18.06.1999](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT3H8M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT3H8M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_naveki_tvoya_1999 =>nrel_keywords: film;;
+
+concept_film_naveki_tvoya_1999 <- concept_comedy;concept_drama;concept_musical;concept_romance;;
+
+concept_film_naveki_tvoya_1999 => nrel_main_actor : concept_aishwarya_rai_bachchan;concept_salman_khan;concept_ajay_devgn;concept_zohra_sehgal;;
+concept_film_naveki_tvoya_1999 => nrel_producer : concept_sanjay_leela_bhansali;;

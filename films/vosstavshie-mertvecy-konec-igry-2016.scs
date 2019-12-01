@@ -1,0 +1,67 @@
+concept_film_vosstavshie_mertvecy_konec_igry_2016
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Восставшие мертвецы: конец игры]
+(* <- lang_ru;;    *);
+[Dead Rising: Endgame]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Восставшие мертвецы: конец игры)](*<-lang_ru;;*);
+[Description (Dead Rising: Endgame)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vosstavshie-mertvecy-konec-igry-2016_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vosstavshie-mertvecy-konec-igry-2016_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Восставшие мертвецы: конец игры)](*<-lang_ru;;*);
+		[Pic. (Dead Rising: Endgame)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vosstavshie-mertvecy-konec-igry-2016.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Dead Rising: Endgame](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [20.06.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [20.06.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H36M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H36M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_vosstavshie_mertvecy_konec_igry_2016 =>nrel_keywords: film;;
+
+concept_film_vosstavshie_mertvecy_konec_igry_2016 <- concept_action;concept_horror;concept_sci_fi;;
+
+concept_film_vosstavshie_mertvecy_konec_igry_2016 => nrel_main_actor : concept_jesse_metcalfe;concept_marie_avgeropoulos;concept_ian_tracey;concept_keegan_connor_tracy;;
+concept_film_vosstavshie_mertvecy_konec_igry_2016 => nrel_producer : concept_pat_williams;;

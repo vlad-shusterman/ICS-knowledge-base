@@ -1,0 +1,67 @@
+concept_film_legion_2010
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Легион]
+(* <- lang_ru;;    *);
+[Legion]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Легион)](*<-lang_ru;;*);
+[Description (Legion)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/legion-2010_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/legion-2010_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Легион)](*<-lang_ru;;*);
+		[Pic. (Legion)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/legion-2010.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [When the last angel falls, the fight for mankind begins.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.01.2010](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.01.2010](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H40M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_legion_2010 =>nrel_keywords: film;;
+
+concept_film_legion_2010 <- concept_action;concept_adventure;concept_fantasy;concept_history;concept_horror;concept_sci_fi;;
+
+concept_film_legion_2010 => nrel_main_actor : concept_paul_bettany;concept_dennis_quaid;concept_charles_s._dutton;concept_lucas_black;;
+concept_film_legion_2010 => nrel_producer : concept_scott_stewart;;

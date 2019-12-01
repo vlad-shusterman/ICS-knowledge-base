@@ -1,0 +1,67 @@
+concept_film_ukroschenie_stroptivogo_1980
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Укрощение строптивого]
+(* <- lang_ru;;    *);
+[Il bisbetico domato / The Taming of the Scoundrel]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Укрощение строптивого)](*<-lang_ru;;*);
+[Description (Il bisbetico domato / The Taming of the Scoundrel)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ukroschenie-stroptivogo-1980_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ukroschenie-stroptivogo-1980_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Укрощение строптивого)](*<-lang_ru;;*);
+		[Pic. (Il bisbetico domato / The Taming of the Scoundrel)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ukroschenie-stroptivogo-1980.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_italy;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Il bisbetico domato / The Taming of the Scoundrel](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [20.12.1980](*<-lang_ru;;*);;
+    => nrel_main_idtf : [20.12.1980](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H47M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H47M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_ukroschenie_stroptivogo_1980 =>nrel_keywords: film;;
+
+concept_film_ukroschenie_stroptivogo_1980 <- concept_comedy;concept_romance;;
+
+concept_film_ukroschenie_stroptivogo_1980 => nrel_main_actor : concept_adriano_celentano;concept_ornella_muti;concept_edith_peters;concept_pippo_santonastaso;;
+concept_film_ukroschenie_stroptivogo_1980 => nrel_producer : concept_franco_castellano;concept_giuseppe_moccia;;

@@ -1,0 +1,67 @@
+concept_film_red_2_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[РЭД 2]
+(* <- lang_ru;;    *);
+[Red 2]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (РЭД 2)](*<-lang_ru;;*);
+[Description (Red 2)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/red-2-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/red-2-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (РЭД 2)](*<-lang_ru;;*);
+		[Pic. (Red 2)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/red-2-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_france;concept_canada;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [They're ex-CIA, but they're back in action. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [18.07.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [18.07.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H56M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H56M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_red_2_2013 =>nrel_keywords: film;;
+
+concept_film_red_2_2013 <- concept_action;concept_comedy;concept_crime;concept_thriller;;
+
+concept_film_red_2_2013 => nrel_main_actor : concept_bruce_willis;concept_helen_mirren;concept_john_malkovich;concept_anthony_hopkins;;
+concept_film_red_2_2013 => nrel_producer : concept_dean_parisot;;

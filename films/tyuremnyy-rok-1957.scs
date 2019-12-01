@@ -1,0 +1,67 @@
+concept_film_tyuremnyy_rok_1957
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Тюремный рок]
+(* <- lang_ru;;    *);
+[Jailhouse Rock]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Тюремный рок)](*<-lang_ru;;*);
+[Description (Jailhouse Rock)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/tyuremnyy-rok-1957_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/tyuremnyy-rok-1957_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Тюремный рок)](*<-lang_ru;;*);
+		[Pic. (Jailhouse Rock)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/tyuremnyy-rok-1957.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [MGM Presents ELVIS PRESLEY at his greatest See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [08.11.1957](*<-lang_ru;;*);;
+    => nrel_main_idtf : [08.11.1957](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H36M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H36M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_tyuremnyy_rok_1957 =>nrel_keywords: film;;
+
+concept_film_tyuremnyy_rok_1957 <- concept_drama;concept_music;concept_musical;;
+
+concept_film_tyuremnyy_rok_1957 => nrel_main_actor : concept_elvis_presley;concept_judy_tyler;concept_mickey_shaughnessy;concept_vaughn_taylor;;
+concept_film_tyuremnyy_rok_1957 => nrel_producer : concept_richard_thorpe;;

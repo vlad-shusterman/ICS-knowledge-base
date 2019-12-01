@@ -1,0 +1,67 @@
+concept_film_melinda_i_melinda_2004
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Мелинда и Мелинда]
+(* <- lang_ru;;    *);
+[Melinda and Melinda]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Мелинда и Мелинда)](*<-lang_ru;;*);
+[Description (Melinda and Melinda)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/melinda-i-melinda-2004_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/melinda-i-melinda-2004_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Мелинда и Мелинда)](*<-lang_ru;;*);
+		[Pic. (Melinda and Melinda)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/melinda-i-melinda-2004.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [One love story. Two versions. Seriously funny. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.10.2004](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.10.2004](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H39M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H39M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_melinda_i_melinda_2004 =>nrel_keywords: film;;
+
+concept_film_melinda_i_melinda_2004 <- concept_comedy;concept_drama;concept_romance;;
+
+concept_film_melinda_i_melinda_2004 => nrel_main_actor : concept_will_ferrell;concept_vinessa_shaw;concept_chiwetel_ejiofor;concept_wallace_shawn;;
+concept_film_melinda_i_melinda_2004 => nrel_producer : concept_woody_allen;;

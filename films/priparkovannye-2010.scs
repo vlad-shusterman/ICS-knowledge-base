@@ -1,0 +1,67 @@
+concept_film_priparkovannye_2010
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Припаркованные]
+(* <- lang_ru;;    *);
+[Parked]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Припаркованные)](*<-lang_ru;;*);
+[Description (Parked)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/priparkovannye-2010_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/priparkovannye-2010_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Припаркованные)](*<-lang_ru;;*);
+		[Pic. (Parked)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/priparkovannye-2010.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_ireland;concept_finland;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Sometimes the person you least expect can help you find your way home.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [14.10.2011](*<-lang_ru;;*);;
+    => nrel_main_idtf : [14.10.2011](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H34M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H34M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_priparkovannye_2010 =>nrel_keywords: film;;
+
+concept_film_priparkovannye_2010 <- concept_drama;;
+
+concept_film_priparkovannye_2010 => nrel_main_actor : concept_colin_morgan;concept_colm_meaney;concept_milka_ahlroth;concept_stuart_graham;;
+concept_film_priparkovannye_2010 => nrel_producer : concept_darragh_byrne;;

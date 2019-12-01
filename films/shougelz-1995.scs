@@ -1,0 +1,67 @@
+concept_film_shougelz_1995
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Шоугелз]
+(* <- lang_ru;;    *);
+[Showgirls]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Шоугелз)](*<-lang_ru;;*);
+[Description (Showgirls)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/shougelz-1995_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/shougelz-1995_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Шоугелз)](*<-lang_ru;;*);
+		[Pic. (Showgirls)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/shougelz-1995.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_france;concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The girls are back in town! (re-release) See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [22.09.1995](*<-lang_ru;;*);;
+    => nrel_main_idtf : [22.09.1995](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H8M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H8M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_NC_17;;
+
+concept_film_shougelz_1995 =>nrel_keywords: film;;
+
+concept_film_shougelz_1995 <- concept_drama;;
+
+concept_film_shougelz_1995 => nrel_main_actor : concept_elizabeth_berkley;concept_kyle_maclachlan;concept_gina_gershon;concept_glenn_plummer;;
+concept_film_shougelz_1995 => nrel_producer : concept_paul_verhoeven;;

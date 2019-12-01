@@ -1,0 +1,67 @@
+concept_film_bezdna_1989
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Бездна]
+(* <- lang_ru;;    *);
+[The Abyss]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Бездна)](*<-lang_ru;;*);
+[Description (The Abyss)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/bezdna-1989_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/bezdna-1989_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Бездна)](*<-lang_ru;;*);
+		[Pic. (The Abyss)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/bezdna-1989.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A place on earth more awesome than anywhere in space. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [09.08.1989](*<-lang_ru;;*);;
+    => nrel_main_idtf : [09.08.1989](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H25M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H25M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_bezdna_1989 =>nrel_keywords: film;;
+
+concept_film_bezdna_1989 <- concept_adventure;concept_drama;concept_mystery;concept_sci_fi;concept_thriller;;
+
+concept_film_bezdna_1989 => nrel_main_actor : concept_ed_harris;concept_mary_elizabeth_mastrantonio;concept_michael_biehn;concept_leo_burmester;;
+concept_film_bezdna_1989 => nrel_producer : concept_james_cameron;;

@@ -1,0 +1,67 @@
+concept_film_gvendolin_1984
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Гвендолин]
+(* <- lang_ru;;    *);
+[Gwendoline]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Гвендолин)](*<-lang_ru;;*);
+[Description (Gwendoline)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/gvendolin-1984_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/gvendolin-1984_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гвендолин)](*<-lang_ru;;*);
+		[Pic. (Gwendoline)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/gvendolin-1984.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_france;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Adventure Without Shame! A Lost, Lost Civilization Where No Man Has Ever Been ... And for Good Reason! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [08.02.1984](*<-lang_ru;;*);;
+    => nrel_main_idtf : [08.02.1984](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H27M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H27M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_gvendolin_1984 =>nrel_keywords: film;;
+
+concept_film_gvendolin_1984 <- concept_adventure;concept_fantasy;;
+
+concept_film_gvendolin_1984 => nrel_main_actor : concept_tawny_kitaen;concept_brent_huff;concept_zabou_breitman;concept_bernadette_lafont;;
+concept_film_gvendolin_1984 => nrel_producer : concept_just_jaeckin;;

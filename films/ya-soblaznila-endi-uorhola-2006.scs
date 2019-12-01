@@ -1,0 +1,67 @@
+concept_film_ya_soblaznila_endi_uorhola_2006
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Я соблазнила Энди Уорхола]
+(* <- lang_ru;;    *);
+[Factory Girl]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Я соблазнила Энди Уорхола)](*<-lang_ru;;*);
+[Description (Factory Girl)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ya-soblaznila-endi-uorhola-2006_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ya-soblaznila-endi-uorhola-2006_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Я соблазнила Энди Уорхола)](*<-lang_ru;;*);
+		[Pic. (Factory Girl)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ya-soblaznila-endi-uorhola-2006.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The Fame. The Spotlight. The Scandal. The Party's About To Begin. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [16.02.2007](*<-lang_ru;;*);;
+    => nrel_main_idtf : [16.02.2007](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H30M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H30M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_ya_soblaznila_endi_uorhola_2006 =>nrel_keywords: film;;
+
+concept_film_ya_soblaznila_endi_uorhola_2006 <- concept_biography;concept_drama;;
+
+concept_film_ya_soblaznila_endi_uorhola_2006 => nrel_main_actor : concept_sienna_miller;concept_guy_pearce;concept_hayden_christensen;concept_jimmy_fallon;;
+concept_film_ya_soblaznila_endi_uorhola_2006 => nrel_producer : concept_george_hickenlooper;;

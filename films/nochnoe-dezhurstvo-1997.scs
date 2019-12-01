@@ -1,0 +1,67 @@
+concept_film_nochnoe_dezhurstvo_1997
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Ночное дежурство]
+(* <- lang_ru;;    *);
+[Nightwatch]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Ночное дежурство)](*<-lang_ru;;*);
+[Description (Nightwatch)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/nochnoe-dezhurstvo-1997_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/nochnoe-dezhurstvo-1997_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ночное дежурство)](*<-lang_ru;;*);
+		[Pic. (Nightwatch)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/nochnoe-dezhurstvo-1997.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [He's a full-time college student who just took the wrong part-time job. Now he's the final piece in a brilliant serial killer's puzzle. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [17.04.1998](*<-lang_ru;;*);;
+    => nrel_main_idtf : [17.04.1998](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H41M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H41M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_nochnoe_dezhurstvo_1997 =>nrel_keywords: film;;
+
+concept_film_nochnoe_dezhurstvo_1997 <- concept_drama;concept_horror;concept_thriller;;
+
+concept_film_nochnoe_dezhurstvo_1997 => nrel_main_actor : concept_ewan_mcgregor;concept_nick_nolte;concept_anais_evans;concept_erich_anderson;;
+concept_film_nochnoe_dezhurstvo_1997 => nrel_producer : concept_ole_bornedal;;

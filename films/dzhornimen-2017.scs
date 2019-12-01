@@ -1,0 +1,67 @@
+concept_film_dzhornimen_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Джорнимен]
+(* <- lang_ru;;    *);
+[Journeyman]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Джорнимен)](*<-lang_ru;;*);
+[Description (Journeyman)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dzhornimen-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dzhornimen-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Джорнимен)](*<-lang_ru;;*);
+		[Pic. (Journeyman)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dzhornimen-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A snapshot into the life of a struggling boxer](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [30.03.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [30.03.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H32M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H32M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_dzhornimen_2017 =>nrel_keywords: film;;
+
+concept_film_dzhornimen_2017 <- concept_drama;concept_sport;;
+
+concept_film_dzhornimen_2017 => nrel_main_actor : concept_paddy_considine;concept_jodie_whittaker;concept_paul_popplewell;concept_brendan_ingle;;
+concept_film_dzhornimen_2017 => nrel_producer : concept_paddy_considine;;

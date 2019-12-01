@@ -1,0 +1,67 @@
+concept_film_bogatey_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Богатей]
+(* <- lang_ru;;    *);
+[Raees]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Богатей)](*<-lang_ru;;*);
+[Description (Raees)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/bogatey-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/bogatey-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Богатей)](*<-lang_ru;;*);
+		[Pic. (Raees)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/bogatey-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_india;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Baniye ka dimaag aur Miyanbhai ki daring.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.01.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.01.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H23M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H23M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_bogatey_2017 =>nrel_keywords: film;;
+
+concept_film_bogatey_2017 <- concept_action;concept_crime;concept_drama;;
+
+concept_film_bogatey_2017 => nrel_main_actor : concept_raj_arjun;concept_shubham_chintamani;concept_shubham_tukaram;concept_yug;;
+concept_film_bogatey_2017 => nrel_producer : concept_rahul_dholakia;;

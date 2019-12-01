@@ -1,0 +1,67 @@
+concept_film_proschay_kristofer_robin_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Прощай, Кристофер Робин]
+(* <- lang_ru;;    *);
+[Goodbye Christopher Robin]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Прощай, Кристофер Робин)](*<-lang_ru;;*);
+[Description (Goodbye Christopher Robin)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/proschay-kristofer-robin-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/proschay-kristofer-robin-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Прощай, Кристофер Робин)](*<-lang_ru;;*);
+		[Pic. (Goodbye Christopher Robin)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/proschay-kristofer-robin-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [From a child's imagination to a worldwide phenomenon. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.09.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.09.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H47M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H47M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_proschay_kristofer_robin_2017 =>nrel_keywords: film;;
+
+concept_film_proschay_kristofer_robin_2017 <- concept_biography;concept_drama;;
+
+concept_film_proschay_kristofer_robin_2017 => nrel_main_actor : concept_domhnall_gleeson;concept_margot_robbie;concept_kelly_macdonald;concept_vicki_pepperdine;;
+concept_film_proschay_kristofer_robin_2017 => nrel_producer : concept_simon_curtis;;

@@ -1,0 +1,67 @@
+concept_film_odinokiy_reyndzher_2014_10_04
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Одинокий рейнджер]
+(* <- lang_ru;;    *);
+[The Lone Ranger]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Одинокий рейнджер)](*<-lang_ru;;*);
+[Description (The Lone Ranger)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/odinokiy-reyndzher-2014-10-04_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/odinokiy-reyndzher-2014-10-04_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Одинокий рейнджер)](*<-lang_ru;;*);
+		[Pic. (The Lone Ranger)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/odinokiy-reyndzher-2014-10-04.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Never Take Off the Mask](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [03.07.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [03.07.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H30M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H30M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_odinokiy_reyndzher_2014_10_04 =>nrel_keywords: film;;
+
+concept_film_odinokiy_reyndzher_2014_10_04 <- concept_action;concept_adventure;concept_comedy;concept_thriller;concept_war;concept_western;;
+
+concept_film_odinokiy_reyndzher_2014_10_04 => nrel_main_actor : concept_johnny_depp;concept_armie_hammer;concept_william_fichtner;concept_tom_wilkinson;;
+concept_film_odinokiy_reyndzher_2014_10_04 => nrel_producer : concept_gore_verbinski;;

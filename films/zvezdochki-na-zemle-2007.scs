@@ -1,0 +1,67 @@
+concept_film_zvezdochki_na_zemle_2007
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Звездочки на земле]
+(* <- lang_ru;;    *);
+[Taare Zameen Par / Like Stars on Earth]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Звездочки на земле)](*<-lang_ru;;*);
+[Description (Taare Zameen Par / Like Stars on Earth)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zvezdochki-na-zemle-2007_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zvezdochki-na-zemle-2007_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Звездочки на земле)](*<-lang_ru;;*);
+		[Pic. (Taare Zameen Par / Like Stars on Earth)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zvezdochki-na-zemle-2007.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_india;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Every Child is Special](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.12.2007](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.12.2007](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H45M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_zvezdochki_na_zemle_2007 =>nrel_keywords: film;;
+
+concept_film_zvezdochki_na_zemle_2007 <- concept_drama;concept_family;;
+
+concept_film_zvezdochki_na_zemle_2007 => nrel_main_actor : concept_darsheel_safary;concept_aamir_khan;concept_tisca_chopra;concept_vipin_sharma;;
+concept_film_zvezdochki_na_zemle_2007 => nrel_producer : concept_aamir_khan;concept_amole_gupte;;

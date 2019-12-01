@@ -1,0 +1,67 @@
+concept_film_flirt_so_zverem_2001
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Флирт со зверем]
+(* <- lang_ru;;    *);
+[Someone Like You...]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Флирт со зверем)](*<-lang_ru;;*);
+[Description (Someone Like You...)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/flirt-so-zverem-2001_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/flirt-so-zverem-2001_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Флирт со зверем)](*<-lang_ru;;*);
+		[Pic. (Someone Like You...)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/flirt-so-zverem-2001.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The story about the one that got away and the one she never saw coming.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [30.03.2001](*<-lang_ru;;*);;
+    => nrel_main_idtf : [30.03.2001](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H37M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H37M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_flirt_so_zverem_2001 =>nrel_keywords: film;;
+
+concept_film_flirt_so_zverem_2001 <- concept_comedy;concept_romance;;
+
+concept_film_flirt_so_zverem_2001 => nrel_main_actor : concept_ashley_judd;concept_greg_kinnear;concept_hugh_jackman;concept_marisa_tomei;;
+concept_film_flirt_so_zverem_2001 => nrel_producer : concept_tony_goldwyn;;

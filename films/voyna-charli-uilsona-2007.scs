@@ -1,0 +1,67 @@
+concept_film_voyna_charli_uilsona_2007
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Война Чарли Уилсона]
+(* <- lang_ru;;    *);
+[Charlie Wilson's War]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Война Чарли Уилсона)](*<-lang_ru;;*);
+[Description (Charlie Wilson's War)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/voyna-charli-uilsona-2007_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/voyna-charli-uilsona-2007_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Война Чарли Уилсона)](*<-lang_ru;;*);
+		[Pic. (Charlie Wilson's War)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/voyna-charli-uilsona-2007.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_germany;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A stiff drink. A little mascara. A lot of nerve. Who said they couldn't bring down the Soviet empire. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.12.2007](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.12.2007](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H42M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H42M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_voyna_charli_uilsona_2007 =>nrel_keywords: film;;
+
+concept_film_voyna_charli_uilsona_2007 <- concept_biography;concept_comedy;concept_drama;concept_history;;
+
+concept_film_voyna_charli_uilsona_2007 => nrel_main_actor : concept_tom_hanks;concept_julia_roberts;concept_philip_seymour_hoffman;concept_amy_adams;;
+concept_film_voyna_charli_uilsona_2007 => nrel_producer : concept_mike_nichols;;

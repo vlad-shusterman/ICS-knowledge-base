@@ -1,0 +1,67 @@
+concept_film_gran_buduschego_2014
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Грань будущего]
+(* <- lang_ru;;    *);
+[Edge of Tomorrow]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Грань будущего)](*<-lang_ru;;*);
+[Description (Edge of Tomorrow)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/gran-buduschego-2014_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/gran-buduschego-2014_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Грань будущего)](*<-lang_ru;;*);
+		[Pic. (Edge of Tomorrow)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/gran-buduschego-2014.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_canada;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Live, Die, Repeat](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [28.05.2014](*<-lang_ru;;*);;
+    => nrel_main_idtf : [28.05.2014](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H53M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H53M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_gran_buduschego_2014 =>nrel_keywords: film;;
+
+concept_film_gran_buduschego_2014 <- concept_action;concept_sci_fi;;
+
+concept_film_gran_buduschego_2014 => nrel_main_actor : concept_tom_cruise;concept_emily_blunt;concept_bill_paxton;concept_brendan_gleeson;;
+concept_film_gran_buduschego_2014 => nrel_producer : concept_doug_liman;;

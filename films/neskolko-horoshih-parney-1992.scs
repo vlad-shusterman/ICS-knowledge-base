@@ -1,0 +1,67 @@
+concept_film_neskolko_horoshih_parney_1992
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Несколько хороших парней]
+(* <- lang_ru;;    *);
+[A Few Good Men]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Несколько хороших парней)](*<-lang_ru;;*);
+[Description (A Few Good Men)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/neskolko-horoshih-parney-1992_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/neskolko-horoshih-parney-1992_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Несколько хороших парней)](*<-lang_ru;;*);
+		[Pic. (A Few Good Men)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/neskolko-horoshih-parney-1992.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [You can't handle the truth! See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [11.12.1992](*<-lang_ru;;*);;
+    => nrel_main_idtf : [11.12.1992](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H18M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H18M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_neskolko_horoshih_parney_1992 =>nrel_keywords: film;;
+
+concept_film_neskolko_horoshih_parney_1992 <- concept_drama;concept_thriller;;
+
+concept_film_neskolko_horoshih_parney_1992 => nrel_main_actor : concept_tom_cruise;concept_jack_nicholson;concept_demi_moore;concept_kevin_bacon;;
+concept_film_neskolko_horoshih_parney_1992 => nrel_producer : concept_rob_reiner;;

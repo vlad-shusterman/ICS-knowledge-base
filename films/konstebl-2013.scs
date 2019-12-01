@@ -1,0 +1,67 @@
+concept_film_konstebl_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Констебль]
+(* <- lang_ru;;    *);
+[Chung fung jin ging / The Constable]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Констебль)](*<-lang_ru;;*);
+[Description (Chung fung jin ging / The Constable)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/konstebl-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/konstebl-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Констебль)](*<-lang_ru;;*);
+		[Pic. (Chung fung jin ging / The Constable)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/konstebl-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_hong_kong;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Chung fung jin ging / The Constable](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [01.11.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [01.11.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H36M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H36M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_konstebl_2013 =>nrel_keywords: film;;
+
+concept_film_konstebl_2013 <- concept_action;concept_drama;;
+
+concept_film_konstebl_2013 => nrel_main_actor : concept_simon_yam;concept_suet_lam;concept_sam_lee;concept_mengmeng_niu;;
+concept_film_konstebl_2013 => nrel_producer : concept_dennis_law;;

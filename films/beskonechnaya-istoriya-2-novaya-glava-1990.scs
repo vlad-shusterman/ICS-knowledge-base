@@ -1,0 +1,67 @@
+concept_film_beskonechnaya_istoriya_2_novaya_glava_1990
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Бесконечная история 2: Новая глава]
+(* <- lang_ru;;    *);
+[The Neverending Story II: The Next Chapter]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Бесконечная история 2: Новая глава)](*<-lang_ru;;*);
+[Description (The Neverending Story II: The Next Chapter)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/beskonechnaya-istoriya-2-novaya-glava-1990_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/beskonechnaya-istoriya-2-novaya-glava-1990_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Бесконечная история 2: Новая глава)](*<-lang_ru;;*);
+		[Pic. (The Neverending Story II: The Next Chapter)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/beskonechnaya-istoriya-2-novaya-glava-1990.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_germany;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Begin an all new adventure as a young boy returns to a world of wonder on the wings of his imagination.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.10.1990](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.10.1990](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H29M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H29M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_beskonechnaya_istoriya_2_novaya_glava_1990 =>nrel_keywords: film;;
+
+concept_film_beskonechnaya_istoriya_2_novaya_glava_1990 <- concept_adventure;concept_drama;concept_family;concept_fantasy;;
+
+concept_film_beskonechnaya_istoriya_2_novaya_glava_1990 => nrel_main_actor : concept_jonathan_brandis;concept_kenny_morrison;concept_clarissa_burt;concept_john_wesley_shipp;;
+concept_film_beskonechnaya_istoriya_2_novaya_glava_1990 => nrel_producer : concept_george_miller;;

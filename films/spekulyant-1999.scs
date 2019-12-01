@@ -1,0 +1,67 @@
+concept_film_spekulyant_1999
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Спекулянт]
+(* <- lang_ru;;    *);
+[Just the Ticket]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Спекулянт)](*<-lang_ru;;*);
+[Description (Just the Ticket)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/spekulyant-1999_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/spekulyant-1999_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Спекулянт)](*<-lang_ru;;*);
+		[Pic. (Just the Ticket)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/spekulyant-1999.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_france;concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Irresponsible, Unreliable, Unpredictable and totally Irresistible.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [26.02.1999](*<-lang_ru;;*);;
+    => nrel_main_idtf : [26.02.1999](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H55M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H55M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_spekulyant_1999 =>nrel_keywords: film;;
+
+concept_film_spekulyant_1999 <- concept_comedy;concept_romance;;
+
+concept_film_spekulyant_1999 => nrel_main_actor : concept_andy_garcia;concept_andie_macdowell;concept_richard_bradford;concept_alice_drummond;;
+concept_film_spekulyant_1999 => nrel_producer : concept_richard_wenk;;

@@ -1,0 +1,67 @@
+concept_film_dnevnik_pamyati_2004
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Дневник памяти]
+(* <- lang_ru;;    *);
+[The Notebook]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Дневник памяти)](*<-lang_ru;;*);
+[Description (The Notebook)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dnevnik-pamyati-2004_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dnevnik-pamyati-2004_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Дневник памяти)](*<-lang_ru;;*);
+		[Pic. (The Notebook)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dnevnik-pamyati-2004.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Behind every great love is a great story.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.06.2004](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.06.2004](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H3M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H3M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_dnevnik_pamyati_2004 =>nrel_keywords: film;;
+
+concept_film_dnevnik_pamyati_2004 <- concept_drama;concept_romance;;
+
+concept_film_dnevnik_pamyati_2004 => nrel_main_actor : concept_gena_rowlands;concept_james_garner;concept_rachel_mcadams;concept_ryan_gosling;;
+concept_film_dnevnik_pamyati_2004 => nrel_producer : concept_nick_cassavetes;;

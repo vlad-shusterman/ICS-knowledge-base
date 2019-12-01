@@ -1,0 +1,67 @@
+concept_film_den_krasnyh_nosov_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[День красных носов]
+(* <- lang_ru;;    *);
+[Red Nose Day Actually]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (День красных носов)](*<-lang_ru;;*);
+[Description (Red Nose Day Actually)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/den-krasnyh-nosov-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/den-krasnyh-nosov-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (День красных носов)](*<-lang_ru;;*);
+		[Pic. (Red Nose Day Actually)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/den-krasnyh-nosov-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The ultimate Comic Relief See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [24.03.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [24.03.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT15M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT15M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_PG;;
+
+concept_film_den_krasnyh_nosov_2017 =>nrel_keywords: film;;
+
+concept_film_den_krasnyh_nosov_2017 <- concept_short;concept_comedy;concept_romance;;
+
+concept_film_den_krasnyh_nosov_2017 => nrel_main_actor : concept_rowan_atkinson;concept_alexis_lynne_baumert;concept_marcus_brigstocke;concept_thomas_brodie_sangster;;
+concept_film_den_krasnyh_nosov_2017 => nrel_producer : concept_richard_curtis;concept_mat_whitecross;;

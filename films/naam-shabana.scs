@@ -1,0 +1,67 @@
+concept_film_naam_shabana
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Её звали Шабана]
+(* <- lang_ru;;    *);
+[Naam Shabana]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Её звали Шабана)](*<-lang_ru;;*);
+[Description (Naam Shabana)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/naam-shabana_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/naam-shabana_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Её звали Шабана)](*<-lang_ru;;*);
+		[Pic. (Naam Shabana)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/naam-shabana.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_india;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Her story... before Baby.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [30.03.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [30.03.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H27M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H27M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_naam_shabana =>nrel_keywords: film;;
+
+concept_film_naam_shabana <- concept_action;concept_thriller;;
+
+concept_film_naam_shabana => nrel_main_actor : concept_taapsee_pannu;concept_akshay_kumar;concept_manoj_bajpayee;concept_taher_shabbir;;
+concept_film_naam_shabana => nrel_producer : concept_shivam_nair;;

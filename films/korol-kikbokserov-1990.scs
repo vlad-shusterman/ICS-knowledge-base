@@ -1,0 +1,67 @@
+concept_film_korol_kikbokserov_1990
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Король кикбоксеров]
+(* <- lang_ru;;    *);
+[The King of the Kickboxers]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Король кикбоксеров)](*<-lang_ru;;*);
+[Description (The King of the Kickboxers)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/korol-kikbokserov-1990_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/korol-kikbokserov-1990_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Король кикбоксеров)](*<-lang_ru;;*);
+		[Pic. (The King of the Kickboxers)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/korol-kikbokserov-1990.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_hong_kong;concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [In the Ring of Death, only one man can become king!](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [02.11.1990](*<-lang_ru;;*);;
+    => nrel_main_idtf : [02.11.1990](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H39M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H39M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_korol_kikbokserov_1990 =>nrel_keywords: film;;
+
+concept_film_korol_kikbokserov_1990 <- concept_action;concept_crime;concept_sport;;
+
+concept_film_korol_kikbokserov_1990 => nrel_main_actor : concept_loren_avedon;concept_richard_jaeckel;concept_don_stroud;concept_billy_blanks;;
+concept_film_korol_kikbokserov_1990 => nrel_producer : concept_lucas_lowe;;

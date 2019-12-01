@@ -1,0 +1,67 @@
+concept_film_doroga_domoy_2_zateryannye_v_san_francisko_1996
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Дорога домой 2: Затерянные в Сан-Франциско]
+(* <- lang_ru;;    *);
+[Homeward Bound II: Lost in San Francisco]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Дорога домой 2: Затерянные в Сан-Франциско)](*<-lang_ru;;*);
+[Description (Homeward Bound II: Lost in San Francisco)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/doroga-domoy-2-zateryannye-v-san-francisko-1996_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/doroga-domoy-2-zateryannye-v-san-francisko-1996_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Дорога домой 2: Затерянные в Сан-Франциско)](*<-lang_ru;;*);
+		[Pic. (Homeward Bound II: Lost in San Francisco)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/doroga-domoy-2-zateryannye-v-san-francisko-1996.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Your favorite talking animals are back!](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [08.03.1996](*<-lang_ru;;*);;
+    => nrel_main_idtf : [08.03.1996](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H28M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H28M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_G;;
+
+concept_film_doroga_domoy_2_zateryannye_v_san_francisko_1996 =>nrel_keywords: film;;
+
+concept_film_doroga_domoy_2_zateryannye_v_san_francisko_1996 <- concept_adventure;concept_comedy;concept_family;concept_romance;;
+
+concept_film_doroga_domoy_2_zateryannye_v_san_francisko_1996 => nrel_main_actor : concept_michael_j._fox;concept_sally_field;concept_ralph_waite;concept_al_michaels;;
+concept_film_doroga_domoy_2_zateryannye_v_san_francisko_1996 => nrel_producer : concept_david_r._ellis;;

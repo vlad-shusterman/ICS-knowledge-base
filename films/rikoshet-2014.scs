@@ -1,0 +1,67 @@
+concept_film_rikoshet_2014
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Рикошет]
+(* <- lang_ru;;    *);
+[Rebound]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Рикошет)](*<-lang_ru;;*);
+[Description (Rebound)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/rikoshet-2014_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/rikoshet-2014_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Рикошет)](*<-lang_ru;;*);
+		[Pic. (Rebound)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/rikoshet-2014.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Rebound](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [23.06.2014](*<-lang_ru;;*);;
+    => nrel_main_idtf : [23.06.2014](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H24M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H24M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_rikoshet_2014 =>nrel_keywords: film;;
+
+concept_film_rikoshet_2014 <- concept_horror;concept_mystery;concept_thriller;;
+
+concept_film_rikoshet_2014 => nrel_main_actor : concept_ashley_james;concept_mark_meir;concept_liz_bauer;concept_kevin_bulla;;
+concept_film_rikoshet_2014 => nrel_producer : concept_megan_freels_johnston;;

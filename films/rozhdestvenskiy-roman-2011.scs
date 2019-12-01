@@ -1,0 +1,67 @@
+concept_film_rozhdestvenskiy_roman_2011
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Рождественский роман]
+(* <- lang_ru;;    *);
+[Love's Christmas Journey]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Рождественский роман)](*<-lang_ru;;*);
+[Description (Love's Christmas Journey)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/rozhdestvenskiy-roman-2011_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/rozhdestvenskiy-roman-2011_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Рождественский роман)](*<-lang_ru;;*);
+		[Pic. (Love's Christmas Journey)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/rozhdestvenskiy-roman-2011.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_uk;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Let the spirit of the season find you.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [05.11.2011](*<-lang_ru;;*);;
+    => nrel_main_idtf : [05.11.2011](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H51M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H51M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_rozhdestvenskiy_roman_2011 =>nrel_keywords: film;;
+
+concept_film_rozhdestvenskiy_roman_2011 <- concept_drama;concept_romance;concept_western;;
+
+concept_film_rozhdestvenskiy_roman_2011 => nrel_main_actor : concept_natalie_hall;concept_jobeth_williams;concept_greg_vaughan;concept_dylan_bruce;;
+concept_film_rozhdestvenskiy_roman_2011 => nrel_producer : concept_david_s._cass_sr.;;

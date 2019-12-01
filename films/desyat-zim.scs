@@ -1,0 +1,67 @@
+concept_film_desyat_zim
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Десять зим]
+(* <- lang_ru;;    *);
+[Dieci inverni / Ten Winters]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Десять зим)](*<-lang_ru;;*);
+[Description (Dieci inverni / Ten Winters)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/desyat-zim_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/desyat-zim_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Десять зим)](*<-lang_ru;;*);
+		[Pic. (Dieci inverni / Ten Winters)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/desyat-zim.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_italy;concept_russia;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Dieci inverni / Ten Winters](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [10.12.2009](*<-lang_ru;;*);;
+    => nrel_main_idtf : [10.12.2009](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H39M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H39M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_desyat_zim =>nrel_keywords: film;;
+
+concept_film_desyat_zim <- concept_romance;;
+
+concept_film_desyat_zim => nrel_main_actor : concept_isabella_ragonese;concept_michele_riondino;concept_glen_blackhall;concept_sergey_zhigunov;;
+concept_film_desyat_zim => nrel_producer : concept_valerio_mieli;;

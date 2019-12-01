@@ -1,0 +1,67 @@
+concept_film_schastlivoe_chislo_slevina_2005
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Счастливое число Слевина]
+(* <- lang_ru;;    *);
+[Lucky Number Slevin]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Счастливое число Слевина)](*<-lang_ru;;*);
+[Description (Lucky Number Slevin)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/schastlivoe-chislo-slevina-2005_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/schastlivoe-chislo-slevina-2005_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Счастливое число Слевина)](*<-lang_ru;;*);
+		[Pic. (Lucky Number Slevin)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/schastlivoe-chislo-slevina-2005.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_germany;concept_uk;concept_usa;concept_canada;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Wrong Time. Wrong Place. Wrong Number. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [24.02.2006](*<-lang_ru;;*);;
+    => nrel_main_idtf : [24.02.2006](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H50M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H50M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_schastlivoe_chislo_slevina_2005 =>nrel_keywords: film;;
+
+concept_film_schastlivoe_chislo_slevina_2005 <- concept_crime;concept_drama;concept_mystery;concept_thriller;;
+
+concept_film_schastlivoe_chislo_slevina_2005 => nrel_main_actor : concept_josh_hartnett;concept_ben_kingsley;concept_morgan_freeman;concept_lucy_liu;;
+concept_film_schastlivoe_chislo_slevina_2005 => nrel_producer : concept_paul_mcguigan;;

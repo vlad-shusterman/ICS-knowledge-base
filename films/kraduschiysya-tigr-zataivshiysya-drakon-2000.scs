@@ -1,0 +1,67 @@
+concept_film_kraduschiysya_tigr_zataivshiysya_drakon_2000
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Крадущийся тигр, затаившийся дракон]
+(* <- lang_ru;;    *);
+[Wo hu cang long / Crouching Tiger, Hidden Dragon]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Крадущийся тигр, затаившийся дракон)](*<-lang_ru;;*);
+[Description (Wo hu cang long / Crouching Tiger, Hidden Dragon)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/kraduschiysya-tigr-zataivshiysya-drakon-2000_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/kraduschiysya-tigr-zataivshiysya-drakon-2000_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Крадущийся тигр, затаившийся дракон)](*<-lang_ru;;*);
+		[Pic. (Wo hu cang long / Crouching Tiger, Hidden Dragon)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/kraduschiysya-tigr-zataivshiysya-drakon-2000.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_taiwan;concept_hong_kong;concept_usa;concept_china;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A timeless story of strength, secrets, and two warriors who would never surrender. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [06.07.2000](*<-lang_ru;;*);;
+    => nrel_main_idtf : [06.07.2000](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_kraduschiysya_tigr_zataivshiysya_drakon_2000 =>nrel_keywords: film;;
+
+concept_film_kraduschiysya_tigr_zataivshiysya_drakon_2000 <- concept_action;concept_adventure;concept_fantasy;concept_romance;;
+
+concept_film_kraduschiysya_tigr_zataivshiysya_drakon_2000 => nrel_main_actor : concept_yun_fat_chow;concept_michelle_yeoh;concept_ziyi_zhang;concept_chen_chang;;
+concept_film_kraduschiysya_tigr_zataivshiysya_drakon_2000 => nrel_producer : concept_ang_lee;;

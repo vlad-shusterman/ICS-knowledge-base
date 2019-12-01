@@ -1,0 +1,67 @@
+concept_film_telohranitel_iz_pekina
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Телохранитель из Пекина]
+(* <- lang_ru;;    *);
+[Chung Nam Hoi bo biu / The Bodyguard from Beijing / The Defender]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Телохранитель из Пекина)](*<-lang_ru;;*);
+[Description (Chung Nam Hoi bo biu / The Bodyguard from Beijing / The Defender)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/telohranitel-iz-pekina_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/telohranitel-iz-pekina_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Телохранитель из Пекина)](*<-lang_ru;;*);
+		[Pic. (Chung Nam Hoi bo biu / The Bodyguard from Beijing / The Defender)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/telohranitel-iz-pekina.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_hong_kong;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Only One Man Stands Between The Assassin And His Target!](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [28.07.1994](*<-lang_ru;;*);;
+    => nrel_main_idtf : [28.07.1994](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H32M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H32M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_telohranitel_iz_pekina =>nrel_keywords: film;;
+
+concept_film_telohranitel_iz_pekina <- concept_action;concept_crime;concept_thriller;;
+
+concept_film_telohranitel_iz_pekina => nrel_main_actor : concept_jet_li;concept_christy_chung;concept_kent_cheng;concept_collin_chou;;
+concept_film_telohranitel_iz_pekina => nrel_producer : concept_corey_yuen;;

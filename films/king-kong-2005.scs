@@ -1,0 +1,67 @@
+concept_film_king_kong_2005
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Кинг Конг]
+(* <- lang_ru;;    *);
+[King Kong]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Кинг Конг)](*<-lang_ru;;*);
+[Description (King Kong)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/king-kong-2005_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/king-kong-2005_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Кинг Конг)](*<-lang_ru;;*);
+		[Pic. (King Kong)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/king-kong-2005.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_new_zealand;concept_usa;concept_germany;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The eighth wonder of the world.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.12.2005](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.12.2005](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT3H7M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT3H7M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_king_kong_2005 =>nrel_keywords: film;;
+
+concept_film_king_kong_2005 <- concept_action;concept_adventure;concept_drama;concept_romance;;
+
+concept_film_king_kong_2005 => nrel_main_actor : concept_naomi_watts;concept_jack_black;concept_adrien_brody;concept_thomas_kretschmann;;
+concept_film_king_kong_2005 => nrel_producer : concept_peter_jackson;;

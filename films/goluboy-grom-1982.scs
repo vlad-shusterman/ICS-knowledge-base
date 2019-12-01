@@ -1,0 +1,67 @@
+concept_film_goluboy_grom_1982
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Голубой гром]
+(* <- lang_ru;;    *);
+[Blue Thunder]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Голубой гром)](*<-lang_ru;;*);
+[Description (Blue Thunder)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/goluboy-grom-1982_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/goluboy-grom-1982_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Голубой гром)](*<-lang_ru;;*);
+		[Pic. (Blue Thunder)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/goluboy-grom-1982.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Flying the most lethal weapon ever made... The Blue Thunder Special. At his fingertips, an infrared camera that can see right through your bedroom walls. A microphone that can record your most intimate conversations. And a 20mm electric cannon with six barrels that can turn your neighborhood into a raging inferno. But he's not headed for a war-torn country. He'll be cruising the skies of America. And only one man can stop him from using it on you. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [05.02.1983](*<-lang_ru;;*);;
+    => nrel_main_idtf : [05.02.1983](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H49M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H49M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_goluboy_grom_1982 =>nrel_keywords: film;;
+
+concept_film_goluboy_grom_1982 <- concept_action;concept_crime;concept_drama;concept_sci_fi;concept_thriller;;
+
+concept_film_goluboy_grom_1982 => nrel_main_actor : concept_roy_scheider;concept_warren_oates;concept_candy_clark;concept_daniel_stern;;
+concept_film_goluboy_grom_1982 => nrel_producer : concept_john_badham;;

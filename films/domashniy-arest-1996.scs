@@ -1,0 +1,67 @@
+concept_film_domashniy_arest_1996
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Домашний арест]
+(* <- lang_ru;;    *);
+[House Arrest]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Домашний арест)](*<-lang_ru;;*);
+[Description (House Arrest)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/domashniy-arest-1996_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/domashniy-arest-1996_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Домашний арест)](*<-lang_ru;;*);
+		[Pic. (House Arrest)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/domashniy-arest-1996.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [There's More Than One Way To Keep A Marriage Together... See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [27.11.1996](*<-lang_ru;;*);;
+    => nrel_main_idtf : [27.11.1996](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H48M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H48M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_domashniy_arest_1996 =>nrel_keywords: film;;
+
+concept_film_domashniy_arest_1996 <- concept_comedy;concept_family;;
+
+concept_film_domashniy_arest_1996 => nrel_main_actor : concept_jamie_lee_curtis;concept_kevin_pollak;concept_kyle_howard;concept_herbert_russell;;
+concept_film_domashniy_arest_1996 => nrel_producer : concept_harry_winer;;

@@ -1,0 +1,67 @@
+concept_film_kroshka_iz_beverli_hillz_2008
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Крошка из Беверли-Хиллз]
+(* <- lang_ru;;    *);
+[Beverly Hills Chihuahua]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Крошка из Беверли-Хиллз)](*<-lang_ru;;*);
+[Description (Beverly Hills Chihuahua)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/kroshka-iz-beverli-hillz-2008_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/kroshka-iz-beverli-hillz-2008_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Крошка из Беверли-Хиллз)](*<-lang_ru;;*);
+		[Pic. (Beverly Hills Chihuahua)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/kroshka-iz-beverli-hillz-2008.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_mexico;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [50% Warrior. 50% Lover. 100% Chihuahua. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.09.2008](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.09.2008](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H31M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H31M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_kroshka_iz_beverli_hillz_2008 =>nrel_keywords: film;;
+
+concept_film_kroshka_iz_beverli_hillz_2008 <- concept_adventure;concept_comedy;concept_drama;concept_family;concept_romance;;
+
+concept_film_kroshka_iz_beverli_hillz_2008 => nrel_main_actor : concept_drew_barrymore;concept_george_lopez;concept_piper_perabo;concept_manolo_cardona;;
+concept_film_kroshka_iz_beverli_hillz_2008 => nrel_producer : concept_raja_gosnell;;

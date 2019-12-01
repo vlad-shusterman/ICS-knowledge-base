@@ -1,0 +1,67 @@
+concept_film_pervyy_udar_1995
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Первый удар / Полицейская история 4: Первый удар]
+(* <- lang_ru;;    *);
+[Ging chaat goo si 4: Ji gaan daan yam mo]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Первый удар / Полицейская история 4: Первый удар)](*<-lang_ru;;*);
+[Description (Ging chaat goo si 4: Ji gaan daan yam mo)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/pervyy-udar-1995_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/pervyy-udar-1995_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Первый удар / Полицейская история 4: Первый удар)](*<-lang_ru;;*);
+		[Pic. (Ging chaat goo si 4: Ji gaan daan yam mo)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/pervyy-udar-1995.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_hong_kong;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Jackie Chan fights for America in his biggest action film ever. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [10.02.1996](*<-lang_ru;;*);;
+    => nrel_main_idtf : [10.02.1996](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H47M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H47M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_pervyy_udar_1995 =>nrel_keywords: film;;
+
+concept_film_pervyy_udar_1995 <- concept_action;concept_adventure;concept_comedy;concept_crime;concept_drama;concept_thriller;;
+
+concept_film_pervyy_udar_1995 => nrel_main_actor : concept_jackie_chan;concept_jackson_lou;concept_annie_wu;concept_bill_tung;;
+concept_film_pervyy_udar_1995 => nrel_producer : concept_stanley_tong;;

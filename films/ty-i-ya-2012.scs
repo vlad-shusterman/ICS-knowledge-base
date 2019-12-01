@@ -1,0 +1,67 @@
+concept_film_ty_i_ya_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Ты и я]
+(* <- lang_ru;;    *);
+[Io e te / Me and you]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Ты и я)](*<-lang_ru;;*);
+[Description (Io e te / Me and you)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ty-i-ya-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ty-i-ya-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ты и я)](*<-lang_ru;;*);
+		[Pic. (Io e te / Me and you)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ty-i-ya-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_italy;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Io e te / Me and you](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.10.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.10.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H43M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H43M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_ty_i_ya_2012 =>nrel_keywords: film;;
+
+concept_film_ty_i_ya_2012 <- concept_drama;;
+
+concept_film_ty_i_ya_2012 => nrel_main_actor : concept_tea_falco;concept_jacopo_olmo_antinori;concept_sonia_bergamasco;concept_veronica_lazar;;
+concept_film_ty_i_ya_2012 => nrel_producer : concept_bernardo_bertolucci;;

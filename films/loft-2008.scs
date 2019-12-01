@@ -1,0 +1,67 @@
+concept_film_loft_2008
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Лофт]
+(* <- lang_ru;;    *);
+[Loft]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Лофт)](*<-lang_ru;;*);
+[Description (Loft)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/loft-2008_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/loft-2008_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Лофт)](*<-lang_ru;;*);
+		[Pic. (Loft)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/loft-2008.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_belgium;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Five friends. One loft. One body.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [22.10.2008](*<-lang_ru;;*);;
+    => nrel_main_idtf : [22.10.2008](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H58M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H58M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_loft_2008 =>nrel_keywords: film;;
+
+concept_film_loft_2008 <- concept_crime;concept_drama;concept_mystery;concept_romance;concept_thriller;;
+
+concept_film_loft_2008 => nrel_main_actor : concept_koen_de_bouw;concept_filip_peeters;concept_matthias_schoenaerts;concept_bruno_vanden_broecke;;
+concept_film_loft_2008 => nrel_producer : concept_erik_van_looy;;

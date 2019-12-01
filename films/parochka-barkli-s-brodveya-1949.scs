@@ -1,0 +1,67 @@
+concept_film_parochka_barkli_s_brodveya_1949
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Парочка Баркли с Бродвея]
+(* <- lang_ru;;    *);
+[The Barkleys of Broadway]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Парочка Баркли с Бродвея)](*<-lang_ru;;*);
+[Description (The Barkleys of Broadway)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/parochka-barkli-s-brodveya-1949_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/parochka-barkli-s-brodveya-1949_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Парочка Баркли с Бродвея)](*<-lang_ru;;*);
+		[Pic. (The Barkleys of Broadway)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/parochka-barkli-s-brodveya-1949.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [M·G·M's New Technicolor Musical Hit See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [01.09.1949](*<-lang_ru;;*);;
+    => nrel_main_idtf : [01.09.1949](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H49M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H49M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Passed;;
+
+concept_film_parochka_barkli_s_brodveya_1949 =>nrel_keywords: film;;
+
+concept_film_parochka_barkli_s_brodveya_1949 <- concept_comedy;concept_musical;;
+
+concept_film_parochka_barkli_s_brodveya_1949 => nrel_main_actor : concept_fred_astaire;concept_ginger_rogers;concept_oscar_levant;concept_billie_burke;;
+concept_film_parochka_barkli_s_brodveya_1949 => nrel_producer : concept_charles_walters;;

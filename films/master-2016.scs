@@ -1,0 +1,67 @@
+concept_film_master_2016
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Мастер]
+(* <- lang_ru;;    *);
+[Maseuteo]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Мастер)](*<-lang_ru;;*);
+[Description (Maseuteo)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/master-2016_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/master-2016_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Мастер)](*<-lang_ru;;*);
+		[Pic. (Maseuteo)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/master-2016.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_south_korea;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Deception. Corruption. Conspiracy.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.12.2016](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.12.2016](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H23M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H23M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_master_2016 =>nrel_keywords: film;;
+
+concept_film_master_2016 <- concept_action;concept_crime;;
+
+concept_film_master_2016 => nrel_main_actor : concept_byung_hun_lee;concept_dong_won_gang;concept_woo_bin_kim;concept_ji_won_uhm;;
+concept_film_master_2016 => nrel_producer : concept_ui_seok_jo;;

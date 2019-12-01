@@ -1,0 +1,67 @@
+concept_film_madrasapattinam_2010
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Мадрасапаттинам / Мадрас - любовь моя]
+(* <- lang_ru;;    *);
+[Madrasapattinam]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Мадрасапаттинам / Мадрас - любовь моя)](*<-lang_ru;;*);
+[Description (Madrasapattinam)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/madrasapattinam-2010_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/madrasapattinam-2010_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Мадрасапаттинам / Мадрас - любовь моя)](*<-lang_ru;;*);
+		[Pic. (Madrasapattinam)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/madrasapattinam-2010.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_india;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A Journey from Chennai to Madrasapattinam.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [09.07.2010](*<-lang_ru;;*);;
+    => nrel_main_idtf : [09.07.2010](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H42M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H42M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_madrasapattinam_2010 =>nrel_keywords: film;;
+
+concept_film_madrasapattinam_2010 <- concept_drama;concept_history;concept_romance;;
+
+concept_film_madrasapattinam_2010 => nrel_main_actor : concept_arya;concept_carole_trangmar_palmer;concept_amy_jackson;concept_cochin_hanifa;;
+concept_film_madrasapattinam_2010 => nrel_producer : concept_a.l._vijay;concept_a.l._vijay;;

@@ -1,0 +1,67 @@
+concept_film_vual_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Вуаль]
+(* <- lang_ru;;    *);
+[The Veil]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Вуаль)](*<-lang_ru;;*);
+[Description (The Veil)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vual-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vual-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Вуаль)](*<-lang_ru;;*);
+		[Pic. (The Veil)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vual-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Blood Will Spill](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.04.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.04.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H33M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H33M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_vual_2017 =>nrel_keywords: film;;
+
+concept_film_vual_2017 <- concept_action;concept_adventure;concept_sci_fi;;
+
+concept_film_vual_2017 => nrel_main_actor : concept_william_levy;concept_william_moseley;concept_serinda_swan;concept_nick_e._tarabay;;
+concept_film_vual_2017 => nrel_producer : concept_brent_ryan_green;;

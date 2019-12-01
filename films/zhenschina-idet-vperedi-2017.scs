@@ -1,0 +1,67 @@
+concept_film_zhenschina_idet_vperedi_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Женщина идет впереди]
+(* <- lang_ru;;    *);
+[Woman Walks Ahead]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Женщина идет впереди)](*<-lang_ru;;*);
+[Description (Woman Walks Ahead)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zhenschina-idet-vperedi-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zhenschina-idet-vperedi-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Женщина идет впереди)](*<-lang_ru;;*);
+		[Pic. (Woman Walks Ahead)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zhenschina-idet-vperedi-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Defy your times.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [28.06.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [28.06.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H41M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H41M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_zhenschina_idet_vperedi_2017 =>nrel_keywords: film;;
+
+concept_film_zhenschina_idet_vperedi_2017 <- concept_biography;concept_drama;concept_history;concept_western;;
+
+concept_film_zhenschina_idet_vperedi_2017 => nrel_main_actor : concept_jessica_chastain;concept_louisa_krause;concept_boots_southerland;concept_chaske_spencer;;
+concept_film_zhenschina_idet_vperedi_2017 => nrel_producer : concept_susanna_white;;

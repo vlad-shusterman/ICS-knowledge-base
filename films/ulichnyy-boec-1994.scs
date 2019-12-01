@@ -1,0 +1,67 @@
+concept_film_ulichnyy_boec_1994
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Уличный боец]
+(* <- lang_ru;;    *);
+[Street Fighter]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Уличный боец)](*<-lang_ru;;*);
+[Description (Street Fighter)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/ulichnyy-boec-1994_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/ulichnyy-boec-1994_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Уличный боец)](*<-lang_ru;;*);
+		[Pic. (Street Fighter)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/ulichnyy-boec-1994.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_japan;concept_usa;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The ultimate battle. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [23.12.1994](*<-lang_ru;;*);;
+    => nrel_main_idtf : [23.12.1994](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H42M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H42M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_ulichnyy_boec_1994 =>nrel_keywords: film;;
+
+concept_film_ulichnyy_boec_1994 <- concept_action;concept_adventure;concept_comedy;concept_thriller;;
+
+concept_film_ulichnyy_boec_1994 => nrel_main_actor : concept_jean_claude_van_damme;concept_raul_julia;concept_ming_na_wen;concept_damian_chapa;;
+concept_film_ulichnyy_boec_1994 => nrel_producer : concept_steven_e._de_souza;;

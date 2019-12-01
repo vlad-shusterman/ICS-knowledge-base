@@ -1,0 +1,67 @@
+concept_film_mertvaya_mamulya_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Мёртвая мамуля]
+(* <- lang_ru;;    *);
+[Mommy Dead and Dearest]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Мёртвая мамуля)](*<-lang_ru;;*);
+[Description (Mommy Dead and Dearest)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/mertvaya-mamulya-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/mertvaya-mamulya-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Мёртвая мамуля)](*<-lang_ru;;*);
+		[Pic. (Mommy Dead and Dearest)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/mertvaya-mamulya-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [In this family, every illness was a lie - except the mother's.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [11.03.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [11.03.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H22M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H22M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_MA;;
+
+concept_film_mertvaya_mamulya_2017 =>nrel_keywords: film;;
+
+concept_film_mertvaya_mamulya_2017 <- concept_documentary;concept_crime;;
+
+concept_film_mertvaya_mamulya_2017 => nrel_main_actor : concept_jim_arnott;concept_david_blanchard;concept_dee_dee_blanchard;concept_gypsy_rose_blanchard;;
+concept_film_mertvaya_mamulya_2017 => nrel_producer : concept_erin_lee_carr;;

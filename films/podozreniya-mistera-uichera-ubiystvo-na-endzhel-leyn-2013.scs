@@ -1,0 +1,67 @@
+concept_film_podozreniya_mistera_uichera_ubiystvo_na_endzhel_leyn_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Подозрения мистера Уичера: Убийство на Энджел Лэйн]
+(* <- lang_ru;;    *);
+[The Suspicions of Mr Whicher: The Murder in Angel Lane]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Подозрения мистера Уичера: Убийство на Энджел Лэйн)](*<-lang_ru;;*);
+[Description (The Suspicions of Mr Whicher: The Murder in Angel Lane)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/podozreniya-mistera-uichera-ubiystvo-na-endzhel-leyn-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/podozreniya-mistera-uichera-ubiystvo-na-endzhel-leyn-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Подозрения мистера Уичера: Убийство на Энджел Лэйн)](*<-lang_ru;;*);
+		[Pic. (The Suspicions of Mr Whicher: The Murder in Angel Lane)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/podozreniya-mistera-uichera-ubiystvo-na-endzhel-leyn-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The Suspicions of Mr Whicher: The Murder in Angel Lane](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.05.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.05.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H55M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H55M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_14;;
+
+concept_film_podozreniya_mistera_uichera_ubiystvo_na_endzhel_leyn_2013 =>nrel_keywords: film;;
+
+concept_film_podozreniya_mistera_uichera_ubiystvo_na_endzhel_leyn_2013 <- concept_crime;concept_drama;concept_mystery;;
+
+concept_film_podozreniya_mistera_uichera_ubiystvo_na_endzhel_leyn_2013 => nrel_main_actor : concept_paddy_considine;concept_olivia_colman;concept_james_wilson;concept_paul_longley;;
+concept_film_podozreniya_mistera_uichera_ubiystvo_na_endzhel_leyn_2013 => nrel_producer : concept_christopher_menaul;;

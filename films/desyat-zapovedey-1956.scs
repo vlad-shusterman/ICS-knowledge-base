@@ -1,0 +1,67 @@
+concept_film_desyat_zapovedey_1956
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Десять заповедей]
+(* <- lang_ru;;    *);
+[The Ten Commandments]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Десять заповедей)](*<-lang_ru;;*);
+[Description (The Ten Commandments)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/desyat-zapovedey-1956_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/desyat-zapovedey-1956_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Десять заповедей)](*<-lang_ru;;*);
+		[Pic. (The Ten Commandments)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/desyat-zapovedey-1956.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Paramount Pictures is proud to announce the return of the greatest motion picture of all time! (1966 re-release) See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [05.10.1956](*<-lang_ru;;*);;
+    => nrel_main_idtf : [05.10.1956](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT3H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT3H40M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_G;;
+
+concept_film_desyat_zapovedey_1956 =>nrel_keywords: film;;
+
+concept_film_desyat_zapovedey_1956 <- concept_adventure;concept_drama;;
+
+concept_film_desyat_zapovedey_1956 => nrel_main_actor : concept_charlton_heston;concept_yul_brynner;concept_anne_baxter;concept_edward_g._robinson;;
+concept_film_desyat_zapovedey_1956 => nrel_producer : concept_cecil_b._demille;;

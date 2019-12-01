@@ -1,0 +1,67 @@
+concept_film_doktor_t_i_ego_zhenschiny_2000
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Доктор «Т» и его женщины]
+(* <- lang_ru;;    *);
+[Dr. T and the Women]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Доктор «Т» и его женщины)](*<-lang_ru;;*);
+[Description (Dr. T and the Women)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/doktor-t-i-ego-zhenschiny-2000_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/doktor-t-i-ego-zhenschiny-2000_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Доктор «Т» и его женщины)](*<-lang_ru;;*);
+		[Pic. (Dr. T and the Women)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/doktor-t-i-ego-zhenschiny-2000.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_germany;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Dr. T and the Women](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.09.2000](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.09.2000](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H2M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H2M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_doktor_t_i_ego_zhenschiny_2000 =>nrel_keywords: film;;
+
+concept_film_doktor_t_i_ego_zhenschiny_2000 <- concept_comedy;concept_drama;concept_romance;;
+
+concept_film_doktor_t_i_ego_zhenschiny_2000 => nrel_main_actor : concept_richard_gere;concept_helen_hunt;concept_farrah_fawcett;concept_laura_dern;;
+concept_film_doktor_t_i_ego_zhenschiny_2000 => nrel_producer : concept_robert_altman;;

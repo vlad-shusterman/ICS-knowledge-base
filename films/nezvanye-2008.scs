@@ -1,0 +1,67 @@
+concept_film_nezvanye_2008
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Незваные]
+(* <- lang_ru;;    *);
+[The Uninvited]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Незваные)](*<-lang_ru;;*);
+[Description (The Uninvited)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/nezvanye-2008_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/nezvanye-2008_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Незваные)](*<-lang_ru;;*);
+		[Pic. (The Uninvited)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/nezvanye-2008.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_canada;concept_germany;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Get invited. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [30.01.2009](*<-lang_ru;;*);;
+    => nrel_main_idtf : [30.01.2009](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H27M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H27M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_nezvanye_2008 =>nrel_keywords: film;;
+
+concept_film_nezvanye_2008 <- concept_drama;concept_horror;concept_mystery;concept_thriller;;
+
+concept_film_nezvanye_2008 => nrel_main_actor : concept_emily_browning;concept_arielle_kebbel;concept_elizabeth_banks;concept_david_strathairn;;
+concept_film_nezvanye_2008 => nrel_producer : concept_charles_guard;concept_thomas_guard;;

@@ -1,0 +1,67 @@
+concept_film_z_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[З/Л/О]
+(* <- lang_ru;;    *);
+[V/H/S]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (З/Л/О)](*<-lang_ru;;*);
+[Description (V/H/S)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/z-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/z-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (З/Л/О)](*<-lang_ru;;*);
+		[Pic. (V/H/S)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/z-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [This collection is killer.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [06.09.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [06.09.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H56M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H56M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_z_2012 =>nrel_keywords: film;;
+
+concept_film_z_2012 <- concept_horror;concept_thriller;;
+
+concept_film_z_2012 => nrel_main_actor : concept_calvin_reeder;concept_lane_hughes;concept_adam_wingard;concept_hannah_fierman;;
+concept_film_z_2012 => nrel_producer : concept_matt_bettinelli_olpin;concept_david_bruckner;concept_tyler_gillett;concept_justin_martinez;concept_glenn_mcquaid;concept_radio_silence;concept_joe_swanberg;concept_chad_villella;concept_ti_west;concept_adam_wingard;;

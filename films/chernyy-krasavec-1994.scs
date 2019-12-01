@@ -1,0 +1,67 @@
+concept_film_chernyy_krasavec_1994
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Черный красавец / Черный Красавчик]
+(* <- lang_ru;;    *);
+[Black Beauty]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Черный красавец / Черный Красавчик)](*<-lang_ru;;*);
+[Description (Black Beauty)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/chernyy-krasavec-1994_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/chernyy-krasavec-1994_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Черный красавец / Черный Красавчик)](*<-lang_ru;;*);
+		[Pic. (Black Beauty)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/chernyy-krasavec-1994.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_uk;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [A story for all ages. A friendship for all time. Share the adventure.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.07.1994](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.07.1994](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H28M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H28M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_G;;
+
+concept_film_chernyy_krasavec_1994 =>nrel_keywords: film;;
+
+concept_film_chernyy_krasavec_1994 <- concept_adventure;concept_drama;concept_family;concept_romance;;
+
+concept_film_chernyy_krasavec_1994 => nrel_main_actor : concept_sean_bean;concept_david_thewlis;concept_docs_keepin_time;concept_alan_cumming;;
+concept_film_chernyy_krasavec_1994 => nrel_producer : concept_caroline_thompson;;

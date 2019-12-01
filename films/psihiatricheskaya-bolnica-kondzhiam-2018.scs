@@ -1,0 +1,67 @@
+concept_film_psihiatricheskaya_bolnica_kondzhiam_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Психиатрическая больница Конджиам]
+(* <- lang_ru;;    *);
+[Gonjiam]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Психиатрическая больница Конджиам)](*<-lang_ru;;*);
+[Description (Gonjiam)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/psihiatricheskaya-bolnica-kondzhiam-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/psihiatricheskaya-bolnica-kondzhiam-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Психиатрическая больница Конджиам)](*<-lang_ru;;*);
+		[Pic. (Gonjiam)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/psihiatricheskaya-bolnica-kondzhiam-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_south_korea;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [1 of the 7 freakiest places in the world See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [28.03.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [28.03.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H35M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H35M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_psihiatricheskaya_bolnica_kondzhiam_2018 =>nrel_keywords: film;;
+
+concept_film_psihiatricheskaya_bolnica_kondzhiam_2018 <- concept_horror;;
+
+concept_film_psihiatricheskaya_bolnica_kondzhiam_2018 => nrel_main_actor : concept_seung_wook_lee;concept_ye_won_mun;concept_ah_yeon_oh;concept_ji_hyun_park;;
+concept_film_psihiatricheskaya_bolnica_kondzhiam_2018 => nrel_producer : concept_beom_sik_jeong;;

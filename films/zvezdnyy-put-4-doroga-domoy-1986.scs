@@ -1,0 +1,67 @@
+concept_film_zvezdnyy_put_4_doroga_domoy_1986
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Звездный путь 4: Дорога домой]
+(* <- lang_ru;;    *);
+[Star Trek IV: The Voyage Home]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Звездный путь 4: Дорога домой)](*<-lang_ru;;*);
+[Description (Star Trek IV: The Voyage Home)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/zvezdnyy-put-4-doroga-domoy-1986_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/zvezdnyy-put-4-doroga-domoy-1986_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Звездный путь 4: Дорога домой)](*<-lang_ru;;*);
+		[Pic. (Star Trek IV: The Voyage Home)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/zvezdnyy-put-4-doroga-domoy-1986.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [How on Earth can they save the future? See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.11.1986](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.11.1986](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H59M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H59M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_zvezdnyy_put_4_doroga_domoy_1986 =>nrel_keywords: film;;
+
+concept_film_zvezdnyy_put_4_doroga_domoy_1986 <- concept_adventure;concept_comedy;concept_sci_fi;;
+
+concept_film_zvezdnyy_put_4_doroga_domoy_1986 => nrel_main_actor : concept_william_shatner;concept_leonard_nimoy;concept_deforest_kelley;concept_james_doohan;;
+concept_film_zvezdnyy_put_4_doroga_domoy_1986 => nrel_producer : concept_leonard_nimoy;;

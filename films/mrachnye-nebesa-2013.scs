@@ -1,0 +1,67 @@
+concept_film_mrachnye_nebesa_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Мрачные небеса]
+(* <- lang_ru;;    *);
+[Dark Skies]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Мрачные небеса)](*<-lang_ru;;*);
+[Description (Dark Skies)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/mrachnye-nebesa-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/mrachnye-nebesa-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Мрачные небеса)](*<-lang_ru;;*);
+		[Pic. (Dark Skies)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/mrachnye-nebesa-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [From the producer of Insidious and Sinister comes a new horror phenomenon. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.02.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.02.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H37M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H37M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_mrachnye_nebesa_2013 =>nrel_keywords: film;;
+
+concept_film_mrachnye_nebesa_2013 <- concept_horror;concept_sci_fi;concept_thriller;;
+
+concept_film_mrachnye_nebesa_2013 => nrel_main_actor : concept_keri_russell;concept_jake_brennan;concept_josh_hamilton;concept_dakota_goyo;;
+concept_film_mrachnye_nebesa_2013 => nrel_producer : concept_scott_stewart;;

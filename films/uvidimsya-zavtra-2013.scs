@@ -1,0 +1,67 @@
+concept_film_uvidimsya_zavtra_2013
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Увидимся завтра]
+(* <- lang_ru;;    *);
+[Ci vediamo domani]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Увидимся завтра)](*<-lang_ru;;*);
+[Description (Ci vediamo domani)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/uvidimsya-zavtra-2013_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/uvidimsya-zavtra-2013_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Увидимся завтра)](*<-lang_ru;;*);
+		[Pic. (Ci vediamo domani)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/uvidimsya-zavtra-2013.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_italy;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Ci vediamo domani](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [11.04.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [11.04.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H43M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H43M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_uvidimsya_zavtra_2013 =>nrel_keywords: film;;
+
+concept_film_uvidimsya_zavtra_2013 <- concept_comedy;concept_family;;
+
+concept_film_uvidimsya_zavtra_2013 => nrel_main_actor : concept_enrico_brignano;concept_burt_young;concept_francesca_inaudi;concept_ricky_tognazzi;;
+concept_film_uvidimsya_zavtra_2013 => nrel_producer : concept_andrea_zaccariello;;

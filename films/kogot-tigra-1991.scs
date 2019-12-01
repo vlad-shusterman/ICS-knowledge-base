@@ -1,0 +1,67 @@
+concept_film_kogot_tigra_1991
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Коготь тигра]
+(* <- lang_ru;;    *);
+[Tiger Claws]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Коготь тигра)](*<-lang_ru;;*);
+[Description (Tiger Claws)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/kogot-tigra-1991_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/kogot-tigra-1991_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Коготь тигра)](*<-lang_ru;;*);
+		[Pic. (Tiger Claws)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/kogot-tigra-1991.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_canada;concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [The city is being torn apart and only two cops can stop the frenzy](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.08.1992](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.08.1992](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H32M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H32M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_kogot_tigra_1991 =>nrel_keywords: film;;
+
+concept_film_kogot_tigra_1991 <- concept_action;;
+
+concept_film_kogot_tigra_1991 => nrel_main_actor : concept_cynthia_rothrock;concept_nick_dibley;concept_fern_figueiredo;concept_jack_vorvis;;
+concept_film_kogot_tigra_1991 => nrel_producer : concept_kelly_makin;;

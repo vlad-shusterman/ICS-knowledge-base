@@ -1,0 +1,67 @@
+concept_film_rasplata_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Расплата]
+(* <- lang_ru;;    *);
+[A Reckoning]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Расплата)](*<-lang_ru;;*);
+[Description (A Reckoning)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/rasplata-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/rasplata-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Расплата)](*<-lang_ru;;*);
+		[Pic. (A Reckoning)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/rasplata-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 3;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Revenge is coming.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [07.08.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [07.08.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H20M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H20M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_rasplata_2018 =>nrel_keywords: film;;
+
+concept_film_rasplata_2018 <- concept_western;;
+
+concept_film_rasplata_2018 => nrel_main_actor : concept_june_dietrich;concept_kevin_makely;concept_todd_a._robinson;concept_lance_henriksen;;
+concept_film_rasplata_2018 => nrel_producer : concept_justin_lee;;

@@ -1,0 +1,67 @@
+concept_film_za_prigorshnyu_dinamita_1971
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[За пригоршню динамита]
+(* <- lang_ru;;    *);
+[Giù la testa / A Fistful of Dynamite / Duck, You Sucker]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (За пригоршню динамита)](*<-lang_ru;;*);
+[Description (Giù la testa / A Fistful of Dynamite / Duck, You Sucker)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/za-prigorshnyu-dinamita-1971_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/za-prigorshnyu-dinamita-1971_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (За пригоршню динамита)](*<-lang_ru;;*);
+		[Pic. (Giù la testa / A Fistful of Dynamite / Duck, You Sucker)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/za-prigorshnyu-dinamita-1971.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_italy;concept_spain;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Rod Steiger and James Coburn will blow you apart in "A Fistful of Dynamite" ("Duck You Sucker") by the master of adventure Sergio Leone](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.10.1971](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.10.1971](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H18M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H18M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_za_prigorshnyu_dinamita_1971 =>nrel_keywords: film;;
+
+concept_film_za_prigorshnyu_dinamita_1971 <- concept_drama;concept_war;concept_western;;
+
+concept_film_za_prigorshnyu_dinamita_1971 => nrel_main_actor : concept_rod_steiger;concept_james_coburn;concept_romolo_valli;concept_maria_monti;;
+concept_film_za_prigorshnyu_dinamita_1971 => nrel_producer : concept_sergio_leone;;

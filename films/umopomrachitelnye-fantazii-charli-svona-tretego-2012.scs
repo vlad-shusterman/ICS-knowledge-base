@@ -1,0 +1,67 @@
+concept_film_umopomrachitelnye_fantazii_charli_svona_tretego_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Умопомрачительные фантазии Чарли Свона-третьего]
+(* <- lang_ru;;    *);
+[A Glimpse Inside the Mind of Charles Swan III]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Умопомрачительные фантазии Чарли Свона-третьего)](*<-lang_ru;;*);
+[Description (A Glimpse Inside the Mind of Charles Swan III)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/umopomrachitelnye-fantazii-charli-svona-tretego-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/umopomrachitelnye-fantazii-charli-svona-tretego-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Умопомрачительные фантазии Чарли Свона-третьего)](*<-lang_ru;;*);
+		[Pic. (A Glimpse Inside the Mind of Charles Swan III)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/umopomrachitelnye-fantazii-charli-svona-tretego-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 5;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Handsome. Brilliant. Heartbroken.](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [14.03.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [14.03.2013](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H26M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H26M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_umopomrachitelnye_fantazii_charli_svona_tretego_2012 =>nrel_keywords: film;;
+
+concept_film_umopomrachitelnye_fantazii_charli_svona_tretego_2012 <- concept_comedy;;
+
+concept_film_umopomrachitelnye_fantazii_charli_svona_tretego_2012 => nrel_main_actor : concept_charlie_sheen;concept_jason_schwartzman;concept_bill_murray;concept_katheryn_winnick;;
+concept_film_umopomrachitelnye_fantazii_charli_svona_tretego_2012 => nrel_producer : concept_roman_coppola;;

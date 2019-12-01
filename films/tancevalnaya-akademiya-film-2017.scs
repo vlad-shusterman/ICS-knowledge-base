@@ -1,0 +1,67 @@
+concept_film_tancevalnaya_akademiya_film_2017
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Танцевальная академия: Фильм]
+(* <- lang_ru;;    *);
+[Dance Academy: The Movie]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Танцевальная академия: Фильм)](*<-lang_ru;;*);
+[Description (Dance Academy: The Movie)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/tancevalnaya-akademiya-film-2017_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/tancevalnaya-akademiya-film-2017_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Танцевальная академия: Фильм)](*<-lang_ru;;*);
+		[Pic. (Dance Academy: The Movie)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/tancevalnaya-akademiya-film-2017.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_germany;concept_australia;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Big City. Bigger Dreams. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [06.04.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [06.04.2017](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H41M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H41M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_tancevalnaya_akademiya_film_2017 =>nrel_keywords: film;;
+
+concept_film_tancevalnaya_akademiya_film_2017 <- concept_drama;;
+
+concept_film_tancevalnaya_akademiya_film_2017 => nrel_main_actor : concept_xenia_goodwin;concept_mackenzie_fearnley;concept_ines_english;concept_adam_sollis;;
+concept_film_tancevalnaya_akademiya_film_2017 => nrel_producer : concept_jeffrey_walker;;

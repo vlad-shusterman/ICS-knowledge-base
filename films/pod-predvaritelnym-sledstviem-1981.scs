@@ -1,0 +1,67 @@
+concept_film_pod_predvaritelnym_sledstviem_1981
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Под предварительным следствием / Инквизитор]
+(* <- lang_ru;;    *);
+[Garde à vue / The Grilling / The Inquisitor]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Под предварительным следствием / Инквизитор)](*<-lang_ru;;*);
+[Description (Garde à vue / The Grilling / The Inquisitor)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/pod-predvaritelnym-sledstviem-1981_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/pod-predvaritelnym-sledstviem-1981_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Под предварительным следствием / Инквизитор)](*<-lang_ru;;*);
+		[Pic. (Garde à vue / The Grilling / The Inquisitor)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/pod-predvaritelnym-sledstviem-1981.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_france;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Garde à vue / The Grilling / The Inquisitor](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [23.09.1981](*<-lang_ru;;*);;
+    => nrel_main_idtf : [23.09.1981](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H27M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H27M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_pod_predvaritelnym_sledstviem_1981 =>nrel_keywords: film;;
+
+concept_film_pod_predvaritelnym_sledstviem_1981 <- concept_crime;concept_drama;concept_thriller;;
+
+concept_film_pod_predvaritelnym_sledstviem_1981 => nrel_main_actor : concept_lino_ventura;concept_michel_serrault;concept_romy_schneider;concept_guy_marchand;;
+concept_film_pod_predvaritelnym_sledstviem_1981 => nrel_producer : concept_claude_miller;;

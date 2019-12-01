@@ -1,0 +1,67 @@
+concept_film_diana_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Диана]
+(* <- lang_ru;;    *);
+[Diane]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Диана)](*<-lang_ru;;*);
+[Description (Diane)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/diana-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/diana-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Диана)](*<-lang_ru;;*);
+		[Pic. (Diane)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/diana-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Diane](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.03.2019](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.03.2019](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H35M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H35M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_diana_2018 =>nrel_keywords: film;;
+
+concept_film_diana_2018 <- concept_drama;;
+
+concept_film_diana_2018 => nrel_main_actor : concept_mary_kay_place;concept_jake_lacy;concept_estelle_parsons;concept_andrea_martin;;
+concept_film_diana_2018 => nrel_producer : concept_kent_jones;;

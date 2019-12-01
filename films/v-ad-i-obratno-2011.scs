@@ -1,0 +1,67 @@
+concept_film_v_ad_i_obratno_2011
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[В ад и обратно]
+(* <- lang_ru;;    *);
+[Hell and Back Again]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (В ад и обратно)](*<-lang_ru;;*);
+[Description (Hell and Back Again)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/v-ad-i-obratno-2011_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/v-ad-i-obratno-2011_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (В ад и обратно)](*<-lang_ru;;*);
+		[Pic. (Hell and Back Again)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/v-ad-i-obratno-2011.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_uk;concept_afghanistan;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Hell and Back Again](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [05.10.2011](*<-lang_ru;;*);;
+    => nrel_main_idtf : [05.10.2011](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H28M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H28M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_Not_Rated;;
+
+concept_film_v_ad_i_obratno_2011 =>nrel_keywords: film;;
+
+concept_film_v_ad_i_obratno_2011 <- concept_documentary;concept_action;concept_history;concept_war;;
+
+concept_film_v_ad_i_obratno_2011 => nrel_main_actor : concept_nathan_harris;concept_ashley_harris;concept_the_marines_of_echo_company;concept_christian_cabaniss;;
+concept_film_v_ad_i_obratno_2011 => nrel_producer : concept_danfung_dennis;;

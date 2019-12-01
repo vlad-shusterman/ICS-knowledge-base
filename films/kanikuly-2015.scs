@@ -1,0 +1,67 @@
+concept_film_kanikuly_2015
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Каникулы]
+(* <- lang_ru;;    *);
+[Vacation]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Каникулы)](*<-lang_ru;;*);
+[Description (Vacation)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/kanikuly-2015_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/kanikuly-2015_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Каникулы)](*<-lang_ru;;*);
+		[Pic. (Vacation)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/kanikuly-2015.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [What could go wrong?](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.07.2015](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.07.2015](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H39M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H39M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_kanikuly_2015 =>nrel_keywords: film;;
+
+concept_film_kanikuly_2015 <- concept_adventure;concept_comedy;;
+
+concept_film_kanikuly_2015 => nrel_main_actor : concept_ed_helms;concept_christina_applegate;concept_skyler_gisondo;concept_steele_stebbins;;
+concept_film_kanikuly_2015 => nrel_producer : concept_john_francis_daley;concept_jonathan_goldstein;;

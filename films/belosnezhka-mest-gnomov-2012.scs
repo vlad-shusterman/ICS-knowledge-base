@@ -1,0 +1,67 @@
+concept_film_belosnezhka_mest_gnomov_2012
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Белоснежка: Месть гномов]
+(* <- lang_ru;;    *);
+[Mirror Mirror]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Белоснежка: Месть гномов)](*<-lang_ru;;*);
+[Description (Mirror Mirror)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/belosnezhka-mest-gnomov-2012_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/belosnezhka-mest-gnomov-2012_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Белоснежка: Месть гномов)](*<-lang_ru;;*);
+		[Pic. (Mirror Mirror)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/belosnezhka-mest-gnomov-2012.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_canada;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [One Bad Apple See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.03.2012](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.03.2012](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H46M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H46M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_belosnezhka_mest_gnomov_2012 =>nrel_keywords: film;;
+
+concept_film_belosnezhka_mest_gnomov_2012 <- concept_adventure;concept_comedy;concept_drama;concept_family;concept_fantasy;;
+
+concept_film_belosnezhka_mest_gnomov_2012 => nrel_main_actor : concept_lily_collins;concept_julia_roberts;concept_armie_hammer;concept_nathan_lane;;
+concept_film_belosnezhka_mest_gnomov_2012 => nrel_producer : concept_tarsem_singh;;

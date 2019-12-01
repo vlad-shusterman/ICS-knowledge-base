@@ -1,0 +1,67 @@
+concept_film_charli_i_shokoladnaya_fabrika_2005
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Чарли и шоколадная фабрика]
+(* <- lang_ru;;    *);
+[Charlie and the Chocolate Factory]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Чарли и шоколадная фабрика)](*<-lang_ru;;*);
+[Description (Charlie and the Chocolate Factory)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/charli-i-shokoladnaya-fabrika-2005_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/charli-i-shokoladnaya-fabrika-2005_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Чарли и шоколадная фабрика)](*<-lang_ru;;*);
+		[Pic. (Charlie and the Chocolate Factory)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/charli-i-shokoladnaya-fabrika-2005.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;concept_usa;
+
+=> nrel_film_critic_rating : 7;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Mike Thinks candy is a waste of time See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [13.07.2005](*<-lang_ru;;*);;
+    => nrel_main_idtf : [13.07.2005](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H55M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H55M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_charli_i_shokoladnaya_fabrika_2005 =>nrel_keywords: film;;
+
+concept_film_charli_i_shokoladnaya_fabrika_2005 <- concept_adventure;concept_comedy;concept_family;concept_fantasy;concept_musical;;
+
+concept_film_charli_i_shokoladnaya_fabrika_2005 => nrel_main_actor : concept_johnny_depp;concept_freddie_highmore;concept_david_kelly;concept_helena_bonham_carter;;
+concept_film_charli_i_shokoladnaya_fabrika_2005 => nrel_producer : concept_tim_burton;;

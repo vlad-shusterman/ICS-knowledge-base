@@ -1,0 +1,67 @@
+concept_film_vy_umrete_ili_my_vernem_vam_dengi_2018
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Вы умрете, или мы вернем вам деньги]
+(* <- lang_ru;;    *);
+[Dead in a Week: Or Your Money Back]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Вы умрете, или мы вернем вам деньги)](*<-lang_ru;;*);
+[Description (Dead in a Week: Or Your Money Back)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vy-umrete-ili-my-vernem-vam-dengi-2018_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vy-umrete-ili-my-vernem-vam-dengi-2018_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Вы умрете, или мы вернем вам деньги)](*<-lang_ru;;*);
+		[Pic. (Dead in a Week: Or Your Money Back)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vy-umrete-ili-my-vernem-vam-dengi-2018.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [If you're serious about ending it, you might need professional help. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.10.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.10.2018](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H30M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H30M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_TV_MA;;
+
+concept_film_vy_umrete_ili_my_vernem_vam_dengi_2018 =>nrel_keywords: film;;
+
+concept_film_vy_umrete_ili_my_vernem_vam_dengi_2018 <- concept_action;concept_comedy;concept_drama;;
+
+concept_film_vy_umrete_ili_my_vernem_vam_dengi_2018 => nrel_main_actor : concept_tom_wilkinson;concept_aneurin_barnard;concept_marion_bailey;concept_freya_mavor;;
+concept_film_vy_umrete_ili_my_vernem_vam_dengi_2018 => nrel_producer : concept_tom_edmunds;;

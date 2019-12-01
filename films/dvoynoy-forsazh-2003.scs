@@ -1,0 +1,67 @@
+concept_film_dvoynoy_forsazh_2003
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Двойной форсаж]
+(* <- lang_ru;;    *);
+[2 Fast 2 Furious]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Двойной форсаж)](*<-lang_ru;;*);
+[Description (2 Fast 2 Furious)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/dvoynoy-forsazh-2003_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/dvoynoy-forsazh-2003_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Двойной форсаж)](*<-lang_ru;;*);
+		[Pic. (2 Fast 2 Furious)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/dvoynoy-forsazh-2003.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;concept_germany;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [2Cool See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [05.06.2003](*<-lang_ru;;*);;
+    => nrel_main_idtf : [05.06.2003](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H47M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H47M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_dvoynoy_forsazh_2003 =>nrel_keywords: film;;
+
+concept_film_dvoynoy_forsazh_2003 <- concept_action;concept_crime;concept_thriller;;
+
+concept_film_dvoynoy_forsazh_2003 => nrel_main_actor : concept_paul_walker;concept_tyrese_gibson;concept_cole_hauser;concept_eva_mendes;;
+concept_film_dvoynoy_forsazh_2003 => nrel_producer : concept_john_singleton;;

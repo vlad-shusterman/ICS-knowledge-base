@@ -1,0 +1,67 @@
+concept_film_bratya_blyuz_1980
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Братья Блюз]
+(* <- lang_ru;;    *);
+[The Blues Brothers]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Братья Блюз)](*<-lang_ru;;*);
+[Description (The Blues Brothers)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/bratya-blyuz-1980_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/bratya-blyuz-1980_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Братья Блюз)](*<-lang_ru;;*);
+		[Pic. (The Blues Brothers)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/bratya-blyuz-1980.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [They're Back See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [20.06.1980](*<-lang_ru;;*);;
+    => nrel_main_idtf : [20.06.1980](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H13M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H13M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_bratya_blyuz_1980 =>nrel_keywords: film;;
+
+concept_film_bratya_blyuz_1980 <- concept_adventure;concept_comedy;concept_crime;concept_music;concept_musical;;
+
+concept_film_bratya_blyuz_1980 => nrel_main_actor : concept_john_belushi;concept_dan_aykroyd;concept_cab_calloway;concept_john_candy;;
+concept_film_bratya_blyuz_1980 => nrel_producer : concept_john_landis;;

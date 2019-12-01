@@ -1,0 +1,67 @@
+concept_film_vysshiy_pilotazh_2005
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Высший пилотаж]
+(* <- lang_ru;;    *);
+[Sky High]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Высший пилотаж)](*<-lang_ru;;*);
+[Description (Sky High)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/vysshiy-pilotazh-2005_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/vysshiy-pilotazh-2005_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Высший пилотаж)](*<-lang_ru;;*);
+		[Pic. (Sky High)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/vysshiy-pilotazh-2005.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Brains, Brawn And Beyond. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [29.07.2005](*<-lang_ru;;*);;
+    => nrel_main_idtf : [29.07.2005](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H40M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_vysshiy_pilotazh_2005 =>nrel_keywords: film;;
+
+concept_film_vysshiy_pilotazh_2005 <- concept_adventure;concept_comedy;concept_family;concept_sci_fi;;
+
+concept_film_vysshiy_pilotazh_2005 => nrel_main_actor : concept_kurt_russell;concept_kelly_preston;concept_michael_angarano;concept_danielle_panabaker;;
+concept_film_vysshiy_pilotazh_2005 => nrel_producer : concept_mike_mitchell;;

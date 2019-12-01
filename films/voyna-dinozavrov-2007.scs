@@ -1,0 +1,67 @@
+concept_film_voyna_dinozavrov_2007
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Война динозавров / Война драконов]
+(* <- lang_ru;;    *);
+[D-War / Dragon Wars]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Война динозавров / Война драконов)](*<-lang_ru;;*);
+[Description (D-War / Dragon Wars)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/voyna-dinozavrov-2007_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/voyna-dinozavrov-2007_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Война динозавров / Война драконов)](*<-lang_ru;;*);
+		[Pic. (D-War / Dragon Wars)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/voyna-dinozavrov-2007.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_south_korea;
+
+=> nrel_film_critic_rating : 4;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [They've made our world their battleground See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [01.08.2007](*<-lang_ru;;*);;
+    => nrel_main_idtf : [01.08.2007](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H30M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H30M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_voyna_dinozavrov_2007 =>nrel_keywords: film;;
+
+concept_film_voyna_dinozavrov_2007 <- concept_action;concept_drama;concept_fantasy;concept_horror;concept_thriller;;
+
+concept_film_voyna_dinozavrov_2007 => nrel_main_actor : concept_jason_behr;concept_amanda_brooks;concept_robert_forster;concept_craig_robinson;;
+concept_film_voyna_dinozavrov_2007 => nrel_producer : concept_hyung_rae_shim;;

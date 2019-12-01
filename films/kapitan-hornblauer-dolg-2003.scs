@@ -1,0 +1,67 @@
+concept_film_kapitan_hornblauer_dolg_2003
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Капитан Хорнблауэр: Долг]
+(* <- lang_ru;;    *);
+[Hornblower: Duty]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Капитан Хорнблауэр: Долг)](*<-lang_ru;;*);
+[Description (Hornblower: Duty)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/kapitan-hornblauer-dolg-2003_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/kapitan-hornblauer-dolg-2003_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Капитан Хорнблауэр: Долг)](*<-lang_ru;;*);
+		[Pic. (Hornblower: Duty)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/kapitan-hornblauer-dolg-2003.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_uk;
+
+=> nrel_film_critic_rating : 8;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Hornblower: Duty](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [06.01.2003](*<-lang_ru;;*);;
+    => nrel_main_idtf : [06.01.2003](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H36M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H36M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_not_rated;;
+
+concept_film_kapitan_hornblauer_dolg_2003 =>nrel_keywords: film;;
+
+concept_film_kapitan_hornblauer_dolg_2003 <- concept_adventure;concept_drama;concept_war;;
+
+concept_film_kapitan_hornblauer_dolg_2003 => nrel_main_actor : concept_ioan_gruffudd;concept_robert_lindsay;concept_paul_mcgann;concept_lorcan_cranitch;;
+concept_film_kapitan_hornblauer_dolg_2003 => nrel_producer : concept_andrew_grieve;;

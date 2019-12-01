@@ -1,0 +1,67 @@
+concept_film_konvoy_1978
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Конвой]
+(* <- lang_ru;;    *);
+[Convoy]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Конвой)](*<-lang_ru;;*);
+[Description (Convoy)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/konvoy-1978_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/konvoy-1978_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Конвой)](*<-lang_ru;;*);
+		[Pic. (Convoy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/konvoy-1978.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Kristofferson and MacGraw...ain't nothin' gonna get in their way!](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [10.06.1978](*<-lang_ru;;*);;
+    => nrel_main_idtf : [10.06.1978](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H50M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H50M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG;;
+
+concept_film_konvoy_1978 =>nrel_keywords: film;;
+
+concept_film_konvoy_1978 <- concept_action;concept_drama;;
+
+concept_film_konvoy_1978 => nrel_main_actor : concept_kris_kristofferson;concept_ali_macgraw;concept_ernest_borgnine;concept_burt_young;;
+concept_film_konvoy_1978 => nrel_producer : concept_sam_peckinpah;;

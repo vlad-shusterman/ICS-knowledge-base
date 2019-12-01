@@ -1,0 +1,67 @@
+concept_film_voyna_teney_2005
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Война теней / Теневой боксёр]
+(* <- lang_ru;;    *);
+[Shadowboxer]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Война теней / Теневой боксёр)](*<-lang_ru;;*);
+[Description (Shadowboxer)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/voyna-teney-2005_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/voyna-teney-2005_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Война теней / Теневой боксёр)](*<-lang_ru;;*);
+		[Pic. (Shadowboxer)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/voyna-teney-2005.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Feeling Protected Is Very Seductive](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [14.07.2006](*<-lang_ru;;*);;
+    => nrel_main_idtf : [14.07.2006](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H33M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H33M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_voyna_teney_2005 =>nrel_keywords: film;;
+
+concept_film_voyna_teney_2005 <- concept_action;concept_crime;concept_drama;concept_thriller;;
+
+concept_film_voyna_teney_2005 => nrel_main_actor : concept_cuba_gooding_jr.;concept_helen_mirren;concept_vanessa_ferlito;concept_macy_gray;;
+concept_film_voyna_teney_2005 => nrel_producer : concept_lee_daniels;;

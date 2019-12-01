@@ -1,0 +1,67 @@
+concept_film_devushka_iz_dzhersi_2004
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Девушка из Джерси]
+(* <- lang_ru;;    *);
+[Jersey Girl]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Девушка из Джерси)](*<-lang_ru;;*);
+[Description (Jersey Girl)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/devushka-iz-dzhersi-2004_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/devushka-iz-dzhersi-2004_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Девушка из Джерси)](*<-lang_ru;;*);
+		[Pic. (Jersey Girl)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/devushka-iz-dzhersi-2004.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_usa;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [He wanted it all...but he got more than he bargained for. See more »](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [26.03.2004](*<-lang_ru;;*);;
+    => nrel_main_idtf : [26.03.2004](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT1H42M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H42M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_PG_13;;
+
+concept_film_devushka_iz_dzhersi_2004 =>nrel_keywords: film;;
+
+concept_film_devushka_iz_dzhersi_2004 <- concept_comedy;concept_drama;concept_romance;;
+
+concept_film_devushka_iz_dzhersi_2004 => nrel_main_actor : concept_ben_affleck;concept_liv_tyler;concept_raquel_castro;concept_betty_aberlin;;
+concept_film_devushka_iz_dzhersi_2004 => nrel_producer : concept_kevin_smith;;

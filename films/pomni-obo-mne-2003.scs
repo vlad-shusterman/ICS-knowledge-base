@@ -1,0 +1,67 @@
+concept_film_pomni_obo_mne_2003
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[Помни обо мне]
+(* <- lang_ru;;    *);
+[Ricordati di me / Remember Me]
+(* <- lang_en;;    *);
+
+<- concept_film;
+
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Помни обо мне)](*<-lang_ru;;*);
+[Description (Ricordati di me / Remember Me)](*<-lang_en;;*);;
+<=nrel_using_constants:
+{
+concept_film
+};;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://HTML/pomni-obo-mne-2003_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/pomni-obo-mne-2003_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Помни обо мне)](*<-lang_ru;;*);
+		[Pic. (Ricordati di me / Remember Me)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/pomni-obo-mne-2003.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+=> nrel_producing_country : concept_italy;concept_france;concept_uk;
+
+=> nrel_film_critic_rating : 6;
+
+=> nrel_tagline_of_film: ...(*
+    => nrel_main_idtf : [Some loves are never forgotten](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [14.02.2003](*<-lang_ru;;*);;
+    => nrel_main_idtf : [14.02.2003](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing : ...(*
+    <- value;;
+    => nrel_main_idtf : [PT2H5M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H5M](*<-lang_en;;*);;
+*);
+
+=>nrel_age_rating: concept_R;;
+
+concept_film_pomni_obo_mne_2003 =>nrel_keywords: film;;
+
+concept_film_pomni_obo_mne_2003 <- concept_comedy;concept_romance;concept_drama;;
+
+concept_film_pomni_obo_mne_2003 => nrel_main_actor : concept_fabrizio_bentivoglio;concept_laura_morante;concept_nicoletta_romanoff;concept_monica_bellucci;;
+concept_film_pomni_obo_mne_2003 => nrel_producer : concept_gabriele_muccino;;
