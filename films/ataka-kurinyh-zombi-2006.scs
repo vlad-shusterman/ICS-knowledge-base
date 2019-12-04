@@ -1,4 +1,4 @@
-concept_film_ataka_kurinyh_zombi_2006
+film_ataka_kurinyh_zombi_2006
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Атака куриных зомби]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_ataka_kurinyh_zombi_2006 =>nrel_keywords: film;;
+film_ataka_kurinyh_zombi_2006 =>nrel_keywords: film;;
 
-concept_film_ataka_kurinyh_zombi_2006 <- concept_comedy;concept_horror;concept_musical;concept_sci_fi;;
+film_ataka_kurinyh_zombi_2006 <- concept_comedy;concept_horror;concept_musical;concept_sci_fi;;
 
-concept_film_ataka_kurinyh_zombi_2006 => nrel_main_actor : concept_jason_yachanin;concept_kate_graham;concept_allyson_sereboff;concept_robin_l._watkins;;
-concept_film_ataka_kurinyh_zombi_2006 => nrel_producer : concept_lloyd_kaufman;;
+film_ataka_kurinyh_zombi_2006 => nrel_main_actor : jason_yachanin;kate_graham;allyson_sereboff;robin_l._watkins;;
+film_ataka_kurinyh_zombi_2006 => nrel_producer : lloyd_kaufman;;

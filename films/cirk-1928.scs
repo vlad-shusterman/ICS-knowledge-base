@@ -1,4 +1,4 @@
-concept_film_cirk_1928
+film_cirk_1928
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Цирк]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Passed;;
 
-concept_film_cirk_1928 =>nrel_keywords: film;;
+film_cirk_1928 =>nrel_keywords: film;;
 
-concept_film_cirk_1928 <- concept_comedy;concept_romance;;
+film_cirk_1928 <- concept_comedy;concept_romance;;
 
-concept_film_cirk_1928 => nrel_main_actor : concept_charles_chaplin;concept_merna_kennedy;concept_al_ernest_garcia;concept_harry_crocker;;
-concept_film_cirk_1928 => nrel_producer : concept_charles_chaplin;;
+film_cirk_1928 => nrel_main_actor : charles_chaplin;merna_kennedy;al_ernest_garcia;harry_crocker;;
+film_cirk_1928 => nrel_producer : charles_chaplin;;

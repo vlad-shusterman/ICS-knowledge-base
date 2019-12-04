@@ -1,4 +1,4 @@
-concept_film_amerikanskoe_velikolepie_2003
+film_amerikanskoe_velikolepie_2003
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Американское великолепие]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_amerikanskoe_velikolepie_2003 =>nrel_keywords: film;;
+film_amerikanskoe_velikolepie_2003 =>nrel_keywords: film;;
 
-concept_film_amerikanskoe_velikolepie_2003 <- concept_biography;concept_comedy;concept_drama;;
+film_amerikanskoe_velikolepie_2003 <- concept_biography;concept_comedy;concept_drama;;
 
-concept_film_amerikanskoe_velikolepie_2003 => nrel_main_actor : concept_paul_giamatti;concept_shari_springer_berman;concept_harvey_pekar;concept_chris_ambrose;;
-concept_film_amerikanskoe_velikolepie_2003 => nrel_producer : concept_shari_springer_berman;concept_robert_pulcini;;
+film_amerikanskoe_velikolepie_2003 => nrel_main_actor : paul_giamatti;shari_springer_berman;harvey_pekar;chris_ambrose;;
+film_amerikanskoe_velikolepie_2003 => nrel_producer : shari_springer_berman;robert_pulcini;;

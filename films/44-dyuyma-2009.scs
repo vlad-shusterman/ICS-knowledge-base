@@ -1,4 +1,4 @@
-concept_film_44_dyuyma_2009
+film_44_dyuyma_2009
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [44 дюйма]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;
+=> nrel_producing_country : uk;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_44_dyuyma_2009 =>nrel_keywords: film;;
+film_44_dyuyma_2009 =>nrel_keywords: film;;
 
-concept_film_44_dyuyma_2009 <- concept_crime;concept_drama;;
+film_44_dyuyma_2009 <- concept_crime;concept_drama;;
 
-concept_film_44_dyuyma_2009 => nrel_main_actor : concept_ray_winstone;concept_ian_mcshane;concept_john_hurt;concept_tom_wilkinson;;
-concept_film_44_dyuyma_2009 => nrel_producer : concept_malcolm_venville;;
+film_44_dyuyma_2009 => nrel_main_actor : ray_winstone;ian_mcshane;john_hurt;tom_wilkinson;;
+film_44_dyuyma_2009 => nrel_producer : malcolm_venville;;

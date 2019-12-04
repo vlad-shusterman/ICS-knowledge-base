@@ -1,4 +1,4 @@
-concept_film_bremya_2016
+film_bremya_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бремя]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_norway;
+=> nrel_producing_country : uk;norway;
 
 => nrel_film_critic_rating : 3;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bremya_2016 =>nrel_keywords: film;;
+film_bremya_2016 =>nrel_keywords: film;;
 
-concept_film_bremya_2016 <- concept_drama;concept_mystery;concept_thriller;;
+film_bremya_2016 <- concept_drama;concept_mystery;concept_thriller;;
 
-concept_film_bremya_2016 => nrel_main_actor : concept_robert_render;concept_anthony_boyle;concept_kenny_thompson;concept_leo_clarke;;
-concept_film_bremya_2016 => nrel_producer : concept_george_clarke;;
+film_bremya_2016 => nrel_main_actor : robert_render;anthony_boyle;kenny_thompson;leo_clarke;;
+film_bremya_2016 => nrel_producer : george_clarke;;

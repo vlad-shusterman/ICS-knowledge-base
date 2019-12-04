@@ -1,4 +1,4 @@
-concept_film_amerikanskiy_pirog_2_2001
+film_amerikanskiy_pirog_2_2001
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Американский пирог 2]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_amerikanskiy_pirog_2_2001 =>nrel_keywords: film;;
+film_amerikanskiy_pirog_2_2001 =>nrel_keywords: film;;
 
-concept_film_amerikanskiy_pirog_2_2001 <- concept_comedy;;
+film_amerikanskiy_pirog_2_2001 <- concept_comedy;;
 
-concept_film_amerikanskiy_pirog_2_2001 => nrel_main_actor : concept_jason_biggs;concept_seann_william_scott;concept_shannon_elizabeth;concept_alyson_hannigan;;
-concept_film_amerikanskiy_pirog_2_2001 => nrel_producer : concept_j.b._rogers;;
+film_amerikanskiy_pirog_2_2001 => nrel_main_actor : jason_biggs;seann_william_scott;shannon_elizabeth;alyson_hannigan;;
+film_amerikanskiy_pirog_2_2001 => nrel_producer : j.b._rogers;;

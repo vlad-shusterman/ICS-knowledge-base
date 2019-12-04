@@ -1,4 +1,4 @@
-concept_film_barri_2016
+film_barri_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Барри]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_barri_2016 =>nrel_keywords: film;;
+film_barri_2016 =>nrel_keywords: film;;
 
-concept_film_barri_2016 <- concept_biography;concept_drama;;
+film_barri_2016 <- concept_biography;concept_drama;;
 
-concept_film_barri_2016 => nrel_main_actor : concept_devon_terrell;concept_anya_taylor_joy;concept_jason_mitchell;concept_ellar_coltrane;;
-concept_film_barri_2016 => nrel_producer : concept_vikram_gandhi;;
+film_barri_2016 => nrel_main_actor : devon_terrell;anya_taylor_joy;jason_mitchell;ellar_coltrane;;
+film_barri_2016 => nrel_producer : vikram_gandhi;;

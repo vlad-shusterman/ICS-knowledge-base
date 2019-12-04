@@ -1,4 +1,4 @@
-concept_film_chayka_2018
+film_chayka_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чайка]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_chayka_2018 =>nrel_keywords: film;;
+film_chayka_2018 =>nrel_keywords: film;;
 
-concept_film_chayka_2018 <- concept_comedy;concept_drama;concept_romance;;
+film_chayka_2018 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_chayka_2018 => nrel_main_actor : concept_annette_bening;concept_corey_stoll;concept_glenn_fleshler;concept_billy_howle;;
-concept_film_chayka_2018 => nrel_producer : concept_michael_mayer;;
+film_chayka_2018 => nrel_main_actor : annette_bening;corey_stoll;glenn_fleshler;billy_howle;;
+film_chayka_2018 => nrel_producer : michael_mayer;;

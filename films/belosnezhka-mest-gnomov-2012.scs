@@ -1,4 +1,4 @@
-concept_film_belosnezhka_mest_gnomov_2012
+film_belosnezhka_mest_gnomov_2012
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Белоснежка: Месть гномов]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_canada;
+=> nrel_producing_country : usa;canada;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_belosnezhka_mest_gnomov_2012 =>nrel_keywords: film;;
+film_belosnezhka_mest_gnomov_2012 =>nrel_keywords: film;;
 
-concept_film_belosnezhka_mest_gnomov_2012 <- concept_adventure;concept_comedy;concept_drama;concept_family;concept_fantasy;;
+film_belosnezhka_mest_gnomov_2012 <- concept_adventure;concept_comedy;concept_drama;concept_family;concept_fantasy;;
 
-concept_film_belosnezhka_mest_gnomov_2012 => nrel_main_actor : concept_lily_collins;concept_julia_roberts;concept_armie_hammer;concept_nathan_lane;;
-concept_film_belosnezhka_mest_gnomov_2012 => nrel_producer : concept_tarsem_singh;;
+film_belosnezhka_mest_gnomov_2012 => nrel_main_actor : lily_collins;julia_roberts;armie_hammer;nathan_lane;;
+film_belosnezhka_mest_gnomov_2012 => nrel_producer : tarsem_singh;;

@@ -1,4 +1,4 @@
-concept_film_chastnaya_zhizn_2018
+film_chastnaya_zhizn_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Частная жизнь]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_chastnaya_zhizn_2018 =>nrel_keywords: film;;
+film_chastnaya_zhizn_2018 =>nrel_keywords: film;;
 
-concept_film_chastnaya_zhizn_2018 <- concept_comedy;concept_drama;;
+film_chastnaya_zhizn_2018 <- concept_comedy;concept_drama;;
 
-concept_film_chastnaya_zhizn_2018 => nrel_main_actor : concept_kathryn_hahn;concept_paul_giamatti;concept_gabrielle_reid;concept_amy_russ;;
-concept_film_chastnaya_zhizn_2018 => nrel_producer : concept_tamara_jenkins;;
+film_chastnaya_zhizn_2018 => nrel_main_actor : kathryn_hahn;paul_giamatti;gabrielle_reid;amy_russ;;
+film_chastnaya_zhizn_2018 => nrel_producer : tamara_jenkins;;

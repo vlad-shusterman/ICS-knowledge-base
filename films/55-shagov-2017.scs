@@ -1,4 +1,4 @@
-concept_film_55_shagov_2017
+film_55_shagov_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [55 шагов]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;concept_belgium;
+=> nrel_producing_country : germany;belgium;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_55_shagov_2017 =>nrel_keywords: film;;
+film_55_shagov_2017 =>nrel_keywords: film;;
 
-concept_film_55_shagov_2017 <- concept_biography;concept_drama;;
+film_55_shagov_2017 <- concept_biography;concept_drama;;
 
-concept_film_55_shagov_2017 => nrel_main_actor : concept_helena_bonham_carter;concept_hilary_swank;concept_jeffrey_tambor;concept_michael_culkin;;
-concept_film_55_shagov_2017 => nrel_producer : concept_bille_august;;
+film_55_shagov_2017 => nrel_main_actor : helena_bonham_carter;hilary_swank;jeffrey_tambor;michael_culkin;;
+film_55_shagov_2017 => nrel_producer : bille_august;;

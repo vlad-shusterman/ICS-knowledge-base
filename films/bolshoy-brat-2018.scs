@@ -1,4 +1,4 @@
-concept_film_bolshoy_brat_2018
+film_bolshoy_brat_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Большой брат]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_hong_kong;
+=> nrel_producing_country : hong_kong;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_14;;
 
-concept_film_bolshoy_brat_2018 =>nrel_keywords: film;;
+film_bolshoy_brat_2018 =>nrel_keywords: film;;
 
-concept_film_bolshoy_brat_2018 <- concept_action;concept_comedy;concept_drama;;
+film_bolshoy_brat_2018 <- concept_action;concept_comedy;concept_drama;;
 
-concept_film_bolshoy_brat_2018 => nrel_main_actor : concept_donnie_yen;concept_joe_chen;concept_kang_yu;concept_wai_ho_auyeung;;
-concept_film_bolshoy_brat_2018 => nrel_producer : concept_ka_wai_kam;;
+film_bolshoy_brat_2018 => nrel_main_actor : donnie_yen;joe_chen;kang_yu;wai_ho_auyeung;;
+film_bolshoy_brat_2018 => nrel_producer : ka_wai_kam;;

@@ -1,4 +1,4 @@
-concept_film_delayte_vashi_stavki_2013
+film_delayte_vashi_stavki_2013
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Делайте ваши ставки!]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_14;;
 
-concept_film_delayte_vashi_stavki_2013 =>nrel_keywords: film;;
+film_delayte_vashi_stavki_2013 =>nrel_keywords: film;;
 
-concept_film_delayte_vashi_stavki_2013 <- concept_drama;;
+film_delayte_vashi_stavki_2013 <- concept_drama;;
 
-concept_film_delayte_vashi_stavki_2013 => nrel_main_actor : concept_steven_pasquale;concept_caroline_dhavernas;concept_anthony_carrigan;concept_sasha_sloan;;
-concept_film_delayte_vashi_stavki_2013 => nrel_producer : concept_bronwen_hughes;;
+film_delayte_vashi_stavki_2013 => nrel_main_actor : steven_pasquale;caroline_dhavernas;anthony_carrigan;sasha_sloan;;
+film_delayte_vashi_stavki_2013 => nrel_producer : bronwen_hughes;;

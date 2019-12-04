@@ -1,4 +1,4 @@
-concept_film_blizost_2004
+film_blizost_2004
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Близость]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_uk;
+=> nrel_producing_country : usa;uk;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_blizost_2004 =>nrel_keywords: film;;
+film_blizost_2004 =>nrel_keywords: film;;
 
-concept_film_blizost_2004 <- concept_drama;concept_romance;;
+film_blizost_2004 <- concept_drama;concept_romance;;
 
-concept_film_blizost_2004 => nrel_main_actor : concept_natalie_portman;concept_jude_law;concept_clive_owen;concept_julia_roberts;;
-concept_film_blizost_2004 => nrel_producer : concept_mike_nichols;;
+film_blizost_2004 => nrel_main_actor : natalie_portman;jude_law;clive_owen;julia_roberts;;
+film_blizost_2004 => nrel_producer : mike_nichols;;

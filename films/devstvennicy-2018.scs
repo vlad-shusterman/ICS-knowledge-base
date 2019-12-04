@@ -1,4 +1,4 @@
-concept_film_devstvennicy_2018
+film_devstvennicy_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Девственницы]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_france;concept_israel;concept_belgium;
+=> nrel_producing_country : france;israel;belgium;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_devstvennicy_2018 =>nrel_keywords: film;;
+film_devstvennicy_2018 =>nrel_keywords: film;;
 
-concept_film_devstvennicy_2018 <- concept_drama;;
+film_devstvennicy_2018 <- concept_drama;;
 
-concept_film_devstvennicy_2018 => nrel_main_actor : concept_joy_rieger;concept_michael_aloni;concept_manuel_elkaslassy;concept_evgenia_dodina;;
-concept_film_devstvennicy_2018 => nrel_producer : concept_keren_ben_rafael;;
+film_devstvennicy_2018 => nrel_main_actor : joy_rieger;michael_aloni;manuel_elkaslassy;evgenia_dodina;;
+film_devstvennicy_2018 => nrel_producer : keren_ben_rafael;;

@@ -1,4 +1,4 @@
-concept_film_anakonda_1997
+film_anakonda_1997
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Анаконда]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_anakonda_1997 =>nrel_keywords: film;;
+film_anakonda_1997 =>nrel_keywords: film;;
 
-concept_film_anakonda_1997 <- concept_action;concept_adventure;concept_horror;concept_thriller;;
+film_anakonda_1997 <- concept_action;concept_adventure;concept_horror;concept_thriller;;
 
-concept_film_anakonda_1997 => nrel_main_actor : concept_jon_voight;concept_jennifer_lopez;concept_eric_stoltz;concept_ice_cube;;
-concept_film_anakonda_1997 => nrel_producer : concept_luis_llosa;;
+film_anakonda_1997 => nrel_main_actor : jon_voight;jennifer_lopez;eric_stoltz;ice_cube;;
+film_anakonda_1997 => nrel_producer : luis_llosa;;

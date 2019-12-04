@@ -1,4 +1,4 @@
-concept_film_bezumie_2005
+film_bezumie_2005
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Безумие]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_ireland;
+=> nrel_producing_country : uk;ireland;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bezumie_2005 =>nrel_keywords: film;;
+film_bezumie_2005 =>nrel_keywords: film;;
 
-concept_film_bezumie_2005 <- concept_drama;concept_romance;concept_thriller;;
+film_bezumie_2005 <- concept_drama;concept_romance;concept_thriller;;
 
-concept_film_bezumie_2005 => nrel_main_actor : concept_natasha_richardson;concept_sean_harris;concept_marton_csokas;concept_ian_mckellen;;
-concept_film_bezumie_2005 => nrel_producer : concept_david_mackenzie;;
+film_bezumie_2005 => nrel_main_actor : natasha_richardson;sean_harris;marton_csokas;ian_mckellen;;
+film_bezumie_2005 => nrel_producer : david_mackenzie;;

@@ -1,4 +1,4 @@
-concept_film_bolshaya_sdelka
+film_bolshaya_sdelka
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Большая сделка]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bolshaya_sdelka =>nrel_keywords: film;;
+film_bolshaya_sdelka =>nrel_keywords: film;;
 
-concept_film_bolshaya_sdelka <- concept_comedy;;
+film_bolshaya_sdelka <- concept_comedy;;
 
-concept_film_bolshaya_sdelka => nrel_main_actor : concept_keraun_harris;concept_simone_shepherd;concept_joey_abril;concept_tony_baker;;
-concept_film_bolshaya_sdelka => nrel_producer : concept_kevin_fredericks;;
+film_bolshaya_sdelka => nrel_main_actor : keraun_harris;simone_shepherd;joey_abril;tony_baker;;
+film_bolshaya_sdelka => nrel_producer : kevin_fredericks;;

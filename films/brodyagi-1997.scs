@@ -1,4 +1,4 @@
-concept_film_brodyagi_1997
+film_brodyagi_1997
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бродяги]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_brodyagi_1997 =>nrel_keywords: film;;
+film_brodyagi_1997 =>nrel_keywords: film;;
 
-concept_film_brodyagi_1997 <- concept_drama;;
+film_brodyagi_1997 <- concept_drama;;
 
-concept_film_brodyagi_1997 => nrel_main_actor : concept_vin_diesel;concept_joey_dedio;concept_t.k._kirkland;concept_mike_epps;;
-concept_film_brodyagi_1997 => nrel_producer : concept_vin_diesel;;
+film_brodyagi_1997 => nrel_main_actor : vin_diesel;joey_dedio;t.k._kirkland;mike_epps;;
+film_brodyagi_1997 => nrel_producer : vin_diesel;;

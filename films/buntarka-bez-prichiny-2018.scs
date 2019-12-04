@@ -1,4 +1,4 @@
-concept_film_buntarka_bez_prichiny_2018
+film_buntarka_bez_prichiny_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бунтарка без причины]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;
+=> nrel_producing_country : uk;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_buntarka_bez_prichiny_2018 =>nrel_keywords: film;;
+film_buntarka_bez_prichiny_2018 =>nrel_keywords: film;;
 
-concept_film_buntarka_bez_prichiny_2018 <- concept_comedy;concept_drama;;
+film_buntarka_bez_prichiny_2018 <- concept_comedy;concept_drama;;
 
-concept_film_buntarka_bez_prichiny_2018 => nrel_main_actor : concept_jemima_kirke;concept_richard_elis;concept_sarah_solemani;concept_alice_lowe;;
-concept_film_buntarka_bez_prichiny_2018 => nrel_producer : concept_jamie_adams;;
+film_buntarka_bez_prichiny_2018 => nrel_main_actor : jemima_kirke;richard_elis;sarah_solemani;alice_lowe;;
+film_buntarka_bez_prichiny_2018 => nrel_producer : jamie_adams;;

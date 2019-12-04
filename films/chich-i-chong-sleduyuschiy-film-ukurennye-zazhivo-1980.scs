@@ -1,4 +1,4 @@
-concept_film_chich_i_chong_sleduyuschiy_film_ukurennye_zazhivo_1980
+film_chich_i_chong_sleduyuschiy_film_ukurennye_zazhivo_1980
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чич и Чонг: Следующий фильм. Укуренные заживо!]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_chich_i_chong_sleduyuschiy_film_ukurennye_zazhivo_1980 =>nrel_keywords: film;;
+film_chich_i_chong_sleduyuschiy_film_ukurennye_zazhivo_1980 =>nrel_keywords: film;;
 
-concept_film_chich_i_chong_sleduyuschiy_film_ukurennye_zazhivo_1980 <- concept_comedy;concept_crime;concept_sci_fi;;
+film_chich_i_chong_sleduyuschiy_film_ukurennye_zazhivo_1980 <- concept_comedy;concept_crime;concept_sci_fi;;
 
-concept_film_chich_i_chong_sleduyuschiy_film_ukurennye_zazhivo_1980 => nrel_main_actor : concept_cheech_marin;concept_tommy_chong;concept_evelyn_guerrero;concept_betty_kennedy;;
-concept_film_chich_i_chong_sleduyuschiy_film_ukurennye_zazhivo_1980 => nrel_producer : concept_tommy_chong;;
+film_chich_i_chong_sleduyuschiy_film_ukurennye_zazhivo_1980 => nrel_main_actor : cheech_marin;tommy_chong;evelyn_guerrero;betty_kennedy;;
+film_chich_i_chong_sleduyuschiy_film_ukurennye_zazhivo_1980 => nrel_producer : tommy_chong;;

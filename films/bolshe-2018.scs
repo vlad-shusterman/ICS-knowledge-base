@@ -1,4 +1,4 @@
-concept_film_bolshe_2018
+film_bolshe_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Больше]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_bolshe_2018 =>nrel_keywords: film;;
+film_bolshe_2018 =>nrel_keywords: film;;
 
-concept_film_bolshe_2018 <- concept_biography;concept_drama;;
+film_bolshe_2018 <- concept_biography;concept_drama;;
 
-concept_film_bolshe_2018 => nrel_main_actor : concept_victoria_justice;concept_julianne_hough;concept_kevin_durand;concept_tyler_hoechlin;;
-concept_film_bolshe_2018 => nrel_producer : concept_george_gallo;;
+film_bolshe_2018 => nrel_main_actor : victoria_justice;julianne_hough;kevin_durand;tyler_hoechlin;;
+film_bolshe_2018 => nrel_producer : george_gallo;;

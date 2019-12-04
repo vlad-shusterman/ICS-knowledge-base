@@ -1,4 +1,4 @@
-concept_film_blesk_1996
+film_blesk_1996
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Блеск]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_australia;
+=> nrel_producing_country : australia;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_blesk_1996 =>nrel_keywords: film;;
+film_blesk_1996 =>nrel_keywords: film;;
 
-concept_film_blesk_1996 <- concept_biography;concept_drama;concept_music;concept_romance;;
+film_blesk_1996 <- concept_biography;concept_drama;concept_music;concept_romance;;
 
-concept_film_blesk_1996 => nrel_main_actor : concept_geoffrey_rush;concept_armin_mueller_stahl;concept_justin_braine;concept_sonia_todd;;
-concept_film_blesk_1996 => nrel_producer : concept_scott_hicks;;
+film_blesk_1996 => nrel_main_actor : geoffrey_rush;armin_mueller_stahl;justin_braine;sonia_todd;;
+film_blesk_1996 => nrel_producer : scott_hicks;;

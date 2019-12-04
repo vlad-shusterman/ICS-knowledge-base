@@ -1,4 +1,4 @@
-concept_film_bezotvetnaya_lyubov_2010
+film_bezotvetnaya_lyubov_2010
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Безответная любовь]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bezotvetnaya_lyubov_2010 =>nrel_keywords: film;;
+film_bezotvetnaya_lyubov_2010 =>nrel_keywords: film;;
 
-concept_film_bezotvetnaya_lyubov_2010 <- concept_drama;concept_thriller;;
+film_bezotvetnaya_lyubov_2010 <- concept_drama;concept_thriller;;
 
-concept_film_bezotvetnaya_lyubov_2010 => nrel_main_actor : concept_justin_baldoni;concept_michael_welch;concept_david_keith;concept_clare_carey;;
-concept_film_bezotvetnaya_lyubov_2010 => nrel_producer : concept_jeffrey_day;concept_jason_epperson;;
+film_bezotvetnaya_lyubov_2010 => nrel_main_actor : justin_baldoni;michael_welch;david_keith;clare_carey;;
+film_bezotvetnaya_lyubov_2010 => nrel_producer : jeffrey_day;jason_epperson;;

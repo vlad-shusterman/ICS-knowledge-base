@@ -1,4 +1,4 @@
-concept_film_chistokrovnye_2017
+film_chistokrovnye_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чистокровные]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_chistokrovnye_2017 =>nrel_keywords: film;;
+film_chistokrovnye_2017 =>nrel_keywords: film;;
 
-concept_film_chistokrovnye_2017 <- concept_crime;concept_drama;concept_thriller;;
+film_chistokrovnye_2017 <- concept_crime;concept_drama;concept_thriller;;
 
-concept_film_chistokrovnye_2017 => nrel_main_actor : concept_olivia_cooke;concept_anya_taylor_joy;concept_anton_yelchin;concept_paul_sparks;;
-concept_film_chistokrovnye_2017 => nrel_producer : concept_cory_finley;;
+film_chistokrovnye_2017 => nrel_main_actor : olivia_cooke;anya_taylor_joy;anton_yelchin;paul_sparks;;
+film_chistokrovnye_2017 => nrel_producer : cory_finley;;

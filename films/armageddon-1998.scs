@@ -1,4 +1,4 @@
-concept_film_armageddon_1998
+film_armageddon_1998
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Армагеддон]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_armageddon_1998 =>nrel_keywords: film;;
+film_armageddon_1998 =>nrel_keywords: film;;
 
-concept_film_armageddon_1998 <- concept_action;concept_adventure;concept_sci_fi;concept_thriller;;
+film_armageddon_1998 <- concept_action;concept_adventure;concept_sci_fi;concept_thriller;;
 
-concept_film_armageddon_1998 => nrel_main_actor : concept_bruce_willis;concept_billy_bob_thornton;concept_ben_affleck;concept_liv_tyler;;
-concept_film_armageddon_1998 => nrel_producer : concept_michael_bay;;
+film_armageddon_1998 => nrel_main_actor : bruce_willis;billy_bob_thornton;ben_affleck;liv_tyler;;
+film_armageddon_1998 => nrel_producer : michael_bay;;

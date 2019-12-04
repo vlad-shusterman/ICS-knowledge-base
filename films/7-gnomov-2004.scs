@@ -1,4 +1,4 @@
-concept_film_7_gnomov_2004
+film_7_gnomov_2004
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [7 гномов]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;
+=> nrel_producing_country : germany;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_7_gnomov_2004 =>nrel_keywords: film;;
+film_7_gnomov_2004 =>nrel_keywords: film;;
 
-concept_film_7_gnomov_2004 <- concept_comedy;concept_family;;
+film_7_gnomov_2004 <- concept_comedy;concept_family;;
 
-concept_film_7_gnomov_2004 => nrel_main_actor : concept_otto_waalkes;concept_mirco_nontschew;concept_boris_aljinovic;concept_markus_majowski;;
-concept_film_7_gnomov_2004 => nrel_producer : concept_sven_unterwaldt_jr.;;
+film_7_gnomov_2004 => nrel_main_actor : otto_waalkes;mirco_nontschew;boris_aljinovic;markus_majowski;;
+film_7_gnomov_2004 => nrel_producer : sven_unterwaldt_jr.;;

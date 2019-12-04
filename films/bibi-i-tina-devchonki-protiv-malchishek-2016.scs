@@ -1,4 +1,4 @@
-concept_film_bibi_i_tina_devchonki_protiv_malchishek_2016
+film_bibi_i_tina_devchonki_protiv_malchishek_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Биби и Тина: Девчонки против мальчишек]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;
+=> nrel_producing_country : germany;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bibi_i_tina_devchonki_protiv_malchishek_2016 =>nrel_keywords: film;;
+film_bibi_i_tina_devchonki_protiv_malchishek_2016 =>nrel_keywords: film;;
 
-concept_film_bibi_i_tina_devchonki_protiv_malchishek_2016 <- concept_adventure;concept_comedy;concept_family;concept_sport;;
+film_bibi_i_tina_devchonki_protiv_malchishek_2016 <- concept_adventure;concept_comedy;concept_family;concept_sport;;
 
-concept_film_bibi_i_tina_devchonki_protiv_malchishek_2016 => nrel_main_actor : concept_lina_larissa_strahl;concept_lisa_marie_koroll;concept_louis_held;concept_michael_maertens;;
-concept_film_bibi_i_tina_devchonki_protiv_malchishek_2016 => nrel_producer : concept_detlev_buck;;
+film_bibi_i_tina_devchonki_protiv_malchishek_2016 => nrel_main_actor : lina_larissa_strahl;lisa_marie_koroll;louis_held;michael_maertens;;
+film_bibi_i_tina_devchonki_protiv_malchishek_2016 => nrel_producer : detlev_buck;;

@@ -1,4 +1,4 @@
-concept_film_bitva_polov_2017
+film_bitva_polov_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Битва полов]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_usa;
+=> nrel_producing_country : uk;usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_bitva_polov_2017 =>nrel_keywords: film;;
+film_bitva_polov_2017 =>nrel_keywords: film;;
 
-concept_film_bitva_polov_2017 <- concept_biography;concept_comedy;concept_drama;concept_sport;;
+film_bitva_polov_2017 <- concept_biography;concept_comedy;concept_drama;concept_sport;;
 
-concept_film_bitva_polov_2017 => nrel_main_actor : concept_emma_stone;concept_steve_carell;concept_andrea_riseborough;concept_sarah_silverman;;
-concept_film_bitva_polov_2017 => nrel_producer : concept_jonathan_dayton;concept_valerie_faris;;
+film_bitva_polov_2017 => nrel_main_actor : emma_stone;steve_carell;andrea_riseborough;sarah_silverman;;
+film_bitva_polov_2017 => nrel_producer : jonathan_dayton;valerie_faris;;

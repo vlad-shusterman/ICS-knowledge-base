@@ -1,4 +1,4 @@
-concept_film_baykery_2004
+film_baykery_2004
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Байкеры]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_india;
+=> nrel_producing_country : india;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_baykery_2004 =>nrel_keywords: film;;
+film_baykery_2004 =>nrel_keywords: film;;
 
-concept_film_baykery_2004 <- concept_action;concept_thriller;;
+film_baykery_2004 <- concept_action;concept_thriller;;
 
-concept_film_baykery_2004 => nrel_main_actor : concept_abhishek_bachchan;concept_john_abraham;concept_uday_chopra;concept_esha_deol;;
-concept_film_baykery_2004 => nrel_producer : concept_sanjay_gadhvi;;
+film_baykery_2004 => nrel_main_actor : abhishek_bachchan;john_abraham;uday_chopra;esha_deol;;
+film_baykery_2004 => nrel_producer : sanjay_gadhvi;;

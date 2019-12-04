@@ -1,4 +1,4 @@
-concept_film_belaya_lenta_2009
+film_belaya_lenta_2009
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Белая лента]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;concept_austria;concept_france;concept_italy;concept_canada;
+=> nrel_producing_country : germany;austria;france;italy;canada;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_belaya_lenta_2009 =>nrel_keywords: film;;
+film_belaya_lenta_2009 =>nrel_keywords: film;;
 
-concept_film_belaya_lenta_2009 <- concept_drama;concept_history;concept_mystery;concept_thriller;;
+film_belaya_lenta_2009 <- concept_drama;concept_history;concept_mystery;concept_thriller;;
 
-concept_film_belaya_lenta_2009 => nrel_main_actor : concept_christian_friedel;concept_ernst_jacobi;concept_leonie_benesch;concept_ulrich_tukur;;
-concept_film_belaya_lenta_2009 => nrel_producer : concept_michael_haneke;;
+film_belaya_lenta_2009 => nrel_main_actor : christian_friedel;ernst_jacobi;leonie_benesch;ulrich_tukur;;
+film_belaya_lenta_2009 => nrel_producer : michael_haneke;;

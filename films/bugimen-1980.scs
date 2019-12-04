@@ -1,4 +1,4 @@
-concept_film_bugimen_1980
+film_bugimen_1980
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бугимен]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bugimen_1980 =>nrel_keywords: film;;
+film_bugimen_1980 =>nrel_keywords: film;;
 
-concept_film_bugimen_1980 <- concept_horror;;
+film_bugimen_1980 <- concept_horror;;
 
-concept_film_bugimen_1980 => nrel_main_actor : concept_suzanna_love;concept_john_carradine;concept_ron_james;concept_nicholas_love;;
-concept_film_bugimen_1980 => nrel_producer : concept_ulli_lommel;;
+film_bugimen_1980 => nrel_main_actor : suzanna_love;john_carradine;ron_james;nicholas_love;;
+film_bugimen_1980 => nrel_producer : ulli_lommel;;

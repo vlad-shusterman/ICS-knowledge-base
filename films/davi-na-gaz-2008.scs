@@ -1,4 +1,4 @@
-concept_film_davi_na_gaz_2008
+film_davi_na_gaz_2008
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Дави на газ]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_france;
+=> nrel_producing_country : france;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_davi_na_gaz_2008 =>nrel_keywords: film;;
+film_davi_na_gaz_2008 =>nrel_keywords: film;;
 
-concept_film_davi_na_gaz_2008 <- concept_action;concept_crime;concept_drama;concept_thriller;;
+film_davi_na_gaz_2008 <- concept_action;concept_crime;concept_drama;concept_thriller;;
 
-concept_film_davi_na_gaz_2008 => nrel_main_actor : concept_roschdy_zem;concept_olivier_gourmet;concept_jocelyn_lagarrigue;concept_julie_durand;;
-concept_film_davi_na_gaz_2008 => nrel_producer : concept_olivier_van_hoofstadt;;
+film_davi_na_gaz_2008 => nrel_main_actor : roschdy_zem;olivier_gourmet;jocelyn_lagarrigue;julie_durand;;
+film_davi_na_gaz_2008 => nrel_producer : olivier_van_hoofstadt;;

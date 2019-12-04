@@ -1,4 +1,4 @@
-concept_film_avstraliya_2008
+film_avstraliya_2008
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Австралия]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_australia;concept_usa;
+=> nrel_producing_country : uk;australia;usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_avstraliya_2008 =>nrel_keywords: film;;
+film_avstraliya_2008 =>nrel_keywords: film;;
 
-concept_film_avstraliya_2008 <- concept_adventure;concept_comedy;concept_drama;concept_romance;concept_war;concept_western;;
+film_avstraliya_2008 <- concept_adventure;concept_comedy;concept_drama;concept_romance;concept_war;concept_western;;
 
-concept_film_avstraliya_2008 => nrel_main_actor : concept_nicole_kidman;concept_hugh_jackman;concept_shea_adams;concept_eddie_baroo;;
-concept_film_avstraliya_2008 => nrel_producer : concept_baz_luhrmann;;
+film_avstraliya_2008 => nrel_main_actor : nicole_kidman;hugh_jackman;shea_adams;eddie_baroo;;
+film_avstraliya_2008 => nrel_producer : baz_luhrmann;;

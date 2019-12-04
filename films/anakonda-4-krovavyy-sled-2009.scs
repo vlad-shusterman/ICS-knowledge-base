@@ -1,4 +1,4 @@
-concept_film_anakonda_4_krovavyy_sled_2009
+film_anakonda_4_krovavyy_sled_2009
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Анаконда 4: Кровавый след]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_romania;concept_usa;
+=> nrel_producing_country : romania;usa;
 
 => nrel_film_critic_rating : 3;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_anakonda_4_krovavyy_sled_2009 =>nrel_keywords: film;;
+film_anakonda_4_krovavyy_sled_2009 =>nrel_keywords: film;;
 
-concept_film_anakonda_4_krovavyy_sled_2009 <- concept_action;concept_adventure;concept_horror;concept_sci_fi;concept_thriller;;
+film_anakonda_4_krovavyy_sled_2009 <- concept_action;concept_adventure;concept_horror;concept_sci_fi;concept_thriller;;
 
-concept_film_anakonda_4_krovavyy_sled_2009 => nrel_main_actor : concept_crystal_allen;concept_linden_ashby;concept_danny_midwinter;concept_calin_stanciu;;
-concept_film_anakonda_4_krovavyy_sled_2009 => nrel_producer : concept_don_e._fauntleroy;;
+film_anakonda_4_krovavyy_sled_2009 => nrel_main_actor : crystal_allen;linden_ashby;danny_midwinter;calin_stanciu;;
+film_anakonda_4_krovavyy_sled_2009 => nrel_producer : don_e._fauntleroy;;

@@ -1,4 +1,4 @@
-concept_film_007_koordinaty_skayfoll_2012
+film_007_koordinaty_skayfoll_2012
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [007: Координаты «Скайфолл»]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_usa;
+=> nrel_producing_country : uk;usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_007_koordinaty_skayfoll_2012 =>nrel_keywords: film;;
+film_007_koordinaty_skayfoll_2012 =>nrel_keywords: film;;
 
-concept_film_007_koordinaty_skayfoll_2012 <- concept_action;concept_adventure;concept_thriller;;
+film_007_koordinaty_skayfoll_2012 <- concept_action;concept_adventure;concept_thriller;;
 
-concept_film_007_koordinaty_skayfoll_2012 => nrel_main_actor : concept_daniel_craig;concept_javier_bardem;concept_naomie_harris;concept_judi_dench;;
-concept_film_007_koordinaty_skayfoll_2012 => nrel_producer : concept_sam_mendes;;
+film_007_koordinaty_skayfoll_2012 => nrel_main_actor : daniel_craig;javier_bardem;naomie_harris;judi_dench;;
+film_007_koordinaty_skayfoll_2012 => nrel_producer : sam_mendes;;

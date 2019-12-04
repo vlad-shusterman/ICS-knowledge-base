@@ -1,4 +1,4 @@
-concept_film_50_detey_spasatelnaya_missiya_mistera_i_missis_kraus_2013
+film_50_detey_spasatelnaya_missiya_mistera_i_missis_kraus_2013
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [50 детей: Спасательная миссия мистера и миссис Краус]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_PG;;
 
-concept_film_50_detey_spasatelnaya_missiya_mistera_i_missis_kraus_2013 =>nrel_keywords: film;;
+film_50_detey_spasatelnaya_missiya_mistera_i_missis_kraus_2013 =>nrel_keywords: film;;
 
-concept_film_50_detey_spasatelnaya_missiya_mistera_i_missis_kraus_2013 <- concept_documentary;;
+film_50_detey_spasatelnaya_missiya_mistera_i_missis_kraus_2013 <- concept_documentary;;
 
-concept_film_50_detey_spasatelnaya_missiya_mistera_i_missis_kraus_2013 => nrel_main_actor : concept_alan_alda;concept_mamie_gummer;concept_liz_perle;concept_paul_shapiro;;
-concept_film_50_detey_spasatelnaya_missiya_mistera_i_missis_kraus_2013 => nrel_producer : concept_steven_pressman;;
+film_50_detey_spasatelnaya_missiya_mistera_i_missis_kraus_2013 => nrel_main_actor : alan_alda;mamie_gummer;liz_perle;paul_shapiro;;
+film_50_detey_spasatelnaya_missiya_mistera_i_missis_kraus_2013 => nrel_producer : steven_pressman;;

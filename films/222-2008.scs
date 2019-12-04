@@ -1,4 +1,4 @@
-concept_film_222_2008
+film_222_2008
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [2:22]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_canada;
+=> nrel_producing_country : canada;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_222_2008 =>nrel_keywords: film;;
+film_222_2008 =>nrel_keywords: film;;
 
-concept_film_222_2008 <- concept_crime;concept_drama;concept_thriller;;
+film_222_2008 <- concept_crime;concept_drama;concept_thriller;;
 
-concept_film_222_2008 => nrel_main_actor : concept_mick_rossi;concept_robert_miano;concept_aaron_gallagher;concept_jorge_a._jimenez;;
-concept_film_222_2008 => nrel_producer : concept_phillip_guzman;;
+film_222_2008 => nrel_main_actor : mick_rossi;robert_miano;aaron_gallagher;jorge_a._jimenez;;
+film_222_2008 => nrel_producer : phillip_guzman;;

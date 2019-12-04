@@ -1,4 +1,4 @@
-concept_film_beskonechno_belyy_medved_2014
+film_beskonechno_belyy_medved_2014
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бесконечно белый медведь]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_beskonechno_belyy_medved_2014 =>nrel_keywords: film;;
+film_beskonechno_belyy_medved_2014 =>nrel_keywords: film;;
 
-concept_film_beskonechno_belyy_medved_2014 <- concept_comedy;concept_drama;concept_romance;;
+film_beskonechno_belyy_medved_2014 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_beskonechno_belyy_medved_2014 => nrel_main_actor : concept_mark_ruffalo;concept_zoe_saldana;concept_imogene_wolodarsky;concept_ashley_aufderheide;;
-concept_film_beskonechno_belyy_medved_2014 => nrel_producer : concept_maya_forbes;;
+film_beskonechno_belyy_medved_2014 => nrel_main_actor : mark_ruffalo;zoe_saldana;imogene_wolodarsky;ashley_aufderheide;;
+film_beskonechno_belyy_medved_2014 => nrel_producer : maya_forbes;;

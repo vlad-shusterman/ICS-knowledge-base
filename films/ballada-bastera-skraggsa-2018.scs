@@ -1,4 +1,4 @@
-concept_film_ballada_bastera_skraggsa_2018
+film_ballada_bastera_skraggsa_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Баллада Бастера Скраггса]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_ballada_bastera_skraggsa_2018 =>nrel_keywords: film;;
+film_ballada_bastera_skraggsa_2018 =>nrel_keywords: film;;
 
-concept_film_ballada_bastera_skraggsa_2018 <- concept_comedy;concept_drama;concept_musical;concept_mystery;concept_romance;concept_western;;
+film_ballada_bastera_skraggsa_2018 <- concept_comedy;concept_drama;concept_musical;concept_mystery;concept_romance;concept_western;;
 
-concept_film_ballada_bastera_skraggsa_2018 => nrel_main_actor : concept_tim_blake_nelson;concept_willie_watson;concept_clancy_brown;concept_danny_mccarthy;;
-concept_film_ballada_bastera_skraggsa_2018 => nrel_producer : concept_ethan_coen;concept_joel_coen;;
+film_ballada_bastera_skraggsa_2018 => nrel_main_actor : tim_blake_nelson;willie_watson;clancy_brown;danny_mccarthy;;
+film_ballada_bastera_skraggsa_2018 => nrel_producer : ethan_coen;joel_coen;;

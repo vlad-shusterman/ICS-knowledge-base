@@ -1,4 +1,4 @@
-concept_film_begi_tolstyak_begi_2007
+film_begi_tolstyak_begi_2007
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Беги, толстяк, беги]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_usa;
+=> nrel_producing_country : uk;usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_begi_tolstyak_begi_2007 =>nrel_keywords: film;;
+film_begi_tolstyak_begi_2007 =>nrel_keywords: film;;
 
-concept_film_begi_tolstyak_begi_2007 <- concept_comedy;concept_romance;concept_sport;;
+film_begi_tolstyak_begi_2007 <- concept_comedy;concept_romance;concept_sport;;
 
-concept_film_begi_tolstyak_begi_2007 => nrel_main_actor : concept_simon_pegg;concept_thandie_newton;concept_hank_azaria;concept_dylan_moran;;
-concept_film_begi_tolstyak_begi_2007 => nrel_producer : concept_david_schwimmer;;
+film_begi_tolstyak_begi_2007 => nrel_main_actor : simon_pegg;thandie_newton;hank_azaria;dylan_moran;;
+film_begi_tolstyak_begi_2007 => nrel_producer : david_schwimmer;;

@@ -1,4 +1,4 @@
-concept_film_chernaya_dyra_1979
+film_chernaya_dyra_1979
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Черная дыра]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_chernaya_dyra_1979 =>nrel_keywords: film;;
+film_chernaya_dyra_1979 =>nrel_keywords: film;;
 
-concept_film_chernaya_dyra_1979 <- concept_action;concept_sci_fi;;
+film_chernaya_dyra_1979 <- concept_action;concept_sci_fi;;
 
-concept_film_chernaya_dyra_1979 => nrel_main_actor : concept_maximilian_schell;concept_anthony_perkins;concept_robert_forster;concept_joseph_bottoms;;
-concept_film_chernaya_dyra_1979 => nrel_producer : concept_gary_nelson;;
+film_chernaya_dyra_1979 => nrel_main_actor : maximilian_schell;anthony_perkins;robert_forster;joseph_bottoms;;
+film_chernaya_dyra_1979 => nrel_producer : gary_nelson;;

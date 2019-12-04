@@ -1,4 +1,4 @@
-concept_film_10_gryaznyh_postupkov_2005
+film_10_gryaznyh_postupkov_2005
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [10 грязных поступков]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_10_gryaznyh_postupkov_2005 =>nrel_keywords: film;;
+film_10_gryaznyh_postupkov_2005 =>nrel_keywords: film;;
 
-concept_film_10_gryaznyh_postupkov_2005 <- concept_comedy;;
+film_10_gryaznyh_postupkov_2005 <- concept_comedy;;
 
-concept_film_10_gryaznyh_postupkov_2005 => nrel_main_actor : concept_milo_ventimiglia;concept_lacey_chabert;concept_charles_durning;concept_tom_amandes;;
-concept_film_10_gryaznyh_postupkov_2005 => nrel_producer : concept_david_kendall;;
+film_10_gryaznyh_postupkov_2005 => nrel_main_actor : milo_ventimiglia;lacey_chabert;charles_durning;tom_amandes;;
+film_10_gryaznyh_postupkov_2005 => nrel_producer : david_kendall;;

@@ -1,4 +1,4 @@
-concept_film_angel_mstitel_2007
+film_angel_mstitel_2007
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Ангел-мститель]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_14;;
 
-concept_film_angel_mstitel_2007 =>nrel_keywords: film;;
+film_angel_mstitel_2007 =>nrel_keywords: film;;
 
-concept_film_angel_mstitel_2007 <- concept_drama;concept_western;;
+film_angel_mstitel_2007 <- concept_drama;concept_western;;
 
-concept_film_angel_mstitel_2007 => nrel_main_actor : concept_kevin_sorbo;concept_nick_chinlund;concept_cynthia_watros;concept_richard_lee_jackson;;
-concept_film_angel_mstitel_2007 => nrel_producer : concept_david_s._cass_sr.;;
+film_angel_mstitel_2007 => nrel_main_actor : kevin_sorbo;nick_chinlund;cynthia_watros;richard_lee_jackson;;
+film_angel_mstitel_2007 => nrel_producer : david_s._cass_sr.;;

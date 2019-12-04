@@ -1,4 +1,4 @@
-concept_film_bolshoe_ya_2010
+film_bolshoe_ya_2010
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Большое я]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;
+=> nrel_producing_country : uk;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bolshoe_ya_2010 =>nrel_keywords: film;;
+film_bolshoe_ya_2010 =>nrel_keywords: film;;
 
-concept_film_bolshoe_ya_2010 <- concept_crime;concept_drama;concept_thriller;;
+film_bolshoe_ya_2010 <- concept_crime;concept_drama;concept_thriller;;
 
-concept_film_bolshoe_ya_2010 => nrel_main_actor : concept_leo_gregory;concept_vincent_regan;concept_beatrice_rosen;concept_phil_davis;;
-concept_film_bolshoe_ya_2010 => nrel_producer : concept_nic_auerbach;;
+film_bolshoe_ya_2010 => nrel_main_actor : leo_gregory;vincent_regan;beatrice_rosen;phil_davis;;
+film_bolshoe_ya_2010 => nrel_producer : nic_auerbach;;

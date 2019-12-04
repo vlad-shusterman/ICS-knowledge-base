@@ -1,4 +1,4 @@
-concept_film_antiporno_2016
+film_antiporno_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Антипорно]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_japan;
+=> nrel_producing_country : japan;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_antiporno_2016 =>nrel_keywords: film;;
+film_antiporno_2016 =>nrel_keywords: film;;
 
-concept_film_antiporno_2016 <- concept_drama;;
+film_antiporno_2016 <- concept_drama;;
 
-concept_film_antiporno_2016 => nrel_main_actor : concept_ami_tomite;concept_mariko_tsutsui;concept_fujiko;concept_sayaka_kotani;;
-concept_film_antiporno_2016 => nrel_producer : concept_sion_sono;;
+film_antiporno_2016 => nrel_main_actor : ami_tomite;mariko_tsutsui;fujiko;sayaka_kotani;;
+film_antiporno_2016 => nrel_producer : sion_sono;;

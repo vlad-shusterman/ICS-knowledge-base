@@ -1,4 +1,4 @@
-concept_film_astral_glava_3_2015
+film_astral_glava_3_2015
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Астрал: Глава 3]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_canada;concept_uk;concept_usa;
+=> nrel_producing_country : canada;uk;usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_astral_glava_3_2015 =>nrel_keywords: film;;
+film_astral_glava_3_2015 =>nrel_keywords: film;;
 
-concept_film_astral_glava_3_2015 <- concept_horror;concept_mystery;concept_thriller;;
+film_astral_glava_3_2015 <- concept_horror;concept_mystery;concept_thriller;;
 
-concept_film_astral_glava_3_2015 => nrel_main_actor : concept_dermot_mulroney;concept_stefanie_scott;concept_angus_sampson;concept_leigh_whannell;;
-concept_film_astral_glava_3_2015 => nrel_producer : concept_leigh_whannell;;
+film_astral_glava_3_2015 => nrel_main_actor : dermot_mulroney;stefanie_scott;angus_sampson;leigh_whannell;;
+film_astral_glava_3_2015 => nrel_producer : leigh_whannell;;

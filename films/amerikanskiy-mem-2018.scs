@@ -1,4 +1,4 @@
-concept_film_amerikanskiy_mem_2018
+film_amerikanskiy_mem_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Американский мем]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_amerikanskiy_mem_2018 =>nrel_keywords: film;;
+film_amerikanskiy_mem_2018 =>nrel_keywords: film;;
 
-concept_film_amerikanskiy_mem_2018 <- concept_documentary;;
+film_amerikanskiy_mem_2018 <- concept_documentary;;
 
-concept_film_amerikanskiy_mem_2018 => nrel_main_actor : concept_kirill_bichutsky;concept_hailey_bieber;concept_amanda_cerny;concept_dane_cook;;
-concept_film_amerikanskiy_mem_2018 => nrel_producer : concept_bert_marcus;;
+film_amerikanskiy_mem_2018 => nrel_main_actor : kirill_bichutsky;hailey_bieber;amanda_cerny;dane_cook;;
+film_amerikanskiy_mem_2018 => nrel_producer : bert_marcus;;

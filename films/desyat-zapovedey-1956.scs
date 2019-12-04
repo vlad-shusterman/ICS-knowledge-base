@@ -1,4 +1,4 @@
-concept_film_desyat_zapovedey_1956
+film_desyat_zapovedey_1956
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Десять заповедей]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_G;;
 
-concept_film_desyat_zapovedey_1956 =>nrel_keywords: film;;
+film_desyat_zapovedey_1956 =>nrel_keywords: film;;
 
-concept_film_desyat_zapovedey_1956 <- concept_adventure;concept_drama;;
+film_desyat_zapovedey_1956 <- concept_adventure;concept_drama;;
 
-concept_film_desyat_zapovedey_1956 => nrel_main_actor : concept_charlton_heston;concept_yul_brynner;concept_anne_baxter;concept_edward_g._robinson;;
-concept_film_desyat_zapovedey_1956 => nrel_producer : concept_cecil_b._demille;;
+film_desyat_zapovedey_1956 => nrel_main_actor : charlton_heston;yul_brynner;anne_baxter;edward_g._robinson;;
+film_desyat_zapovedey_1956 => nrel_producer : cecil_b._demille;;

@@ -1,4 +1,4 @@
-concept_film_50_pervyh_poceluev_2004
+film_50_pervyh_poceluev_2004
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [50 первых поцелуев]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_50_pervyh_poceluev_2004 =>nrel_keywords: film;;
+film_50_pervyh_poceluev_2004 =>nrel_keywords: film;;
 
-concept_film_50_pervyh_poceluev_2004 <- concept_comedy;concept_drama;concept_romance;;
+film_50_pervyh_poceluev_2004 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_50_pervyh_poceluev_2004 => nrel_main_actor : concept_adam_sandler;concept_drew_barrymore;concept_rob_schneider;concept_sean_astin;;
-concept_film_50_pervyh_poceluev_2004 => nrel_producer : concept_peter_segal;;
+film_50_pervyh_poceluev_2004 => nrel_main_actor : adam_sandler;drew_barrymore;rob_schneider;sean_astin;;
+film_50_pervyh_poceluev_2004 => nrel_producer : peter_segal;;

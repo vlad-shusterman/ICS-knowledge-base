@@ -1,4 +1,4 @@
-concept_film_bitva_za_planetu_obezyan_1973
+film_bitva_za_planetu_obezyan_1973
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Битва за планету обезьян]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_G;;
 
-concept_film_bitva_za_planetu_obezyan_1973 =>nrel_keywords: film;;
+film_bitva_za_planetu_obezyan_1973 =>nrel_keywords: film;;
 
-concept_film_bitva_za_planetu_obezyan_1973 <- concept_action;concept_sci_fi;;
+film_bitva_za_planetu_obezyan_1973 <- concept_action;concept_sci_fi;;
 
-concept_film_bitva_za_planetu_obezyan_1973 => nrel_main_actor : concept_roddy_mcdowall;concept_claude_akins;concept_natalie_trundy;concept_severn_darden;;
-concept_film_bitva_za_planetu_obezyan_1973 => nrel_producer : concept_j._lee_thompson;;
+film_bitva_za_planetu_obezyan_1973 => nrel_main_actor : roddy_mcdowall;claude_akins;natalie_trundy;severn_darden;;
+film_bitva_za_planetu_obezyan_1973 => nrel_producer : j._lee_thompson;;

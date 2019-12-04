@@ -1,4 +1,4 @@
-concept_film_aleksandr_2004
+film_aleksandr_2004
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Александр]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_uk;concept_germany;concept_netherlands;concept_france;concept_italy;concept_morocco;concept_thailand;
+=> nrel_producing_country : usa;uk;germany;netherlands;france;italy;morocco;thailand;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_aleksandr_2004 =>nrel_keywords: film;;
+film_aleksandr_2004 =>nrel_keywords: film;;
 
-concept_film_aleksandr_2004 <- concept_action;concept_biography;concept_drama;concept_history;concept_romance;concept_war;;
+film_aleksandr_2004 <- concept_action;concept_biography;concept_drama;concept_history;concept_romance;concept_war;;
 
-concept_film_aleksandr_2004 => nrel_main_actor : concept_colin_farrell;concept_anthony_hopkins;concept_rosario_dawson;concept_angelina_jolie;;
-concept_film_aleksandr_2004 => nrel_producer : concept_oliver_stone;;
+film_aleksandr_2004 => nrel_main_actor : colin_farrell;anthony_hopkins;rosario_dawson;angelina_jolie;;
+film_aleksandr_2004 => nrel_producer : oliver_stone;;

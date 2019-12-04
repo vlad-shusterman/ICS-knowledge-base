@@ -1,4 +1,4 @@
-concept_film_devushka_2012
+film_devushka_2012
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Девушка]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_south_africa;concept_usa;concept_germany;
+=> nrel_producing_country : uk;south_africa;usa;germany;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_14;;
 
-concept_film_devushka_2012 =>nrel_keywords: film;;
+film_devushka_2012 =>nrel_keywords: film;;
 
-concept_film_devushka_2012 <- concept_biography;concept_drama;;
+film_devushka_2012 <- concept_biography;concept_drama;;
 
-concept_film_devushka_2012 => nrel_main_actor : concept_sienna_miller;concept_toby_jones;concept_imelda_staunton;concept_conrad_kemp;;
-concept_film_devushka_2012 => nrel_producer : concept_julian_jarrold;;
+film_devushka_2012 => nrel_main_actor : sienna_miller;toby_jones;imelda_staunton;conrad_kemp;;
+film_devushka_2012 => nrel_producer : julian_jarrold;;

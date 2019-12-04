@@ -1,4 +1,4 @@
-concept_film_bolshaya_igra_2009
+film_bolshaya_igra_2009
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Большая игра]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_uk;concept_france;
+=> nrel_producing_country : usa;uk;france;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_bolshaya_igra_2009 =>nrel_keywords: film;;
+film_bolshaya_igra_2009 =>nrel_keywords: film;;
 
-concept_film_bolshaya_igra_2009 <- concept_crime;concept_drama;concept_mystery;concept_thriller;;
+film_bolshaya_igra_2009 <- concept_crime;concept_drama;concept_mystery;concept_thriller;;
 
-concept_film_bolshaya_igra_2009 => nrel_main_actor : concept_russell_crowe;concept_rachel_mcadams;concept_ben_affleck;concept_helen_mirren;;
-concept_film_bolshaya_igra_2009 => nrel_producer : concept_kevin_macdonald;;
+film_bolshaya_igra_2009 => nrel_main_actor : russell_crowe;rachel_mcadams;ben_affleck;helen_mirren;;
+film_bolshaya_igra_2009 => nrel_producer : kevin_macdonald;;

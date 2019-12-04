@@ -1,4 +1,4 @@
-concept_film_bitva_za_el_alameyn_2002
+film_bitva_za_el_alameyn_2002
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Битва за Эль-Аламейн]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_italy;
+=> nrel_producing_country : italy;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bitva_za_el_alameyn_2002 =>nrel_keywords: film;;
+film_bitva_za_el_alameyn_2002 =>nrel_keywords: film;;
 
-concept_film_bitva_za_el_alameyn_2002 <- concept_drama;concept_war;;
+film_bitva_za_el_alameyn_2002 <- concept_drama;concept_war;;
 
-concept_film_bitva_za_el_alameyn_2002 => nrel_main_actor : concept_paolo_briguglia;concept_pierfrancesco_favino;concept_luciano_scarpa;concept_emilio_solfrizzi;;
-concept_film_bitva_za_el_alameyn_2002 => nrel_producer : concept_enzo_monteleone;;
+film_bitva_za_el_alameyn_2002 => nrel_main_actor : paolo_briguglia;pierfrancesco_favino;luciano_scarpa;emilio_solfrizzi;;
+film_bitva_za_el_alameyn_2002 => nrel_producer : enzo_monteleone;;

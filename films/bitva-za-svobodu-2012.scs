@@ -1,4 +1,4 @@
-concept_film_bitva_za_svobodu_2012
+film_bitva_za_svobodu_2012
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Битва за свободу]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_mexico;
+=> nrel_producing_country : mexico;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bitva_za_svobodu_2012 =>nrel_keywords: film;;
+film_bitva_za_svobodu_2012 =>nrel_keywords: film;;
 
-concept_film_bitva_za_svobodu_2012 <- concept_drama;concept_history;concept_war;concept_western;;
+film_bitva_za_svobodu_2012 <- concept_drama;concept_history;concept_war;concept_western;;
 
-concept_film_bitva_za_svobodu_2012 => nrel_main_actor : concept_andy_garcia;concept_oscar_isaac;concept_catalina_sandino_moreno;concept_santiago_cabrera;;
-concept_film_bitva_za_svobodu_2012 => nrel_producer : concept_dean_wright;;
+film_bitva_za_svobodu_2012 => nrel_main_actor : andy_garcia;oscar_isaac;catalina_sandino_moreno;santiago_cabrera;;
+film_bitva_za_svobodu_2012 => nrel_producer : dean_wright;;

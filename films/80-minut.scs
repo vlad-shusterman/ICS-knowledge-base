@@ -1,4 +1,4 @@
-concept_film_80_minut
+film_80_minut
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [80 минут]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;
+=> nrel_producing_country : germany;
 
 => nrel_film_critic_rating : 4;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_80_minut =>nrel_keywords: film;;
+film_80_minut =>nrel_keywords: film;;
 
-concept_film_80_minut <- concept_action;concept_crime;concept_thriller;;
+film_80_minut <- concept_action;concept_crime;concept_thriller;;
 
-concept_film_80_minut => nrel_main_actor : concept_gabriel_mann;concept_oliver_kieran_jones;concept_josh_dallas;concept_natalia_avelon;;
-concept_film_80_minut => nrel_producer : concept_thomas_jahn;;
+film_80_minut => nrel_main_actor : gabriel_mann;oliver_kieran_jones;josh_dallas;natalia_avelon;;
+film_80_minut => nrel_producer : thomas_jahn;;

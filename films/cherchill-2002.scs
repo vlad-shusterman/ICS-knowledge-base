@@ -1,4 +1,4 @@
-concept_film_cherchill_2002
+film_cherchill_2002
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Черчилль]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_usa;
+=> nrel_producing_country : uk;usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_G;;
 
-concept_film_cherchill_2002 =>nrel_keywords: film;;
+film_cherchill_2002 =>nrel_keywords: film;;
 
-concept_film_cherchill_2002 <- concept_biography;concept_drama;concept_history;;
+film_cherchill_2002 <- concept_biography;concept_drama;concept_history;;
 
-concept_film_cherchill_2002 => nrel_main_actor : concept_albert_finney;concept_vanessa_redgrave;concept_jim_broadbent;concept_linus_roache;;
-concept_film_cherchill_2002 => nrel_producer : concept_richard_loncraine;;
+film_cherchill_2002 => nrel_main_actor : albert_finney;vanessa_redgrave;jim_broadbent;linus_roache;;
+film_cherchill_2002 => nrel_producer : richard_loncraine;;

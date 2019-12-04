@@ -1,4 +1,4 @@
-concept_film_baykery_2003
+film_baykery_2003
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Байкеры]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_baykery_2003 =>nrel_keywords: film;;
+film_baykery_2003 =>nrel_keywords: film;;
 
-concept_film_baykery_2003 <- concept_action;concept_drama;;
+film_baykery_2003 <- concept_action;concept_drama;;
 
-concept_film_baykery_2003 => nrel_main_actor : concept_laurence_fishburne;concept_derek_luke;concept_orlando_jones;concept_djimon_hounsou;;
-concept_film_baykery_2003 => nrel_producer : concept_reggie_rock_bythewood;;
+film_baykery_2003 => nrel_main_actor : laurence_fishburne;derek_luke;orlando_jones;djimon_hounsou;;
+film_baykery_2003 => nrel_producer : reggie_rock_bythewood;;

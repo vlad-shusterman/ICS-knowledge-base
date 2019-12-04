@@ -1,4 +1,4 @@
-concept_film_cherepashki_nindzya_3_1992
+film_cherepashki_nindzya_3_1992
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Черепашки-ниндзя 3]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_hong_kong;
+=> nrel_producing_country : usa;hong_kong;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_cherepashki_nindzya_3_1992 =>nrel_keywords: film;;
+film_cherepashki_nindzya_3_1992 =>nrel_keywords: film;;
 
-concept_film_cherepashki_nindzya_3_1992 <- concept_action;concept_adventure;concept_comedy;concept_family;concept_fantasy;concept_sci_fi;;
+film_cherepashki_nindzya_3_1992 <- concept_action;concept_adventure;concept_comedy;concept_family;concept_fantasy;concept_sci_fi;;
 
-concept_film_cherepashki_nindzya_3_1992 => nrel_main_actor : concept_elias_koteas;concept_paige_turco;concept_stuart_wilson;concept_sab_shimono;;
-concept_film_cherepashki_nindzya_3_1992 => nrel_producer : concept_stuart_gillard;;
+film_cherepashki_nindzya_3_1992 => nrel_main_actor : elias_koteas;paige_turco;stuart_wilson;sab_shimono;;
+film_cherepashki_nindzya_3_1992 => nrel_producer : stuart_gillard;;

@@ -1,4 +1,4 @@
-concept_film_angel_rozhdestva_2009
+film_angel_rozhdestva_2009
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Ангел Рождества]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_angel_rozhdestva_2009 =>nrel_keywords: film;;
+film_angel_rozhdestva_2009 =>nrel_keywords: film;;
 
-concept_film_angel_rozhdestva_2009 <- concept_comedy;concept_drama;concept_romance;;
+film_angel_rozhdestva_2009 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_angel_rozhdestva_2009 => nrel_main_actor : concept_k.c._clyde;concept_kari_hawker_diaz;concept_bruce_davison;concept_elisa_brough;;
-concept_film_angel_rozhdestva_2009 => nrel_producer : concept_brian_brough;;
+film_angel_rozhdestva_2009 => nrel_main_actor : k.c._clyde;kari_hawker_diaz;bruce_davison;elisa_brough;;
+film_angel_rozhdestva_2009 => nrel_producer : brian_brough;;

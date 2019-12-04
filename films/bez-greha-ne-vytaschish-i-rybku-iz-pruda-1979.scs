@@ -1,4 +1,4 @@
-concept_film_bez_greha_ne_vytaschish_i_rybku_iz_pruda_1979
+film_bez_greha_ne_vytaschish_i_rybku_iz_pruda_1979
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Без греха не вытащишь и рыбку из пруда?]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_italy;
+=> nrel_producing_country : italy;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bez_greha_ne_vytaschish_i_rybku_iz_pruda_1979 =>nrel_keywords: film;;
+film_bez_greha_ne_vytaschish_i_rybku_iz_pruda_1979 =>nrel_keywords: film;;
 
-concept_film_bez_greha_ne_vytaschish_i_rybku_iz_pruda_1979 <- concept_comedy;;
+film_bez_greha_ne_vytaschish_i_rybku_iz_pruda_1979 <- concept_comedy;;
 
-concept_film_bez_greha_ne_vytaschish_i_rybku_iz_pruda_1979 => nrel_main_actor : concept_renzo_montagnani;concept_paola_senatore;concept_alvaro_vitali;concept_mario_carotenuto;;
-concept_film_bez_greha_ne_vytaschish_i_rybku_iz_pruda_1979 => nrel_producer : concept_marino_girolami;;
+film_bez_greha_ne_vytaschish_i_rybku_iz_pruda_1979 => nrel_main_actor : renzo_montagnani;paola_senatore;alvaro_vitali;mario_carotenuto;;
+film_bez_greha_ne_vytaschish_i_rybku_iz_pruda_1979 => nrel_producer : marino_girolami;;

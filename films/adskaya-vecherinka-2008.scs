@@ -1,4 +1,4 @@
-concept_film_adskaya_vecherinka_2008
+film_adskaya_vecherinka_2008
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Адская вечеринка]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_adskaya_vecherinka_2008 =>nrel_keywords: film;;
+film_adskaya_vecherinka_2008 =>nrel_keywords: film;;
 
-concept_film_adskaya_vecherinka_2008 <- concept_comedy;concept_horror;;
+film_adskaya_vecherinka_2008 <- concept_comedy;concept_horror;;
 
-concept_film_adskaya_vecherinka_2008 => nrel_main_actor : concept_jared_kusnitz;concept_greyson_chadwick;concept_chandler_darby;concept_carissa_capobianco;;
-concept_film_adskaya_vecherinka_2008 => nrel_producer : concept_gregg_bishop;;
+film_adskaya_vecherinka_2008 => nrel_main_actor : jared_kusnitz;greyson_chadwick;chandler_darby;carissa_capobianco;;
+film_adskaya_vecherinka_2008 => nrel_producer : gregg_bishop;;

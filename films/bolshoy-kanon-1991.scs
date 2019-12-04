@@ -1,4 +1,4 @@
-concept_film_bolshoy_kanon_1991
+film_bolshoy_kanon_1991
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Большой каньон]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bolshoy_kanon_1991 =>nrel_keywords: film;;
+film_bolshoy_kanon_1991 =>nrel_keywords: film;;
 
-concept_film_bolshoy_kanon_1991 <- concept_crime;concept_drama;;
+film_bolshoy_kanon_1991 <- concept_crime;concept_drama;;
 
-concept_film_bolshoy_kanon_1991 => nrel_main_actor : concept_danny_glover;concept_kevin_kline;concept_steve_martin;concept_mary_mcdonnell;;
-concept_film_bolshoy_kanon_1991 => nrel_producer : concept_lawrence_kasdan;;
+film_bolshoy_kanon_1991 => nrel_main_actor : danny_glover;kevin_kline;steve_martin;mary_mcdonnell;;
+film_bolshoy_kanon_1991 => nrel_producer : lawrence_kasdan;;

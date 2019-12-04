@@ -1,4 +1,4 @@
-concept_film_bezotvetnaya_lyubov_1999
+film_bezotvetnaya_lyubov_1999
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Безответная любовь / Танцовщица "Голубой Луны"]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_india;
+=> nrel_producing_country : india;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bezotvetnaya_lyubov_1999 =>nrel_keywords: film;;
+film_bezotvetnaya_lyubov_1999 =>nrel_keywords: film;;
 
-concept_film_bezotvetnaya_lyubov_1999 <- concept_drama;concept_romance;;
+film_bezotvetnaya_lyubov_1999 <- concept_drama;concept_romance;;
 
-concept_film_bezotvetnaya_lyubov_1999 => nrel_main_actor : concept_salman_khan;concept_urmila_matondkar;concept_jaspal_bhatti;concept_shammi_kapoor;;
-concept_film_bezotvetnaya_lyubov_1999 => nrel_producer : concept_andaleeb_sultanpuri;;
+film_bezotvetnaya_lyubov_1999 => nrel_main_actor : salman_khan;urmila_matondkar;jaspal_bhatti;shammi_kapoor;;
+film_bezotvetnaya_lyubov_1999 => nrel_producer : andaleeb_sultanpuri;;

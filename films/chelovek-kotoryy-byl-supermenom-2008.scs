@@ -1,4 +1,4 @@
-concept_film_chelovek_kotoryy_byl_supermenom_2008
+film_chelovek_kotoryy_byl_supermenom_2008
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Человек, который был суперменом]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_south_korea;
+=> nrel_producing_country : south_korea;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_chelovek_kotoryy_byl_supermenom_2008 =>nrel_keywords: film;;
+film_chelovek_kotoryy_byl_supermenom_2008 =>nrel_keywords: film;;
 
-concept_film_chelovek_kotoryy_byl_supermenom_2008 <- concept_comedy;concept_drama;;
+film_chelovek_kotoryy_byl_supermenom_2008 <- concept_comedy;concept_drama;;
 
-concept_film_chelovek_kotoryy_byl_supermenom_2008 => nrel_main_actor : concept_jung_min_hwang;concept_ji_hyun_jun;concept_gil_seung_bang;concept_woo_hyuk_choi;;
-concept_film_chelovek_kotoryy_byl_supermenom_2008 => nrel_producer : concept_yoon_chul_jung;;
+film_chelovek_kotoryy_byl_supermenom_2008 => nrel_main_actor : jung_min_hwang;ji_hyun_jun;gil_seung_bang;woo_hyuk_choi;;
+film_chelovek_kotoryy_byl_supermenom_2008 => nrel_producer : yoon_chul_jung;;

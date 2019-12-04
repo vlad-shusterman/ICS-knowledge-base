@@ -1,4 +1,4 @@
-concept_film_bez_sna_2000
+film_bez_sna_2000
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Без сна]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_italy;
+=> nrel_producing_country : italy;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bez_sna_2000 =>nrel_keywords: film;;
+film_bez_sna_2000 =>nrel_keywords: film;;
 
-concept_film_bez_sna_2000 <- concept_horror;concept_mystery;concept_thriller;;
+film_bez_sna_2000 <- concept_horror;concept_mystery;concept_thriller;;
 
-concept_film_bez_sna_2000 => nrel_main_actor : concept_max_von_sydow;concept_stefano_dionisi;concept_chiara_caselli;concept_gabriele_lavia;;
-concept_film_bez_sna_2000 => nrel_producer : concept_dario_argento;;
+film_bez_sna_2000 => nrel_main_actor : max_von_sydow;stefano_dionisi;chiara_caselli;gabriele_lavia;;
+film_bez_sna_2000 => nrel_producer : dario_argento;;

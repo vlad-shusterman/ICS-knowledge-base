@@ -1,4 +1,4 @@
-concept_film_akuliy_tornado_2_2014
+film_akuliy_tornado_2_2014
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Акулий торнадо 2]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 4;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_14;;
 
-concept_film_akuliy_tornado_2_2014 =>nrel_keywords: film;;
+film_akuliy_tornado_2_2014 =>nrel_keywords: film;;
 
-concept_film_akuliy_tornado_2_2014 <- concept_action;concept_adventure;concept_comedy;concept_horror;concept_sci_fi;concept_thriller;;
+film_akuliy_tornado_2_2014 <- concept_action;concept_adventure;concept_comedy;concept_horror;concept_sci_fi;concept_thriller;;
 
-concept_film_akuliy_tornado_2_2014 => nrel_main_actor : concept_ian_ziering;concept_tara_reid;concept_vivica_a._fox;concept_mark_mcgrath;;
-concept_film_akuliy_tornado_2_2014 => nrel_producer : concept_anthony_c._ferrante;;
+film_akuliy_tornado_2_2014 => nrel_main_actor : ian_ziering;tara_reid;vivica_a._fox;mark_mcgrath;;
+film_akuliy_tornado_2_2014 => nrel_producer : anthony_c._ferrante;;

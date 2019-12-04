@@ -1,4 +1,4 @@
-concept_film_arhitektor_2016
+film_arhitektor_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Архитектор]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_arhitektor_2016 =>nrel_keywords: film;;
+film_arhitektor_2016 =>nrel_keywords: film;;
 
-concept_film_arhitektor_2016 <- concept_comedy;concept_drama;;
+film_arhitektor_2016 <- concept_comedy;concept_drama;;
 
-concept_film_arhitektor_2016 => nrel_main_actor : concept_parker_posey;concept_john_carroll_lynch;concept_james_frain;concept_eric_mccormack;;
-concept_film_arhitektor_2016 => nrel_producer : concept_jonathan_parker;;
+film_arhitektor_2016 => nrel_main_actor : parker_posey;john_carroll_lynch;james_frain;eric_mccormack;;
+film_arhitektor_2016 => nrel_producer : jonathan_parker;;

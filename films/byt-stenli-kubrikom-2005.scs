@@ -1,4 +1,4 @@
-concept_film_byt_stenli_kubrikom_2005
+film_byt_stenli_kubrikom_2005
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Быть Стэнли Кубриком]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_france;concept_canada;concept_isle_of_man;
+=> nrel_producing_country : uk;france;canada;isle_of_man;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_byt_stenli_kubrikom_2005 =>nrel_keywords: film;;
+film_byt_stenli_kubrikom_2005 =>nrel_keywords: film;;
 
-concept_film_byt_stenli_kubrikom_2005 <- concept_comedy;concept_drama;;
+film_byt_stenli_kubrikom_2005 <- concept_comedy;concept_drama;;
 
-concept_film_byt_stenli_kubrikom_2005 => nrel_main_actor : concept_john_malkovich;concept_jim_davidson;concept_richard_e._grant;concept_tom_allen;;
-concept_film_byt_stenli_kubrikom_2005 => nrel_producer : concept_brian_w._cook;;
+film_byt_stenli_kubrikom_2005 => nrel_main_actor : john_malkovich;jim_davidson;richard_e._grant;tom_allen;;
+film_byt_stenli_kubrikom_2005 => nrel_producer : brian_w._cook;;

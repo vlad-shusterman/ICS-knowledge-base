@@ -1,4 +1,4 @@
-concept_film_britni_navsegda_2017
+film_britni_navsegda_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бритни навсегда]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 3;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_14;;
 
-concept_film_britni_navsegda_2017 =>nrel_keywords: film;;
+film_britni_navsegda_2017 =>nrel_keywords: film;;
 
-concept_film_britni_navsegda_2017 <- concept_biography;concept_drama;concept_music;;
+film_britni_navsegda_2017 <- concept_biography;concept_drama;concept_music;;
 
-concept_film_britni_navsegda_2017 => nrel_main_actor : concept_natasha_bassett;concept_nathan_keyes;concept_nicole_oliver;concept_matthew_harrison;;
-concept_film_britni_navsegda_2017 => nrel_producer : concept_leslie_libman;;
+film_britni_navsegda_2017 => nrel_main_actor : natasha_bassett;nathan_keyes;nicole_oliver;matthew_harrison;;
+film_britni_navsegda_2017 => nrel_producer : leslie_libman;;

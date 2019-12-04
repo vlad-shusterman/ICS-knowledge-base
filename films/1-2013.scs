@@ -1,4 +1,4 @@
-concept_film_1_2013
+film_1_2013
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [1]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_1_2013 =>nrel_keywords: film;;
+film_1_2013 =>nrel_keywords: film;;
 
-concept_film_1_2013 <- concept_documentary;concept_history;concept_sport;;
+film_1_2013 <- concept_documentary;concept_history;concept_sport;;
 
-concept_film_1_2013 => nrel_main_actor : concept_michael_fassbender;concept_niki_lauda;concept_lewis_hamilton;concept_michael_schumacher;;
-concept_film_1_2013 => nrel_producer : concept_paul_crowder;;
+film_1_2013 => nrel_main_actor : michael_fassbender;niki_lauda;lewis_hamilton;michael_schumacher;;
+film_1_2013 => nrel_producer : paul_crowder;;

@@ -1,4 +1,4 @@
-concept_film_bum_1980
+film_bum_1980
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бум / Вечеринка]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_france;
+=> nrel_producing_country : france;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_bum_1980 =>nrel_keywords: film;;
+film_bum_1980 =>nrel_keywords: film;;
 
-concept_film_bum_1980 <- concept_comedy;concept_drama;concept_romance;;
+film_bum_1980 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_bum_1980 => nrel_main_actor : concept_claude_brasseur;concept_brigitte_fossey;concept_sophie_marceau;concept_denise_grey;;
-concept_film_bum_1980 => nrel_producer : concept_claude_pinoteau;;
+film_bum_1980 => nrel_main_actor : claude_brasseur;brigitte_fossey;sophie_marceau;denise_grey;;
+film_bum_1980 => nrel_producer : claude_pinoteau;;

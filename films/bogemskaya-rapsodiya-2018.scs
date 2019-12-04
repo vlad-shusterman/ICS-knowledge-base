@@ -1,4 +1,4 @@
-concept_film_bogemskaya_rapsodiya_2018
+film_bogemskaya_rapsodiya_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Богемская рапсодия]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_usa;
+=> nrel_producing_country : uk;usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_bogemskaya_rapsodiya_2018 =>nrel_keywords: film;;
+film_bogemskaya_rapsodiya_2018 =>nrel_keywords: film;;
 
-concept_film_bogemskaya_rapsodiya_2018 <- concept_biography;concept_drama;concept_music;;
+film_bogemskaya_rapsodiya_2018 <- concept_biography;concept_drama;concept_music;;
 
-concept_film_bogemskaya_rapsodiya_2018 => nrel_main_actor : concept_rami_malek;concept_lucy_boynton;concept_gwilym_lee;concept_ben_hardy;;
-concept_film_bogemskaya_rapsodiya_2018 => nrel_producer : concept_bryan_singer;;
+film_bogemskaya_rapsodiya_2018 => nrel_main_actor : rami_malek;lucy_boynton;gwilym_lee;ben_hardy;;
+film_bogemskaya_rapsodiya_2018 => nrel_producer : bryan_singer;;

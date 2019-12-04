@@ -1,4 +1,4 @@
-concept_film_angely_padayut_2007
+film_angely_padayut_2007
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Ангелы падают]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_14;;
 
-concept_film_angely_padayut_2007 =>nrel_keywords: film;;
+film_angely_padayut_2007 =>nrel_keywords: film;;
 
-concept_film_angely_padayut_2007 <- concept_drama;concept_romance;concept_thriller;;
+film_angely_padayut_2007 <- concept_drama;concept_romance;concept_thriller;;
 
-concept_film_angely_padayut_2007 => nrel_main_actor : concept_heather_locklear;concept_johnathon_schaech;concept_gary_hudson;concept_derek_hamilton;;
-concept_film_angely_padayut_2007 => nrel_producer : concept_ralph_hemecker;;
+film_angely_padayut_2007 => nrel_main_actor : heather_locklear;johnathon_schaech;gary_hudson;derek_hamilton;;
+film_angely_padayut_2007 => nrel_producer : ralph_hemecker;;

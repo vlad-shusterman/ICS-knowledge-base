@@ -1,4 +1,4 @@
-concept_film_chelovek_protiv_2015
+film_chelovek_protiv_2015
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Человек против]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_canada;
+=> nrel_producing_country : canada;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_chelovek_protiv_2015 =>nrel_keywords: film;;
+film_chelovek_protiv_2015 =>nrel_keywords: film;;
 
-concept_film_chelovek_protiv_2015 <- concept_horror;concept_sci_fi;concept_thriller;;
+film_chelovek_protiv_2015 <- concept_horror;concept_sci_fi;concept_thriller;;
 
-concept_film_chelovek_protiv_2015 => nrel_main_actor : concept_chris_diamantopoulos;concept_chloe_bradt;concept_michael_cram;concept_kelly_fanson;;
-concept_film_chelovek_protiv_2015 => nrel_producer : concept_adam_massey;;
+film_chelovek_protiv_2015 => nrel_main_actor : chris_diamantopoulos;chloe_bradt;michael_cram;kelly_fanson;;
+film_chelovek_protiv_2015 => nrel_producer : adam_massey;;

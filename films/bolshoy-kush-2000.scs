@@ -1,4 +1,4 @@
-concept_film_bolshoy_kush_2000
+film_bolshoy_kush_2000
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Большой куш]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_usa;
+=> nrel_producing_country : uk;usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bolshoy_kush_2000 =>nrel_keywords: film;;
+film_bolshoy_kush_2000 =>nrel_keywords: film;;
 
-concept_film_bolshoy_kush_2000 <- concept_comedy;concept_crime;;
+film_bolshoy_kush_2000 <- concept_comedy;concept_crime;;
 
-concept_film_bolshoy_kush_2000 => nrel_main_actor : concept_jason_statham;concept_brad_pitt;concept_benicio_del_toro;concept_dennis_farina;;
-concept_film_bolshoy_kush_2000 => nrel_producer : concept_guy_ritchie;;
+film_bolshoy_kush_2000 => nrel_main_actor : jason_statham;brad_pitt;benicio_del_toro;dennis_farina;;
+film_bolshoy_kush_2000 => nrel_producer : guy_ritchie;;

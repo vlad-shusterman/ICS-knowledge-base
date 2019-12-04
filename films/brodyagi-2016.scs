@@ -1,4 +1,4 @@
-concept_film_brodyagi_2016
+film_brodyagi_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бродяги]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_brodyagi_2016 =>nrel_keywords: film;;
+film_brodyagi_2016 =>nrel_keywords: film;;
 
-concept_film_brodyagi_2016 <- concept_comedy;concept_romance;;
+film_brodyagi_2016 <- concept_comedy;concept_romance;;
 
-concept_film_brodyagi_2016 => nrel_main_actor : concept_callum_turner;concept_grace_van_patten;concept_michal_vondel;concept_mike_birbiglia;;
-concept_film_brodyagi_2016 => nrel_producer : concept_adam_leon;;
+film_brodyagi_2016 => nrel_main_actor : callum_turner;grace_van_patten;michal_vondel;mike_birbiglia;;
+film_brodyagi_2016 => nrel_producer : adam_leon;;

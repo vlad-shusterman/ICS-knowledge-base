@@ -1,4 +1,4 @@
-concept_film_bog_bolshoy_ya_malenkaya_2001
+film_bog_bolshoy_ya_malenkaya_2001
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бог большой, я маленькая]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_france;
+=> nrel_producing_country : france;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_bog_bolshoy_ya_malenkaya_2001 =>nrel_keywords: film;;
+film_bog_bolshoy_ya_malenkaya_2001 =>nrel_keywords: film;;
 
-concept_film_bog_bolshoy_ya_malenkaya_2001 <- concept_comedy;concept_romance;;
+film_bog_bolshoy_ya_malenkaya_2001 <- concept_comedy;concept_romance;;
 
-concept_film_bog_bolshoy_ya_malenkaya_2001 => nrel_main_actor : concept_audrey_tautou;concept_edouard_baer;concept_julie_depardieu;concept_catherine_jacob;;
-concept_film_bog_bolshoy_ya_malenkaya_2001 => nrel_producer : concept_pascale_bailly;;
+film_bog_bolshoy_ya_malenkaya_2001 => nrel_main_actor : audrey_tautou;edouard_baer;julie_depardieu;catherine_jacob;;
+film_bog_bolshoy_ya_malenkaya_2001 => nrel_producer : pascale_bailly;;

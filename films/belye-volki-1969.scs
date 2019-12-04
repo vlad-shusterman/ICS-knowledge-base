@@ -1,4 +1,4 @@
-concept_film_belye_volki_1969
+film_belye_volki_1969
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Белые волки]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_east_germany;concept_yugoslavia;
+=> nrel_producing_country : east_germany;yugoslavia;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_belye_volki_1969 =>nrel_keywords: film;;
+film_belye_volki_1969 =>nrel_keywords: film;;
 
-concept_film_belye_volki_1969 <- concept_drama;concept_history;concept_western;;
+film_belye_volki_1969 <- concept_drama;concept_history;concept_western;;
 
-concept_film_belye_volki_1969 => nrel_main_actor : concept_gojko_mitic;concept_horst_schulze;concept_barbara_brylska;concept_holger_mahlich;;
-concept_film_belye_volki_1969 => nrel_producer : concept_konrad_petzold;concept_bosko_boskovic;;
+film_belye_volki_1969 => nrel_main_actor : gojko_mitic;horst_schulze;barbara_brylska;holger_mahlich;;
+film_belye_volki_1969 => nrel_producer : konrad_petzold;bosko_boskovic;;

@@ -1,4 +1,4 @@
-concept_film_amar_akbar_i_entoni_2015
+film_amar_akbar_i_entoni_2015
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Амар, Акбар и Энтони]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;
+=> nrel_producing_country : uk;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_amar_akbar_i_entoni_2015 =>nrel_keywords: film;;
+film_amar_akbar_i_entoni_2015 =>nrel_keywords: film;;
 
-concept_film_amar_akbar_i_entoni_2015 <- concept_comedy;concept_drama;concept_romance;;
+film_amar_akbar_i_entoni_2015 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_amar_akbar_i_entoni_2015 => nrel_main_actor : concept_rez_kempton;concept_sam_vincenti;concept_martin_delaney;concept_karen_david;;
-concept_film_amar_akbar_i_entoni_2015 => nrel_producer : concept_atul_malhotra;;
+film_amar_akbar_i_entoni_2015 => nrel_main_actor : rez_kempton;sam_vincenti;martin_delaney;karen_david;;
+film_amar_akbar_i_entoni_2015 => nrel_producer : atul_malhotra;;

@@ -1,4 +1,4 @@
-concept_film_agent_dzhonni_inglish_30_2018
+film_agent_dzhonni_inglish_30_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Агент Джонни Инглиш 3.0]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_france;concept_usa;concept_china;
+=> nrel_producing_country : uk;france;usa;china;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_agent_dzhonni_inglish_30_2018 =>nrel_keywords: film;;
+film_agent_dzhonni_inglish_30_2018 =>nrel_keywords: film;;
 
-concept_film_agent_dzhonni_inglish_30_2018 <- concept_action;concept_adventure;concept_comedy;;
+film_agent_dzhonni_inglish_30_2018 <- concept_action;concept_adventure;concept_comedy;;
 
-concept_film_agent_dzhonni_inglish_30_2018 => nrel_main_actor : concept_rowan_atkinson;concept_ben_miller;concept_olga_kurylenko;concept_emma_thompson;;
-concept_film_agent_dzhonni_inglish_30_2018 => nrel_producer : concept_david_kerr;;
+film_agent_dzhonni_inglish_30_2018 => nrel_main_actor : rowan_atkinson;ben_miller;olga_kurylenko;emma_thompson;;
+film_agent_dzhonni_inglish_30_2018 => nrel_producer : david_kerr;;

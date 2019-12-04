@@ -1,4 +1,4 @@
-concept_film_devid_brent_zhizn_v_doroge_2016
+film_devid_brent_zhizn_v_doroge_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Дэвид Брент: Жизнь в дороге]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_usa;
+=> nrel_producing_country : uk;usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_devid_brent_zhizn_v_doroge_2016 =>nrel_keywords: film;;
+film_devid_brent_zhizn_v_doroge_2016 =>nrel_keywords: film;;
 
-concept_film_devid_brent_zhizn_v_doroge_2016 <- concept_comedy;concept_music;;
+film_devid_brent_zhizn_v_doroge_2016 <- concept_comedy;concept_music;;
 
-concept_film_devid_brent_zhizn_v_doroge_2016 => nrel_main_actor : concept_ricky_gervais;concept_rob_jarvis;concept_abbie_murphy;concept_mandeep_dhillon;;
-concept_film_devid_brent_zhizn_v_doroge_2016 => nrel_producer : concept_ricky_gervais;;
+film_devid_brent_zhizn_v_doroge_2016 => nrel_main_actor : ricky_gervais;rob_jarvis;abbie_murphy;mandeep_dhillon;;
+film_devid_brent_zhizn_v_doroge_2016 => nrel_producer : ricky_gervais;;

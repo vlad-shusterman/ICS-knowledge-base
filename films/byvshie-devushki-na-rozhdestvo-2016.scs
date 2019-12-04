@@ -1,4 +1,4 @@
-concept_film_byvshie_devushki_na_rozhdestvo_2016
+film_byvshie_devushki_na_rozhdestvo_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бывшие девушки на Рождество]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_PG;;
 
-concept_film_byvshie_devushki_na_rozhdestvo_2016 =>nrel_keywords: film;;
+film_byvshie_devushki_na_rozhdestvo_2016 =>nrel_keywords: film;;
 
-concept_film_byvshie_devushki_na_rozhdestvo_2016 <- concept_comedy;concept_romance;;
+film_byvshie_devushki_na_rozhdestvo_2016 <- concept_comedy;concept_romance;;
 
-concept_film_byvshie_devushki_na_rozhdestvo_2016 => nrel_main_actor : concept_tammin_sursok;concept_brent_bailey;concept_lindsey_mckeon;concept_abigail_klein;;
-concept_film_byvshie_devushki_na_rozhdestvo_2016 => nrel_producer : concept_jake_helgren;;
+film_byvshie_devushki_na_rozhdestvo_2016 => nrel_main_actor : tammin_sursok;brent_bailey;lindsey_mckeon;abigail_klein;;
+film_byvshie_devushki_na_rozhdestvo_2016 => nrel_producer : jake_helgren;;

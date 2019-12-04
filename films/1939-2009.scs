@@ -1,4 +1,4 @@
-concept_film_1939_2009
+film_1939_2009
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [1939]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;
+=> nrel_producing_country : uk;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_1939_2009 =>nrel_keywords: film;;
+film_1939_2009 =>nrel_keywords: film;;
 
-concept_film_1939_2009 <- concept_drama;concept_history;concept_thriller;concept_war;;
+film_1939_2009 <- concept_drama;concept_history;concept_thriller;concept_war;;
 
-concept_film_1939_2009 => nrel_main_actor : concept_romola_garai;concept_eddie_redmayne;concept_juno_temple;concept_toby_regbo;;
-concept_film_1939_2009 => nrel_producer : concept_stephen_poliakoff;;
+film_1939_2009 => nrel_main_actor : romola_garai;eddie_redmayne;juno_temple;toby_regbo;;
+film_1939_2009 => nrel_producer : stephen_poliakoff;;

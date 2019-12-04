@@ -1,4 +1,4 @@
-concept_film_bolshaya_afera_v_malenkom_gorode_2016
+film_bolshaya_afera_v_malenkom_gorode_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Большая афера в маленьком городе / Почти великолепная деревня]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_italy;
+=> nrel_producing_country : italy;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bolshaya_afera_v_malenkom_gorode_2016 =>nrel_keywords: film;;
+film_bolshaya_afera_v_malenkom_gorode_2016 =>nrel_keywords: film;;
 
-concept_film_bolshaya_afera_v_malenkom_gorode_2016 <- concept_comedy;;
+film_bolshaya_afera_v_malenkom_gorode_2016 <- concept_comedy;;
 
-concept_film_bolshaya_afera_v_malenkom_gorode_2016 => nrel_main_actor : concept_fabio_volo;concept_silvio_orlando;concept_nando_paone;concept_carlo_buccirosso;;
-concept_film_bolshaya_afera_v_malenkom_gorode_2016 => nrel_producer : concept_massimo_gaudioso;;
+film_bolshaya_afera_v_malenkom_gorode_2016 => nrel_main_actor : fabio_volo;silvio_orlando;nando_paone;carlo_buccirosso;;
+film_bolshaya_afera_v_malenkom_gorode_2016 => nrel_producer : massimo_gaudioso;;

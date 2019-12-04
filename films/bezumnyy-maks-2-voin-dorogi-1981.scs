@@ -1,4 +1,4 @@
-concept_film_bezumnyy_maks_2_voin_dorogi_1981
+film_bezumnyy_maks_2_voin_dorogi_1981
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Безумный Макс 2: Воин дороги]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_australia;
+=> nrel_producing_country : australia;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bezumnyy_maks_2_voin_dorogi_1981 =>nrel_keywords: film;;
+film_bezumnyy_maks_2_voin_dorogi_1981 =>nrel_keywords: film;;
 
-concept_film_bezumnyy_maks_2_voin_dorogi_1981 <- concept_action;concept_adventure;concept_sci_fi;concept_thriller;;
+film_bezumnyy_maks_2_voin_dorogi_1981 <- concept_action;concept_adventure;concept_sci_fi;concept_thriller;;
 
-concept_film_bezumnyy_maks_2_voin_dorogi_1981 => nrel_main_actor : concept_mel_gibson;concept_bruce_spence;concept_michael_preston;concept_max_phipps;;
-concept_film_bezumnyy_maks_2_voin_dorogi_1981 => nrel_producer : concept_george_miller;;
+film_bezumnyy_maks_2_voin_dorogi_1981 => nrel_main_actor : mel_gibson;bruce_spence;michael_preston;max_phipps;;
+film_bezumnyy_maks_2_voin_dorogi_1981 => nrel_producer : george_miller;;

@@ -1,4 +1,4 @@
-concept_film_aeroplan_2_prodolzhenie
+film_aeroplan_2_prodolzhenie
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Аэроплан 2: Продолжение]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_aeroplan_2_prodolzhenie =>nrel_keywords: film;;
+film_aeroplan_2_prodolzhenie =>nrel_keywords: film;;
 
-concept_film_aeroplan_2_prodolzhenie <- concept_comedy;concept_sci_fi;;
+film_aeroplan_2_prodolzhenie <- concept_comedy;concept_sci_fi;;
 
-concept_film_aeroplan_2_prodolzhenie => nrel_main_actor : concept_robert_hays;concept_julie_hagerty;concept_lloyd_bridges;concept_raymond_burr;;
-concept_film_aeroplan_2_prodolzhenie => nrel_producer : concept_ken_finkleman;;
+film_aeroplan_2_prodolzhenie => nrel_main_actor : robert_hays;julie_hagerty;lloyd_bridges;raymond_burr;;
+film_aeroplan_2_prodolzhenie => nrel_producer : ken_finkleman;;

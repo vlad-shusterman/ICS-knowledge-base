@@ -1,4 +1,4 @@
-concept_film_bereg_moskitov_1986
+film_bereg_moskitov_1986
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Берег москитов]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_bereg_moskitov_1986 =>nrel_keywords: film;;
+film_bereg_moskitov_1986 =>nrel_keywords: film;;
 
-concept_film_bereg_moskitov_1986 <- concept_adventure;concept_drama;concept_thriller;;
+film_bereg_moskitov_1986 <- concept_adventure;concept_drama;concept_thriller;;
 
-concept_film_bereg_moskitov_1986 => nrel_main_actor : concept_harrison_ford;concept_helen_mirren;concept_river_phoenix;concept_jadrien_steele;;
-concept_film_bereg_moskitov_1986 => nrel_producer : concept_peter_weir;;
+film_bereg_moskitov_1986 => nrel_main_actor : harrison_ford;helen_mirren;river_phoenix;jadrien_steele;;
+film_bereg_moskitov_1986 => nrel_producer : peter_weir;;

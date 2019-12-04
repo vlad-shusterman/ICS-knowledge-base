@@ -1,4 +1,4 @@
-concept_film_chetvertyy_chelovek_2007
+film_chetvertyy_chelovek_2007
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Четвертый человек]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_serbia;
+=> nrel_producing_country : serbia;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_chetvertyy_chelovek_2007 =>nrel_keywords: film;;
+film_chetvertyy_chelovek_2007 =>nrel_keywords: film;;
 
-concept_film_chetvertyy_chelovek_2007 <- concept_action;concept_adventure;concept_mystery;concept_romance;concept_thriller;;
+film_chetvertyy_chelovek_2007 <- concept_action;concept_adventure;concept_mystery;concept_romance;concept_thriller;;
 
-concept_film_chetvertyy_chelovek_2007 => nrel_main_actor : concept_nikola_kojo;concept_dragan_petrovic_pele;concept_bogdan_diklic;concept_marija_karan;;
-concept_film_chetvertyy_chelovek_2007 => nrel_producer : concept_dejan_zecevic;;
+film_chetvertyy_chelovek_2007 => nrel_main_actor : nikola_kojo;dragan_petrovic_pele;bogdan_diklic;marija_karan;;
+film_chetvertyy_chelovek_2007 => nrel_producer : dejan_zecevic;;

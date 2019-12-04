@@ -1,4 +1,4 @@
-concept_film_chelovecheskiy_potok_2017
+film_chelovecheskiy_potok_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Человеческий поток]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;concept_usa;concept_china;concept_palestine;concept_france;
+=> nrel_producing_country : germany;usa;china;palestine;france;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_chelovecheskiy_potok_2017 =>nrel_keywords: film;;
+film_chelovecheskiy_potok_2017 =>nrel_keywords: film;;
 
-concept_film_chelovecheskiy_potok_2017 <- concept_documentary;;
+film_chelovecheskiy_potok_2017 <- concept_documentary;;
 
-concept_film_chelovecheskiy_potok_2017 => nrel_main_actor : concept_israa_abboud;concept_hiba_abed;concept_rami_abu_sondos;concept_weiwei_ai;;
-concept_film_chelovecheskiy_potok_2017 => nrel_producer : concept_weiwei_ai;;
+film_chelovecheskiy_potok_2017 => nrel_main_actor : israa_abboud;hiba_abed;rami_abu_sondos;weiwei_ai;;
+film_chelovecheskiy_potok_2017 => nrel_producer : weiwei_ai;;
