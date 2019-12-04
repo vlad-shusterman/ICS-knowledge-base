@@ -1,4 +1,4 @@
-concept_film_chelovek_pauk_vozvraschenie_domoy_2017
+film_chelovek_pauk_vozvraschenie_domoy_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Человек-паук: Возвращение домой]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_chelovek_pauk_vozvraschenie_domoy_2017 =>nrel_keywords: film;;
+film_chelovek_pauk_vozvraschenie_domoy_2017 =>nrel_keywords: film;;
 
-concept_film_chelovek_pauk_vozvraschenie_domoy_2017 <- concept_action;concept_adventure;concept_sci_fi;;
+film_chelovek_pauk_vozvraschenie_domoy_2017 <- concept_action;concept_adventure;concept_sci_fi;;
 
-concept_film_chelovek_pauk_vozvraschenie_domoy_2017 => nrel_main_actor : concept_tom_holland;concept_michael_keaton;concept_robert_downey_jr.;concept_marisa_tomei;;
-concept_film_chelovek_pauk_vozvraschenie_domoy_2017 => nrel_producer : concept_jon_watts;;
+film_chelovek_pauk_vozvraschenie_domoy_2017 => nrel_main_actor : tom_holland;michael_keaton;robert_downey_jr.;marisa_tomei;;
+film_chelovek_pauk_vozvraschenie_domoy_2017 => nrel_producer : jon_watts;;

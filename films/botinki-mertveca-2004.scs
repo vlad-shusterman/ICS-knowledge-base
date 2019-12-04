@@ -1,4 +1,4 @@
-concept_film_botinki_mertveca_2004
+film_botinki_mertveca_2004
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Ботинки мертвеца]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;
+=> nrel_producing_country : uk;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_botinki_mertveca_2004 =>nrel_keywords: film;;
+film_botinki_mertveca_2004 =>nrel_keywords: film;;
 
-concept_film_botinki_mertveca_2004 <- concept_crime;concept_drama;concept_thriller;;
+film_botinki_mertveca_2004 <- concept_crime;concept_drama;concept_thriller;;
 
-concept_film_botinki_mertveca_2004 => nrel_main_actor : concept_paddy_considine;concept_gary_stretch;concept_toby_kebbell;concept_stuart_wolfenden;;
-concept_film_botinki_mertveca_2004 => nrel_producer : concept_shane_meadows;;
+film_botinki_mertveca_2004 => nrel_main_actor : paddy_considine;gary_stretch;toby_kebbell;stuart_wolfenden;;
+film_botinki_mertveca_2004 => nrel_producer : shane_meadows;;

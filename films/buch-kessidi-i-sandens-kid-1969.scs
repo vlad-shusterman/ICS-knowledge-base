@@ -1,4 +1,4 @@
-concept_film_buch_kessidi_i_sandens_kid_1969
+film_buch_kessidi_i_sandens_kid_1969
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Буч Кэссиди и Сандэнс Кид]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_buch_kessidi_i_sandens_kid_1969 =>nrel_keywords: film;;
+film_buch_kessidi_i_sandens_kid_1969 =>nrel_keywords: film;;
 
-concept_film_buch_kessidi_i_sandens_kid_1969 <- concept_biography;concept_crime;concept_drama;concept_western;;
+film_buch_kessidi_i_sandens_kid_1969 <- concept_biography;concept_crime;concept_drama;concept_western;;
 
-concept_film_buch_kessidi_i_sandens_kid_1969 => nrel_main_actor : concept_paul_newman;concept_robert_redford;concept_katharine_ross;concept_strother_martin;;
-concept_film_buch_kessidi_i_sandens_kid_1969 => nrel_producer : concept_george_roy_hill;;
+film_buch_kessidi_i_sandens_kid_1969 => nrel_main_actor : paul_newman;robert_redford;katharine_ross;strother_martin;;
+film_buch_kessidi_i_sandens_kid_1969 => nrel_producer : george_roy_hill;;

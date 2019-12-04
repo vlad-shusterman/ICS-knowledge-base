@@ -1,4 +1,4 @@
-concept_film_bomzh_s_drobovikom_2011
+film_bomzh_s_drobovikom_2011
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бомж с дробовиком]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_canada;
+=> nrel_producing_country : canada;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_bomzh_s_drobovikom_2011 =>nrel_keywords: film;;
+film_bomzh_s_drobovikom_2011 =>nrel_keywords: film;;
 
-concept_film_bomzh_s_drobovikom_2011 <- concept_action;concept_comedy;concept_horror;concept_thriller;;
+film_bomzh_s_drobovikom_2011 <- concept_action;concept_comedy;concept_horror;concept_thriller;;
 
-concept_film_bomzh_s_drobovikom_2011 => nrel_main_actor : concept_rutger_hauer;concept_pasha_ebrahimi;concept_robb_wells;concept_brian_downey;;
-concept_film_bomzh_s_drobovikom_2011 => nrel_producer : concept_jason_eisener;;
+film_bomzh_s_drobovikom_2011 => nrel_main_actor : rutger_hauer;pasha_ebrahimi;robb_wells;brian_downey;;
+film_bomzh_s_drobovikom_2011 => nrel_producer : jason_eisener;;

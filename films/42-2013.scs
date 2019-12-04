@@ -1,4 +1,4 @@
-concept_film_42_2013
+film_42_2013
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [42]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_42_2013 =>nrel_keywords: film;;
+film_42_2013 =>nrel_keywords: film;;
 
-concept_film_42_2013 <- concept_biography;concept_drama;concept_sport;;
+film_42_2013 <- concept_biography;concept_drama;concept_sport;;
 
-concept_film_42_2013 => nrel_main_actor : concept_chadwick_boseman;concept_t.r._knight;concept_harrison_ford;concept_nicole_beharie;;
-concept_film_42_2013 => nrel_producer : concept_brian_helgeland;;
+film_42_2013 => nrel_main_actor : chadwick_boseman;t.r._knight;harrison_ford;nicole_beharie;;
+film_42_2013 => nrel_producer : brian_helgeland;;

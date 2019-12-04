@@ -1,4 +1,4 @@
-concept_film_brennan_2016
+film_brennan_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бреннан]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_brennan_2016 =>nrel_keywords: film;;
+film_brennan_2016 =>nrel_keywords: film;;
 
-concept_film_brennan_2016 <- concept_drama;;
+film_brennan_2016 <- concept_drama;;
 
-concept_film_brennan_2016 => nrel_main_actor : concept_jim_garrity;concept_mel_fair;concept_stephen_brown;concept_jack_vale;;
-concept_film_brennan_2016 => nrel_producer : concept_david_leo_schultz;;
+film_brennan_2016 => nrel_main_actor : jim_garrity;mel_fair;stephen_brown;jack_vale;;
+film_brennan_2016 => nrel_producer : david_leo_schultz;;

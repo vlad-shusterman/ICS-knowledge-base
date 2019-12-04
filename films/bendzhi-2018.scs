@@ -1,4 +1,4 @@
-concept_film_bendzhi_2018
+film_bendzhi_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бенджи]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_united_arab_emirates;concept_usa;
+=> nrel_producing_country : united_arab_emirates;usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_PG;;
 
-concept_film_bendzhi_2018 =>nrel_keywords: film;;
+film_bendzhi_2018 =>nrel_keywords: film;;
 
-concept_film_bendzhi_2018 <- concept_crime;concept_drama;concept_family;;
+film_bendzhi_2018 <- concept_crime;concept_drama;concept_family;;
 
-concept_film_bendzhi_2018 => nrel_main_actor : concept_gabriel_bateman;concept_darby_camp;concept_kiele_sanchez;concept_gralen_bryant_banks;;
-concept_film_bendzhi_2018 => nrel_producer : concept_brandon_camp;;
+film_bendzhi_2018 => nrel_main_actor : gabriel_bateman;darby_camp;kiele_sanchez;gralen_bryant_banks;;
+film_bendzhi_2018 => nrel_producer : brandon_camp;;

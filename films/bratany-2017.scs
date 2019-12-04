@@ -1,4 +1,4 @@
-concept_film_bratany_2017
+film_bratany_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Братаны]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_south_korea;
+=> nrel_producing_country : south_korea;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bratany_2017 =>nrel_keywords: film;;
+film_bratany_2017 =>nrel_keywords: film;;
 
-concept_film_bratany_2017 <- concept_comedy;;
+film_bratany_2017 <- concept_comedy;;
 
-concept_film_bratany_2017 => nrel_main_actor : concept_dong_seok_ma;concept_dong_hwi_lee;concept_lee_hanee;concept_woo_jin_jo;;
-concept_film_bratany_2017 => nrel_producer : concept_you_jeong_chang;;
+film_bratany_2017 => nrel_main_actor : dong_seok_ma;dong_hwi_lee;lee_hanee;woo_jin_jo;;
+film_bratany_2017 => nrel_producer : you_jeong_chang;;

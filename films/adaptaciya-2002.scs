@@ -1,4 +1,4 @@
-concept_film_adaptaciya_2002
+film_adaptaciya_2002
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Адаптация]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_adaptaciya_2002 =>nrel_keywords: film;;
+film_adaptaciya_2002 =>nrel_keywords: film;;
 
-concept_film_adaptaciya_2002 <- concept_comedy;concept_drama;;
+film_adaptaciya_2002 <- concept_comedy;concept_drama;;
 
-concept_film_adaptaciya_2002 => nrel_main_actor : concept_nicolas_cage;concept_meryl_streep;concept_chris_cooper;concept_tilda_swinton;;
-concept_film_adaptaciya_2002 => nrel_producer : concept_spike_jonze;;
+film_adaptaciya_2002 => nrel_main_actor : nicolas_cage;meryl_streep;chris_cooper;tilda_swinton;;
+film_adaptaciya_2002 => nrel_producer : spike_jonze;;

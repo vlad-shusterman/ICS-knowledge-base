@@ -1,4 +1,4 @@
-concept_film_beshenyy_byk_2018
+film_beshenyy_byk_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бешеный бык]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_south_korea;
+=> nrel_producing_country : south_korea;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_beshenyy_byk_2018 =>nrel_keywords: film;;
+film_beshenyy_byk_2018 =>nrel_keywords: film;;
 
-concept_film_beshenyy_byk_2018 <- concept_action;concept_crime;;
+film_beshenyy_byk_2018 <- concept_action;concept_crime;;
 
-concept_film_beshenyy_byk_2018 => nrel_main_actor : concept_dong_seok_ma;concept_ji_hyo_song;concept_seong_oh_kim;concept_min_jae_kim;;
-concept_film_beshenyy_byk_2018 => nrel_producer : concept_kim_min_ho;;
+film_beshenyy_byk_2018 => nrel_main_actor : dong_seok_ma;ji_hyo_song;seong_oh_kim;min_jae_kim;;
+film_beshenyy_byk_2018 => nrel_producer : kim_min_ho;;

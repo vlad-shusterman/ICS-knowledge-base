@@ -1,4 +1,4 @@
-concept_film_avgustovskie_kity_1987
+film_avgustovskie_kity_1987
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Августовские киты / Киты августа]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_avgustovskie_kity_1987 =>nrel_keywords: film;;
+film_avgustovskie_kity_1987 =>nrel_keywords: film;;
 
-concept_film_avgustovskie_kity_1987 <- concept_drama;;
+film_avgustovskie_kity_1987 <- concept_drama;;
 
-concept_film_avgustovskie_kity_1987 => nrel_main_actor : concept_bette_davis;concept_lillian_gish;concept_vincent_price;concept_ann_sothern;;
-concept_film_avgustovskie_kity_1987 => nrel_producer : concept_lindsay_anderson;;
+film_avgustovskie_kity_1987 => nrel_main_actor : bette_davis;lillian_gish;vincent_price;ann_sothern;;
+film_avgustovskie_kity_1987 => nrel_producer : lindsay_anderson;;

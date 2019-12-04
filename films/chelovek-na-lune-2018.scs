@@ -1,4 +1,4 @@
-concept_film_chelovek_na_lune_2018
+film_chelovek_na_lune_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Человек на Луне]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_japan;
+=> nrel_producing_country : usa;japan;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_chelovek_na_lune_2018 =>nrel_keywords: film;;
+film_chelovek_na_lune_2018 =>nrel_keywords: film;;
 
-concept_film_chelovek_na_lune_2018 <- concept_biography;concept_drama;concept_history;;
+film_chelovek_na_lune_2018 <- concept_biography;concept_drama;concept_history;;
 
-concept_film_chelovek_na_lune_2018 => nrel_main_actor : concept_ryan_gosling;concept_claire_foy;concept_jason_clarke;concept_kyle_chandler;;
-concept_film_chelovek_na_lune_2018 => nrel_producer : concept_damien_chazelle;;
+film_chelovek_na_lune_2018 => nrel_main_actor : ryan_gosling;claire_foy;jason_clarke;kyle_chandler;;
+film_chelovek_na_lune_2018 => nrel_producer : damien_chazelle;;

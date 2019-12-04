@@ -1,4 +1,4 @@
-concept_film_ben_gur_1959
+film_ben_gur_1959
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бен-Гур]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_G;;
 
-concept_film_ben_gur_1959 =>nrel_keywords: film;;
+film_ben_gur_1959 =>nrel_keywords: film;;
 
-concept_film_ben_gur_1959 <- concept_adventure;concept_drama;concept_history;;
+film_ben_gur_1959 <- concept_adventure;concept_drama;concept_history;;
 
-concept_film_ben_gur_1959 => nrel_main_actor : concept_charlton_heston;concept_jack_hawkins;concept_stephen_boyd;concept_haya_harareet;;
-concept_film_ben_gur_1959 => nrel_producer : concept_william_wyler;;
+film_ben_gur_1959 => nrel_main_actor : charlton_heston;jack_hawkins;stephen_boyd;haya_harareet;;
+film_ben_gur_1959 => nrel_producer : william_wyler;;

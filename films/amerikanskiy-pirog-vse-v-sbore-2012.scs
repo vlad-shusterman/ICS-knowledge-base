@@ -1,4 +1,4 @@
-concept_film_amerikanskiy_pirog_vse_v_sbore_2012
+film_amerikanskiy_pirog_vse_v_sbore_2012
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Американский пирог: Все в сборе]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_amerikanskiy_pirog_vse_v_sbore_2012 =>nrel_keywords: film;;
+film_amerikanskiy_pirog_vse_v_sbore_2012 =>nrel_keywords: film;;
 
-concept_film_amerikanskiy_pirog_vse_v_sbore_2012 <- concept_comedy;;
+film_amerikanskiy_pirog_vse_v_sbore_2012 <- concept_comedy;;
 
-concept_film_amerikanskiy_pirog_vse_v_sbore_2012 => nrel_main_actor : concept_jason_biggs;concept_alyson_hannigan;concept_seann_william_scott;concept_chris_klein;;
-concept_film_amerikanskiy_pirog_vse_v_sbore_2012 => nrel_producer : concept_jon_hurwitz;concept_hayden_schlossberg;;
+film_amerikanskiy_pirog_vse_v_sbore_2012 => nrel_main_actor : jason_biggs;alyson_hannigan;seann_william_scott;chris_klein;;
+film_amerikanskiy_pirog_vse_v_sbore_2012 => nrel_producer : jon_hurwitz;hayden_schlossberg;;

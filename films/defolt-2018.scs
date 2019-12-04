@@ -1,4 +1,4 @@
-concept_film_defolt_2018
+film_defolt_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Дефолт]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_south_korea;
+=> nrel_producing_country : south_korea;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_defolt_2018 =>nrel_keywords: film;;
+film_defolt_2018 =>nrel_keywords: film;;
 
-concept_film_defolt_2018 <- concept_drama;;
+film_defolt_2018 <- concept_drama;;
 
-concept_film_defolt_2018 => nrel_main_actor : concept_hye_su_kim;concept_ah_in_yoo;concept_jun_ho_heo;concept_woo_jin_jo;;
-concept_film_defolt_2018 => nrel_producer : concept_kook_hee_choi;;
+film_defolt_2018 => nrel_main_actor : hye_su_kim;ah_in_yoo;jun_ho_heo;woo_jin_jo;;
+film_defolt_2018 => nrel_producer : kook_hee_choi;;

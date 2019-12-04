@@ -1,4 +1,4 @@
-concept_film_ameli_2001
+film_ameli_2001
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Амели]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_france;concept_germany;
+=> nrel_producing_country : france;germany;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_ameli_2001 =>nrel_keywords: film;;
+film_ameli_2001 =>nrel_keywords: film;;
 
-concept_film_ameli_2001 <- concept_comedy;concept_romance;;
+film_ameli_2001 <- concept_comedy;concept_romance;;
 
-concept_film_ameli_2001 => nrel_main_actor : concept_audrey_tautou;concept_mathieu_kassovitz;concept_rufus;concept_lorella_cravotta;;
-concept_film_ameli_2001 => nrel_producer : concept_jean_pierre_jeunet;;
+film_ameli_2001 => nrel_main_actor : audrey_tautou;mathieu_kassovitz;rufus;lorella_cravotta;;
+film_ameli_2001 => nrel_producer : jean_pierre_jeunet;;

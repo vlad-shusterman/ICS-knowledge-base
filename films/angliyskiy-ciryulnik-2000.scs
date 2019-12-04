@@ -1,4 +1,4 @@
-concept_film_angliyskiy_ciryulnik_2000
+film_angliyskiy_ciryulnik_2000
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Английский цирюльник]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_uk;concept_germany;
+=> nrel_producing_country : usa;uk;germany;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_angliyskiy_ciryulnik_2000 =>nrel_keywords: film;;
+film_angliyskiy_ciryulnik_2000 =>nrel_keywords: film;;
 
-concept_film_angliyskiy_ciryulnik_2000 <- concept_comedy;concept_drama;concept_romance;;
+film_angliyskiy_ciryulnik_2000 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_angliyskiy_ciryulnik_2000 => nrel_main_actor : concept_alan_rickman;concept_natasha_richardson;concept_rachel_griffiths;concept_rachael_leigh_cook;;
-concept_film_angliyskiy_ciryulnik_2000 => nrel_producer : concept_paddy_breathnach;;
+film_angliyskiy_ciryulnik_2000 => nrel_main_actor : alan_rickman;natasha_richardson;rachel_griffiths;rachael_leigh_cook;;
+film_angliyskiy_ciryulnik_2000 => nrel_producer : paddy_breathnach;;

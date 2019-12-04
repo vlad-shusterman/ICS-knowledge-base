@@ -1,4 +1,4 @@
-concept_film_choknutyy_professor_1963
+film_choknutyy_professor_1963
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чокнутый профессор]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_choknutyy_professor_1963 =>nrel_keywords: film;;
+film_choknutyy_professor_1963 =>nrel_keywords: film;;
 
-concept_film_choknutyy_professor_1963 <- concept_comedy;concept_romance;concept_sci_fi;;
+film_choknutyy_professor_1963 <- concept_comedy;concept_romance;concept_sci_fi;;
 
-concept_film_choknutyy_professor_1963 => nrel_main_actor : concept_jerry_lewis;concept_stella_stevens;concept_del_moore;concept_kathleen_freeman;;
-concept_film_choknutyy_professor_1963 => nrel_producer : concept_jerry_lewis;;
+film_choknutyy_professor_1963 => nrel_main_actor : jerry_lewis;stella_stevens;del_moore;kathleen_freeman;;
+film_choknutyy_professor_1963 => nrel_producer : jerry_lewis;;

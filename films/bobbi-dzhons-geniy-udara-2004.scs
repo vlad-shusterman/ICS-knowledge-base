@@ -1,4 +1,4 @@
-concept_film_bobbi_dzhons_geniy_udara_2004
+film_bobbi_dzhons_geniy_udara_2004
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бобби Джонс: Гений удара]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_bobbi_dzhons_geniy_udara_2004 =>nrel_keywords: film;;
+film_bobbi_dzhons_geniy_udara_2004 =>nrel_keywords: film;;
 
-concept_film_bobbi_dzhons_geniy_udara_2004 <- concept_biography;concept_drama;concept_romance;concept_sport;;
+film_bobbi_dzhons_geniy_udara_2004 <- concept_biography;concept_drama;concept_romance;concept_sport;;
 
-concept_film_bobbi_dzhons_geniy_udara_2004 => nrel_main_actor : concept_jim_caviezel;concept_claire_forlani;concept_jeremy_northam;concept_malcolm_mcdowell;;
-concept_film_bobbi_dzhons_geniy_udara_2004 => nrel_producer : concept_rowdy_herrington;;
+film_bobbi_dzhons_geniy_udara_2004 => nrel_main_actor : jim_caviezel;claire_forlani;jeremy_northam;malcolm_mcdowell;;
+film_bobbi_dzhons_geniy_udara_2004 => nrel_producer : rowdy_herrington;;

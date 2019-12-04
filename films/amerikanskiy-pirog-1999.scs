@@ -1,4 +1,4 @@
-concept_film_amerikanskiy_pirog_1999
+film_amerikanskiy_pirog_1999
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Американский пирог]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_amerikanskiy_pirog_1999 =>nrel_keywords: film;;
+film_amerikanskiy_pirog_1999 =>nrel_keywords: film;;
 
-concept_film_amerikanskiy_pirog_1999 <- concept_comedy;;
+film_amerikanskiy_pirog_1999 <- concept_comedy;;
 
-concept_film_amerikanskiy_pirog_1999 => nrel_main_actor : concept_jason_biggs;concept_chris_klein;concept_thomas_ian_nicholas;concept_jennifer_coolidge;;
-concept_film_amerikanskiy_pirog_1999 => nrel_producer : concept_paul_weitz;concept_chris_weitz;;
+film_amerikanskiy_pirog_1999 => nrel_main_actor : jason_biggs;chris_klein;thomas_ian_nicholas;jennifer_coolidge;;
+film_amerikanskiy_pirog_1999 => nrel_producer : paul_weitz;chris_weitz;;

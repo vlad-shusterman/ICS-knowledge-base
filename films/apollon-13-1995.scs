@@ -1,4 +1,4 @@
-concept_film_apollon_13_1995
+film_apollon_13_1995
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Аполлон 13]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_apollon_13_1995 =>nrel_keywords: film;;
+film_apollon_13_1995 =>nrel_keywords: film;;
 
-concept_film_apollon_13_1995 <- concept_adventure;concept_drama;concept_history;;
+film_apollon_13_1995 <- concept_adventure;concept_drama;concept_history;;
 
-concept_film_apollon_13_1995 => nrel_main_actor : concept_tom_hanks;concept_bill_paxton;concept_kevin_bacon;concept_gary_sinise;;
-concept_film_apollon_13_1995 => nrel_producer : concept_ron_howard;;
+film_apollon_13_1995 => nrel_main_actor : tom_hanks;bill_paxton;kevin_bacon;gary_sinise;;
+film_apollon_13_1995 => nrel_producer : ron_howard;;

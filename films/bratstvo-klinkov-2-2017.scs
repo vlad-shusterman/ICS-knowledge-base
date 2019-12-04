@@ -1,4 +1,4 @@
-concept_film_bratstvo_klinkov_2_2017
+film_bratstvo_klinkov_2_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Братство клинков 2]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_china;
+=> nrel_producing_country : china;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bratstvo_klinkov_2_2017 =>nrel_keywords: film;;
+film_bratstvo_klinkov_2_2017 =>nrel_keywords: film;;
 
-concept_film_bratstvo_klinkov_2_2017 <- concept_action;concept_drama;concept_history;;
+film_bratstvo_klinkov_2_2017 <- concept_action;concept_drama;concept_history;;
 
-concept_film_bratstvo_klinkov_2_2017 => nrel_main_actor : concept_chen_chang;concept_mi_yang;concept_yi_zhang;concept_shih_chieh_king;;
-concept_film_bratstvo_klinkov_2_2017 => nrel_producer : concept_yang_lu;;
+film_bratstvo_klinkov_2_2017 => nrel_main_actor : chen_chang;mi_yang;yi_zhang;shih_chieh_king;;
+film_bratstvo_klinkov_2_2017 => nrel_producer : yang_lu;;

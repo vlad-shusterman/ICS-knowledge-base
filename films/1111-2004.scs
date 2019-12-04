@@ -1,4 +1,4 @@
-concept_film_1111_2004
+film_1111_2004
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [11:11]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_canada;
+=> nrel_producing_country : canada;
 
 => nrel_film_critic_rating : 4;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_1111_2004 =>nrel_keywords: film;;
+film_1111_2004 =>nrel_keywords: film;;
 
-concept_film_1111_2004 <- concept_horror;concept_thriller;;
+film_1111_2004 <- concept_horror;concept_thriller;;
 
-concept_film_1111_2004 => nrel_main_actor : concept_laura_mennell;concept_paul_dzenkiw;concept_christie_will_wolf;concept_kristina_copeland;;
-concept_film_1111_2004 => nrel_producer : concept_micheal_bafaro;;
+film_1111_2004 => nrel_main_actor : laura_mennell;paul_dzenkiw;christie_will_wolf;kristina_copeland;;
+film_1111_2004 => nrel_producer : micheal_bafaro;;

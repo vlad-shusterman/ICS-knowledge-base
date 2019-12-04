@@ -1,4 +1,4 @@
-concept_film_bratya_iz_grimsbi_2016
+film_bratya_iz_grimsbi_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Братья из Гримсби]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_usa;
+=> nrel_producing_country : uk;usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bratya_iz_grimsbi_2016 =>nrel_keywords: film;;
+film_bratya_iz_grimsbi_2016 =>nrel_keywords: film;;
 
-concept_film_bratya_iz_grimsbi_2016 <- concept_action;concept_adventure;concept_comedy;concept_crime;concept_thriller;;
+film_bratya_iz_grimsbi_2016 <- concept_action;concept_adventure;concept_comedy;concept_crime;concept_thriller;;
 
-concept_film_bratya_iz_grimsbi_2016 => nrel_main_actor : concept_sacha_baron_cohen;concept_mark_strong;concept_rebel_wilson;concept_freddie_crowder;;
-concept_film_bratya_iz_grimsbi_2016 => nrel_producer : concept_louis_leterrier;;
+film_bratya_iz_grimsbi_2016 => nrel_main_actor : sacha_baron_cohen;mark_strong;rebel_wilson;freddie_crowder;;
+film_bratya_iz_grimsbi_2016 => nrel_producer : louis_leterrier;;

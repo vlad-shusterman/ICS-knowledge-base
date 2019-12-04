@@ -1,4 +1,4 @@
-concept_film_bozhestvennoe_oruzhie_2008
+film_bozhestvennoe_oruzhie_2008
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Божественное оружие]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_south_korea;
+=> nrel_producing_country : south_korea;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_bozhestvennoe_oruzhie_2008 =>nrel_keywords: film;;
+film_bozhestvennoe_oruzhie_2008 =>nrel_keywords: film;;
 
-concept_film_bozhestvennoe_oruzhie_2008 <- concept_adventure;concept_drama;;
+film_bozhestvennoe_oruzhie_2008 <- concept_adventure;concept_drama;;
 
-concept_film_bozhestvennoe_oruzhie_2008 => nrel_main_actor : concept_jae_yeong_jeong;concept_eun_jeong_han;concept_jun_ho_heo;concept_sung_ki_ahn;;
-concept_film_bozhestvennoe_oruzhie_2008 => nrel_producer : concept_yoo_jin_kim;;
+film_bozhestvennoe_oruzhie_2008 => nrel_main_actor : jae_yeong_jeong;eun_jeong_han;jun_ho_heo;sung_ki_ahn;;
+film_bozhestvennoe_oruzhie_2008 => nrel_producer : yoo_jin_kim;;

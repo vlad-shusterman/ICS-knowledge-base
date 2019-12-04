@@ -1,4 +1,4 @@
-concept_film_chempion
+film_chempion
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чемпион]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_chempion =>nrel_keywords: film;;
+film_chempion =>nrel_keywords: film;;
 
-concept_film_chempion <- concept_biography;concept_drama;concept_family;concept_history;concept_sport;;
+film_chempion <- concept_biography;concept_drama;concept_family;concept_history;concept_sport;;
 
-concept_film_chempion => nrel_main_actor : concept_diane_lane;concept_john_malkovich;concept_margo_martindale;concept_nelsan_ellis;;
-concept_film_chempion => nrel_producer : concept_randall_wallace;;
+film_chempion => nrel_main_actor : diane_lane;john_malkovich;margo_martindale;nelsan_ellis;;
+film_chempion => nrel_producer : randall_wallace;;

@@ -1,4 +1,4 @@
-concept_film_besposchadnyy_zapad_2017
+film_besposchadnyy_zapad_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Беспощадный Запад]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_besposchadnyy_zapad_2017 =>nrel_keywords: film;;
+film_besposchadnyy_zapad_2017 =>nrel_keywords: film;;
 
-concept_film_besposchadnyy_zapad_2017 <- concept_action;concept_adventure;concept_western;;
+film_besposchadnyy_zapad_2017 <- concept_action;concept_adventure;concept_western;;
 
-concept_film_besposchadnyy_zapad_2017 => nrel_main_actor : concept_danny_brown;concept_dan_fowlks;concept_paul_haapaniemi;concept_alexander_harris;;
-concept_film_besposchadnyy_zapad_2017 => nrel_producer : concept_lexie_findarle_trivundza;concept_nick_trivundza;;
+film_besposchadnyy_zapad_2017 => nrel_main_actor : danny_brown;dan_fowlks;paul_haapaniemi;alexander_harris;;
+film_besposchadnyy_zapad_2017 => nrel_producer : lexie_findarle_trivundza;nick_trivundza;;

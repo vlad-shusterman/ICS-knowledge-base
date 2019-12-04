@@ -1,4 +1,4 @@
-concept_film_begstvo_s_planety_obezyan_1971
+film_begstvo_s_planety_obezyan_1971
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бегство с планеты обезьян]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_G;;
 
-concept_film_begstvo_s_planety_obezyan_1971 =>nrel_keywords: film;;
+film_begstvo_s_planety_obezyan_1971 =>nrel_keywords: film;;
 
-concept_film_begstvo_s_planety_obezyan_1971 <- concept_action;concept_sci_fi;;
+film_begstvo_s_planety_obezyan_1971 <- concept_action;concept_sci_fi;;
 
-concept_film_begstvo_s_planety_obezyan_1971 => nrel_main_actor : concept_roddy_mcdowall;concept_kim_hunter;concept_bradford_dillman;concept_natalie_trundy;;
-concept_film_begstvo_s_planety_obezyan_1971 => nrel_producer : concept_don_taylor;;
+film_begstvo_s_planety_obezyan_1971 => nrel_main_actor : roddy_mcdowall;kim_hunter;bradford_dillman;natalie_trundy;;
+film_begstvo_s_planety_obezyan_1971 => nrel_producer : don_taylor;;

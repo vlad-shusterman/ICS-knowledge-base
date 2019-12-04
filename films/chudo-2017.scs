@@ -1,4 +1,4 @@
-concept_film_chudo_2017
+film_chudo_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чудо]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_hong_kong;
+=> nrel_producing_country : usa;hong_kong;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_chudo_2017 =>nrel_keywords: film;;
+film_chudo_2017 =>nrel_keywords: film;;
 
-concept_film_chudo_2017 <- concept_drama;concept_family;;
+film_chudo_2017 <- concept_drama;concept_family;;
 
-concept_film_chudo_2017 => nrel_main_actor : concept_jacob_tremblay;concept_owen_wilson;concept_izabela_vidovic;concept_julia_roberts;;
-concept_film_chudo_2017 => nrel_producer : concept_stephen_chbosky;;
+film_chudo_2017 => nrel_main_actor : jacob_tremblay;owen_wilson;izabela_vidovic;julia_roberts;;
+film_chudo_2017 => nrel_producer : stephen_chbosky;;

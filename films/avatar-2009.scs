@@ -1,4 +1,4 @@
-concept_film_avatar_2009
+film_avatar_2009
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Аватар]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_avatar_2009 =>nrel_keywords: film;;
+film_avatar_2009 =>nrel_keywords: film;;
 
-concept_film_avatar_2009 <- concept_action;concept_adventure;concept_fantasy;concept_sci_fi;;
+film_avatar_2009 <- concept_action;concept_adventure;concept_fantasy;concept_sci_fi;;
 
-concept_film_avatar_2009 => nrel_main_actor : concept_sam_worthington;concept_zoe_saldana;concept_sigourney_weaver;concept_michelle_rodriguez;;
-concept_film_avatar_2009 => nrel_producer : concept_james_cameron;;
+film_avatar_2009 => nrel_main_actor : sam_worthington;zoe_saldana;sigourney_weaver;michelle_rodriguez;;
+film_avatar_2009 => nrel_producer : james_cameron;;

@@ -1,4 +1,4 @@
-concept_film_boec_2010
+film_boec_2010
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Боец]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_boec_2010 =>nrel_keywords: film;;
+film_boec_2010 =>nrel_keywords: film;;
 
-concept_film_boec_2010 <- concept_biography;concept_drama;concept_sport;;
+film_boec_2010 <- concept_biography;concept_drama;concept_sport;;
 
-concept_film_boec_2010 => nrel_main_actor : concept_mark_wahlberg;concept_christian_bale;concept_amy_adams;concept_melissa_leo;;
-concept_film_boec_2010 => nrel_producer : concept_david_o._russell;;
+film_boec_2010 => nrel_main_actor : mark_wahlberg;christian_bale;amy_adams;melissa_leo;;
+film_boec_2010 => nrel_producer : david_o._russell;;

@@ -1,4 +1,4 @@
-concept_film_astronavt_farmer_2006
+film_astronavt_farmer_2006
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Астронавт Фармер / Фермер-Астронавт]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_astronavt_farmer_2006 =>nrel_keywords: film;;
+film_astronavt_farmer_2006 =>nrel_keywords: film;;
 
-concept_film_astronavt_farmer_2006 <- concept_adventure;concept_drama;concept_sci_fi;;
+film_astronavt_farmer_2006 <- concept_adventure;concept_drama;concept_sci_fi;;
 
-concept_film_astronavt_farmer_2006 => nrel_main_actor : concept_billy_bob_thornton;concept_virginia_madsen;concept_bruce_dern;concept_max_thieriot;;
-concept_film_astronavt_farmer_2006 => nrel_producer : concept_michael_polish;;
+film_astronavt_farmer_2006 => nrel_main_actor : billy_bob_thornton;virginia_madsen;bruce_dern;max_thieriot;;
+film_astronavt_farmer_2006 => nrel_producer : michael_polish;;

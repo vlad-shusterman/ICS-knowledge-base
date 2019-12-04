@@ -1,4 +1,4 @@
-concept_film_camp_rock_muzykalnye_kanikuly_2008
+film_camp_rock_muzykalnye_kanikuly_2008
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Camp Rock: Музыкальные каникулы]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_G;;
 
-concept_film_camp_rock_muzykalnye_kanikuly_2008 =>nrel_keywords: film;;
+film_camp_rock_muzykalnye_kanikuly_2008 =>nrel_keywords: film;;
 
-concept_film_camp_rock_muzykalnye_kanikuly_2008 <- concept_comedy;concept_family;concept_music;concept_musical;concept_romance;;
+film_camp_rock_muzykalnye_kanikuly_2008 <- concept_comedy;concept_family;concept_music;concept_musical;concept_romance;;
 
-concept_film_camp_rock_muzykalnye_kanikuly_2008 => nrel_main_actor : concept_demi_lovato;concept_joe_jonas;concept_meaghan_martin;concept_maria_canals_barrera;;
-concept_film_camp_rock_muzykalnye_kanikuly_2008 => nrel_producer : concept_matthew_diamond;;
+film_camp_rock_muzykalnye_kanikuly_2008 => nrel_main_actor : demi_lovato;joe_jonas;meaghan_martin;maria_canals_barrera;;
+film_camp_rock_muzykalnye_kanikuly_2008 => nrel_producer : matthew_diamond;;

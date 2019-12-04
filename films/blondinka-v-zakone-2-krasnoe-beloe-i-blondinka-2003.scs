@@ -1,4 +1,4 @@
-concept_film_blondinka_v_zakone_2_krasnoe_beloe_i_blondinka_2003
+film_blondinka_v_zakone_2_krasnoe_beloe_i_blondinka_2003
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Блондинка в законе 2: Красное, белое и блондинка]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_blondinka_v_zakone_2_krasnoe_beloe_i_blondinka_2003 =>nrel_keywords: film;;
+film_blondinka_v_zakone_2_krasnoe_beloe_i_blondinka_2003 =>nrel_keywords: film;;
 
-concept_film_blondinka_v_zakone_2_krasnoe_beloe_i_blondinka_2003 <- concept_comedy;;
+film_blondinka_v_zakone_2_krasnoe_beloe_i_blondinka_2003 <- concept_comedy;;
 
-concept_film_blondinka_v_zakone_2_krasnoe_beloe_i_blondinka_2003 => nrel_main_actor : concept_reese_witherspoon;concept_sally_field;concept_bob_newhart;concept_regina_king;;
-concept_film_blondinka_v_zakone_2_krasnoe_beloe_i_blondinka_2003 => nrel_producer : concept_charles_herman_wurmfeld;;
+film_blondinka_v_zakone_2_krasnoe_beloe_i_blondinka_2003 => nrel_main_actor : reese_witherspoon;sally_field;bob_newhart;regina_king;;
+film_blondinka_v_zakone_2_krasnoe_beloe_i_blondinka_2003 => nrel_producer : charles_herman_wurmfeld;;

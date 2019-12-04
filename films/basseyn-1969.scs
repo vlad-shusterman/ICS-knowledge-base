@@ -1,4 +1,4 @@
-concept_film_basseyn_1969
+film_basseyn_1969
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бассейн]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_france;concept_italy;
+=> nrel_producing_country : france;italy;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_GP;;
 
-concept_film_basseyn_1969 =>nrel_keywords: film;;
+film_basseyn_1969 =>nrel_keywords: film;;
 
-concept_film_basseyn_1969 <- concept_crime;concept_drama;concept_romance;;
+film_basseyn_1969 <- concept_crime;concept_drama;concept_romance;;
 
-concept_film_basseyn_1969 => nrel_main_actor : concept_alain_delon;concept_romy_schneider;concept_maurice_ronet;concept_jane_birkin;;
-concept_film_basseyn_1969 => nrel_producer : concept_jacques_deray;;
+film_basseyn_1969 => nrel_main_actor : alain_delon;romy_schneider;maurice_ronet;jane_birkin;;
+film_basseyn_1969 => nrel_producer : jacques_deray;;

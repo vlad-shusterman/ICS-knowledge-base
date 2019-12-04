@@ -1,4 +1,4 @@
-concept_film_chelovek_pauk_3_vrag_v_otrazhenii_2007
+film_chelovek_pauk_3_vrag_v_otrazhenii_2007
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Человек-паук 3: Враг в отражении]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_chelovek_pauk_3_vrag_v_otrazhenii_2007 =>nrel_keywords: film;;
+film_chelovek_pauk_3_vrag_v_otrazhenii_2007 =>nrel_keywords: film;;
 
-concept_film_chelovek_pauk_3_vrag_v_otrazhenii_2007 <- concept_action;concept_sci_fi;;
+film_chelovek_pauk_3_vrag_v_otrazhenii_2007 <- concept_action;concept_sci_fi;;
 
-concept_film_chelovek_pauk_3_vrag_v_otrazhenii_2007 => nrel_main_actor : concept_tobey_maguire;concept_kirsten_dunst;concept_topher_grace;concept_thomas_haden_church;;
-concept_film_chelovek_pauk_3_vrag_v_otrazhenii_2007 => nrel_producer : concept_sam_raimi;;
+film_chelovek_pauk_3_vrag_v_otrazhenii_2007 => nrel_main_actor : tobey_maguire;kirsten_dunst;topher_grace;thomas_haden_church;;
+film_chelovek_pauk_3_vrag_v_otrazhenii_2007 => nrel_producer : sam_raimi;;

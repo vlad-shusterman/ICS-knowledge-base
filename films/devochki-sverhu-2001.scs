@@ -1,4 +1,4 @@
-concept_film_devochki_sverhu_2001
+film_devochki_sverhu_2001
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Девочки сверху]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;
+=> nrel_producing_country : germany;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_devochki_sverhu_2001 =>nrel_keywords: film;;
+film_devochki_sverhu_2001 =>nrel_keywords: film;;
 
-concept_film_devochki_sverhu_2001 <- concept_comedy;;
+film_devochki_sverhu_2001 <- concept_comedy;;
 
-concept_film_devochki_sverhu_2001 => nrel_main_actor : concept_diana_amft;concept_felicitas_woll;concept_karoline_herfurth;concept_andreas_christ;;
-concept_film_devochki_sverhu_2001 => nrel_producer : concept_dennis_gansel;;
+film_devochki_sverhu_2001 => nrel_main_actor : diana_amft;felicitas_woll;karoline_herfurth;andreas_christ;;
+film_devochki_sverhu_2001 => nrel_producer : dennis_gansel;;

@@ -1,4 +1,4 @@
-concept_film_beskonechnaya_istoriya_2_novaya_glava_1990
+film_beskonechnaya_istoriya_2_novaya_glava_1990
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бесконечная история 2: Новая глава]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;
+=> nrel_producing_country : germany;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_beskonechnaya_istoriya_2_novaya_glava_1990 =>nrel_keywords: film;;
+film_beskonechnaya_istoriya_2_novaya_glava_1990 =>nrel_keywords: film;;
 
-concept_film_beskonechnaya_istoriya_2_novaya_glava_1990 <- concept_adventure;concept_drama;concept_family;concept_fantasy;;
+film_beskonechnaya_istoriya_2_novaya_glava_1990 <- concept_adventure;concept_drama;concept_family;concept_fantasy;;
 
-concept_film_beskonechnaya_istoriya_2_novaya_glava_1990 => nrel_main_actor : concept_jonathan_brandis;concept_kenny_morrison;concept_clarissa_burt;concept_john_wesley_shipp;;
-concept_film_beskonechnaya_istoriya_2_novaya_glava_1990 => nrel_producer : concept_george_miller;;
+film_beskonechnaya_istoriya_2_novaya_glava_1990 => nrel_main_actor : jonathan_brandis;kenny_morrison;clarissa_burt;john_wesley_shipp;;
+film_beskonechnaya_istoriya_2_novaya_glava_1990 => nrel_producer : george_miller;;

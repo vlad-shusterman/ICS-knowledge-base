@@ -1,4 +1,4 @@
-concept_film_bogatey_2017
+film_bogatey_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Богатей]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_india;
+=> nrel_producing_country : india;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_bogatey_2017 =>nrel_keywords: film;;
+film_bogatey_2017 =>nrel_keywords: film;;
 
-concept_film_bogatey_2017 <- concept_action;concept_crime;concept_drama;;
+film_bogatey_2017 <- concept_action;concept_crime;concept_drama;;
 
-concept_film_bogatey_2017 => nrel_main_actor : concept_raj_arjun;concept_shubham_chintamani;concept_shubham_tukaram;concept_yug;;
-concept_film_bogatey_2017 => nrel_producer : concept_rahul_dholakia;;
+film_bogatey_2017 => nrel_main_actor : raj_arjun;shubham_chintamani;shubham_tukaram;yug;;
+film_bogatey_2017 => nrel_producer : rahul_dholakia;;

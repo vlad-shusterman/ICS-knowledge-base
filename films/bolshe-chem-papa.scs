@@ -1,4 +1,4 @@
-concept_film_bolshe_chem_papa
+film_bolshe_chem_papa
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Больше, чем папа]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;
+=> nrel_producing_country : germany;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bolshe_chem_papa =>nrel_keywords: film;;
+film_bolshe_chem_papa =>nrel_keywords: film;;
 
-concept_film_bolshe_chem_papa <- concept_comedy;concept_drama;concept_family;;
+film_bolshe_chem_papa <- concept_comedy;concept_drama;concept_family;;
 
-concept_film_bolshe_chem_papa => nrel_main_actor : concept_luis_vorbach;concept_jordan_prentice;concept_ella_frey;concept_marco_licht;;
-concept_film_bolshe_chem_papa => nrel_producer : concept_joachim_dollhopf;concept_evi_goldbrunner;;
+film_bolshe_chem_papa => nrel_main_actor : luis_vorbach;jordan_prentice;ella_frey;marco_licht;;
+film_bolshe_chem_papa => nrel_producer : joachim_dollhopf;evi_goldbrunner;;

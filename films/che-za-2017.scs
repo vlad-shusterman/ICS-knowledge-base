@@ -1,4 +1,4 @@
-concept_film_che_za_2017
+film_che_za_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чё за..!]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 4;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_che_za_2017 =>nrel_keywords: film;;
+film_che_za_2017 =>nrel_keywords: film;;
 
-concept_film_che_za_2017 <- concept_horror;;
+film_che_za_2017 <- concept_horror;;
 
-concept_film_che_za_2017 => nrel_main_actor : concept_callie_ott;concept_nicholas_james_reilly;concept_andrea_hunt;concept_benjamin_norris;;
-concept_film_che_za_2017 => nrel_producer : concept_peter_herro;;
+film_che_za_2017 => nrel_main_actor : callie_ott;nicholas_james_reilly;andrea_hunt;benjamin_norris;;
+film_che_za_2017 => nrel_producer : peter_herro;;

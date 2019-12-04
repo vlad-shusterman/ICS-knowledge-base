@@ -1,4 +1,4 @@
-concept_film_chaplin_1992
+film_chaplin_1992
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чаплин]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_france;concept_italy;concept_japan;concept_usa;
+=> nrel_producing_country : uk;france;italy;japan;usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_chaplin_1992 =>nrel_keywords: film;;
+film_chaplin_1992 =>nrel_keywords: film;;
 
-concept_film_chaplin_1992 <- concept_biography;concept_comedy;concept_drama;;
+film_chaplin_1992 <- concept_biography;concept_comedy;concept_drama;;
 
-concept_film_chaplin_1992 => nrel_main_actor : concept_robert_downey_jr.;concept_geraldine_chaplin;concept_paul_rhys;concept_john_thaw;;
-concept_film_chaplin_1992 => nrel_producer : concept_richard_attenborough;;
+film_chaplin_1992 => nrel_main_actor : robert_downey_jr.;geraldine_chaplin;paul_rhys;john_thaw;;
+film_chaplin_1992 => nrel_producer : richard_attenborough;;

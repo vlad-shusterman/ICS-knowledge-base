@@ -1,4 +1,4 @@
-concept_film_beshenye_psy_1992
+film_beshenye_psy_1992
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бешеные псы]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_beshenye_psy_1992 =>nrel_keywords: film;;
+film_beshenye_psy_1992 =>nrel_keywords: film;;
 
-concept_film_beshenye_psy_1992 <- concept_crime;concept_drama;concept_thriller;;
+film_beshenye_psy_1992 <- concept_crime;concept_drama;concept_thriller;;
 
-concept_film_beshenye_psy_1992 => nrel_main_actor : concept_harvey_keitel;concept_tim_roth;concept_michael_madsen;concept_chris_penn;;
-concept_film_beshenye_psy_1992 => nrel_producer : concept_quentin_tarantino;;
+film_beshenye_psy_1992 => nrel_main_actor : harvey_keitel;tim_roth;michael_madsen;chris_penn;;
+film_beshenye_psy_1992 => nrel_producer : quentin_tarantino;;

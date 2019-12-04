@@ -1,4 +1,4 @@
-concept_film_bagsi_1991
+film_bagsi_1991
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Багси]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bagsi_1991 =>nrel_keywords: film;;
+film_bagsi_1991 =>nrel_keywords: film;;
 
-concept_film_bagsi_1991 <- concept_biography;concept_crime;concept_drama;;
+film_bagsi_1991 <- concept_biography;concept_crime;concept_drama;;
 
-concept_film_bagsi_1991 => nrel_main_actor : concept_warren_beatty;concept_annette_bening;concept_harvey_keitel;concept_ben_kingsley;;
-concept_film_bagsi_1991 => nrel_producer : concept_barry_levinson;;
+film_bagsi_1991 => nrel_main_actor : warren_beatty;annette_bening;harvey_keitel;ben_kingsley;;
+film_bagsi_1991 => nrel_producer : barry_levinson;;

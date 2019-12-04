@@ -1,4 +1,4 @@
-concept_film_daleko_daleko_1992
+film_daleko_daleko_1992
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Далеко – далеко]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_daleko_daleko_1992 =>nrel_keywords: film;;
+film_daleko_daleko_1992 =>nrel_keywords: film;;
 
-concept_film_daleko_daleko_1992 <- concept_adventure;concept_drama;concept_romance;concept_western;;
+film_daleko_daleko_1992 <- concept_adventure;concept_drama;concept_romance;concept_western;;
 
-concept_film_daleko_daleko_1992 => nrel_main_actor : concept_tom_cruise;concept_nicole_kidman;concept_thomas_gibson;concept_robert_prosky;;
-concept_film_daleko_daleko_1992 => nrel_producer : concept_ron_howard;;
+film_daleko_daleko_1992 => nrel_main_actor : tom_cruise;nicole_kidman;thomas_gibson;robert_prosky;;
+film_daleko_daleko_1992 => nrel_producer : ron_howard;;

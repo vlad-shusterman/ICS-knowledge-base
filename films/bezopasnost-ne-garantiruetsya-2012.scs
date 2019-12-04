@@ -1,4 +1,4 @@
-concept_film_bezopasnost_ne_garantiruetsya_2012
+film_bezopasnost_ne_garantiruetsya_2012
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Безопасность не гарантируется]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bezopasnost_ne_garantiruetsya_2012 =>nrel_keywords: film;;
+film_bezopasnost_ne_garantiruetsya_2012 =>nrel_keywords: film;;
 
-concept_film_bezopasnost_ne_garantiruetsya_2012 <- concept_comedy;concept_drama;concept_romance;;
+film_bezopasnost_ne_garantiruetsya_2012 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_bezopasnost_ne_garantiruetsya_2012 => nrel_main_actor : concept_aubrey_plaza;concept_mark_duplass;concept_jake_johnson;concept_karan_soni;;
-concept_film_bezopasnost_ne_garantiruetsya_2012 => nrel_producer : concept_colin_trevorrow;;
+film_bezopasnost_ne_garantiruetsya_2012 => nrel_main_actor : aubrey_plaza;mark_duplass;jake_johnson;karan_soni;;
+film_bezopasnost_ne_garantiruetsya_2012 => nrel_producer : colin_trevorrow;;

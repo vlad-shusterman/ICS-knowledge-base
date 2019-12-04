@@ -1,4 +1,4 @@
-concept_film_bruklinskie_policeyskie_2009
+film_bruklinskie_policeyskie_2009
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бруклинские полицейские]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bruklinskie_policeyskie_2009 =>nrel_keywords: film;;
+film_bruklinskie_policeyskie_2009 =>nrel_keywords: film;;
 
-concept_film_bruklinskie_policeyskie_2009 <- concept_crime;concept_drama;concept_thriller;;
+film_bruklinskie_policeyskie_2009 <- concept_crime;concept_drama;concept_thriller;;
 
-concept_film_bruklinskie_policeyskie_2009 => nrel_main_actor : concept_richard_gere;concept_don_cheadle;concept_ethan_hawke;concept_wesley_snipes;;
-concept_film_bruklinskie_policeyskie_2009 => nrel_producer : concept_antoine_fuqua;;
+film_bruklinskie_policeyskie_2009 => nrel_main_actor : richard_gere;don_cheadle;ethan_hawke;wesley_snipes;;
+film_bruklinskie_policeyskie_2009 => nrel_producer : antoine_fuqua;;

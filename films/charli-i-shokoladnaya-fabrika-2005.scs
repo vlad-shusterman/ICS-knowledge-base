@@ -1,4 +1,4 @@
-concept_film_charli_i_shokoladnaya_fabrika_2005
+film_charli_i_shokoladnaya_fabrika_2005
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чарли и шоколадная фабрика]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_usa;
+=> nrel_producing_country : uk;usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_charli_i_shokoladnaya_fabrika_2005 =>nrel_keywords: film;;
+film_charli_i_shokoladnaya_fabrika_2005 =>nrel_keywords: film;;
 
-concept_film_charli_i_shokoladnaya_fabrika_2005 <- concept_adventure;concept_comedy;concept_family;concept_fantasy;concept_musical;;
+film_charli_i_shokoladnaya_fabrika_2005 <- concept_adventure;concept_comedy;concept_family;concept_fantasy;concept_musical;;
 
-concept_film_charli_i_shokoladnaya_fabrika_2005 => nrel_main_actor : concept_johnny_depp;concept_freddie_highmore;concept_david_kelly;concept_helena_bonham_carter;;
-concept_film_charli_i_shokoladnaya_fabrika_2005 => nrel_producer : concept_tim_burton;;
+film_charli_i_shokoladnaya_fabrika_2005 => nrel_main_actor : johnny_depp;freddie_highmore;david_kelly;helena_bonham_carter;;
+film_charli_i_shokoladnaya_fabrika_2005 => nrel_producer : tim_burton;;

@@ -1,4 +1,4 @@
-concept_film_begi_bez_oglyadki_2005
+film_begi_bez_oglyadki_2005
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Беги без оглядки]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;concept_usa;
+=> nrel_producing_country : germany;usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_begi_bez_oglyadki_2005 =>nrel_keywords: film;;
+film_begi_bez_oglyadki_2005 =>nrel_keywords: film;;
 
-concept_film_begi_bez_oglyadki_2005 <- concept_action;concept_crime;concept_drama;concept_thriller;;
+film_begi_bez_oglyadki_2005 <- concept_action;concept_crime;concept_drama;concept_thriller;;
 
-concept_film_begi_bez_oglyadki_2005 => nrel_main_actor : concept_paul_walker;concept_cameron_bright;concept_chazz_palminteri;concept_vera_farmiga;;
-concept_film_begi_bez_oglyadki_2005 => nrel_producer : concept_wayne_kramer;;
+film_begi_bez_oglyadki_2005 => nrel_main_actor : paul_walker;cameron_bright;chazz_palminteri;vera_farmiga;;
+film_begi_bez_oglyadki_2005 => nrel_producer : wayne_kramer;;

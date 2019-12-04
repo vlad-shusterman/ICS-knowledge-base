@@ -1,4 +1,4 @@
-concept_film_derzhis_ot_menya_podalshe_2013
+film_derzhis_ot_menya_podalshe_2013
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Держись от меня подальше]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_italy;
+=> nrel_producing_country : italy;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_derzhis_ot_menya_podalshe_2013 =>nrel_keywords: film;;
+film_derzhis_ot_menya_podalshe_2013 =>nrel_keywords: film;;
 
-concept_film_derzhis_ot_menya_podalshe_2013 <- concept_comedy;;
+film_derzhis_ot_menya_podalshe_2013 <- concept_comedy;;
 
-concept_film_derzhis_ot_menya_podalshe_2013 => nrel_main_actor : concept_enrico_brignano;concept_ambra_angiolini;concept_anna_galiena;concept_giampaolo_morelli;;
-concept_film_derzhis_ot_menya_podalshe_2013 => nrel_producer : concept_alessio_maria_federici;;
+film_derzhis_ot_menya_podalshe_2013 => nrel_main_actor : enrico_brignano;ambra_angiolini;anna_galiena;giampaolo_morelli;;
+film_derzhis_ot_menya_podalshe_2013 => nrel_producer : alessio_maria_federici;;

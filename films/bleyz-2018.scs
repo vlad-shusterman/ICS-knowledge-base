@@ -1,4 +1,4 @@
-concept_film_bleyz_2018
+film_bleyz_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Блэйз]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bleyz_2018 =>nrel_keywords: film;;
+film_bleyz_2018 =>nrel_keywords: film;;
 
-concept_film_bleyz_2018 <- concept_biography;concept_drama;concept_music;;
+film_bleyz_2018 <- concept_biography;concept_drama;concept_music;;
 
-concept_film_bleyz_2018 => nrel_main_actor : concept_ben_dickey;concept_alia_shawkat;concept_charlie_sexton;concept_josh_hamilton;;
-concept_film_bleyz_2018 => nrel_producer : concept_ethan_hawke;;
+film_bleyz_2018 => nrel_main_actor : ben_dickey;alia_shawkat;charlie_sexton;josh_hamilton;;
+film_bleyz_2018 => nrel_producer : ethan_hawke;;

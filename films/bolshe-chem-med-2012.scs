@@ -1,4 +1,4 @@
-concept_film_bolshe_chem_med_2012
+film_bolshe_chem_med_2012
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Больше чем мед]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_switzerland;concept_germany;concept_austria;
+=> nrel_producing_country : switzerland;germany;austria;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Unrated;;
 
-concept_film_bolshe_chem_med_2012 =>nrel_keywords: film;;
+film_bolshe_chem_med_2012 =>nrel_keywords: film;;
 
-concept_film_bolshe_chem_med_2012 <- concept_documentary;;
+film_bolshe_chem_med_2012 <- concept_documentary;;
 
-concept_film_bolshe_chem_med_2012 => nrel_main_actor : concept_fred_jaggi;concept_randolf_menzel;concept_john_miller;concept_liane_singer;;
-concept_film_bolshe_chem_med_2012 => nrel_producer : concept_markus_imhoof;;
+film_bolshe_chem_med_2012 => nrel_main_actor : fred_jaggi;randolf_menzel;john_miller;liane_singer;;
+film_bolshe_chem_med_2012 => nrel_producer : markus_imhoof;;

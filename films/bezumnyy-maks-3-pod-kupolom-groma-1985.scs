@@ -1,4 +1,4 @@
-concept_film_bezumnyy_maks_3_pod_kupolom_groma_1985
+film_bezumnyy_maks_3_pod_kupolom_groma_1985
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Безумный Макс 3: Под куполом грома]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_australia;
+=> nrel_producing_country : australia;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_bezumnyy_maks_3_pod_kupolom_groma_1985 =>nrel_keywords: film;;
+film_bezumnyy_maks_3_pod_kupolom_groma_1985 =>nrel_keywords: film;;
 
-concept_film_bezumnyy_maks_3_pod_kupolom_groma_1985 <- concept_action;concept_adventure;concept_sci_fi;;
+film_bezumnyy_maks_3_pod_kupolom_groma_1985 <- concept_action;concept_adventure;concept_sci_fi;;
 
-concept_film_bezumnyy_maks_3_pod_kupolom_groma_1985 => nrel_main_actor : concept_mel_gibson;concept_tina_turner;concept_bruce_spence;concept_adam_cockburn;;
-concept_film_bezumnyy_maks_3_pod_kupolom_groma_1985 => nrel_producer : concept_george_miller;concept_george_ogilvie;;
+film_bezumnyy_maks_3_pod_kupolom_groma_1985 => nrel_main_actor : mel_gibson;tina_turner;bruce_spence;adam_cockburn;;
+film_bezumnyy_maks_3_pod_kupolom_groma_1985 => nrel_producer : george_miller;george_ogilvie;;

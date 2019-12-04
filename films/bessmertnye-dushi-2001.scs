@@ -1,4 +1,4 @@
-concept_film_bessmertnye_dushi_2001
+film_bessmertnye_dushi_2001
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бессмертные души]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 4;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_bessmertnye_dushi_2001 =>nrel_keywords: film;;
+film_bessmertnye_dushi_2001 =>nrel_keywords: film;;
 
-concept_film_bessmertnye_dushi_2001 <- concept_horror;concept_mystery;concept_thriller;;
+film_bessmertnye_dushi_2001 <- concept_horror;concept_mystery;concept_thriller;;
 
-concept_film_bessmertnye_dushi_2001 => nrel_main_actor : concept_melissa_sagemiller;concept_wes_bentley;concept_casey_affleck;concept_eliza_dushku;;
-concept_film_bessmertnye_dushi_2001 => nrel_producer : concept_stephen_carpenter;;
+film_bessmertnye_dushi_2001 => nrel_main_actor : melissa_sagemiller;wes_bentley;casey_affleck;eliza_dushku;;
+film_bessmertnye_dushi_2001 => nrel_producer : stephen_carpenter;;

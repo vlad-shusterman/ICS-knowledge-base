@@ -1,4 +1,4 @@
-concept_film_azy_ubiystva_1991
+film_azy_ubiystva_1991
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Азы убийства / Всё об убийстве]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_azy_ubiystva_1991 =>nrel_keywords: film;;
+film_azy_ubiystva_1991 =>nrel_keywords: film;;
 
-concept_film_azy_ubiystva_1991 <- concept_mystery;concept_thriller;;
+film_azy_ubiystva_1991 <- concept_mystery;concept_thriller;;
 
-concept_film_azy_ubiystva_1991 => nrel_main_actor : concept_pierce_brosnan;concept_dey_young;concept_antoni_corone;concept_raphael_sbarge;;
-concept_film_azy_ubiystva_1991 => nrel_producer : concept_bill_condon;;
+film_azy_ubiystva_1991 => nrel_main_actor : pierce_brosnan;dey_young;antoni_corone;raphael_sbarge;;
+film_azy_ubiystva_1991 => nrel_producer : bill_condon;;

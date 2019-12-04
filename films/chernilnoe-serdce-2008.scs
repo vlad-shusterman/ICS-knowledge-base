@@ -1,4 +1,4 @@
-concept_film_chernilnoe_serdce_2008
+film_chernilnoe_serdce_2008
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чернильное сердце]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;concept_uk;concept_usa;
+=> nrel_producing_country : germany;uk;usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_chernilnoe_serdce_2008 =>nrel_keywords: film;;
+film_chernilnoe_serdce_2008 =>nrel_keywords: film;;
 
-concept_film_chernilnoe_serdce_2008 <- concept_adventure;concept_family;concept_fantasy;;
+film_chernilnoe_serdce_2008 <- concept_adventure;concept_family;concept_fantasy;;
 
-concept_film_chernilnoe_serdce_2008 => nrel_main_actor : concept_brendan_fraser;concept_andy_serkis;concept_eliza_bennett;concept_sienna_guillory;;
-concept_film_chernilnoe_serdce_2008 => nrel_producer : concept_iain_softley;;
+film_chernilnoe_serdce_2008 => nrel_main_actor : brendan_fraser;andy_serkis;eliza_bennett;sienna_guillory;;
+film_chernilnoe_serdce_2008 => nrel_producer : iain_softley;;

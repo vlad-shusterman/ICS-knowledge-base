@@ -1,4 +1,4 @@
-concept_film_20_nedel_2017
+film_20_nedel_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [20 недель]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_20_nedel_2017 =>nrel_keywords: film;;
+film_20_nedel_2017 =>nrel_keywords: film;;
 
-concept_film_20_nedel_2017 <- concept_drama;concept_romance;;
+film_20_nedel_2017 <- concept_drama;concept_romance;;
 
-concept_film_20_nedel_2017 => nrel_main_actor : concept_jocelin_donahue;concept_richard_riehle;concept_amir_arison;concept_michelle_krusiec;;
-concept_film_20_nedel_2017 => nrel_producer : concept_leena_pendharkar;;
+film_20_nedel_2017 => nrel_main_actor : jocelin_donahue;richard_riehle;amir_arison;michelle_krusiec;;
+film_20_nedel_2017 => nrel_producer : leena_pendharkar;;

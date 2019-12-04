@@ -1,4 +1,4 @@
-concept_film_chernyy_dozhd_1989
+film_chernyy_dozhd_1989
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Черный дождь]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_chernyy_dozhd_1989 =>nrel_keywords: film;;
+film_chernyy_dozhd_1989 =>nrel_keywords: film;;
 
-concept_film_chernyy_dozhd_1989 <- concept_action;concept_crime;concept_thriller;;
+film_chernyy_dozhd_1989 <- concept_action;concept_crime;concept_thriller;;
 
-concept_film_chernyy_dozhd_1989 => nrel_main_actor : concept_michael_douglas;concept_andy_garcia;concept_ken_takakura;concept_kate_capshaw;;
-concept_film_chernyy_dozhd_1989 => nrel_producer : concept_ridley_scott;;
+film_chernyy_dozhd_1989 => nrel_main_actor : michael_douglas;andy_garcia;ken_takakura;kate_capshaw;;
+film_chernyy_dozhd_1989 => nrel_producer : ridley_scott;;

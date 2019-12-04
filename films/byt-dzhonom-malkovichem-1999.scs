@@ -1,4 +1,4 @@
-concept_film_byt_dzhonom_malkovichem_1999
+film_byt_dzhonom_malkovichem_1999
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Быть Джоном Малковичем]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_byt_dzhonom_malkovichem_1999 =>nrel_keywords: film;;
+film_byt_dzhonom_malkovichem_1999 =>nrel_keywords: film;;
 
-concept_film_byt_dzhonom_malkovichem_1999 <- concept_comedy;concept_drama;concept_fantasy;;
+film_byt_dzhonom_malkovichem_1999 <- concept_comedy;concept_drama;concept_fantasy;;
 
-concept_film_byt_dzhonom_malkovichem_1999 => nrel_main_actor : concept_john_cusack;concept_cameron_diaz;concept_catherine_keener;concept_john_malkovich;;
-concept_film_byt_dzhonom_malkovichem_1999 => nrel_producer : concept_spike_jonze;;
+film_byt_dzhonom_malkovichem_1999 => nrel_main_actor : john_cusack;cameron_diaz;catherine_keener;john_malkovich;;
+film_byt_dzhonom_malkovichem_1999 => nrel_producer : spike_jonze;;

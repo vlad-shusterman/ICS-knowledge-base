@@ -1,4 +1,4 @@
-concept_film_avgustovskiy_tuman_2016
+film_avgustovskiy_tuman_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Августовский туман]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;
+=> nrel_producing_country : germany;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_avgustovskiy_tuman_2016 =>nrel_keywords: film;;
+film_avgustovskiy_tuman_2016 =>nrel_keywords: film;;
 
-concept_film_avgustovskiy_tuman_2016 <- concept_drama;concept_war;;
+film_avgustovskiy_tuman_2016 <- concept_drama;concept_war;;
 
-concept_film_avgustovskiy_tuman_2016 => nrel_main_actor : concept_ivo_pietzcker;concept_sebastian_koch;concept_thomas_schubert;concept_fritzi_haberlandt;;
-concept_film_avgustovskiy_tuman_2016 => nrel_producer : concept_kai_wessel;;
+film_avgustovskiy_tuman_2016 => nrel_main_actor : ivo_pietzcker;sebastian_koch;thomas_schubert;fritzi_haberlandt;;
+film_avgustovskiy_tuman_2016 => nrel_producer : kai_wessel;;

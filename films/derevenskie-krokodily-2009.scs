@@ -1,4 +1,4 @@
-concept_film_derevenskie_krokodily_2009
+film_derevenskie_krokodily_2009
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Деревенские крокодилы]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;
+=> nrel_producing_country : germany;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_derevenskie_krokodily_2009 =>nrel_keywords: film;;
+film_derevenskie_krokodily_2009 =>nrel_keywords: film;;
 
-concept_film_derevenskie_krokodily_2009 <- concept_adventure;concept_family;;
+film_derevenskie_krokodily_2009 <- concept_adventure;concept_family;;
 
-concept_film_derevenskie_krokodily_2009 => nrel_main_actor : concept_nick_romeo_reimann;concept_fabian_halbig;concept_leonie_tepe;concept_manuel_steitz;;
-concept_film_derevenskie_krokodily_2009 => nrel_producer : concept_christian_ditter;;
+film_derevenskie_krokodily_2009 => nrel_main_actor : nick_romeo_reimann;fabian_halbig;leonie_tepe;manuel_steitz;;
+film_derevenskie_krokodily_2009 => nrel_producer : christian_ditter;;

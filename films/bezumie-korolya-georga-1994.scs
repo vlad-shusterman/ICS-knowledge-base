@@ -1,4 +1,4 @@
-concept_film_bezumie_korolya_georga_1994
+film_bezumie_korolya_georga_1994
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Безумие короля Георга]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;
+=> nrel_producing_country : uk;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_bezumie_korolya_georga_1994 =>nrel_keywords: film;;
+film_bezumie_korolya_georga_1994 =>nrel_keywords: film;;
 
-concept_film_bezumie_korolya_georga_1994 <- concept_biography;concept_comedy;concept_drama;concept_history;;
+film_bezumie_korolya_georga_1994 <- concept_biography;concept_comedy;concept_drama;concept_history;;
 
-concept_film_bezumie_korolya_georga_1994 => nrel_main_actor : concept_nigel_hawthorne;concept_helen_mirren;concept_rupert_graves;concept_amanda_donohoe;;
-concept_film_bezumie_korolya_georga_1994 => nrel_producer : concept_nicholas_hytner;;
+film_bezumie_korolya_georga_1994 => nrel_main_actor : nigel_hawthorne;helen_mirren;rupert_graves;amanda_donohoe;;
+film_bezumie_korolya_georga_1994 => nrel_producer : nicholas_hytner;;

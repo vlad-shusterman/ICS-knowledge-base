@@ -1,4 +1,4 @@
-concept_film_bobbi_2006
+film_bobbi_2006
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бобби]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bobbi_2006 =>nrel_keywords: film;;
+film_bobbi_2006 =>nrel_keywords: film;;
 
-concept_film_bobbi_2006 <- concept_biography;concept_drama;concept_history;;
+film_bobbi_2006 <- concept_biography;concept_drama;concept_history;;
 
-concept_film_bobbi_2006 => nrel_main_actor : concept_anthony_hopkins;concept_demi_moore;concept_sharon_stone;concept_harry_belafonte;;
-concept_film_bobbi_2006 => nrel_producer : concept_emilio_estevez;;
+film_bobbi_2006 => nrel_main_actor : anthony_hopkins;demi_moore;sharon_stone;harry_belafonte;;
+film_bobbi_2006 => nrel_producer : emilio_estevez;;

@@ -1,4 +1,4 @@
-concept_film_bespomoschnyy_2007
+film_bespomoschnyy_2007
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Беспомощный]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_canada;concept_usa;
+=> nrel_producing_country : canada;usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bespomoschnyy_2007 =>nrel_keywords: film;;
+film_bespomoschnyy_2007 =>nrel_keywords: film;;
 
-concept_film_bespomoschnyy_2007 <- concept_comedy;concept_drama;concept_romance;;
+film_bespomoschnyy_2007 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_bespomoschnyy_2007 => nrel_main_actor : concept_matthew_perry;concept_lynn_collins;concept_kevin_pollak;concept_bob_gunton;;
-concept_film_bespomoschnyy_2007 => nrel_producer : concept_harris_goldberg;;
+film_bespomoschnyy_2007 => nrel_main_actor : matthew_perry;lynn_collins;kevin_pollak;bob_gunton;;
+film_bespomoschnyy_2007 => nrel_producer : harris_goldberg;;

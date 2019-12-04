@@ -1,4 +1,4 @@
-concept_film_baskiya_1996
+film_baskiya_1996
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Баския]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_baskiya_1996 =>nrel_keywords: film;;
+film_baskiya_1996 =>nrel_keywords: film;;
 
-concept_film_baskiya_1996 <- concept_biography;concept_drama;;
+film_baskiya_1996 <- concept_biography;concept_drama;;
 
-concept_film_baskiya_1996 => nrel_main_actor : concept_jeffrey_wright;concept_michael_wincott;concept_benicio_del_toro;concept_claire_forlani;;
-concept_film_baskiya_1996 => nrel_producer : concept_julian_schnabel;;
+film_baskiya_1996 => nrel_main_actor : jeffrey_wright;michael_wincott;benicio_del_toro;claire_forlani;;
+film_baskiya_1996 => nrel_producer : julian_schnabel;;

@@ -1,4 +1,4 @@
-concept_film_bratya_soperniki_2004
+film_bratya_soperniki_2004
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Братья-соперники]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_australia;concept_uk;
+=> nrel_producing_country : australia;uk;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bratya_soperniki_2004 =>nrel_keywords: film;;
+film_bratya_soperniki_2004 =>nrel_keywords: film;;
 
-concept_film_bratya_soperniki_2004 <- concept_comedy;concept_drama;concept_romance;;
+film_bratya_soperniki_2004 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_bratya_soperniki_2004 => nrel_main_actor : concept_giovanni_ribisi;concept_adam_garcia;concept_joe_petruzzi;concept_rodney_afif;;
-concept_film_bratya_soperniki_2004 => nrel_producer : concept_jan_sardi;;
+film_bratya_soperniki_2004 => nrel_main_actor : giovanni_ribisi;adam_garcia;joe_petruzzi;rodney_afif;;
+film_bratya_soperniki_2004 => nrel_producer : jan_sardi;;

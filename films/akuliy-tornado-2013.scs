@@ -1,4 +1,4 @@
-concept_film_akuliy_tornado_2013
+film_akuliy_tornado_2013
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Акулий торнадо]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 3;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_14;;
 
-concept_film_akuliy_tornado_2013 =>nrel_keywords: film;;
+film_akuliy_tornado_2013 =>nrel_keywords: film;;
 
-concept_film_akuliy_tornado_2013 <- concept_action;concept_adventure;concept_comedy;concept_horror;concept_sci_fi;concept_thriller;;
+film_akuliy_tornado_2013 <- concept_action;concept_adventure;concept_comedy;concept_horror;concept_sci_fi;concept_thriller;;
 
-concept_film_akuliy_tornado_2013 => nrel_main_actor : concept_ian_ziering;concept_tara_reid;concept_john_heard;concept_cassandra_scerbo;;
-concept_film_akuliy_tornado_2013 => nrel_producer : concept_anthony_c._ferrante;;
+film_akuliy_tornado_2013 => nrel_main_actor : ian_ziering;tara_reid;john_heard;cassandra_scerbo;;
+film_akuliy_tornado_2013 => nrel_producer : anthony_c._ferrante;;

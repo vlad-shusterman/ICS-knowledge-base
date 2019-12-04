@@ -1,4 +1,4 @@
-concept_film_amerikanskaya_sila_2014
+film_amerikanskaya_sila_2014
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Американская сила]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 4;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_amerikanskaya_sila_2014 =>nrel_keywords: film;;
+film_amerikanskaya_sila_2014 =>nrel_keywords: film;;
 
-concept_film_amerikanskaya_sila_2014 <- concept_action;;
+film_amerikanskaya_sila_2014 <- concept_action;;
 
-concept_film_amerikanskaya_sila_2014 => nrel_main_actor : concept_nick_principe;concept_robin_sydney;concept_todd_farmer;concept_john_fallon;;
-concept_film_amerikanskaya_sila_2014 => nrel_producer : concept_ravi_dhar;;
+film_amerikanskaya_sila_2014 => nrel_main_actor : nick_principe;robin_sydney;todd_farmer;john_fallon;;
+film_amerikanskaya_sila_2014 => nrel_producer : ravi_dhar;;

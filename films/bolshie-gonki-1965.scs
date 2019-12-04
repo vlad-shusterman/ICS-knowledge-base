@@ -1,4 +1,4 @@
-concept_film_bolshie_gonki_1965
+film_bolshie_gonki_1965
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Большие гонки]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Passed;;
 
-concept_film_bolshie_gonki_1965 =>nrel_keywords: film;;
+film_bolshie_gonki_1965 =>nrel_keywords: film;;
 
-concept_film_bolshie_gonki_1965 <- concept_action;concept_adventure;concept_comedy;concept_family;concept_romance;concept_sport;concept_western;;
+film_bolshie_gonki_1965 <- concept_action;concept_adventure;concept_comedy;concept_family;concept_romance;concept_sport;concept_western;;
 
-concept_film_bolshie_gonki_1965 => nrel_main_actor : concept_tony_curtis;concept_natalie_wood;concept_jack_lemmon;concept_peter_falk;;
-concept_film_bolshie_gonki_1965 => nrel_producer : concept_blake_edwards;;
+film_bolshie_gonki_1965 => nrel_main_actor : tony_curtis;natalie_wood;jack_lemmon;peter_falk;;
+film_bolshie_gonki_1965 => nrel_producer : blake_edwards;;

@@ -1,4 +1,4 @@
-concept_film_bezumno_vlyublennyy_1981
+film_bezumno_vlyublennyy_1981
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Безумно влюбленный]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_italy;
+=> nrel_producing_country : italy;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bezumno_vlyublennyy_1981 =>nrel_keywords: film;;
+film_bezumno_vlyublennyy_1981 =>nrel_keywords: film;;
 
-concept_film_bezumno_vlyublennyy_1981 <- concept_comedy;concept_romance;;
+film_bezumno_vlyublennyy_1981 <- concept_comedy;concept_romance;;
 
-concept_film_bezumno_vlyublennyy_1981 => nrel_main_actor : concept_adriano_celentano;concept_ornella_muti;concept_adolfo_celi;concept_milla_sannoner;;
-concept_film_bezumno_vlyublennyy_1981 => nrel_producer : concept_franco_castellano;concept_giuseppe_moccia;;
+film_bezumno_vlyublennyy_1981 => nrel_main_actor : adriano_celentano;ornella_muti;adolfo_celi;milla_sannoner;;
+film_bezumno_vlyublennyy_1981 => nrel_producer : franco_castellano;giuseppe_moccia;;

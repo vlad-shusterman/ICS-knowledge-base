@@ -1,4 +1,4 @@
-concept_film_delo_hrabryh_2017
+film_delo_hrabryh_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Дело храбрых]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_delo_hrabryh_2017 =>nrel_keywords: film;;
+film_delo_hrabryh_2017 =>nrel_keywords: film;;
 
-concept_film_delo_hrabryh_2017 <- concept_action;concept_biography;concept_drama;;
+film_delo_hrabryh_2017 <- concept_action;concept_biography;concept_drama;;
 
-concept_film_delo_hrabryh_2017 => nrel_main_actor : concept_josh_brolin;concept_miles_teller;concept_jeff_bridges;concept_jennifer_connelly;;
-concept_film_delo_hrabryh_2017 => nrel_producer : concept_joseph_kosinski;;
+film_delo_hrabryh_2017 => nrel_main_actor : josh_brolin;miles_teller;jeff_bridges;jennifer_connelly;;
+film_delo_hrabryh_2017 => nrel_producer : joseph_kosinski;;

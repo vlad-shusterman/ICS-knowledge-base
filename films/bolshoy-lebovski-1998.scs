@@ -1,4 +1,4 @@
-concept_film_bolshoy_lebovski_1998
+film_bolshoy_lebovski_1998
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Большой Лебовски]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_uk;
+=> nrel_producing_country : usa;uk;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bolshoy_lebovski_1998 =>nrel_keywords: film;;
+film_bolshoy_lebovski_1998 =>nrel_keywords: film;;
 
-concept_film_bolshoy_lebovski_1998 <- concept_comedy;concept_crime;concept_sport;;
+film_bolshoy_lebovski_1998 <- concept_comedy;concept_crime;concept_sport;;
 
-concept_film_bolshoy_lebovski_1998 => nrel_main_actor : concept_jeff_bridges;concept_john_goodman;concept_julianne_moore;concept_steve_buscemi;;
-concept_film_bolshoy_lebovski_1998 => nrel_producer : concept_joel_coen;concept_ethan_coen;;
+film_bolshoy_lebovski_1998 => nrel_main_actor : jeff_bridges;john_goodman;julianne_moore;steve_buscemi;;
+film_bolshoy_lebovski_1998 => nrel_producer : joel_coen;ethan_coen;;

@@ -1,4 +1,4 @@
-concept_film_chto_takoe_zdorove_2017
+film_chto_takoe_zdorove_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Что такое здоровье]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_chto_takoe_zdorove_2017 =>nrel_keywords: film;;
+film_chto_takoe_zdorove_2017 =>nrel_keywords: film;;
 
-concept_film_chto_takoe_zdorove_2017 <- concept_documentary;;
+film_chto_takoe_zdorove_2017 <- concept_documentary;;
 
-concept_film_chto_takoe_zdorove_2017 => nrel_main_actor : concept_kip_andersen;concept_larry_baldwin;concept_neal_barnard;concept_tia_blanco;;
-concept_film_chto_takoe_zdorove_2017 => nrel_producer : concept_kip_andersen;concept_keegan_kuhn;;
+film_chto_takoe_zdorove_2017 => nrel_main_actor : kip_andersen;larry_baldwin;neal_barnard;tia_blanco;;
+film_chto_takoe_zdorove_2017 => nrel_producer : kip_andersen;keegan_kuhn;;

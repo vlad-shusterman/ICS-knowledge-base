@@ -1,4 +1,4 @@
-concept_film_bogatenkiy_richi_1994
+film_bogatenkiy_richi_1994
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Богатенький Ричи]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_bogatenkiy_richi_1994 =>nrel_keywords: film;;
+film_bogatenkiy_richi_1994 =>nrel_keywords: film;;
 
-concept_film_bogatenkiy_richi_1994 <- concept_comedy;concept_family;;
+film_bogatenkiy_richi_1994 <- concept_comedy;concept_family;;
 
-concept_film_bogatenkiy_richi_1994 => nrel_main_actor : concept_macaulay_culkin;concept_edward_herrmann;concept_john_larroquette;concept_christine_ebersole;;
-concept_film_bogatenkiy_richi_1994 => nrel_producer : concept_donald_petrie;;
+film_bogatenkiy_richi_1994 => nrel_main_actor : macaulay_culkin;edward_herrmann;john_larroquette;christine_ebersole;;
+film_bogatenkiy_richi_1994 => nrel_producer : donald_petrie;;

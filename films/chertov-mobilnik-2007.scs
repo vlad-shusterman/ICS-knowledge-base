@@ -1,4 +1,4 @@
-concept_film_chertov_mobilnik_2007
+film_chertov_mobilnik_2007
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чертов мобильник]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_france;
+=> nrel_producing_country : france;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_chertov_mobilnik_2007 =>nrel_keywords: film;;
+film_chertov_mobilnik_2007 =>nrel_keywords: film;;
 
-concept_film_chertov_mobilnik_2007 <- concept_comedy;concept_fantasy;;
+film_chertov_mobilnik_2007 <- concept_comedy;concept_fantasy;;
 
-concept_film_chertov_mobilnik_2007 => nrel_main_actor : concept_jean_baptiste_maunier;concept_jennifer_decker;concept_benjamin_jungers;concept_vladimir_consigny;;
-concept_film_chertov_mobilnik_2007 => nrel_producer : concept_james_huth;;
+film_chertov_mobilnik_2007 => nrel_main_actor : jean_baptiste_maunier;jennifer_decker;benjamin_jungers;vladimir_consigny;;
+film_chertov_mobilnik_2007 => nrel_producer : james_huth;;

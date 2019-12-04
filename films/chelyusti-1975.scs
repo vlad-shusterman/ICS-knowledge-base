@@ -1,4 +1,4 @@
-concept_film_chelyusti_1975
+film_chelyusti_1975
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Челюсти]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_chelyusti_1975 =>nrel_keywords: film;;
+film_chelyusti_1975 =>nrel_keywords: film;;
 
-concept_film_chelyusti_1975 <- concept_adventure;concept_drama;concept_thriller;;
+film_chelyusti_1975 <- concept_adventure;concept_drama;concept_thriller;;
 
-concept_film_chelyusti_1975 => nrel_main_actor : concept_roy_scheider;concept_robert_shaw;concept_richard_dreyfuss;concept_lorraine_gary;;
-concept_film_chelyusti_1975 => nrel_producer : concept_steven_spielberg;;
+film_chelyusti_1975 => nrel_main_actor : roy_scheider;robert_shaw;richard_dreyfuss;lorraine_gary;;
+film_chelyusti_1975 => nrel_producer : steven_spielberg;;

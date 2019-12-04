@@ -1,4 +1,4 @@
-concept_film_belyy_lebed_2018
+film_belyy_lebed_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Белый лебедь]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_norway;
+=> nrel_producing_country : norway;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_belyy_lebed_2018 =>nrel_keywords: film;;
+film_belyy_lebed_2018 =>nrel_keywords: film;;
 
-concept_film_belyy_lebed_2018 <- concept_biography;concept_drama;concept_history;;
+film_belyy_lebed_2018 <- concept_biography;concept_drama;concept_history;;
 
-concept_film_belyy_lebed_2018 => nrel_main_actor : concept_ine_marie_wilmann;concept_valene_kane;concept_eldar_skar;concept_anders_mordal;;
-concept_film_belyy_lebed_2018 => nrel_producer : concept_anne_sewitsky;;
+film_belyy_lebed_2018 => nrel_main_actor : ine_marie_wilmann;valene_kane;eldar_skar;anders_mordal;;
+film_belyy_lebed_2018 => nrel_producer : anne_sewitsky;;

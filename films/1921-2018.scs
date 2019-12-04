@@ -1,4 +1,4 @@
-concept_film_1921_2018
+film_1921_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [1921]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_india;
+=> nrel_producing_country : india;
 
 => nrel_film_critic_rating : 4;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_1921_2018 =>nrel_keywords: film;;
+film_1921_2018 =>nrel_keywords: film;;
 
-concept_film_1921_2018 <- concept_horror;concept_mystery;concept_romance;;
+film_1921_2018 <- concept_horror;concept_mystery;concept_romance;;
 
-concept_film_1921_2018 => nrel_main_actor : concept_zareen_khan;concept_karan_kundrra;concept_vikram_bhatt;concept_angela_krislinzki;;
-concept_film_1921_2018 => nrel_producer : concept_vikram_bhatt;;
+film_1921_2018 => nrel_main_actor : zareen_khan;karan_kundrra;vikram_bhatt;angela_krislinzki;;
+film_1921_2018 => nrel_producer : vikram_bhatt;;

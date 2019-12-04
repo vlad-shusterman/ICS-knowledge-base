@@ -1,4 +1,4 @@
-concept_film_chto_sluchilos_proshloy_nochyu_1986
+film_chto_sluchilos_proshloy_nochyu_1986
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Что случилось прошлой ночью]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_chto_sluchilos_proshloy_nochyu_1986 =>nrel_keywords: film;;
+film_chto_sluchilos_proshloy_nochyu_1986 =>nrel_keywords: film;;
 
-concept_film_chto_sluchilos_proshloy_nochyu_1986 <- concept_comedy;concept_drama;concept_romance;;
+film_chto_sluchilos_proshloy_nochyu_1986 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_chto_sluchilos_proshloy_nochyu_1986 => nrel_main_actor : concept_rob_lowe;concept_demi_moore;concept_jim_belushi;concept_elizabeth_perkins;;
-concept_film_chto_sluchilos_proshloy_nochyu_1986 => nrel_producer : concept_edward_zwick;;
+film_chto_sluchilos_proshloy_nochyu_1986 => nrel_main_actor : rob_lowe;demi_moore;jim_belushi;elizabeth_perkins;;
+film_chto_sluchilos_proshloy_nochyu_1986 => nrel_producer : edward_zwick;;

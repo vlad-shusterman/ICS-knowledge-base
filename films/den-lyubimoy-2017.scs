@@ -1,4 +1,4 @@
-concept_film_den_lyubimoy_2017
+film_den_lyubimoy_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [День любимой]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_MA;;
 
-concept_film_den_lyubimoy_2017 =>nrel_keywords: film;;
+film_den_lyubimoy_2017 =>nrel_keywords: film;;
 
-concept_film_den_lyubimoy_2017 <- concept_comedy;concept_drama;;
+film_den_lyubimoy_2017 <- concept_comedy;concept_drama;;
 
-concept_film_den_lyubimoy_2017 => nrel_main_actor : concept_bob_odenkirk;concept_amber_tamblyn;concept_stacy_keach;concept_alex_karpovsky;;
-concept_film_den_lyubimoy_2017 => nrel_producer : concept_michael_paul_stephenson;;
+film_den_lyubimoy_2017 => nrel_main_actor : bob_odenkirk;amber_tamblyn;stacy_keach;alex_karpovsky;;
+film_den_lyubimoy_2017 => nrel_producer : michael_paul_stephenson;;

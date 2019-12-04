@@ -1,4 +1,4 @@
-concept_film_beguschiy_po_lezviyu_1982
+film_beguschiy_po_lezviyu_1982
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бегущий по лезвию]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_hong_kong;concept_uk;
+=> nrel_producing_country : usa;hong_kong;uk;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_beguschiy_po_lezviyu_1982 =>nrel_keywords: film;;
+film_beguschiy_po_lezviyu_1982 =>nrel_keywords: film;;
 
-concept_film_beguschiy_po_lezviyu_1982 <- concept_action;concept_sci_fi;concept_thriller;;
+film_beguschiy_po_lezviyu_1982 <- concept_action;concept_sci_fi;concept_thriller;;
 
-concept_film_beguschiy_po_lezviyu_1982 => nrel_main_actor : concept_harrison_ford;concept_rutger_hauer;concept_sean_young;concept_edward_james_olmos;;
-concept_film_beguschiy_po_lezviyu_1982 => nrel_producer : concept_ridley_scott;;
+film_beguschiy_po_lezviyu_1982 => nrel_main_actor : harrison_ford;rutger_hauer;sean_young;edward_james_olmos;;
+film_beguschiy_po_lezviyu_1982 => nrel_producer : ridley_scott;;

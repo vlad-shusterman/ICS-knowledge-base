@@ -1,4 +1,4 @@
-concept_film_anakonda_3_cena_eksperimenta
+film_anakonda_3_cena_eksperimenta
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Анаконда 3: Цена эксперимента]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_romania;
+=> nrel_producing_country : usa;romania;
 
 => nrel_film_critic_rating : 3;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_anakonda_3_cena_eksperimenta =>nrel_keywords: film;;
+film_anakonda_3_cena_eksperimenta =>nrel_keywords: film;;
 
-concept_film_anakonda_3_cena_eksperimenta <- concept_action;concept_adventure;concept_horror;concept_sci_fi;concept_thriller;;
+film_anakonda_3_cena_eksperimenta <- concept_action;concept_adventure;concept_horror;concept_sci_fi;concept_thriller;;
 
-concept_film_anakonda_3_cena_eksperimenta => nrel_main_actor : concept_david_hasselhoff;concept_crystal_allen;concept_ryan_mccluskey;concept_patrick_regis;;
-concept_film_anakonda_3_cena_eksperimenta => nrel_producer : concept_don_e._fauntleroy;;
+film_anakonda_3_cena_eksperimenta => nrel_main_actor : david_hasselhoff;crystal_allen;ryan_mccluskey;patrick_regis;;
+film_anakonda_3_cena_eksperimenta => nrel_producer : don_e._fauntleroy;;

@@ -1,4 +1,4 @@
-concept_film_buddenbroki_2008
+film_buddenbroki_2008
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Будденброки]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;
+=> nrel_producing_country : germany;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_buddenbroki_2008 =>nrel_keywords: film;;
+film_buddenbroki_2008 =>nrel_keywords: film;;
 
-concept_film_buddenbroki_2008 <- concept_drama;;
+film_buddenbroki_2008 <- concept_drama;;
 
-concept_film_buddenbroki_2008 => nrel_main_actor : concept_armin_mueller_stahl;concept_iris_berben;concept_jessica_schwarz;concept_august_diehl;;
-concept_film_buddenbroki_2008 => nrel_producer : concept_heinrich_breloer;;
+film_buddenbroki_2008 => nrel_main_actor : armin_mueller_stahl;iris_berben;jessica_schwarz;august_diehl;;
+film_buddenbroki_2008 => nrel_producer : heinrich_breloer;;

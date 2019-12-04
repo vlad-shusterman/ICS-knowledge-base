@@ -1,4 +1,4 @@
-concept_film_deti_bez_prismotra_2006
+film_deti_bez_prismotra_2006
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Дети без присмотра]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_deti_bez_prismotra_2006 =>nrel_keywords: film;;
+film_deti_bez_prismotra_2006 =>nrel_keywords: film;;
 
-concept_film_deti_bez_prismotra_2006 <- concept_adventure;concept_comedy;concept_family;concept_romance;;
+film_deti_bez_prismotra_2006 <- concept_adventure;concept_comedy;concept_family;concept_romance;;
 
-concept_film_deti_bez_prismotra_2006 => nrel_main_actor : concept_dyllan_christopher;concept_tyler_james_williams;concept_gia_mantegna;concept_quinn_shephard;;
-concept_film_deti_bez_prismotra_2006 => nrel_producer : concept_paul_feig;;
+film_deti_bez_prismotra_2006 => nrel_main_actor : dyllan_christopher;tyler_james_williams;gia_mantegna;quinn_shephard;;
+film_deti_bez_prismotra_2006 => nrel_producer : paul_feig;;

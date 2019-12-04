@@ -1,4 +1,4 @@
-concept_film_balans_sil_1996
+film_balans_sil_1996
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Баланс сил]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_canada;concept_usa;
+=> nrel_producing_country : canada;usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_balans_sil_1996 =>nrel_keywords: film;;
+film_balans_sil_1996 =>nrel_keywords: film;;
 
-concept_film_balans_sil_1996 <- concept_action;;
+film_balans_sil_1996 <- concept_action;;
 
-concept_film_balans_sil_1996 => nrel_main_actor : concept_billy_blanks;concept_mako;concept_lisa_jai;concept_denis_akiyama;;
-concept_film_balans_sil_1996 => nrel_producer : concept_rick_bennett;;
+film_balans_sil_1996 => nrel_main_actor : billy_blanks;mako;lisa_jai;denis_akiyama;;
+film_balans_sil_1996 => nrel_producer : rick_bennett;;

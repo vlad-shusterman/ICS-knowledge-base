@@ -1,4 +1,4 @@
-concept_film_cepnaya_reakciya_1996
+film_cepnaya_reakciya_1996
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Цепная реакция]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_cepnaya_reakciya_1996 =>nrel_keywords: film;;
+film_cepnaya_reakciya_1996 =>nrel_keywords: film;;
 
-concept_film_cepnaya_reakciya_1996 <- concept_action;concept_drama;concept_sci_fi;concept_thriller;;
+film_cepnaya_reakciya_1996 <- concept_action;concept_drama;concept_sci_fi;concept_thriller;;
 
-concept_film_cepnaya_reakciya_1996 => nrel_main_actor : concept_keanu_reeves;concept_morgan_freeman;concept_rachel_weisz;concept_fred_ward;;
-concept_film_cepnaya_reakciya_1996 => nrel_producer : concept_andrew_davis;;
+film_cepnaya_reakciya_1996 => nrel_main_actor : keanu_reeves;morgan_freeman;rachel_weisz;fred_ward;;
+film_cepnaya_reakciya_1996 => nrel_producer : andrew_davis;;

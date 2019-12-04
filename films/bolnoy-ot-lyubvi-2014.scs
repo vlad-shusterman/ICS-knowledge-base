@@ -1,4 +1,4 @@
-concept_film_bolnoy_ot_lyubvi_2014
+film_bolnoy_ot_lyubvi_2014
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Больной от любви]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_bolnoy_ot_lyubvi_2014 =>nrel_keywords: film;;
+film_bolnoy_ot_lyubvi_2014 =>nrel_keywords: film;;
 
-concept_film_bolnoy_ot_lyubvi_2014 <- concept_comedy;concept_romance;;
+film_bolnoy_ot_lyubvi_2014 <- concept_comedy;concept_romance;;
 
-concept_film_bolnoy_ot_lyubvi_2014 => nrel_main_actor : concept_matt_leblanc;concept_ali_larter;concept_adam_rodriguez;concept_ashley_williams;;
-concept_film_bolnoy_ot_lyubvi_2014 => nrel_producer : concept_luke_matheny;;
+film_bolnoy_ot_lyubvi_2014 => nrel_main_actor : matt_leblanc;ali_larter;adam_rodriguez;ashley_williams;;
+film_bolnoy_ot_lyubvi_2014 => nrel_producer : luke_matheny;;

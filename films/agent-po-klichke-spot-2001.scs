@@ -1,4 +1,4 @@
-concept_film_agent_po_klichke_spot_2001
+film_agent_po_klichke_spot_2001
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Агент по кличке Спот]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_australia;
+=> nrel_producing_country : usa;australia;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_agent_po_klichke_spot_2001 =>nrel_keywords: film;;
+film_agent_po_klichke_spot_2001 =>nrel_keywords: film;;
 
-concept_film_agent_po_klichke_spot_2001 <- concept_action;concept_comedy;concept_crime;concept_family;;
+film_agent_po_klichke_spot_2001 <- concept_action;concept_comedy;concept_crime;concept_family;;
 
-concept_film_agent_po_klichke_spot_2001 => nrel_main_actor : concept_david_arquette;concept_michael_clarke_duncan;concept_leslie_bibb;concept_joe_viterelli;;
-concept_film_agent_po_klichke_spot_2001 => nrel_producer : concept_john_whitesell;;
+film_agent_po_klichke_spot_2001 => nrel_main_actor : david_arquette;michael_clarke_duncan;leslie_bibb;joe_viterelli;;
+film_agent_po_klichke_spot_2001 => nrel_producer : john_whitesell;;

@@ -1,4 +1,4 @@
-concept_film_bioskopevala_2018
+film_bioskopevala_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Биоскопевала]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_india;
+=> nrel_producing_country : india;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bioskopevala_2018 =>nrel_keywords: film;;
+film_bioskopevala_2018 =>nrel_keywords: film;;
 
-concept_film_bioskopevala_2018 <- concept_drama;;
+film_bioskopevala_2018 <- concept_drama;;
 
-concept_film_bioskopevala_2018 => nrel_main_actor : concept_danny_denzongpa;concept_geetanjali_thapa;concept_adil_hussain;concept_tisca_chopra;;
-concept_film_bioskopevala_2018 => nrel_producer : concept_deb_medhekar;;
+film_bioskopevala_2018 => nrel_main_actor : danny_denzongpa;geetanjali_thapa;adil_hussain;tisca_chopra;;
+film_bioskopevala_2018 => nrel_producer : deb_medhekar;;

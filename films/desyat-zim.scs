@@ -1,4 +1,4 @@
-concept_film_desyat_zim
+film_desyat_zim
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Десять зим]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_italy;concept_russia;
+=> nrel_producing_country : italy;russia;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_desyat_zim =>nrel_keywords: film;;
+film_desyat_zim =>nrel_keywords: film;;
 
-concept_film_desyat_zim <- concept_romance;;
+film_desyat_zim <- concept_romance;;
 
-concept_film_desyat_zim => nrel_main_actor : concept_isabella_ragonese;concept_michele_riondino;concept_glen_blackhall;concept_sergey_zhigunov;;
-concept_film_desyat_zim => nrel_producer : concept_valerio_mieli;;
+film_desyat_zim => nrel_main_actor : isabella_ragonese;michele_riondino;glen_blackhall;sergey_zhigunov;;
+film_desyat_zim => nrel_producer : valerio_mieli;;

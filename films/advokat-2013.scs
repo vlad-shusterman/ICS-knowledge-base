@@ -1,4 +1,4 @@
-concept_film_advokat_2013
+film_advokat_2013
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Адвокат]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_south_korea;
+=> nrel_producing_country : south_korea;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_advokat_2013 =>nrel_keywords: film;;
+film_advokat_2013 =>nrel_keywords: film;;
 
-concept_film_advokat_2013 <- concept_drama;;
+film_advokat_2013 <- concept_drama;;
 
-concept_film_advokat_2013 => nrel_main_actor : concept_kwang_soo_cha;concept_seon_mook_cho;concept_ki_jung_han;concept_sung_ho_hong;;
-concept_film_advokat_2013 => nrel_producer : concept_woosuk_yang;;
+film_advokat_2013 => nrel_main_actor : kwang_soo_cha;seon_mook_cho;ki_jung_han;sung_ho_hong;;
+film_advokat_2013 => nrel_producer : woosuk_yang;;

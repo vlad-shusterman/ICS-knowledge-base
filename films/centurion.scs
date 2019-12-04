@@ -1,4 +1,4 @@
-concept_film_centurion
+film_centurion
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Центурион]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_france;concept_usa;
+=> nrel_producing_country : uk;france;usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_centurion =>nrel_keywords: film;;
+film_centurion =>nrel_keywords: film;;
 
-concept_film_centurion <- concept_action;concept_drama;concept_history;concept_war;;
+film_centurion <- concept_action;concept_drama;concept_history;concept_war;;
 
-concept_film_centurion => nrel_main_actor : concept_michael_fassbender;concept_dominic_west;concept_olga_kurylenko;concept_andreas_wisniewski;;
-concept_film_centurion => nrel_producer : concept_neil_marshall;;
+film_centurion => nrel_main_actor : michael_fassbender;dominic_west;olga_kurylenko;andreas_wisniewski;;
+film_centurion => nrel_producer : neil_marshall;;

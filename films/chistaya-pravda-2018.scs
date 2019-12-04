@@ -1,4 +1,4 @@
-concept_film_chistaya_pravda_2018
+film_chistaya_pravda_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чистая правда]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;
+=> nrel_producing_country : uk;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_chistaya_pravda_2018 =>nrel_keywords: film;;
+film_chistaya_pravda_2018 =>nrel_keywords: film;;
 
-concept_film_chistaya_pravda_2018 <- concept_biography;concept_drama;concept_history;;
+film_chistaya_pravda_2018 <- concept_biography;concept_drama;concept_history;;
 
-concept_film_chistaya_pravda_2018 => nrel_main_actor : concept_kenneth_branagh;concept_judi_dench;concept_ian_mckellen;concept_nonso_anozie;;
-concept_film_chistaya_pravda_2018 => nrel_producer : concept_kenneth_branagh;;
+film_chistaya_pravda_2018 => nrel_main_actor : kenneth_branagh;judi_dench;ian_mckellen;nonso_anozie;;
+film_chistaya_pravda_2018 => nrel_producer : kenneth_branagh;;

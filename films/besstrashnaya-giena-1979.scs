@@ -1,4 +1,4 @@
-concept_film_besstrashnaya_giena_1979
+film_besstrashnaya_giena_1979
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бесстрашная гиена]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_hong_kong;concept_south_korea;
+=> nrel_producing_country : hong_kong;south_korea;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_besstrashnaya_giena_1979 =>nrel_keywords: film;;
+film_besstrashnaya_giena_1979 =>nrel_keywords: film;;
 
-concept_film_besstrashnaya_giena_1979 <- concept_comedy;concept_action;;
+film_besstrashnaya_giena_1979 <- concept_comedy;concept_action;;
 
-concept_film_besstrashnaya_giena_1979 => nrel_main_actor : concept_jackie_chan;concept_james_tien;concept_dean_shek;concept_hui_lou_chen;;
-concept_film_besstrashnaya_giena_1979 => nrel_producer : concept_jackie_chan;;
+film_besstrashnaya_giena_1979 => nrel_main_actor : jackie_chan;james_tien;dean_shek;hui_lou_chen;;
+film_besstrashnaya_giena_1979 => nrel_producer : jackie_chan;;

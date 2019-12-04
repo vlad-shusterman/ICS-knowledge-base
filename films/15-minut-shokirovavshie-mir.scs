@@ -1,4 +1,4 @@
-concept_film_15_minut_shokirovavshie_mir
+film_15_minut_shokirovavshie_mir
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [15 минут, шокировавшие мир]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;
+=> nrel_producing_country : uk;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_15_minut_shokirovavshie_mir =>nrel_keywords: film;;
+film_15_minut_shokirovavshie_mir =>nrel_keywords: film;;
 
-concept_film_15_minut_shokirovavshie_mir <- concept_short;concept_comedy;concept_history;concept_sport;;
+film_15_minut_shokirovavshie_mir <- concept_short;concept_comedy;concept_history;concept_sport;;
 
-concept_film_15_minut_shokirovavshie_mir => nrel_main_actor : concept_andrew_schofield;concept_neil_fitzmaurice;concept_jamie_carragher;concept_steven_gerrard;;
-concept_film_15_minut_shokirovavshie_mir => nrel_producer : concept_illy;;
+film_15_minut_shokirovavshie_mir => nrel_main_actor : andrew_schofield;neil_fitzmaurice;jamie_carragher;steven_gerrard;;
+film_15_minut_shokirovavshie_mir => nrel_producer : illy;;

@@ -1,4 +1,4 @@
-concept_film_astral_glava_2_2013
+film_astral_glava_2_2013
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Астрал: Глава 2]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_canada;
+=> nrel_producing_country : usa;canada;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_astral_glava_2_2013 =>nrel_keywords: film;;
+film_astral_glava_2_2013 =>nrel_keywords: film;;
 
-concept_film_astral_glava_2_2013 <- concept_horror;concept_mystery;concept_thriller;;
+film_astral_glava_2_2013 <- concept_horror;concept_mystery;concept_thriller;;
 
-concept_film_astral_glava_2_2013 => nrel_main_actor : concept_patrick_wilson;concept_rose_byrne;concept_barbara_hershey;concept_lin_shaye;;
-concept_film_astral_glava_2_2013 => nrel_producer : concept_james_wan;;
+film_astral_glava_2_2013 => nrel_main_actor : patrick_wilson;rose_byrne;barbara_hershey;lin_shaye;;
+film_astral_glava_2_2013 => nrel_producer : james_wan;;

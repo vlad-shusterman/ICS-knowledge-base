@@ -1,4 +1,4 @@
-concept_film_chuzhoy_bilet_2000
+film_chuzhoy_bilet_2000
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чужой билет]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_chuzhoy_bilet_2000 =>nrel_keywords: film;;
+film_chuzhoy_bilet_2000 =>nrel_keywords: film;;
 
-concept_film_chuzhoy_bilet_2000 <- concept_drama;concept_romance;;
+film_chuzhoy_bilet_2000 <- concept_drama;concept_romance;;
 
-concept_film_chuzhoy_bilet_2000 => nrel_main_actor : concept_ben_affleck;concept_gwyneth_paltrow;concept_natasha_henstridge;concept_edward_edwards;;
-concept_film_chuzhoy_bilet_2000 => nrel_producer : concept_don_roos;;
+film_chuzhoy_bilet_2000 => nrel_main_actor : ben_affleck;gwyneth_paltrow;natasha_henstridge;edward_edwards;;
+film_chuzhoy_bilet_2000 => nrel_producer : don_roos;;

@@ -1,4 +1,4 @@
-concept_film_asteroid_protiv_zemli_2014
+film_asteroid_protiv_zemli_2014
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Астероид против Земли]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 3;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_14;;
 
-concept_film_asteroid_protiv_zemli_2014 =>nrel_keywords: film;;
+film_asteroid_protiv_zemli_2014 =>nrel_keywords: film;;
 
-concept_film_asteroid_protiv_zemli_2014 <- concept_action;concept_adventure;concept_sci_fi;concept_thriller;;
+film_asteroid_protiv_zemli_2014 <- concept_action;concept_adventure;concept_sci_fi;concept_thriller;;
 
-concept_film_asteroid_protiv_zemli_2014 => nrel_main_actor : concept_tia_carrere;concept_jason_brooks;concept_tim_russ;concept_darin_cooper;;
-concept_film_asteroid_protiv_zemli_2014 => nrel_producer : concept_christopher_ray;;
+film_asteroid_protiv_zemli_2014 => nrel_main_actor : tia_carrere;jason_brooks;tim_russ;darin_cooper;;
+film_asteroid_protiv_zemli_2014 => nrel_producer : christopher_ray;;

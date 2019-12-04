@@ -1,4 +1,4 @@
-concept_film_amerikanskiy_psihopat_2000
+film_amerikanskiy_psihopat_2000
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Американский психопат]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_canada;
+=> nrel_producing_country : usa;canada;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_amerikanskiy_psihopat_2000 =>nrel_keywords: film;;
+film_amerikanskiy_psihopat_2000 =>nrel_keywords: film;;
 
-concept_film_amerikanskiy_psihopat_2000 <- concept_crime;concept_drama;;
+film_amerikanskiy_psihopat_2000 <- concept_crime;concept_drama;;
 
-concept_film_amerikanskiy_psihopat_2000 => nrel_main_actor : concept_christian_bale;concept_justin_theroux;concept_josh_lucas;concept_bill_sage;;
-concept_film_amerikanskiy_psihopat_2000 => nrel_producer : concept_mary_harron;;
+film_amerikanskiy_psihopat_2000 => nrel_main_actor : christian_bale;justin_theroux;josh_lucas;bill_sage;;
+film_amerikanskiy_psihopat_2000 => nrel_producer : mary_harron;;

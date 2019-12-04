@@ -1,4 +1,4 @@
-concept_film_dalekiy_svidetel_2017
+film_dalekiy_svidetel_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Далекий свидетель]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_usa;
+=> nrel_producing_country : uk;usa;
 
 => nrel_film_critic_rating : 4;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_MA;;
 
-concept_film_dalekiy_svidetel_2017 =>nrel_keywords: film;;
+film_dalekiy_svidetel_2017 =>nrel_keywords: film;;
 
-concept_film_dalekiy_svidetel_2017 <- concept_crime;concept_drama;concept_thriller;;
+film_dalekiy_svidetel_2017 <- concept_crime;concept_drama;concept_thriller;;
 
-concept_film_dalekiy_svidetel_2017 => nrel_main_actor : concept_aaron_stanford;concept_sean_patrick_flanery;concept_teri_reeves;concept_forrest_fyre;;
-concept_film_dalekiy_svidetel_2017 => nrel_producer : concept_adam_del_giudice;;
+film_dalekiy_svidetel_2017 => nrel_main_actor : aaron_stanford;sean_patrick_flanery;teri_reeves;forrest_fyre;;
+film_dalekiy_svidetel_2017 => nrel_producer : adam_del_giudice;;

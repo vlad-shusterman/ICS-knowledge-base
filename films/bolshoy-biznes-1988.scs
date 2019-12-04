@@ -1,4 +1,4 @@
-concept_film_bolshoy_biznes_1988
+film_bolshoy_biznes_1988
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Большой бизнес]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_bolshoy_biznes_1988 =>nrel_keywords: film;;
+film_bolshoy_biznes_1988 =>nrel_keywords: film;;
 
-concept_film_bolshoy_biznes_1988 <- concept_comedy;;
+film_bolshoy_biznes_1988 <- concept_comedy;;
 
-concept_film_bolshoy_biznes_1988 => nrel_main_actor : concept_bette_midler;concept_lily_tomlin;concept_fred_ward;concept_edward_herrmann;;
-concept_film_bolshoy_biznes_1988 => nrel_producer : concept_jim_abrahams;;
+film_bolshoy_biznes_1988 => nrel_main_actor : bette_midler;lily_tomlin;fred_ward;edward_herrmann;;
+film_bolshoy_biznes_1988 => nrel_producer : jim_abrahams;;

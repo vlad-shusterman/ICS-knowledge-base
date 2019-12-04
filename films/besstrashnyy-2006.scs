@@ -1,4 +1,4 @@
-concept_film_besstrashnyy_2006
+film_besstrashnyy_2006
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бесстрашный]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_china;concept_hong_kong;
+=> nrel_producing_country : china;hong_kong;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_besstrashnyy_2006 =>nrel_keywords: film;;
+film_besstrashnyy_2006 =>nrel_keywords: film;;
 
-concept_film_besstrashnyy_2006 <- concept_action;concept_biography;concept_drama;concept_sport;;
+film_besstrashnyy_2006 <- concept_action;concept_biography;concept_drama;concept_sport;;
 
-concept_film_besstrashnyy_2006 => nrel_main_actor : concept_jet_li;concept_li_sun;concept_yong_dong;concept_yun_qu;;
-concept_film_besstrashnyy_2006 => nrel_producer : concept_ronny_yu;;
+film_besstrashnyy_2006 => nrel_main_actor : jet_li;li_sun;yong_dong;yun_qu;;
+film_besstrashnyy_2006 => nrel_producer : ronny_yu;;

@@ -1,4 +1,4 @@
-concept_film_ben_10_naperegonki_so_vremenem_2007
+film_ben_10_naperegonki_so_vremenem_2007
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бен 10: Наперегонки со временем]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 4;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_PG;;
 
-concept_film_ben_10_naperegonki_so_vremenem_2007 =>nrel_keywords: film;;
+film_ben_10_naperegonki_so_vremenem_2007 =>nrel_keywords: film;;
 
-concept_film_ben_10_naperegonki_so_vremenem_2007 <- concept_action;concept_adventure;concept_sci_fi;;
+film_ben_10_naperegonki_so_vremenem_2007 <- concept_action;concept_adventure;concept_sci_fi;;
 
-concept_film_ben_10_naperegonki_so_vremenem_2007 => nrel_main_actor : concept_graham_phillips;concept_christien_anholt;concept_haley_ramm;concept_beth_littleford;;
-concept_film_ben_10_naperegonki_so_vremenem_2007 => nrel_producer : concept_alex_winter;;
+film_ben_10_naperegonki_so_vremenem_2007 => nrel_main_actor : graham_phillips;christien_anholt;haley_ramm;beth_littleford;;
+film_ben_10_naperegonki_so_vremenem_2007 => nrel_producer : alex_winter;;

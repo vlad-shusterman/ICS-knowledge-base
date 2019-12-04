@@ -1,4 +1,4 @@
-concept_film_bagrovaya_myata_2018
+film_bagrovaya_myata_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Багровая мята]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_hong_kong;concept_usa;
+=> nrel_producing_country : hong_kong;usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bagrovaya_myata_2018 =>nrel_keywords: film;;
+film_bagrovaya_myata_2018 =>nrel_keywords: film;;
 
-concept_film_bagrovaya_myata_2018 <- concept_action;concept_drama;concept_thriller;;
+film_bagrovaya_myata_2018 <- concept_action;concept_drama;concept_thriller;;
 
-concept_film_bagrovaya_myata_2018 => nrel_main_actor : concept_jennifer_garner;concept_john_gallagher_jr.;concept_john_ortiz;concept_juan_pablo_raba;;
-concept_film_bagrovaya_myata_2018 => nrel_producer : concept_pierre_morel;;
+film_bagrovaya_myata_2018 => nrel_main_actor : jennifer_garner;john_gallagher_jr.;john_ortiz;juan_pablo_raba;;
+film_bagrovaya_myata_2018 => nrel_producer : pierre_morel;;

@@ -1,4 +1,4 @@
-concept_film_bez_izyana_1999
+film_bez_izyana_1999
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Без изъяна]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bez_izyana_1999 =>nrel_keywords: film;;
+film_bez_izyana_1999 =>nrel_keywords: film;;
 
-concept_film_bez_izyana_1999 <- concept_comedy;concept_crime;concept_drama;;
+film_bez_izyana_1999 <- concept_comedy;concept_crime;concept_drama;;
 
-concept_film_bez_izyana_1999 => nrel_main_actor : concept_robert_de_niro;concept_philip_seymour_hoffman;concept_barry_miller;concept_chris_bauer;;
-concept_film_bez_izyana_1999 => nrel_producer : concept_joel_schumacher;;
+film_bez_izyana_1999 => nrel_main_actor : robert_de_niro;philip_seymour_hoffman;barry_miller;chris_bauer;;
+film_bez_izyana_1999 => nrel_producer : joel_schumacher;;

@@ -1,4 +1,4 @@
-concept_film_belyy_shum_2004
+film_belyy_shum_2004
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Белый шум]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_canada;concept_usa;
+=> nrel_producing_country : uk;canada;usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_belyy_shum_2004 =>nrel_keywords: film;;
+film_belyy_shum_2004 =>nrel_keywords: film;;
 
-concept_film_belyy_shum_2004 <- concept_drama;concept_horror;concept_mystery;concept_thriller;;
+film_belyy_shum_2004 <- concept_drama;concept_horror;concept_mystery;concept_thriller;;
 
-concept_film_belyy_shum_2004 => nrel_main_actor : concept_michael_keaton;concept_deborah_kara_unger;concept_ian_mcneice;concept_chandra_west;;
-concept_film_belyy_shum_2004 => nrel_producer : concept_geoffrey_sax;;
+film_belyy_shum_2004 => nrel_main_actor : michael_keaton;deborah_kara_unger;ian_mcneice;chandra_west;;
+film_belyy_shum_2004 => nrel_producer : geoffrey_sax;;

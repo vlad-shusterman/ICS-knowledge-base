@@ -1,4 +1,4 @@
-concept_film_amerikanskiy_spusk_2014
+film_amerikanskiy_spusk_2014
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Американский спуск]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_canada;
+=> nrel_producing_country : canada;
 
 => nrel_film_critic_rating : 3;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_amerikanskiy_spusk_2014 =>nrel_keywords: film;;
+film_amerikanskiy_spusk_2014 =>nrel_keywords: film;;
 
-concept_film_amerikanskiy_spusk_2014 <- concept_thriller;;
+film_amerikanskiy_spusk_2014 <- concept_thriller;;
 
-concept_film_amerikanskiy_spusk_2014 => nrel_main_actor : concept_eva_link;concept_madeline_link;concept_olivier_surprenant;concept_caeden_lawrence;;
-concept_film_amerikanskiy_spusk_2014 => nrel_producer : concept_brooks_hunter;;
+film_amerikanskiy_spusk_2014 => nrel_main_actor : eva_link;madeline_link;olivier_surprenant;caeden_lawrence;;
+film_amerikanskiy_spusk_2014 => nrel_producer : brooks_hunter;;

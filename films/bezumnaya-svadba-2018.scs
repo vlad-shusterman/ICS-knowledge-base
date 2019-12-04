@@ -1,4 +1,4 @@
-concept_film_bezumnaya_svadba_2018
+film_bezumnaya_svadba_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Безумная свадьба]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_ukraine;
+=> nrel_producing_country : ukraine;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bezumnaya_svadba_2018 =>nrel_keywords: film;;
+film_bezumnaya_svadba_2018 =>nrel_keywords: film;;
 
-concept_film_bezumnaya_svadba_2018 <- concept_comedy;;
+film_bezumnaya_svadba_2018 <- concept_comedy;;
 
-concept_film_bezumnaya_svadba_2018 => nrel_main_actor : concept_aram_arzumanyan;concept_yuriy_horbunov;concept_aleksandr_kobzar;concept_vera_kobzar;;
-concept_film_bezumnaya_svadba_2018 => nrel_producer : concept_vladyslav_klimchuk;;
+film_bezumnaya_svadba_2018 => nrel_main_actor : aram_arzumanyan;yuriy_horbunov;aleksandr_kobzar;vera_kobzar;;
+film_bezumnaya_svadba_2018 => nrel_producer : vladyslav_klimchuk;;

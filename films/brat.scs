@@ -1,4 +1,4 @@
-concept_film_brat
+film_brat
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Брат]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_belgium;concept_ireland;
+=> nrel_producing_country : belgium;ireland;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_brat =>nrel_keywords: film;;
+film_brat =>nrel_keywords: film;;
 
-concept_film_brat <- concept_comedy;concept_drama;concept_thriller;;
+film_brat <- concept_comedy;concept_drama;concept_thriller;;
 
-concept_film_brat => nrel_main_actor : concept_koen_de_bouw;concept_titus_de_voogdt;concept_koen_de_graeve;concept_udo_kier;;
-concept_film_brat => nrel_producer : concept_geoffrey_enthoven;;
+film_brat => nrel_main_actor : koen_de_bouw;titus_de_voogdt;koen_de_graeve;udo_kier;;
+film_brat => nrel_producer : geoffrey_enthoven;;
