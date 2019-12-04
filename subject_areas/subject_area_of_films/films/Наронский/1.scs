@@ -118,6 +118,60 @@ concept_police
 (* <- lang_en;;	*);
 <= nrel_inclusion: concept_keywords;;
 
+concept_car
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[машина]
+(* <- lang_ru;;	*);
+[car]
+(* <- lang_en;;	*);
+<= nrel_inclusion: concept_keywords;;
+
+concept_rush
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[гонка]
+(* <- lang_ru;;	*);
+[rush]
+(* <- lang_en;;	*);
+<= nrel_inclusion: concept_keywords;;
+
+concept_fight
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[бой]
+(* <- lang_ru;;	*);
+[fight]
+(* <- lang_en;;	*);
+<= nrel_inclusion: concept_keywords;;
+
+concept_box
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[бокс]
+(* <- lang_ru;;	*);
+[box]
+(* <- lang_en;;	*);
+<= nrel_inclusion: concept_keywords;;
+
+concept_butterfly
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[мотылек]
+(* <- lang_ru;;	*);
+[butterfly]
+(* <- lang_en;;	*);
+<= nrel_inclusion: concept_keywords;;
+
+concept_freedom
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+[freedom]
+(* <- lang_ru;;	*);
+[свобода]
+(* <- lang_en;;	*);
+<= nrel_inclusion: concept_keywords;;
+
 
 
 
