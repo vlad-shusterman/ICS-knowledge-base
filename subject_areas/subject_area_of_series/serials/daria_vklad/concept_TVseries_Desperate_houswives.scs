@@ -39,10 +39,8 @@ Desperate_houswives <-rrel_key_sc_element:...
 	
 Desperate_houswives => nrel_production_country : Usa;;
 
-concept_calendar_date -> 2004;;
-2004 => nrel_main_idtf : [2004 год](*<-lang_ru;;*);;
-2004 => nrel_main_idtf : [year of 2004](*<-lang_en;;*);;
-Desperate_houswives => nrel_production_year : 2004;;
+
+Desperate_houswives => nrel_world_premiere: ...(* -> rrel_number_of_year: 2004;;*);;
 	
 value ->8;;
 Desperate_houswives => nrel_num_of_seasons: 8;;

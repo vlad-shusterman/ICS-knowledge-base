@@ -1,0 +1,50 @@
+concept_human -> Noah_Wiley;;
+
+Noah_Wiley
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Ноа Страуссер Спир Уайли[]
+	(* <- lang_ru;;	*);
+	[Noah_Wiley]
+	(* <- lang_en;;	*);;
+	
+Noah_Wiley <-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Описание (Ноа Страуссер Спир Уайли[)](*<-lang_ru;;*);
+		[Description (Noah Wiley)](*<-lang_en;;*);;
+	<=nrel_using_constants:
+	{
+        concept_actor
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://HTML/Noah_Wiley_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+		->rrel_example: "file://HTML/Noah_Wiley_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+Noah_Wiley <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ноа Страуссер Спир Уайли[)](*<-lang_ru;;*);
+		[Pic. (Noah_Wiley)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://IMG/Noah_Wiley.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_calendar_date->1971;;
+Noah_Wiley =>nrel_date_of_birth: 1971;;
+1971=>nrel_main_idtf:[1971 год](*<-lang_ru;;*);;
+1971=>nrel_main_idtf:[year of 1971](*<-lang_en;;*);;
+
+concept_calendar_date->1984;;
+Noah_Wiley =>nrel_career_start_date: 1984;;
+1984=>nrel_main_idtf:[1984 год](*<-lang_ru;;*);;
+1984=>nrel_main_idtf:[year of 1984](*<-lang_en;;*);;
+
+Noah_Wiley =>nrel_cityzenship: Usa;;

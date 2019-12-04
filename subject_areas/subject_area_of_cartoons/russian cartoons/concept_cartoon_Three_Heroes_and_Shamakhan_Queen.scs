@@ -41,6 +41,7 @@ concept_cartoon_Three_Heroes_and_Shamakhan_Queen
 =>nrel_keywords: concept_superhero;
 =>nrel_keywords: concept_animals;
 =>nrel_age_rating: concept_PG0;
+=> nrel_production_country: Russia;
 =>nrel_prototype: concept_character_Ilya_Muromets;
 =>nrel_prototype: concept_character_Dobrynya_Nikitich;
 =>nrel_prototype: concept_character_Alesha_Popovich;;

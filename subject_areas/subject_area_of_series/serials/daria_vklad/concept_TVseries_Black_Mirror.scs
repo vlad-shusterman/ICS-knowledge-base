@@ -39,10 +39,8 @@ Black_Mirror <-rrel_key_sc_element:...
 	
 Black_Mirror => nrel_production_country : Uk;;
 
-concept_calendar_date -> 2011;;
-2011 => nrel_main_idtf : [2011 год](*<-lang_ru;;*);;
-2011 => nrel_main_idtf : [year of 2011](*<-lang_en;;*);;
-Black_Mirror => nrel_production_year : 2011;;
+
+Black_Mirror => nrel_world_premiere: ...(* -> rrel_number_of_year: 2011;;*);;
 	
 value -> 4;;
 Black_Mirror => nrel_num_of_seasons: 4;;

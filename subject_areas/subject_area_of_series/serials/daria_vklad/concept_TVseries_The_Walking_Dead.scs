@@ -40,10 +40,8 @@ The_Walking_Dead <-rrel_key_sc_element:...
 
 The_Walking_Dead => nrel_production_country : Usa;;
 
-concept_calendar_date -> 2010;;
-2010 => nrel_main_idtf : [2010 год](*<-lang_ru;;*);;
-2010 => nrel_main_idtf : [year of 2010](*<-lang_en;;*);;
-The_Walking_Dead => nrel_production_year : 2010;;
+
+The_Walking_Dead => nrel_world_premiere: ...(* -> rrel_number_of_year: 2010;;*);;
 	
 value -> 9;;
 The_Walking_Dead => nrel_num_of_seasons: 9;;

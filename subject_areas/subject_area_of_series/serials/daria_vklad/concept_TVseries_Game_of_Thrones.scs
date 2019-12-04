@@ -38,12 +38,10 @@ Game_of_Thrones <-rrel_key_sc_element:...
 *);;
 
 
-Game_of_Thrones => nrel_production : Usa;;
+Game_of_Thrones => nrel_production_country : Usa;;
 
-concept_calendar_date -> 2011;;
-2011 => nrel_main_idtf : [2011 год](*<-lang_ru;;*);;
-2011 => nrel_main_idtf : [year of 2011](*<-lang_en;;*);;
-Game_of_Thrones => nrel_production_year : 2011;;
+
+Game_of_Thrones => nrel_world_premiere: ...(* -> rrel_number_of_year: 2011;;*);;
 	
 value -> 7;;
 Game_of_Thrones => nrel_num_of_seasons: 7;;

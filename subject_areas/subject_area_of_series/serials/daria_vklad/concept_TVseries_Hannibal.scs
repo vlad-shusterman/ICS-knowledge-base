@@ -39,10 +39,8 @@ Hannibal <-rrel_key_sc_element:...
 
 Hannibal => nrel_production_country : Usa;;
 
-concept_calendar_date -> 2013;;
-2013 => nrel_main_idtf : [2013 год](*<-lang_ru;;*);;
-2013 => nrel_main_idtf : [year of 2013](*<-lang_en;;*);;
-Hannibal => nrel_production_year : 2013;;
+
+Hannibal => nrel_world_premiere: ...(* -> rrel_number_of_year: 2013;;*);;
 	
 value -> 3;;
 Hannibal => nrel_num_of_seasons: 3;;

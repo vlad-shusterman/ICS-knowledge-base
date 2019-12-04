@@ -38,5 +38,6 @@ concept_cartoon_The_Adventures_of_the_Good_Soldier_Schweik
 => nrel_creation: concept_traditional_animation;
 =>nrel_keywords: concept_soldier;
 =>nrel_keywords: concept_fantasy;
+=> nrel_production_country: Russia;
 =>nrel_keywords: concept_adventure;
 =>nrel_age_rating: concept_PG0;;
