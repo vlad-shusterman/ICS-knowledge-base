@@ -41,5 +41,6 @@ concept_cartoon_Star_dogs_Squirrel_and_Arrow
 =>nrel_keywords: concept_astronaut;
 =>nrel_keywords: concept_animals;
 =>nrel_age_rating: concept_PG0;
+=> nrel_production_country: Russia;
 =>nrel_prototype: concept_character_Squirrel;
 =>nrel_prototype: concept_character_Arrow;;
