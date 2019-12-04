@@ -1,4 +1,4 @@
-concept_film_bolshoy_i_dobryy_velikan_2016
+film_bolshoy_i_dobryy_velikan_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Большой и добрый великан]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_india;
+=> nrel_producing_country : usa;india;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_bolshoy_i_dobryy_velikan_2016 =>nrel_keywords: film;;
+film_bolshoy_i_dobryy_velikan_2016 =>nrel_keywords: film;;
 
-concept_film_bolshoy_i_dobryy_velikan_2016 <- concept_adventure;concept_family;concept_fantasy;;
+film_bolshoy_i_dobryy_velikan_2016 <- concept_adventure;concept_family;concept_fantasy;;
 
-concept_film_bolshoy_i_dobryy_velikan_2016 => nrel_main_actor : concept_mark_rylance;concept_ruby_barnhill;concept_penelope_wilton;concept_jemaine_clement;;
-concept_film_bolshoy_i_dobryy_velikan_2016 => nrel_producer : concept_steven_spielberg;;
+film_bolshoy_i_dobryy_velikan_2016 => nrel_main_actor : mark_rylance;ruby_barnhill;penelope_wilton;jemaine_clement;;
+film_bolshoy_i_dobryy_velikan_2016 => nrel_producer : steven_spielberg;;

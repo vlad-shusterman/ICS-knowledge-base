@@ -1,4 +1,4 @@
-concept_film_bratya_blyuz_1980
+film_bratya_blyuz_1980
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Братья Блюз]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bratya_blyuz_1980 =>nrel_keywords: film;;
+film_bratya_blyuz_1980 =>nrel_keywords: film;;
 
-concept_film_bratya_blyuz_1980 <- concept_adventure;concept_comedy;concept_crime;concept_music;concept_musical;;
+film_bratya_blyuz_1980 <- concept_adventure;concept_comedy;concept_crime;concept_music;concept_musical;;
 
-concept_film_bratya_blyuz_1980 => nrel_main_actor : concept_john_belushi;concept_dan_aykroyd;concept_cab_calloway;concept_john_candy;;
-concept_film_bratya_blyuz_1980 => nrel_producer : concept_john_landis;;
+film_bratya_blyuz_1980 => nrel_main_actor : john_belushi;dan_aykroyd;cab_calloway;john_candy;;
+film_bratya_blyuz_1980 => nrel_producer : john_landis;;

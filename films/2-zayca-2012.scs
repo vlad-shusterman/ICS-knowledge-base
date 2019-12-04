@@ -1,4 +1,4 @@
-concept_film_2_zayca_2012
+film_2_zayca_2012
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [2 зайца]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_brazil;
+=> nrel_producing_country : brazil;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_MA;;
 
-concept_film_2_zayca_2012 =>nrel_keywords: film;;
+film_2_zayca_2012 =>nrel_keywords: film;;
 
-concept_film_2_zayca_2012 <- concept_action;concept_thriller;;
+film_2_zayca_2012 <- concept_action;concept_thriller;;
 
-concept_film_2_zayca_2012 => nrel_main_actor : concept_fernando_alves_pinto;concept_alessandra_negrini;concept_caco_ciocler;concept_marat_descartes;;
-concept_film_2_zayca_2012 => nrel_producer : concept_afonso_poyart;;
+film_2_zayca_2012 => nrel_main_actor : fernando_alves_pinto;alessandra_negrini;caco_ciocler;marat_descartes;;
+film_2_zayca_2012 => nrel_producer : afonso_poyart;;

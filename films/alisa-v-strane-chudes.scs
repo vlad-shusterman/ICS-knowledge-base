@@ -1,4 +1,4 @@
-concept_film_alisa_v_strane_chudes
+film_alisa_v_strane_chudes
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Алиса в стране чудес]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_alisa_v_strane_chudes =>nrel_keywords: film;;
+film_alisa_v_strane_chudes =>nrel_keywords: film;;
 
-concept_film_alisa_v_strane_chudes <- concept_adventure;concept_family;concept_fantasy;;
+film_alisa_v_strane_chudes <- concept_adventure;concept_family;concept_fantasy;;
 
-concept_film_alisa_v_strane_chudes => nrel_main_actor : concept_mia_wasikowska;concept_johnny_depp;concept_helena_bonham_carter;concept_anne_hathaway;;
-concept_film_alisa_v_strane_chudes => nrel_producer : concept_tim_burton;;
+film_alisa_v_strane_chudes => nrel_main_actor : mia_wasikowska;johnny_depp;helena_bonham_carter;anne_hathaway;;
+film_alisa_v_strane_chudes => nrel_producer : tim_burton;;

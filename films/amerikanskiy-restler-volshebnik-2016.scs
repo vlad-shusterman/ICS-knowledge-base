@@ -1,4 +1,4 @@
-concept_film_amerikanskiy_restler_volshebnik_2016
+film_amerikanskiy_restler_volshebnik_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Американский рестлер: Волшебник]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_amerikanskiy_restler_volshebnik_2016 =>nrel_keywords: film;;
+film_amerikanskiy_restler_volshebnik_2016 =>nrel_keywords: film;;
 
-concept_film_amerikanskiy_restler_volshebnik_2016 <- concept_drama;concept_sport;;
+film_amerikanskiy_restler_volshebnik_2016 <- concept_drama;concept_sport;;
 
-concept_film_amerikanskiy_restler_volshebnik_2016 => nrel_main_actor : concept_george_kosturos;concept_william_fichtner;concept_ali_afshar;concept_lia_marie_johnson;;
-concept_film_amerikanskiy_restler_volshebnik_2016 => nrel_producer : concept_alex_ranarivelo;;
+film_amerikanskiy_restler_volshebnik_2016 => nrel_main_actor : george_kosturos;william_fichtner;ali_afshar;lia_marie_johnson;;
+film_amerikanskiy_restler_volshebnik_2016 => nrel_producer : alex_ranarivelo;;

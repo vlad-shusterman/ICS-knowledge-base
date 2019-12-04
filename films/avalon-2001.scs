@@ -1,4 +1,4 @@
-concept_film_avalon_2001
+film_avalon_2001
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Авалон]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_japan;concept_poland;
+=> nrel_producing_country : japan;poland;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_avalon_2001 =>nrel_keywords: film;;
+film_avalon_2001 =>nrel_keywords: film;;
 
-concept_film_avalon_2001 <- concept_action;concept_drama;concept_fantasy;concept_sci_fi;concept_thriller;;
+film_avalon_2001 <- concept_action;concept_drama;concept_fantasy;concept_sci_fi;concept_thriller;;
 
-concept_film_avalon_2001 => nrel_main_actor : concept_malgorzata_foremniak;concept_wladyslaw_kowalski;concept_jerzy_gudejko;concept_dariusz_biskupski;;
-concept_film_avalon_2001 => nrel_producer : concept_mamoru_oshii;;
+film_avalon_2001 => nrel_main_actor : malgorzata_foremniak;wladyslaw_kowalski;jerzy_gudejko;dariusz_biskupski;;
+film_avalon_2001 => nrel_producer : mamoru_oshii;;

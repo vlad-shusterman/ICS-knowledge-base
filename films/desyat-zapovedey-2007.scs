@@ -1,4 +1,4 @@
-concept_film_desyat_zapovedey_2007
+film_desyat_zapovedey_2007
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Десять заповедей]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_mexico;
+=> nrel_producing_country : usa;mexico;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_desyat_zapovedey_2007 =>nrel_keywords: film;;
+film_desyat_zapovedey_2007 =>nrel_keywords: film;;
 
-concept_film_desyat_zapovedey_2007 <- concept_comedy;concept_romance;;
+film_desyat_zapovedey_2007 <- concept_comedy;concept_romance;;
 
-concept_film_desyat_zapovedey_2007 => nrel_main_actor : concept_paul_rudd;concept_jessica_alba;concept_winona_ryder;concept_adam_brody;;
-concept_film_desyat_zapovedey_2007 => nrel_producer : concept_david_wain;;
+film_desyat_zapovedey_2007 => nrel_main_actor : paul_rudd;jessica_alba;winona_ryder;adam_brody;;
+film_desyat_zapovedey_2007 => nrel_producer : david_wain;;

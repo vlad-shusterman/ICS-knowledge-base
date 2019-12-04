@@ -1,4 +1,4 @@
-concept_film_cherepa_2000
+film_cherepa_2000
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Черепа]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_canada;
+=> nrel_producing_country : usa;canada;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_cherepa_2000 =>nrel_keywords: film;;
+film_cherepa_2000 =>nrel_keywords: film;;
 
-concept_film_cherepa_2000 <- concept_action;concept_crime;concept_drama;concept_thriller;;
+film_cherepa_2000 <- concept_action;concept_crime;concept_drama;concept_thriller;;
 
-concept_film_cherepa_2000 => nrel_main_actor : concept_joshua_jackson;concept_paul_walker;concept_hill_harper;concept_leslie_bibb;;
-concept_film_cherepa_2000 => nrel_producer : concept_rob_cohen;;
+film_cherepa_2000 => nrel_main_actor : joshua_jackson;paul_walker;hill_harper;leslie_bibb;;
+film_cherepa_2000 => nrel_producer : rob_cohen;;

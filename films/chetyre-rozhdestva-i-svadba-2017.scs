@@ -1,4 +1,4 @@
-concept_film_chetyre_rozhdestva_i_svadba_2017
+film_chetyre_rozhdestva_i_svadba_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Четыре Рождества и свадьба]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_14;;
 
-concept_film_chetyre_rozhdestva_i_svadba_2017 =>nrel_keywords: film;;
+film_chetyre_rozhdestva_i_svadba_2017 =>nrel_keywords: film;;
 
-concept_film_chetyre_rozhdestva_i_svadba_2017 <- concept_comedy;concept_drama;concept_family;concept_romance;;
+film_chetyre_rozhdestva_i_svadba_2017 <- concept_comedy;concept_drama;concept_family;concept_romance;;
 
-concept_film_chetyre_rozhdestva_i_svadba_2017 => nrel_main_actor : concept_arielle_kebbel;concept_corey_sevier;concept_markie_post;concept_madison_smith;;
-concept_film_chetyre_rozhdestva_i_svadba_2017 => nrel_producer : concept_marita_grabiak;;
+film_chetyre_rozhdestva_i_svadba_2017 => nrel_main_actor : arielle_kebbel;corey_sevier;markie_post;madison_smith;;
+film_chetyre_rozhdestva_i_svadba_2017 => nrel_producer : marita_grabiak;;

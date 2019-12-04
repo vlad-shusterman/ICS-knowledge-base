@@ -1,4 +1,4 @@
-concept_film_chingiz_han_1965
+film_chingiz_han_1965
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чингиз Хан]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_west_germany;concept_yugoslavia;concept_usa;
+=> nrel_producing_country : uk;west_germany;yugoslavia;usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Approved;;
 
-concept_film_chingiz_han_1965 =>nrel_keywords: film;;
+film_chingiz_han_1965 =>nrel_keywords: film;;
 
-concept_film_chingiz_han_1965 <- concept_adventure;concept_drama;concept_history;concept_war;;
+film_chingiz_han_1965 <- concept_adventure;concept_drama;concept_history;concept_war;;
 
-concept_film_chingiz_han_1965 => nrel_main_actor : concept_stephen_boyd;concept_omar_sharif;concept_james_mason;concept_eli_wallach;;
-concept_film_chingiz_han_1965 => nrel_producer : concept_henry_levin;;
+film_chingiz_han_1965 => nrel_main_actor : stephen_boyd;omar_sharif;james_mason;eli_wallach;;
+film_chingiz_han_1965 => nrel_producer : henry_levin;;

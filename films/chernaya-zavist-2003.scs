@@ -1,4 +1,4 @@
-concept_film_chernaya_zavist_2003
+film_chernaya_zavist_2003
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Черная зависть]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_chernaya_zavist_2003 =>nrel_keywords: film;;
+film_chernaya_zavist_2003 =>nrel_keywords: film;;
 
-concept_film_chernaya_zavist_2003 <- concept_comedy;;
+film_chernaya_zavist_2003 <- concept_comedy;;
 
-concept_film_chernaya_zavist_2003 => nrel_main_actor : concept_ben_stiller;concept_jack_black;concept_rachel_weisz;concept_amy_poehler;;
-concept_film_chernaya_zavist_2003 => nrel_producer : concept_barry_levinson;;
+film_chernaya_zavist_2003 => nrel_main_actor : ben_stiller;jack_black;rachel_weisz;amy_poehler;;
+film_chernaya_zavist_2003 => nrel_producer : barry_levinson;;

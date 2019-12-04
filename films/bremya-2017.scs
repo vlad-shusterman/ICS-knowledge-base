@@ -1,4 +1,4 @@
-concept_film_bremya_2017
+film_bremya_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бремя]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_australia;
+=> nrel_producing_country : australia;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_MA;;
 
-concept_film_bremya_2017 =>nrel_keywords: film;;
+film_bremya_2017 =>nrel_keywords: film;;
 
-concept_film_bremya_2017 <- concept_drama;concept_horror;concept_sci_fi;concept_thriller;;
+film_bremya_2017 <- concept_drama;concept_horror;concept_sci_fi;concept_thriller;;
 
-concept_film_bremya_2017 => nrel_main_actor : concept_simone_landers;concept_martin_freeman;concept_marlee_jane_mcpherson_dobbins;concept_lily_anne_mcpherson_dobbins;;
-concept_film_bremya_2017 => nrel_producer : concept_ben_howling;concept_yolanda_ramke;;
+film_bremya_2017 => nrel_main_actor : simone_landers;martin_freeman;marlee_jane_mcpherson_dobbins;lily_anne_mcpherson_dobbins;;
+film_bremya_2017 => nrel_producer : ben_howling;yolanda_ramke;;

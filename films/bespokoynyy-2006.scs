@@ -1,4 +1,4 @@
-concept_film_bespokoynyy_2006
+film_bespokoynyy_2006
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Беспокойный]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_south_korea;
+=> nrel_producing_country : south_korea;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bespokoynyy_2006 =>nrel_keywords: film;;
+film_bespokoynyy_2006 =>nrel_keywords: film;;
 
-concept_film_bespokoynyy_2006 <- concept_action;concept_adventure;concept_drama;concept_fantasy;concept_romance;;
+film_bespokoynyy_2006 <- concept_action;concept_adventure;concept_drama;concept_fantasy;concept_romance;;
 
-concept_film_bespokoynyy_2006 => nrel_main_actor : concept_jun_ho_heo;concept_woo_sung_jung;concept_kwang_il_kim;concept_tae_hee_kim;;
-concept_film_bespokoynyy_2006 => nrel_producer : concept_dong_oh_jo;;
+film_bespokoynyy_2006 => nrel_main_actor : jun_ho_heo;woo_sung_jung;kwang_il_kim;tae_hee_kim;;
+film_bespokoynyy_2006 => nrel_producer : dong_oh_jo;;

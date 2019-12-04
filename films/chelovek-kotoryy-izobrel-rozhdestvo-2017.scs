@@ -1,4 +1,4 @@
-concept_film_chelovek_kotoryy_izobrel_rozhdestvo_2017
+film_chelovek_kotoryy_izobrel_rozhdestvo_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Человек, который изобрёл Рождество]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_ireland;concept_canada;
+=> nrel_producing_country : ireland;canada;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_chelovek_kotoryy_izobrel_rozhdestvo_2017 =>nrel_keywords: film;;
+film_chelovek_kotoryy_izobrel_rozhdestvo_2017 =>nrel_keywords: film;;
 
-concept_film_chelovek_kotoryy_izobrel_rozhdestvo_2017 <- concept_biography;concept_comedy;concept_drama;;
+film_chelovek_kotoryy_izobrel_rozhdestvo_2017 <- concept_biography;concept_comedy;concept_drama;;
 
-concept_film_chelovek_kotoryy_izobrel_rozhdestvo_2017 => nrel_main_actor : concept_dan_stevens;concept_mark_schrier;concept_patrick_joseph_byrnes;concept_miriam_margolyes;;
-concept_film_chelovek_kotoryy_izobrel_rozhdestvo_2017 => nrel_producer : concept_bharat_nalluri;;
+film_chelovek_kotoryy_izobrel_rozhdestvo_2017 => nrel_main_actor : dan_stevens;mark_schrier;patrick_joseph_byrnes;miriam_margolyes;;
+film_chelovek_kotoryy_izobrel_rozhdestvo_2017 => nrel_producer : bharat_nalluri;;

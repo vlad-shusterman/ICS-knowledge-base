@@ -1,4 +1,4 @@
-concept_film_bob_marli_2012
+film_bob_marli_2012
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Боб Марли]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_usa;
+=> nrel_producing_country : uk;usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_bob_marli_2012 =>nrel_keywords: film;;
+film_bob_marli_2012 =>nrel_keywords: film;;
 
-concept_film_bob_marli_2012 <- concept_documentary;concept_biography;concept_music;;
+film_bob_marli_2012 <- concept_documentary;concept_biography;concept_music;;
 
-concept_film_bob_marli_2012 => nrel_main_actor : concept_bob_marley;concept_ziggy_marley;concept_rita_marley;concept_jimmy_cliff;;
-concept_film_bob_marli_2012 => nrel_producer : concept_kevin_macdonald;;
+film_bob_marli_2012 => nrel_main_actor : bob_marley;ziggy_marley;rita_marley;jimmy_cliff;;
+film_bob_marli_2012 => nrel_producer : kevin_macdonald;;

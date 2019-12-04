@@ -1,4 +1,4 @@
-concept_film_budesh_so_mnoy_druzhit_2002
+film_budesh_so_mnoy_druzhit_2002
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Будешь со мной дружить?]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_india;
+=> nrel_producing_country : india;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_budesh_so_mnoy_druzhit_2002 =>nrel_keywords: film;;
+film_budesh_so_mnoy_druzhit_2002 =>nrel_keywords: film;;
 
-concept_film_budesh_so_mnoy_druzhit_2002 <- concept_musical;concept_romance;concept_drama;concept_family;;
+film_budesh_so_mnoy_druzhit_2002 <- concept_musical;concept_romance;concept_drama;concept_family;;
 
-concept_film_budesh_so_mnoy_druzhit_2002 => nrel_main_actor : concept_hrithik_roshan;concept_kareena_kapoor;concept_rani_mukerji;concept_uday_chopra;;
-concept_film_budesh_so_mnoy_druzhit_2002 => nrel_producer : concept_kunal_kohli;;
+film_budesh_so_mnoy_druzhit_2002 => nrel_main_actor : hrithik_roshan;kareena_kapoor;rani_mukerji;uday_chopra;;
+film_budesh_so_mnoy_druzhit_2002 => nrel_producer : kunal_kohli;;

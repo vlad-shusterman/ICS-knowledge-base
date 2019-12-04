@@ -1,4 +1,4 @@
-concept_film_chelovek_kotoryy_izmenil_vse_2011
+film_chelovek_kotoryy_izmenil_vse_2011
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Человек, который изменил всё]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_chelovek_kotoryy_izmenil_vse_2011 =>nrel_keywords: film;;
+film_chelovek_kotoryy_izmenil_vse_2011 =>nrel_keywords: film;;
 
-concept_film_chelovek_kotoryy_izmenil_vse_2011 <- concept_biography;concept_drama;concept_sport;;
+film_chelovek_kotoryy_izmenil_vse_2011 <- concept_biography;concept_drama;concept_sport;;
 
-concept_film_chelovek_kotoryy_izmenil_vse_2011 => nrel_main_actor : concept_brad_pitt;concept_robin_wright;concept_jonah_hill;concept_philip_seymour_hoffman;;
-concept_film_chelovek_kotoryy_izmenil_vse_2011 => nrel_producer : concept_bennett_miller;;
+film_chelovek_kotoryy_izmenil_vse_2011 => nrel_main_actor : brad_pitt;robin_wright;jonah_hill;philip_seymour_hoffman;;
+film_chelovek_kotoryy_izmenil_vse_2011 => nrel_producer : bennett_miller;;

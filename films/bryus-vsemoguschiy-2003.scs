@@ -1,4 +1,4 @@
-concept_film_bryus_vsemoguschiy_2003
+film_bryus_vsemoguschiy_2003
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Брюс Всемогущий]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_bryus_vsemoguschiy_2003 =>nrel_keywords: film;;
+film_bryus_vsemoguschiy_2003 =>nrel_keywords: film;;
 
-concept_film_bryus_vsemoguschiy_2003 <- concept_comedy;concept_drama;concept_fantasy;;
+film_bryus_vsemoguschiy_2003 <- concept_comedy;concept_drama;concept_fantasy;;
 
-concept_film_bryus_vsemoguschiy_2003 => nrel_main_actor : concept_jim_carrey;concept_jennifer_aniston;concept_morgan_freeman;concept_philip_baker_hall;;
-concept_film_bryus_vsemoguschiy_2003 => nrel_producer : concept_tom_shadyac;;
+film_bryus_vsemoguschiy_2003 => nrel_main_actor : jim_carrey;jennifer_aniston;morgan_freeman;philip_baker_hall;;
+film_bryus_vsemoguschiy_2003 => nrel_producer : tom_shadyac;;

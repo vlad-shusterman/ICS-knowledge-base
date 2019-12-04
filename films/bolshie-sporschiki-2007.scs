@@ -1,4 +1,4 @@
-concept_film_bolshie_sporschiki_2007
+film_bolshie_sporschiki_2007
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Большие спорщики]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_bolshie_sporschiki_2007 =>nrel_keywords: film;;
+film_bolshie_sporschiki_2007 =>nrel_keywords: film;;
 
-concept_film_bolshie_sporschiki_2007 <- concept_biography;concept_drama;concept_romance;;
+film_bolshie_sporschiki_2007 <- concept_biography;concept_drama;concept_romance;;
 
-concept_film_bolshie_sporschiki_2007 => nrel_main_actor : concept_denzel_washington;concept_forest_whitaker;concept_kimberly_elise;concept_nate_parker;;
-concept_film_bolshie_sporschiki_2007 => nrel_producer : concept_denzel_washington;;
+film_bolshie_sporschiki_2007 => nrel_main_actor : denzel_washington;forest_whitaker;kimberly_elise;nate_parker;;
+film_bolshie_sporschiki_2007 => nrel_producer : denzel_washington;;

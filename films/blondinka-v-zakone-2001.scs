@@ -1,4 +1,4 @@
-concept_film_blondinka_v_zakone_2001
+film_blondinka_v_zakone_2001
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Блондинка в законе]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_blondinka_v_zakone_2001 =>nrel_keywords: film;;
+film_blondinka_v_zakone_2001 =>nrel_keywords: film;;
 
-concept_film_blondinka_v_zakone_2001 <- concept_comedy;concept_romance;;
+film_blondinka_v_zakone_2001 <- concept_comedy;concept_romance;;
 
-concept_film_blondinka_v_zakone_2001 => nrel_main_actor : concept_reese_witherspoon;concept_luke_wilson;concept_selma_blair;concept_matthew_davis;;
-concept_film_blondinka_v_zakone_2001 => nrel_producer : concept_robert_luketic;;
+film_blondinka_v_zakone_2001 => nrel_main_actor : reese_witherspoon;luke_wilson;selma_blair;matthew_davis;;
+film_blondinka_v_zakone_2001 => nrel_producer : robert_luketic;;

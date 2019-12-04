@@ -1,4 +1,4 @@
-concept_film_2pac_legenda_2017
+film_2pac_legenda_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [2pac: Легенда]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_2pac_legenda_2017 =>nrel_keywords: film;;
+film_2pac_legenda_2017 =>nrel_keywords: film;;
 
-concept_film_2pac_legenda_2017 <- concept_biography;concept_drama;concept_music;;
+film_2pac_legenda_2017 <- concept_biography;concept_drama;concept_music;;
 
-concept_film_2pac_legenda_2017 => nrel_main_actor : concept_demetrius_shipp_jr.;concept_danai_gurira;concept_kat_graham;concept_annie_ilonzeh;;
-concept_film_2pac_legenda_2017 => nrel_producer : concept_benny_boom;;
+film_2pac_legenda_2017 => nrel_main_actor : demetrius_shipp_jr.;danai_gurira;kat_graham;annie_ilonzeh;;
+film_2pac_legenda_2017 => nrel_producer : benny_boom;;

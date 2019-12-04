@@ -1,4 +1,4 @@
-concept_film_bezymyannyy_2016
+film_bezymyannyy_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Безымянный]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_bezymyannyy_2016 =>nrel_keywords: film;;
+film_bezymyannyy_2016 =>nrel_keywords: film;;
 
-concept_film_bezymyannyy_2016 <- concept_horror;concept_mystery;concept_thriller;;
+film_bezymyannyy_2016 <- concept_horror;concept_mystery;concept_thriller;;
 
-concept_film_bezymyannyy_2016 => nrel_main_actor : concept_amy_holland_pennell;concept_connor_trinneer;concept_mark_holzum;concept_peter_mayer;;
-concept_film_bezymyannyy_2016 => nrel_producer : concept_david_trotti;;
+film_bezymyannyy_2016 => nrel_main_actor : amy_holland_pennell;connor_trinneer;mark_holzum;peter_mayer;;
+film_bezymyannyy_2016 => nrel_producer : david_trotti;;

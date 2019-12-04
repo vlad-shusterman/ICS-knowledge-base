@@ -1,4 +1,4 @@
-concept_film_avgust_rash_2007
+film_avgust_rash_2007
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Август Раш]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_avgust_rash_2007 =>nrel_keywords: film;;
+film_avgust_rash_2007 =>nrel_keywords: film;;
 
-concept_film_avgust_rash_2007 <- concept_drama;concept_music;;
+film_avgust_rash_2007 <- concept_drama;concept_music;;
 
-concept_film_avgust_rash_2007 => nrel_main_actor : concept_freddie_highmore;concept_keri_russell;concept_jonathan_rhys_meyers;concept_terrence_howard;;
-concept_film_avgust_rash_2007 => nrel_producer : concept_kirsten_sheridan;;
+film_avgust_rash_2007 => nrel_main_actor : freddie_highmore;keri_russell;jonathan_rhys_meyers;terrence_howard;;
+film_avgust_rash_2007 => nrel_producer : kirsten_sheridan;;

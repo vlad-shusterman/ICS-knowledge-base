@@ -1,4 +1,4 @@
-concept_film_chetyre_svadby_i_odni_pohorony_1993
+film_chetyre_svadby_i_odni_pohorony_1993
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Четыре свадьбы и одни похороны]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;
+=> nrel_producing_country : uk;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_chetyre_svadby_i_odni_pohorony_1993 =>nrel_keywords: film;;
+film_chetyre_svadby_i_odni_pohorony_1993 =>nrel_keywords: film;;
 
-concept_film_chetyre_svadby_i_odni_pohorony_1993 <- concept_comedy;concept_drama;concept_romance;;
+film_chetyre_svadby_i_odni_pohorony_1993 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_chetyre_svadby_i_odni_pohorony_1993 => nrel_main_actor : concept_hugh_grant;concept_andie_macdowell;concept_james_fleet;concept_simon_callow;;
-concept_film_chetyre_svadby_i_odni_pohorony_1993 => nrel_producer : concept_mike_newell;;
+film_chetyre_svadby_i_odni_pohorony_1993 => nrel_main_actor : hugh_grant;andie_macdowell;james_fleet;simon_callow;;
+film_chetyre_svadby_i_odni_pohorony_1993 => nrel_producer : mike_newell;;

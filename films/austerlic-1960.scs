@@ -1,4 +1,4 @@
-concept_film_austerlic_1960
+film_austerlic_1960
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Аустерлиц]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_france;concept_italy;concept_yugoslavia;concept_liechtenstein;
+=> nrel_producing_country : france;italy;yugoslavia;liechtenstein;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_austerlic_1960 =>nrel_keywords: film;;
+film_austerlic_1960 =>nrel_keywords: film;;
 
-concept_film_austerlic_1960 <- concept_drama;concept_history;concept_war;;
+film_austerlic_1960 <- concept_drama;concept_history;concept_war;;
 
-concept_film_austerlic_1960 => nrel_main_actor : concept_pierre_mondy;concept_martine_carol;concept_claudia_cardinale;concept_leslie_caron;;
-concept_film_austerlic_1960 => nrel_producer : concept_abel_gance;;
+film_austerlic_1960 => nrel_main_actor : pierre_mondy;martine_carol;claudia_cardinale;leslie_caron;;
+film_austerlic_1960 => nrel_producer : abel_gance;;

@@ -1,4 +1,4 @@
-concept_film_amerikanskaya_devstvennica_2009
+film_amerikanskaya_devstvennica_2009
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Американская девственница]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 4;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_amerikanskaya_devstvennica_2009 =>nrel_keywords: film;;
+film_amerikanskaya_devstvennica_2009 =>nrel_keywords: film;;
 
-concept_film_amerikanskaya_devstvennica_2009 <- concept_comedy;;
+film_amerikanskaya_devstvennica_2009 <- concept_comedy;;
 
-concept_film_amerikanskaya_devstvennica_2009 => nrel_main_actor : concept_jenna_dewan;concept_bo_burnham;concept_brianne_davis;concept_rob_schneider;;
-concept_film_amerikanskaya_devstvennica_2009 => nrel_producer : concept_clare_kilner;;
+film_amerikanskaya_devstvennica_2009 => nrel_main_actor : jenna_dewan;bo_burnham;brianne_davis;rob_schneider;;
+film_amerikanskaya_devstvennica_2009 => nrel_producer : clare_kilner;;

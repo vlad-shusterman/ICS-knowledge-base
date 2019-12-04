@@ -1,4 +1,4 @@
-concept_film_betmen_1989
+film_betmen_1989
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бэтмен]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_uk;
+=> nrel_producing_country : usa;uk;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_betmen_1989 =>nrel_keywords: film;;
+film_betmen_1989 =>nrel_keywords: film;;
 
-concept_film_betmen_1989 <- concept_action;concept_adventure;;
+film_betmen_1989 <- concept_action;concept_adventure;;
 
-concept_film_betmen_1989 => nrel_main_actor : concept_michael_keaton;concept_jack_nicholson;concept_kim_basinger;concept_robert_wuhl;;
-concept_film_betmen_1989 => nrel_producer : concept_tim_burton;;
+film_betmen_1989 => nrel_main_actor : michael_keaton;jack_nicholson;kim_basinger;robert_wuhl;;
+film_betmen_1989 => nrel_producer : tim_burton;;

@@ -1,4 +1,4 @@
-concept_film_bush_2008
+film_bush_2008
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Буш]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_australia;concept_hong_kong;concept_switzerland;concept_china;
+=> nrel_producing_country : usa;australia;hong_kong;switzerland;china;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_bush_2008 =>nrel_keywords: film;;
+film_bush_2008 =>nrel_keywords: film;;
 
-concept_film_bush_2008 <- concept_biography;concept_comedy;concept_drama;concept_history;;
+film_bush_2008 <- concept_biography;concept_comedy;concept_drama;concept_history;;
 
-concept_film_bush_2008 => nrel_main_actor : concept_josh_brolin;concept_elizabeth_banks;concept_ioan_gruffudd;concept_colin_hanks;;
-concept_film_bush_2008 => nrel_producer : concept_oliver_stone;;
+film_bush_2008 => nrel_main_actor : josh_brolin;elizabeth_banks;ioan_gruffudd;colin_hanks;;
+film_bush_2008 => nrel_producer : oliver_stone;;

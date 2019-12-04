@@ -1,4 +1,4 @@
-concept_film_bomonty_2018
+film_bomonty_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бомонты]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bomonty_2018 =>nrel_keywords: film;;
+film_bomonty_2018 =>nrel_keywords: film;;
 
-concept_film_bomonty_2018 <- concept_comedy;concept_horror;concept_thriller;;
+film_bomonty_2018 <- concept_comedy;concept_horror;concept_thriller;;
 
-concept_film_bomonty_2018 => nrel_main_actor : concept_george_standing_bear;concept_ali_currier;concept_kayli_currier;concept_maureen_downs;;
-concept_film_bomonty_2018 => nrel_producer : concept_jamie_sharps;;
+film_bomonty_2018 => nrel_main_actor : george_standing_bear;ali_currier;kayli_currier;maureen_downs;;
+film_bomonty_2018 => nrel_producer : jamie_sharps;;

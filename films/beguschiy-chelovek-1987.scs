@@ -1,4 +1,4 @@
-concept_film_beguschiy_chelovek_1987
+film_beguschiy_chelovek_1987
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бегущий человек]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_beguschiy_chelovek_1987 =>nrel_keywords: film;;
+film_beguschiy_chelovek_1987 =>nrel_keywords: film;;
 
-concept_film_beguschiy_chelovek_1987 <- concept_action;concept_sci_fi;concept_thriller;;
+film_beguschiy_chelovek_1987 <- concept_action;concept_sci_fi;concept_thriller;;
 
-concept_film_beguschiy_chelovek_1987 => nrel_main_actor : concept_arnold_schwarzenegger;concept_maria_conchita_alonso;concept_yaphet_kotto;concept_jim_brown;;
-concept_film_beguschiy_chelovek_1987 => nrel_producer : concept_paul_michael_glaser;;
+film_beguschiy_chelovek_1987 => nrel_main_actor : arnold_schwarzenegger;maria_conchita_alonso;yaphet_kotto;jim_brown;;
+film_beguschiy_chelovek_1987 => nrel_producer : paul_michael_glaser;;

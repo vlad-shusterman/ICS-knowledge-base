@@ -1,4 +1,4 @@
-concept_film_chudo_na_34_y_ulice_1994
+film_chudo_na_34_y_ulice_1994
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чудо на 34-й улице]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_chudo_na_34_y_ulice_1994 =>nrel_keywords: film;;
+film_chudo_na_34_y_ulice_1994 =>nrel_keywords: film;;
 
-concept_film_chudo_na_34_y_ulice_1994 <- concept_family;concept_fantasy;;
+film_chudo_na_34_y_ulice_1994 <- concept_family;concept_fantasy;;
 
-concept_film_chudo_na_34_y_ulice_1994 => nrel_main_actor : concept_richard_attenborough;concept_elizabeth_perkins;concept_dylan_mcdermott;concept_j.t._walsh;;
-concept_film_chudo_na_34_y_ulice_1994 => nrel_producer : concept_les_mayfield;;
+film_chudo_na_34_y_ulice_1994 => nrel_main_actor : richard_attenborough;elizabeth_perkins;dylan_mcdermott;j.t._walsh;;
+film_chudo_na_34_y_ulice_1994 => nrel_producer : les_mayfield;;

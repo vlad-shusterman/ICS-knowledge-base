@@ -1,4 +1,4 @@
-concept_film_chetyre_pera_2002
+film_chetyre_pera_2002
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Четыре пера]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;concept_usa;
+=> nrel_producing_country : uk;usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_chetyre_pera_2002 =>nrel_keywords: film;;
+film_chetyre_pera_2002 =>nrel_keywords: film;;
 
-concept_film_chetyre_pera_2002 <- concept_adventure;concept_drama;concept_romance;concept_war;;
+film_chetyre_pera_2002 <- concept_adventure;concept_drama;concept_romance;concept_war;;
 
-concept_film_chetyre_pera_2002 => nrel_main_actor : concept_heath_ledger;concept_wes_bentley;concept_kate_hudson;concept_mohamed_bouich;;
-concept_film_chetyre_pera_2002 => nrel_producer : concept_shekhar_kapur;;
+film_chetyre_pera_2002 => nrel_main_actor : heath_ledger;wes_bentley;kate_hudson;mohamed_bouich;;
+film_chetyre_pera_2002 => nrel_producer : shekhar_kapur;;

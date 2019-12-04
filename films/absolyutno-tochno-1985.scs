@@ -1,4 +1,4 @@
-concept_film_absolyutno_tochno_1985
+film_absolyutno_tochno_1985
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Абсолютно точно]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_absolyutno_tochno_1985 =>nrel_keywords: film;;
+film_absolyutno_tochno_1985 =>nrel_keywords: film;;
 
-concept_film_absolyutno_tochno_1985 <- concept_comedy;concept_drama;concept_romance;;
+film_absolyutno_tochno_1985 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_absolyutno_tochno_1985 => nrel_main_actor : concept_john_cusack;concept_daphne_zuniga;concept_anthony_edwards;concept_boyd_gaines;;
-concept_film_absolyutno_tochno_1985 => nrel_producer : concept_rob_reiner;;
+film_absolyutno_tochno_1985 => nrel_main_actor : john_cusack;daphne_zuniga;anthony_edwards;boyd_gaines;;
+film_absolyutno_tochno_1985 => nrel_producer : rob_reiner;;

@@ -1,4 +1,4 @@
-concept_film_apartamenty_1303_2012
+film_apartamenty_1303_2012
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Апартаменты 1303]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_canada;concept_usa;
+=> nrel_producing_country : canada;usa;
 
 => nrel_film_critic_rating : 3;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_apartamenty_1303_2012 =>nrel_keywords: film;;
+film_apartamenty_1303_2012 =>nrel_keywords: film;;
 
-concept_film_apartamenty_1303_2012 <- concept_horror;;
+film_apartamenty_1303_2012 <- concept_horror;;
 
-concept_film_apartamenty_1303_2012 => nrel_main_actor : concept_mischa_barton;concept_julianne_michelle;concept_rebecca_de_mornay;concept_corey_sevier;;
-concept_film_apartamenty_1303_2012 => nrel_producer : concept_michael_taverna;;
+film_apartamenty_1303_2012 => nrel_main_actor : mischa_barton;julianne_michelle;rebecca_de_mornay;corey_sevier;;
+film_apartamenty_1303_2012 => nrel_producer : michael_taverna;;

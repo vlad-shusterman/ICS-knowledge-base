@@ -1,4 +1,4 @@
-concept_film_amanda_2009
+film_amanda_2009
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Аманда]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 4;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_amanda_2009 =>nrel_keywords: film;;
+film_amanda_2009 =>nrel_keywords: film;;
 
-concept_film_amanda_2009 <- concept_comedy;concept_drama;concept_romance;;
+film_amanda_2009 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_amanda_2009 => nrel_main_actor : concept_ariana_dubynin;concept_randy_ryan;concept_matthew_w._allen;concept_neil_s._bagadiong;;
-concept_film_amanda_2009 => nrel_producer : concept_steve_marra;;
+film_amanda_2009 => nrel_main_actor : ariana_dubynin;randy_ryan;matthew_w._allen;neil_s._bagadiong;;
+film_amanda_2009 => nrel_producer : steve_marra;;

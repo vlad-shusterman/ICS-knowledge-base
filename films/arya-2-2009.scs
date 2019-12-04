@@ -1,4 +1,4 @@
-concept_film_arya_2_2009
+film_arya_2_2009
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Арья 2]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_india;
+=> nrel_producing_country : india;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_arya_2_2009 =>nrel_keywords: film;;
+film_arya_2_2009 =>nrel_keywords: film;;
 
-concept_film_arya_2_2009 <- concept_action;concept_comedy;;
+film_arya_2_2009 <- concept_action;concept_comedy;;
 
-concept_film_arya_2_2009 => nrel_main_actor : concept_allu_arjun;concept_kajal_aggarwal;concept_navdeep;concept_mukesh_rishi;;
-concept_film_arya_2_2009 => nrel_producer : concept_sukumar;;
+film_arya_2_2009 => nrel_main_actor : allu_arjun;kajal_aggarwal;navdeep;mukesh_rishi;;
+film_arya_2_2009 => nrel_producer : sukumar;;

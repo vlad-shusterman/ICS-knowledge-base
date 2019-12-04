@@ -1,4 +1,4 @@
-concept_film_38_ya_parallel_2004
+film_38_ya_parallel_2004
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [38-я параллель]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_south_korea;
+=> nrel_producing_country : south_korea;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_38_ya_parallel_2004 =>nrel_keywords: film;;
+film_38_ya_parallel_2004 =>nrel_keywords: film;;
 
-concept_film_38_ya_parallel_2004 <- concept_action;concept_drama;concept_war;;
+film_38_ya_parallel_2004 <- concept_action;concept_drama;concept_war;;
 
-concept_film_38_ya_parallel_2004 => nrel_main_actor : concept_dong_gun_jang;concept_won_bin;concept_eun_ju_lee;concept_hyeong_jin_kong;;
-concept_film_38_ya_parallel_2004 => nrel_producer : concept_je_kyu_kang;;
+film_38_ya_parallel_2004 => nrel_main_actor : dong_gun_jang;won_bin;eun_ju_lee;hyeong_jin_kong;;
+film_38_ya_parallel_2004 => nrel_producer : je_kyu_kang;;

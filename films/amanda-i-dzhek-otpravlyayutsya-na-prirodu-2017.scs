@@ -1,4 +1,4 @@
-concept_film_amanda_i_dzhek_otpravlyayutsya_na_prirodu_2017
+film_amanda_i_dzhek_otpravlyayutsya_na_prirodu_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Аманда и Джек отправляются на природу]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 4;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_MA;;
 
-concept_film_amanda_i_dzhek_otpravlyayutsya_na_prirodu_2017 =>nrel_keywords: film;;
+film_amanda_i_dzhek_otpravlyayutsya_na_prirodu_2017 =>nrel_keywords: film;;
 
-concept_film_amanda_i_dzhek_otpravlyayutsya_na_prirodu_2017 <- concept_comedy;concept_drama;concept_romance;;
+film_amanda_i_dzhek_otpravlyayutsya_na_prirodu_2017 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_amanda_i_dzhek_otpravlyayutsya_na_prirodu_2017 => nrel_main_actor : concept_david_arquette;concept_amy_acker;concept_adan_canto;concept_june_squibb;;
-concept_film_amanda_i_dzhek_otpravlyayutsya_na_prirodu_2017 => nrel_producer : concept_brandon_dickerson;;
+film_amanda_i_dzhek_otpravlyayutsya_na_prirodu_2017 => nrel_main_actor : david_arquette;amy_acker;adan_canto;june_squibb;;
+film_amanda_i_dzhek_otpravlyayutsya_na_prirodu_2017 => nrel_producer : brandon_dickerson;;

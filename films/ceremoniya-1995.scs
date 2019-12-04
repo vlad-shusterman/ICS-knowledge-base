@@ -1,4 +1,4 @@
-concept_film_ceremoniya_1995
+film_ceremoniya_1995
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Церемония]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_france;concept_germany;
+=> nrel_producing_country : france;germany;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_ceremoniya_1995 =>nrel_keywords: film;;
+film_ceremoniya_1995 =>nrel_keywords: film;;
 
-concept_film_ceremoniya_1995 <- concept_crime;concept_drama;concept_mystery;concept_thriller;;
+film_ceremoniya_1995 <- concept_crime;concept_drama;concept_mystery;concept_thriller;;
 
-concept_film_ceremoniya_1995 => nrel_main_actor : concept_isabelle_huppert;concept_sandrine_bonnaire;concept_jacqueline_bisset;concept_jean_pierre_cassel;;
-concept_film_ceremoniya_1995 => nrel_producer : concept_claude_chabrol;;
+film_ceremoniya_1995 => nrel_main_actor : isabelle_huppert;sandrine_bonnaire;jacqueline_bisset;jean_pierre_cassel;;
+film_ceremoniya_1995 => nrel_producer : claude_chabrol;;

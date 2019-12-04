@@ -1,4 +1,4 @@
-concept_film_cirque_du_soleil_skazochnyy_mir_2012
+film_cirque_du_soleil_skazochnyy_mir_2012
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Cirque du Soleil: Сказочный мир]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_cirque_du_soleil_skazochnyy_mir_2012 =>nrel_keywords: film;;
+film_cirque_du_soleil_skazochnyy_mir_2012 =>nrel_keywords: film;;
 
-concept_film_cirque_du_soleil_skazochnyy_mir_2012 <- concept_fantasy;;
+film_cirque_du_soleil_skazochnyy_mir_2012 <- concept_fantasy;;
 
-concept_film_cirque_du_soleil_skazochnyy_mir_2012 => nrel_main_actor : concept_erica_linz;concept_igor_zaripov;concept_lutz_halbhubner;concept_john_clarke;;
-concept_film_cirque_du_soleil_skazochnyy_mir_2012 => nrel_producer : concept_andrew_adamson;;
+film_cirque_du_soleil_skazochnyy_mir_2012 => nrel_main_actor : erica_linz;igor_zaripov;lutz_halbhubner;john_clarke;;
+film_cirque_du_soleil_skazochnyy_mir_2012 => nrel_producer : andrew_adamson;;

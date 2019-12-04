@@ -1,4 +1,4 @@
-concept_film_444_posledniy_den_na_zemle_2011
+film_444_posledniy_den_na_zemle_2011
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [4:44 Последний день на Земле]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_switzerland;concept_france;
+=> nrel_producing_country : usa;switzerland;france;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_444_posledniy_den_na_zemle_2011 =>nrel_keywords: film;;
+film_444_posledniy_den_na_zemle_2011 =>nrel_keywords: film;;
 
-concept_film_444_posledniy_den_na_zemle_2011 <- concept_drama;concept_fantasy;concept_sci_fi;;
+film_444_posledniy_den_na_zemle_2011 <- concept_drama;concept_fantasy;concept_sci_fi;;
 
-concept_film_444_posledniy_den_na_zemle_2011 => nrel_main_actor : concept_willem_dafoe;concept_shanyn_leigh;concept_natasha_lyonne;concept_paul_hipp;;
-concept_film_444_posledniy_den_na_zemle_2011 => nrel_producer : concept_abel_ferrara;;
+film_444_posledniy_den_na_zemle_2011 => nrel_main_actor : willem_dafoe;shanyn_leigh;natasha_lyonne;paul_hipp;;
+film_444_posledniy_den_na_zemle_2011 => nrel_producer : abel_ferrara;;

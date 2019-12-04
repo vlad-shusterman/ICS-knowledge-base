@@ -1,4 +1,4 @@
-concept_film_almaznyy_pes_2008
+film_almaznyy_pes_2008
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Алмазный пес]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_almaznyy_pes_2008 =>nrel_keywords: film;;
+film_almaznyy_pes_2008 =>nrel_keywords: film;;
 
-concept_film_almaznyy_pes_2008 <- concept_comedy;concept_family;concept_fantasy;;
+film_almaznyy_pes_2008 <- concept_comedy;concept_family;concept_fantasy;;
 
-concept_film_almaznyy_pes_2008 => nrel_main_actor : concept_luke_benward;concept_french_stewart;concept_kelly_perine;concept_kevin_p._farley;;
-concept_film_almaznyy_pes_2008 => nrel_producer : concept_mark_stouffer;;
+film_almaznyy_pes_2008 => nrel_main_actor : luke_benward;french_stewart;kelly_perine;kevin_p._farley;;
+film_almaznyy_pes_2008 => nrel_producer : mark_stouffer;;

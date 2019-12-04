@@ -1,4 +1,4 @@
-concept_film_88_minut_2006
+film_88_minut_2006
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [88 минут]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_germany;concept_canada;
+=> nrel_producing_country : usa;germany;canada;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_88_minut_2006 =>nrel_keywords: film;;
+film_88_minut_2006 =>nrel_keywords: film;;
 
-concept_film_88_minut_2006 <- concept_crime;concept_drama;concept_mystery;concept_thriller;;
+film_88_minut_2006 <- concept_crime;concept_drama;concept_mystery;concept_thriller;;
 
-concept_film_88_minut_2006 => nrel_main_actor : concept_al_pacino;concept_alicia_witt;concept_ben_mckenzie;concept_leelee_sobieski;;
-concept_film_88_minut_2006 => nrel_producer : concept_jon_avnet;;
+film_88_minut_2006 => nrel_main_actor : al_pacino;alicia_witt;ben_mckenzie;leelee_sobieski;;
+film_88_minut_2006 => nrel_producer : jon_avnet;;

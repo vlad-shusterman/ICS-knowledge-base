@@ -1,4 +1,4 @@
-concept_film_chelovek_pauk_2002
+film_chelovek_pauk_2002
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Человек-паук]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_chelovek_pauk_2002 =>nrel_keywords: film;;
+film_chelovek_pauk_2002 =>nrel_keywords: film;;
 
-concept_film_chelovek_pauk_2002 <- concept_action;concept_adventure;concept_sci_fi;;
+film_chelovek_pauk_2002 <- concept_action;concept_adventure;concept_sci_fi;;
 
-concept_film_chelovek_pauk_2002 => nrel_main_actor : concept_tobey_maguire;concept_kirsten_dunst;concept_willem_dafoe;concept_james_franco;;
-concept_film_chelovek_pauk_2002 => nrel_producer : concept_sam_raimi;;
+film_chelovek_pauk_2002 => nrel_main_actor : tobey_maguire;kirsten_dunst;willem_dafoe;james_franco;;
+film_chelovek_pauk_2002 => nrel_producer : sam_raimi;;

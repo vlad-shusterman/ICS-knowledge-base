@@ -1,4 +1,4 @@
-concept_film_anakonda_2_ohota_za_proklyatoy_orhideey_2004
+film_anakonda_2_ohota_za_proklyatoy_orhideey_2004
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Анаконда 2: Охота за проклятой орхидеей]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_anakonda_2_ohota_za_proklyatoy_orhideey_2004 =>nrel_keywords: film;;
+film_anakonda_2_ohota_za_proklyatoy_orhideey_2004 =>nrel_keywords: film;;
 
-concept_film_anakonda_2_ohota_za_proklyatoy_orhideey_2004 <- concept_action;concept_adventure;concept_horror;concept_thriller;;
+film_anakonda_2_ohota_za_proklyatoy_orhideey_2004 <- concept_action;concept_adventure;concept_horror;concept_thriller;;
 
-concept_film_anakonda_2_ohota_za_proklyatoy_orhideey_2004 => nrel_main_actor : concept_morris_chestnut;concept_kadee_strickland;concept_eugene_byrd;concept_johnny_messner;;
-concept_film_anakonda_2_ohota_za_proklyatoy_orhideey_2004 => nrel_producer : concept_dwight_h._little;;
+film_anakonda_2_ohota_za_proklyatoy_orhideey_2004 => nrel_main_actor : morris_chestnut;kadee_strickland;eugene_byrd;johnny_messner;;
+film_anakonda_2_ohota_za_proklyatoy_orhideey_2004 => nrel_producer : dwight_h._little;;

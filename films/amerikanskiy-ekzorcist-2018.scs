@@ -1,4 +1,4 @@
-concept_film_amerikanskiy_ekzorcist_2018
+film_amerikanskiy_ekzorcist_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Американский экзорцист]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 3;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_MA;;
 
-concept_film_amerikanskiy_ekzorcist_2018 =>nrel_keywords: film;;
+film_amerikanskiy_ekzorcist_2018 =>nrel_keywords: film;;
 
-concept_film_amerikanskiy_ekzorcist_2018 <- concept_comedy;concept_horror;;
+film_amerikanskiy_ekzorcist_2018 <- concept_comedy;concept_horror;;
 
-concept_film_amerikanskiy_ekzorcist_2018 => nrel_main_actor : concept_bill_moseley;concept_gemma_mcilhenny;concept_john_bolaris;concept_john_mckeever;;
-concept_film_amerikanskiy_ekzorcist_2018 => nrel_producer : concept_tony_trov;concept_johnny_zito;;
+film_amerikanskiy_ekzorcist_2018 => nrel_main_actor : bill_moseley;gemma_mcilhenny;john_bolaris;john_mckeever;;
+film_amerikanskiy_ekzorcist_2018 => nrel_producer : tony_trov;johnny_zito;;

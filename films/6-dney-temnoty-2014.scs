@@ -1,4 +1,4 @@
-concept_film_6_dney_temnoty_2014
+film_6_dney_temnoty_2014
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [6 дней темноты]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_canada;
+=> nrel_producing_country : canada;
 
 => nrel_film_critic_rating : 4;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_6_dney_temnoty_2014 =>nrel_keywords: film;;
+film_6_dney_temnoty_2014 =>nrel_keywords: film;;
 
-concept_film_6_dney_temnoty_2014 <- concept_horror;;
+film_6_dney_temnoty_2014 <- concept_horror;;
 
-concept_film_6_dney_temnoty_2014 => nrel_main_actor : concept_svetlana_d._petkovic;concept_lorena_rincon;concept_peter_j._chaffey;concept_ana_maljevic;;
-concept_film_6_dney_temnoty_2014 => nrel_producer : concept_miona_bogovic;;
+film_6_dney_temnoty_2014 => nrel_main_actor : svetlana_d._petkovic;lorena_rincon;peter_j._chaffey;ana_maljevic;;
+film_6_dney_temnoty_2014 => nrel_producer : miona_bogovic;;

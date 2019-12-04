@@ -1,4 +1,4 @@
-concept_film_biznesmeny_2018
+film_biznesmeny_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бизнесмены]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_kazakhstan;
+=> nrel_producing_country : kazakhstan;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_biznesmeny_2018 =>nrel_keywords: film;;
+film_biznesmeny_2018 =>nrel_keywords: film;;
 
-concept_film_biznesmeny_2018 <- concept_drama;;
+film_biznesmeny_2018 <- concept_drama;;
 
-concept_film_biznesmeny_2018 => nrel_main_actor : concept_aisulu_azimbayeva;concept_askar_ilyasov;concept_sanjar_madi;concept_sharip_serik;;
-concept_film_biznesmeny_2018 => nrel_producer : concept_akan_satayev;;
+film_biznesmeny_2018 => nrel_main_actor : aisulu_azimbayeva;askar_ilyasov;sanjar_madi;sharip_serik;;
+film_biznesmeny_2018 => nrel_producer : akan_satayev;;

@@ -1,4 +1,4 @@
-concept_film_bratstvo_tanca_2007
+film_bratstvo_tanca_2007
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Братство танца]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_bratstvo_tanca_2007 =>nrel_keywords: film;;
+film_bratstvo_tanca_2007 =>nrel_keywords: film;;
 
-concept_film_bratstvo_tanca_2007 <- concept_drama;concept_music;concept_romance;;
+film_bratstvo_tanca_2007 <- concept_drama;concept_music;concept_romance;;
 
-concept_film_bratstvo_tanca_2007 => nrel_main_actor : concept_columbus_short;concept_meagan_good;concept_ne_yo;concept_darrin_dewitt_henson;;
-concept_film_bratstvo_tanca_2007 => nrel_producer : concept_sylvain_white;;
+film_bratstvo_tanca_2007 => nrel_main_actor : columbus_short;meagan_good;ne_yo;darrin_dewitt_henson;;
+film_bratstvo_tanca_2007 => nrel_producer : sylvain_white;;

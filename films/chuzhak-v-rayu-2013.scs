@@ -1,4 +1,4 @@
-concept_film_chuzhak_v_rayu_2013
+film_chuzhak_v_rayu_2013
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чужак в раю]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_thailand;
+=> nrel_producing_country : thailand;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_chuzhak_v_rayu_2013 =>nrel_keywords: film;;
+film_chuzhak_v_rayu_2013 =>nrel_keywords: film;;
 
-concept_film_chuzhak_v_rayu_2013 <- concept_thriller;;
+film_chuzhak_v_rayu_2013 <- concept_thriller;;
 
-concept_film_chuzhak_v_rayu_2013 => nrel_main_actor : concept_colin_egglesfield;concept_catalina_sandino_moreno;concept_byron_mann;concept_stuart_townsend;;
-concept_film_chuzhak_v_rayu_2013 => nrel_producer : concept_corrado_boccia;;
+film_chuzhak_v_rayu_2013 => nrel_main_actor : colin_egglesfield;catalina_sandino_moreno;byron_mann;stuart_townsend;;
+film_chuzhak_v_rayu_2013 => nrel_producer : corrado_boccia;;

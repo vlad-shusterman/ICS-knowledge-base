@@ -1,4 +1,4 @@
-concept_film_bog_znaet_1995
+film_bog_znaet_1995
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бог знает]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_india;
+=> nrel_producing_country : india;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_bog_znaet_1995 =>nrel_keywords: film;;
+film_bog_znaet_1995 =>nrel_keywords: film;;
 
-concept_film_bog_znaet_1995 <- concept_action;concept_crime;concept_drama;concept_romance;;
+film_bog_znaet_1995 <- concept_action;concept_crime;concept_drama;concept_romance;;
 
-concept_film_bog_znaet_1995 => nrel_main_actor : concept_shah_rukh_khan;concept_juhi_chawla;concept_vivek_mushran;concept_pankaj_kapur;;
-concept_film_bog_znaet_1995 => nrel_producer : concept_rajiv_mehra;;
+film_bog_znaet_1995 => nrel_main_actor : shah_rukh_khan;juhi_chawla;vivek_mushran;pankaj_kapur;;
+film_bog_znaet_1995 => nrel_producer : rajiv_mehra;;

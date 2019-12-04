@@ -1,4 +1,4 @@
-concept_film_15_minut_slavy_2001
+film_15_minut_slavy_2001
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [15 минут славы]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_germany;
+=> nrel_producing_country : usa;germany;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_15_minut_slavy_2001 =>nrel_keywords: film;;
+film_15_minut_slavy_2001 =>nrel_keywords: film;;
 
-concept_film_15_minut_slavy_2001 <- concept_action;concept_crime;concept_drama;concept_thriller;;
+film_15_minut_slavy_2001 <- concept_action;concept_crime;concept_drama;concept_thriller;;
 
-concept_film_15_minut_slavy_2001 => nrel_main_actor : concept_robert_de_niro;concept_edward_burns;concept_kelsey_grammer;concept_avery_brooks;;
-concept_film_15_minut_slavy_2001 => nrel_producer : concept_john_herzfeld;;
+film_15_minut_slavy_2001 => nrel_main_actor : robert_de_niro;edward_burns;kelsey_grammer;avery_brooks;;
+film_15_minut_slavy_2001 => nrel_producer : john_herzfeld;;

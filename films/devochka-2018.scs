@@ -1,4 +1,4 @@
-concept_film_devochka_2018
+film_devochka_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Девочка]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_belgium;concept_netherlands;
+=> nrel_producing_country : belgium;netherlands;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_devochka_2018 =>nrel_keywords: film;;
+film_devochka_2018 =>nrel_keywords: film;;
 
-concept_film_devochka_2018 <- concept_drama;;
+film_devochka_2018 <- concept_drama;;
 
-concept_film_devochka_2018 => nrel_main_actor : concept_victor_polster;concept_arieh_worthalter;concept_oliver_bodart;concept_tijmen_govaerts;;
-concept_film_devochka_2018 => nrel_producer : concept_lukas_dhont;;
+film_devochka_2018 => nrel_main_actor : victor_polster;arieh_worthalter;oliver_bodart;tijmen_govaerts;;
+film_devochka_2018 => nrel_producer : lukas_dhont;;

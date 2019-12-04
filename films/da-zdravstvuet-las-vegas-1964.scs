@@ -1,4 +1,4 @@
-concept_film_da_zdravstvuet_las_vegas_1964
+film_da_zdravstvuet_las_vegas_1964
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Да здравствует Лас-Вегас]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Approved;;
 
-concept_film_da_zdravstvuet_las_vegas_1964 =>nrel_keywords: film;;
+film_da_zdravstvuet_las_vegas_1964 =>nrel_keywords: film;;
 
-concept_film_da_zdravstvuet_las_vegas_1964 <- concept_comedy;concept_musical;;
+film_da_zdravstvuet_las_vegas_1964 <- concept_comedy;concept_musical;;
 
-concept_film_da_zdravstvuet_las_vegas_1964 => nrel_main_actor : concept_elvis_presley;concept_ann_margret;concept_cesare_danova;concept_william_demarest;;
-concept_film_da_zdravstvuet_las_vegas_1964 => nrel_producer : concept_george_sidney;;
+film_da_zdravstvuet_las_vegas_1964 => nrel_main_actor : elvis_presley;ann_margret;cesare_danova;william_demarest;;
+film_da_zdravstvuet_las_vegas_1964 => nrel_producer : george_sidney;;

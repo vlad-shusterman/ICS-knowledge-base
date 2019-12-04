@@ -1,4 +1,4 @@
-concept_film_belaya_masai_2005
+film_belaya_masai_2005
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Белая масаи]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;
+=> nrel_producing_country : germany;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_belaya_masai_2005 =>nrel_keywords: film;;
+film_belaya_masai_2005 =>nrel_keywords: film;;
 
-concept_film_belaya_masai_2005 <- concept_drama;concept_romance;;
+film_belaya_masai_2005 <- concept_drama;concept_romance;;
 
-concept_film_belaya_masai_2005 => nrel_main_actor : concept_nina_hoss;concept_jacky_ido;concept_katja_flint;concept_antonio_prester;;
-concept_film_belaya_masai_2005 => nrel_producer : concept_hermine_huntgeburth;;
+film_belaya_masai_2005 => nrel_main_actor : nina_hoss;jacky_ido;katja_flint;antonio_prester;;
+film_belaya_masai_2005 => nrel_producer : hermine_huntgeburth;;

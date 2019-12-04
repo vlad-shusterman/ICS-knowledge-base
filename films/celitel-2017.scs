@@ -1,4 +1,4 @@
-concept_film_celitel_2017
+film_celitel_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Целитель]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_spain;concept_usa;concept_canada;
+=> nrel_producing_country : spain;usa;canada;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_celitel_2017 =>nrel_keywords: film;;
+film_celitel_2017 =>nrel_keywords: film;;
 
-concept_film_celitel_2017 <- concept_comedy;concept_drama;concept_family;concept_romance;;
+film_celitel_2017 <- concept_comedy;concept_drama;concept_family;concept_romance;;
 
-concept_film_celitel_2017 => nrel_main_actor : concept_oliver_jackson_cohen;concept_jonathan_pryce;concept_camilla_luddington;concept_jorge_garcia;;
-concept_film_celitel_2017 => nrel_producer : concept_paco_arango;;
+film_celitel_2017 => nrel_main_actor : oliver_jackson_cohen;jonathan_pryce;camilla_luddington;jorge_garcia;;
+film_celitel_2017 => nrel_producer : paco_arango;;

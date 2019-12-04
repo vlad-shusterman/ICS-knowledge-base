@@ -1,4 +1,4 @@
-concept_film_akuly_malibu_2009
+film_akuly_malibu_2009
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Акулы Малибу]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_australia;concept_canada;
+=> nrel_producing_country : australia;canada;
 
 => nrel_film_critic_rating : 3;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_14;;
 
-concept_film_akuly_malibu_2009 =>nrel_keywords: film;;
+film_akuly_malibu_2009 =>nrel_keywords: film;;
 
-concept_film_akuly_malibu_2009 <- concept_action;concept_adventure;concept_comedy;concept_drama;concept_horror;concept_sci_fi;concept_thriller;;
+film_akuly_malibu_2009 <- concept_action;concept_adventure;concept_comedy;concept_drama;concept_horror;concept_sci_fi;concept_thriller;;
 
-concept_film_akuly_malibu_2009 => nrel_main_actor : concept_renee_bowen;concept_remi_broadway;concept_joel_amos_byrnes;concept_warren_christie;;
-concept_film_akuly_malibu_2009 => nrel_producer : concept_david_lister;;
+film_akuly_malibu_2009 => nrel_main_actor : renee_bowen;remi_broadway;joel_amos_byrnes;warren_christie;;
+film_akuly_malibu_2009 => nrel_producer : david_lister;;

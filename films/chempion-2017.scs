@@ -1,4 +1,4 @@
-concept_film_chempion_2017
+film_chempion_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чемпион]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_chempion_2017 =>nrel_keywords: film;;
+film_chempion_2017 =>nrel_keywords: film;;
 
-concept_film_chempion_2017 <- concept_drama;concept_family;concept_sport;;
+film_chempion_2017 <- concept_drama;concept_family;concept_sport;;
 
-concept_film_chempion_2017 => nrel_main_actor : concept_gary_graham;concept_andrew_cheney;concept_isaiah_stratton;concept_robert_amaya;;
-concept_film_chempion_2017 => nrel_producer : concept_judd_brannon;;
+film_chempion_2017 => nrel_main_actor : gary_graham;andrew_cheney;isaiah_stratton;robert_amaya;;
+film_chempion_2017 => nrel_producer : judd_brannon;;

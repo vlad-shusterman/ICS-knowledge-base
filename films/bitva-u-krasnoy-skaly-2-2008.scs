@@ -1,4 +1,4 @@
-concept_film_bitva_u_krasnoy_skaly_2_2008
+film_bitva_u_krasnoy_skaly_2_2008
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Битва у Красной скалы 2]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_china;concept_hong_kong;concept_japan;concept_taiwan;concept_south_korea;
+=> nrel_producing_country : china;hong_kong;japan;taiwan;south_korea;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_bitva_u_krasnoy_skaly_2_2008 =>nrel_keywords: film;;
+film_bitva_u_krasnoy_skaly_2_2008 =>nrel_keywords: film;;
 
-concept_film_bitva_u_krasnoy_skaly_2_2008 <- concept_action;concept_drama;concept_history;concept_war;;
+film_bitva_u_krasnoy_skaly_2_2008 <- concept_action;concept_drama;concept_history;concept_war;;
 
-concept_film_bitva_u_krasnoy_skaly_2_2008 => nrel_main_actor : concept_tony_chiu_wai_leung;concept_takeshi_kaneshiro;concept_fengyi_zhang;concept_chen_chang;;
-concept_film_bitva_u_krasnoy_skaly_2_2008 => nrel_producer : concept_john_woo;;
+film_bitva_u_krasnoy_skaly_2_2008 => nrel_main_actor : tony_chiu_wai_leung;takeshi_kaneshiro;fengyi_zhang;chen_chang;;
+film_bitva_u_krasnoy_skaly_2_2008 => nrel_producer : john_woo;;

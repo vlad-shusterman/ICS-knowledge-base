@@ -1,4 +1,4 @@
-concept_film_amerikanskaya_pastoral_2016
+film_amerikanskaya_pastoral_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Американская пастораль]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_hong_kong;concept_usa;
+=> nrel_producing_country : hong_kong;usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_amerikanskaya_pastoral_2016 =>nrel_keywords: film;;
+film_amerikanskaya_pastoral_2016 =>nrel_keywords: film;;
 
-concept_film_amerikanskaya_pastoral_2016 <- concept_crime;concept_drama;;
+film_amerikanskaya_pastoral_2016 <- concept_crime;concept_drama;;
 
-concept_film_amerikanskaya_pastoral_2016 => nrel_main_actor : concept_ewan_mcgregor;concept_jennifer_connelly;concept_dakota_fanning;concept_peter_riegert;;
-concept_film_amerikanskaya_pastoral_2016 => nrel_producer : concept_ewan_mcgregor;;
+film_amerikanskaya_pastoral_2016 => nrel_main_actor : ewan_mcgregor;jennifer_connelly;dakota_fanning;peter_riegert;;
+film_amerikanskaya_pastoral_2016 => nrel_producer : ewan_mcgregor;;

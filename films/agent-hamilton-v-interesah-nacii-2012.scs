@@ -1,4 +1,4 @@
-concept_film_agent_hamilton_v_interesah_nacii_2012
+film_agent_hamilton_v_interesah_nacii_2012
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Агент Хамилтон: В интересах нации]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_sweden;
+=> nrel_producing_country : sweden;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_agent_hamilton_v_interesah_nacii_2012 =>nrel_keywords: film;;
+film_agent_hamilton_v_interesah_nacii_2012 =>nrel_keywords: film;;
 
-concept_film_agent_hamilton_v_interesah_nacii_2012 <- concept_action;concept_drama;concept_thriller;;
+film_agent_hamilton_v_interesah_nacii_2012 <- concept_action;concept_drama;concept_thriller;;
 
-concept_film_agent_hamilton_v_interesah_nacii_2012 => nrel_main_actor : concept_mikael_persbrandt;concept_saba_mubarak;concept_pernilla_august;concept_jason_flemyng;;
-concept_film_agent_hamilton_v_interesah_nacii_2012 => nrel_producer : concept_kathrine_windfeld;;
+film_agent_hamilton_v_interesah_nacii_2012 => nrel_main_actor : mikael_persbrandt;saba_mubarak;pernilla_august;jason_flemyng;;
+film_agent_hamilton_v_interesah_nacii_2012 => nrel_producer : kathrine_windfeld;;

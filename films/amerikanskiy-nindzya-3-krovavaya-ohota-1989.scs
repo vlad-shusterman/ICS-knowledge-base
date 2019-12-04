@@ -1,4 +1,4 @@
-concept_film_amerikanskiy_nindzya_3_krovavaya_ohota_1989
+film_amerikanskiy_nindzya_3_krovavaya_ohota_1989
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Американский ниндзя 3: Кровавая охота]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_canada;concept_south_africa;
+=> nrel_producing_country : usa;canada;south_africa;
 
 => nrel_film_critic_rating : 4;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_amerikanskiy_nindzya_3_krovavaya_ohota_1989 =>nrel_keywords: film;;
+film_amerikanskiy_nindzya_3_krovavaya_ohota_1989 =>nrel_keywords: film;;
 
-concept_film_amerikanskiy_nindzya_3_krovavaya_ohota_1989 <- concept_action;concept_drama;;
+film_amerikanskiy_nindzya_3_krovavaya_ohota_1989 <- concept_action;concept_drama;;
 
-concept_film_amerikanskiy_nindzya_3_krovavaya_ohota_1989 => nrel_main_actor : concept_david_bradley;concept_steve_james;concept_marjoe_gortner;concept_michele_b._chan;;
-concept_film_amerikanskiy_nindzya_3_krovavaya_ohota_1989 => nrel_producer : concept_cedric_sundstrom;;
+film_amerikanskiy_nindzya_3_krovavaya_ohota_1989 => nrel_main_actor : david_bradley;steve_james;marjoe_gortner;michele_b._chan;;
+film_amerikanskiy_nindzya_3_krovavaya_ohota_1989 => nrel_producer : cedric_sundstrom;;

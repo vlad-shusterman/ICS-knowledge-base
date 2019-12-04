@@ -1,4 +1,4 @@
-concept_film_avichi_pravdivye_istorii_2017
+film_avichi_pravdivye_istorii_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Авичи: Правдивые истории]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_sweden;concept_netherlands;
+=> nrel_producing_country : sweden;netherlands;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_avichi_pravdivye_istorii_2017 =>nrel_keywords: film;;
+film_avichi_pravdivye_istorii_2017 =>nrel_keywords: film;;
 
-concept_film_avichi_pravdivye_istorii_2017 <- concept_documentary;concept_music;;
+film_avichi_pravdivye_istorii_2017 <- concept_documentary;concept_music;;
 
-concept_film_avichi_pravdivye_istorii_2017 => nrel_main_actor : concept_salem_al_fakir;concept_avicii;concept_johan_bjerkelund;concept_aloe_blacc;;
-concept_film_avichi_pravdivye_istorii_2017 => nrel_producer : concept_levan_tsikurishvili;;
+film_avichi_pravdivye_istorii_2017 => nrel_main_actor : salem_al_fakir;avicii;johan_bjerkelund;aloe_blacc;;
+film_avichi_pravdivye_istorii_2017 => nrel_producer : levan_tsikurishvili;;

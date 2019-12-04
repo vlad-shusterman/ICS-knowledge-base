@@ -1,4 +1,4 @@
-concept_film_bitva_na_girlyandah_2010
+film_bitva_na_girlyandah_2010
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Битва на гирляндах]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_canada;concept_usa;
+=> nrel_producing_country : canada;usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_PG;;
 
-concept_film_bitva_na_girlyandah_2010 =>nrel_keywords: film;;
+film_bitva_na_girlyandah_2010 =>nrel_keywords: film;;
 
-concept_film_bitva_na_girlyandah_2010 <- concept_comedy;concept_family;;
+film_bitva_na_girlyandah_2010 <- concept_comedy;concept_family;;
 
-concept_film_bitva_na_girlyandah_2010 => nrel_main_actor : concept_daniel_stern;concept_matt_frewer;concept_allison_hossack;concept_teryl_rothery;;
-concept_film_bitva_na_girlyandah_2010 => nrel_producer : concept_harvey_frost;;
+film_bitva_na_girlyandah_2010 => nrel_main_actor : daniel_stern;matt_frewer;allison_hossack;teryl_rothery;;
+film_bitva_na_girlyandah_2010 => nrel_producer : harvey_frost;;

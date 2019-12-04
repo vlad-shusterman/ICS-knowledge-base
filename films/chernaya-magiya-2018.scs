@@ -1,4 +1,4 @@
-concept_film_chernaya_magiya_2018
+film_chernaya_magiya_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чёрная магия]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_indonesia;
+=> nrel_producing_country : indonesia;
 
 => nrel_film_critic_rating : 4;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_chernaya_magiya_2018 =>nrel_keywords: film;;
+film_chernaya_magiya_2018 =>nrel_keywords: film;;
 
-concept_film_chernaya_magiya_2018 <- concept_horror;;
+film_chernaya_magiya_2018 <- concept_horror;;
 
-concept_film_chernaya_magiya_2018 => nrel_main_actor : concept_kelly_brook;concept_marcellino_lafrand;concept_ayu_dyah_pasha;concept_ray_sahetapy;;
-concept_film_chernaya_magiya_2018 => nrel_producer : concept_helfi_c.h._kardit;;
+film_chernaya_magiya_2018 => nrel_main_actor : kelly_brook;marcellino_lafrand;ayu_dyah_pasha;ray_sahetapy;;
+film_chernaya_magiya_2018 => nrel_producer : helfi_c.h._kardit;;

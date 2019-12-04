@@ -1,4 +1,4 @@
-concept_film_boevye_roboty_1996
+film_boevye_roboty_1996
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Боевые роботы]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_boevye_roboty_1996 =>nrel_keywords: film;;
+film_boevye_roboty_1996 =>nrel_keywords: film;;
 
-concept_film_boevye_roboty_1996 <- concept_action;concept_adventure;concept_sci_fi;;
+film_boevye_roboty_1996 <- concept_action;concept_adventure;concept_sci_fi;;
 
-concept_film_boevye_roboty_1996 => nrel_main_actor : concept_james_remar;concept_kyle_howard;concept_james_tolkan;concept_james_lew;;
-concept_film_boevye_roboty_1996 => nrel_producer : concept_ian_barry;;
+film_boevye_roboty_1996 => nrel_main_actor : james_remar;kyle_howard;james_tolkan;james_lew;;
+film_boevye_roboty_1996 => nrel_producer : ian_barry;;

@@ -1,4 +1,4 @@
-concept_film_100_gradusov_nizhe_nulya_2013
+film_100_gradusov_nizhe_nulya_2013
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [100 градусов ниже нуля]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 2;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_100_gradusov_nizhe_nulya_2013 =>nrel_keywords: film;;
+film_100_gradusov_nizhe_nulya_2013 =>nrel_keywords: film;;
 
-concept_film_100_gradusov_nizhe_nulya_2013 <- concept_action;concept_adventure;concept_drama;concept_sci_fi;concept_thriller;;
+film_100_gradusov_nizhe_nulya_2013 <- concept_action;concept_adventure;concept_drama;concept_sci_fi;concept_thriller;;
 
-concept_film_100_gradusov_nizhe_nulya_2013 => nrel_main_actor : concept_jeff_fahey;concept_sara_malakul_lane;concept_marc_ewins;concept_john_rhys_davies;;
-concept_film_100_gradusov_nizhe_nulya_2013 => nrel_producer : concept_r.d._braunstein;;
+film_100_gradusov_nizhe_nulya_2013 => nrel_main_actor : jeff_fahey;sara_malakul_lane;marc_ewins;john_rhys_davies;;
+film_100_gradusov_nizhe_nulya_2013 => nrel_producer : r.d._braunstein;;

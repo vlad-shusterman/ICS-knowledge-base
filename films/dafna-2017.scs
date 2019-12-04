@@ -1,4 +1,4 @@
-concept_film_dafna_2017
+film_dafna_2017
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Дафна]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_uk;
+=> nrel_producing_country : uk;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_MA;;
 
-concept_film_dafna_2017 =>nrel_keywords: film;;
+film_dafna_2017 =>nrel_keywords: film;;
 
-concept_film_dafna_2017 <- concept_comedy;concept_drama;;
+film_dafna_2017 <- concept_comedy;concept_drama;;
 
-concept_film_dafna_2017 => nrel_main_actor : concept_emily_beecham;concept_geraldine_james;concept_tom_vaughan_lawlor;concept_nathaniel_martello_white;;
-concept_film_dafna_2017 => nrel_producer : concept_peter_mackie_burns;;
+film_dafna_2017 => nrel_main_actor : emily_beecham;geraldine_james;tom_vaughan_lawlor;nathaniel_martello_white;;
+film_dafna_2017 => nrel_producer : peter_mackie_burns;;

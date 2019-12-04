@@ -1,4 +1,4 @@
-concept_film_adskiy_endshpil_2009
+film_adskiy_endshpil_2009
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Адский эндшпиль]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 5;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_adskiy_endshpil_2009 =>nrel_keywords: film;;
+film_adskiy_endshpil_2009 =>nrel_keywords: film;;
 
-concept_film_adskiy_endshpil_2009 <- concept_action;concept_comedy;;
+film_adskiy_endshpil_2009 <- concept_action;concept_comedy;;
 
-concept_film_adskiy_endshpil_2009 => nrel_main_actor : concept_joe_anderson;concept_rob_corddry;concept_ellen_barkin;concept_odette_annable;;
-concept_film_adskiy_endshpil_2009 => nrel_producer : concept_fouad_mikati;;
+film_adskiy_endshpil_2009 => nrel_main_actor : joe_anderson;rob_corddry;ellen_barkin;odette_annable;;
+film_adskiy_endshpil_2009 => nrel_producer : fouad_mikati;;

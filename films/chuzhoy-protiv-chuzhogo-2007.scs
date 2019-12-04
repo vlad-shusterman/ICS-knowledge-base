@@ -1,4 +1,4 @@
-concept_film_chuzhoy_protiv_chuzhogo_2007
+film_chuzhoy_protiv_chuzhogo_2007
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чужой против Чужого]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 3;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_chuzhoy_protiv_chuzhogo_2007 =>nrel_keywords: film;;
+film_chuzhoy_protiv_chuzhogo_2007 =>nrel_keywords: film;;
 
-concept_film_chuzhoy_protiv_chuzhogo_2007 <- concept_action;concept_sci_fi;concept_thriller;;
+film_chuzhoy_protiv_chuzhogo_2007 <- concept_action;concept_sci_fi;concept_thriller;;
 
-concept_film_chuzhoy_protiv_chuzhogo_2007 => nrel_main_actor : concept_jason_london;concept_gigi_edgley;concept_christa_campbell;concept_coby_bell;;
-concept_film_chuzhoy_protiv_chuzhogo_2007 => nrel_producer : concept_c._roma;;
+film_chuzhoy_protiv_chuzhogo_2007 => nrel_main_actor : jason_london;gigi_edgley;christa_campbell;coby_bell;;
+film_chuzhoy_protiv_chuzhogo_2007 => nrel_producer : c._roma;;

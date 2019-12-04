@@ -1,4 +1,4 @@
-concept_film_devushka_iz_dzhersi_2004
+film_devushka_iz_dzhersi_2004
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Девушка из Джерси]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_devushka_iz_dzhersi_2004 =>nrel_keywords: film;;
+film_devushka_iz_dzhersi_2004 =>nrel_keywords: film;;
 
-concept_film_devushka_iz_dzhersi_2004 <- concept_comedy;concept_drama;concept_romance;;
+film_devushka_iz_dzhersi_2004 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_devushka_iz_dzhersi_2004 => nrel_main_actor : concept_ben_affleck;concept_liv_tyler;concept_raquel_castro;concept_betty_aberlin;;
-concept_film_devushka_iz_dzhersi_2004 => nrel_producer : concept_kevin_smith;;
+film_devushka_iz_dzhersi_2004 => nrel_main_actor : ben_affleck;liv_tyler;raquel_castro;betty_aberlin;;
+film_devushka_iz_dzhersi_2004 => nrel_producer : kevin_smith;;

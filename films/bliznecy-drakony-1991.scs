@@ -1,4 +1,4 @@
-concept_film_bliznecy_drakony_1991
+film_bliznecy_drakony_1991
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Близнецы-драконы]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_hong_kong;
+=> nrel_producing_country : hong_kong;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_bliznecy_drakony_1991 =>nrel_keywords: film;;
+film_bliznecy_drakony_1991 =>nrel_keywords: film;;
 
-concept_film_bliznecy_drakony_1991 <- concept_action;concept_comedy;;
+film_bliznecy_drakony_1991 <- concept_action;concept_comedy;;
 
-concept_film_bliznecy_drakony_1991 => nrel_main_actor : concept_jackie_chan;concept_maggie_cheung;concept_teddy_robin_kwan;concept_james_wong;;
-concept_film_bliznecy_drakony_1991 => nrel_producer : concept_ringo_lam;concept_hark_tsui;;
+film_bliznecy_drakony_1991 => nrel_main_actor : jackie_chan;maggie_cheung;teddy_robin_kwan;james_wong;;
+film_bliznecy_drakony_1991 => nrel_producer : ringo_lam;hark_tsui;;

@@ -1,4 +1,4 @@
-concept_film_angel_a_2005
+film_angel_a_2005
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Ангел-А]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_france;
+=> nrel_producing_country : france;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_angel_a_2005 =>nrel_keywords: film;;
+film_angel_a_2005 =>nrel_keywords: film;;
 
-concept_film_angel_a_2005 <- concept_comedy;concept_drama;concept_fantasy;concept_romance;;
+film_angel_a_2005 <- concept_comedy;concept_drama;concept_fantasy;concept_romance;;
 
-concept_film_angel_a_2005 => nrel_main_actor : concept_rie_rasmussen;concept_jamel_debbouze;concept_gilbert_melki;concept_serge_riaboukine;;
-concept_film_angel_a_2005 => nrel_producer : concept_luc_besson;;
+film_angel_a_2005 => nrel_main_actor : rie_rasmussen;jamel_debbouze;gilbert_melki;serge_riaboukine;;
+film_angel_a_2005 => nrel_producer : luc_besson;;

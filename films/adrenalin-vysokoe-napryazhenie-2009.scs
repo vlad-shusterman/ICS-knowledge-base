@@ -1,4 +1,4 @@
-concept_film_adrenalin_vysokoe_napryazhenie_2009
+film_adrenalin_vysokoe_napryazhenie_2009
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Адреналин: Высокое напряжение]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_adrenalin_vysokoe_napryazhenie_2009 =>nrel_keywords: film;;
+film_adrenalin_vysokoe_napryazhenie_2009 =>nrel_keywords: film;;
 
-concept_film_adrenalin_vysokoe_napryazhenie_2009 <- concept_action;concept_crime;concept_thriller;;
+film_adrenalin_vysokoe_napryazhenie_2009 <- concept_action;concept_crime;concept_thriller;;
 
-concept_film_adrenalin_vysokoe_napryazhenie_2009 => nrel_main_actor : concept_jason_statham;concept_amy_smart;concept_clifton_collins_jr.;concept_dwight_yoakam;;
-concept_film_adrenalin_vysokoe_napryazhenie_2009 => nrel_producer : concept_mark_neveldine;concept_brian_taylor;;
+film_adrenalin_vysokoe_napryazhenie_2009 => nrel_main_actor : jason_statham;amy_smart;clifton_collins_jr.;dwight_yoakam;;
+film_adrenalin_vysokoe_napryazhenie_2009 => nrel_producer : mark_neveldine;brian_taylor;;

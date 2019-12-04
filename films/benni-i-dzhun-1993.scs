@@ -1,4 +1,4 @@
-concept_film_benni_i_dzhun_1993
+film_benni_i_dzhun_1993
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бенни и Джун]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_benni_i_dzhun_1993 =>nrel_keywords: film;;
+film_benni_i_dzhun_1993 =>nrel_keywords: film;;
 
-concept_film_benni_i_dzhun_1993 <- concept_comedy;concept_drama;concept_romance;;
+film_benni_i_dzhun_1993 <- concept_comedy;concept_drama;concept_romance;;
 
-concept_film_benni_i_dzhun_1993 => nrel_main_actor : concept_johnny_depp;concept_mary_stuart_masterson;concept_aidan_quinn;concept_julianne_moore;;
-concept_film_benni_i_dzhun_1993 => nrel_producer : concept_jeremiah_s._chechik;;
+film_benni_i_dzhun_1993 => nrel_main_actor : johnny_depp;mary_stuart_masterson;aidan_quinn;julianne_moore;;
+film_benni_i_dzhun_1993 => nrel_producer : jeremiah_s._chechik;;

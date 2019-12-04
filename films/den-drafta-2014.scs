@@ -1,4 +1,4 @@
-concept_film_den_drafta_2014
+film_den_drafta_2014
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [День драфта]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_den_drafta_2014 =>nrel_keywords: film;;
+film_den_drafta_2014 =>nrel_keywords: film;;
 
-concept_film_den_drafta_2014 <- concept_drama;concept_sport;;
+film_den_drafta_2014 <- concept_drama;concept_sport;;
 
-concept_film_den_drafta_2014 => nrel_main_actor : concept_kevin_costner;concept_chadwick_boseman;concept_jennifer_garner;concept_frank_langella;;
-concept_film_den_drafta_2014 => nrel_producer : concept_ivan_reitman;;
+film_den_drafta_2014 => nrel_main_actor : kevin_costner;chadwick_boseman;jennifer_garner;frank_langella;;
+film_den_drafta_2014 => nrel_producer : ivan_reitman;;

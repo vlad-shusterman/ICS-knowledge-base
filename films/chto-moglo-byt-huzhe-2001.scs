@@ -1,4 +1,4 @@
-concept_film_chto_moglo_byt_huzhe_2001
+film_chto_moglo_byt_huzhe_2001
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Что могло быть хуже?]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_chto_moglo_byt_huzhe_2001 =>nrel_keywords: film;;
+film_chto_moglo_byt_huzhe_2001 =>nrel_keywords: film;;
 
-concept_film_chto_moglo_byt_huzhe_2001 <- concept_comedy;concept_crime;;
+film_chto_moglo_byt_huzhe_2001 <- concept_comedy;concept_crime;;
 
-concept_film_chto_moglo_byt_huzhe_2001 => nrel_main_actor : concept_martin_lawrence;concept_danny_devito;concept_john_leguizamo;concept_glenne_headly;;
-concept_film_chto_moglo_byt_huzhe_2001 => nrel_producer : concept_sam_weisman;;
+film_chto_moglo_byt_huzhe_2001 => nrel_main_actor : martin_lawrence;danny_devito;john_leguizamo;glenne_headly;;
+film_chto_moglo_byt_huzhe_2001 => nrel_producer : sam_weisman;;

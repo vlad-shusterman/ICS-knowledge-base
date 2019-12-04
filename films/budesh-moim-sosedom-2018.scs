@@ -1,4 +1,4 @@
-concept_film_budesh_moim_sosedom_2018
+film_budesh_moim_sosedom_2018
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Будешь моим соседом?]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_budesh_moim_sosedom_2018 =>nrel_keywords: film;;
+film_budesh_moim_sosedom_2018 =>nrel_keywords: film;;
 
-concept_film_budesh_moim_sosedom_2018 <- concept_documentary;concept_biography;;
+film_budesh_moim_sosedom_2018 <- concept_documentary;concept_biography;;
 
-concept_film_budesh_moim_sosedom_2018 => nrel_main_actor : concept_fred_rogers;concept_joanne_rogers;concept_john_rogers;concept_jim_rogers;;
-concept_film_budesh_moim_sosedom_2018 => nrel_producer : concept_morgan_neville;;
+film_budesh_moim_sosedom_2018 => nrel_main_actor : fred_rogers;joanne_rogers;john_rogers;jim_rogers;;
+film_budesh_moim_sosedom_2018 => nrel_producer : morgan_neville;;

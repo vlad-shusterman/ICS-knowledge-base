@@ -1,4 +1,4 @@
-concept_film_den_surka_1993
+film_den_surka_1993
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [День сурка]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_den_surka_1993 =>nrel_keywords: film;;
+film_den_surka_1993 =>nrel_keywords: film;;
 
-concept_film_den_surka_1993 <- concept_comedy;concept_fantasy;concept_romance;;
+film_den_surka_1993 <- concept_comedy;concept_fantasy;concept_romance;;
 
-concept_film_den_surka_1993 => nrel_main_actor : concept_bill_murray;concept_andie_macdowell;concept_chris_elliott;concept_stephen_tobolowsky;;
-concept_film_den_surka_1993 => nrel_producer : concept_harold_ramis;;
+film_den_surka_1993 => nrel_main_actor : bill_murray;andie_macdowell;chris_elliott;stephen_tobolowsky;;
+film_den_surka_1993 => nrel_producer : harold_ramis;;

@@ -1,4 +1,4 @@
-concept_film_chtec_2008
+film_chtec_2008
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чтец]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;concept_usa;
+=> nrel_producing_country : germany;usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_chtec_2008 =>nrel_keywords: film;;
+film_chtec_2008 =>nrel_keywords: film;;
 
-concept_film_chtec_2008 <- concept_drama;concept_romance;;
+film_chtec_2008 <- concept_drama;concept_romance;;
 
-concept_film_chtec_2008 => nrel_main_actor : concept_kate_winslet;concept_ralph_fiennes;concept_bruno_ganz;concept_jeanette_hain;;
-concept_film_chtec_2008 => nrel_producer : concept_stephen_daldry;;
+film_chtec_2008 => nrel_main_actor : kate_winslet;ralph_fiennes;bruno_ganz;jeanette_hain;;
+film_chtec_2008 => nrel_producer : stephen_daldry;;

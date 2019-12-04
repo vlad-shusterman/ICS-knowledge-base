@@ -1,4 +1,4 @@
-concept_film_chelovek_iz_niotkuda_2010
+film_chelovek_iz_niotkuda_2010
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Человек из ниоткуда]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_south_korea;
+=> nrel_producing_country : south_korea;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_chelovek_iz_niotkuda_2010 =>nrel_keywords: film;;
+film_chelovek_iz_niotkuda_2010 =>nrel_keywords: film;;
 
-concept_film_chelovek_iz_niotkuda_2010 <- concept_action;concept_drama;concept_thriller;;
+film_chelovek_iz_niotkuda_2010 <- concept_action;concept_drama;concept_thriller;;
 
-concept_film_chelovek_iz_niotkuda_2010 => nrel_main_actor : concept_won_bin;concept_sae_ron_kim;concept_tae_hoon_kim;concept_hee_won_kim;;
-concept_film_chelovek_iz_niotkuda_2010 => nrel_producer : concept_jeong_beom_lee;;
+film_chelovek_iz_niotkuda_2010 => nrel_main_actor : won_bin;sae_ron_kim;tae_hoon_kim;hee_won_kim;;
+film_chelovek_iz_niotkuda_2010 => nrel_producer : jeong_beom_lee;;

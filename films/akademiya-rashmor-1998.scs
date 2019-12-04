@@ -1,4 +1,4 @@
-concept_film_akademiya_rashmor_1998
+film_akademiya_rashmor_1998
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Академия Рашмор]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_akademiya_rashmor_1998 =>nrel_keywords: film;;
+film_akademiya_rashmor_1998 =>nrel_keywords: film;;
 
-concept_film_akademiya_rashmor_1998 <- concept_comedy;concept_drama;;
+film_akademiya_rashmor_1998 <- concept_comedy;concept_drama;;
 
-concept_film_akademiya_rashmor_1998 => nrel_main_actor : concept_jason_schwartzman;concept_bill_murray;concept_olivia_williams;concept_seymour_cassel;;
-concept_film_akademiya_rashmor_1998 => nrel_producer : concept_wes_anderson;;
+film_akademiya_rashmor_1998 => nrel_main_actor : jason_schwartzman;bill_murray;olivia_williams;seymour_cassel;;
+film_akademiya_rashmor_1998 => nrel_producer : wes_anderson;;

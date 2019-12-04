@@ -1,4 +1,4 @@
-concept_film_chungkingskiy_ekspress_1994
+film_chungkingskiy_ekspress_1994
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чунгкингский экспресс]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_hong_kong;
+=> nrel_producing_country : hong_kong;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG_13;;
 
-concept_film_chungkingskiy_ekspress_1994 =>nrel_keywords: film;;
+film_chungkingskiy_ekspress_1994 =>nrel_keywords: film;;
 
-concept_film_chungkingskiy_ekspress_1994 <- concept_comedy;concept_crime;concept_drama;concept_mystery;concept_romance;;
+film_chungkingskiy_ekspress_1994 <- concept_comedy;concept_crime;concept_drama;concept_mystery;concept_romance;;
 
-concept_film_chungkingskiy_ekspress_1994 => nrel_main_actor : concept_brigitte_lin;concept_takeshi_kaneshiro;concept_tony_chiu_wai_leung;concept_faye_wong;;
-concept_film_chungkingskiy_ekspress_1994 => nrel_producer : concept_kar_wai_wong;;
+film_chungkingskiy_ekspress_1994 => nrel_main_actor : brigitte_lin;takeshi_kaneshiro;tony_chiu_wai_leung;faye_wong;;
+film_chungkingskiy_ekspress_1994 => nrel_producer : kar_wai_wong;;

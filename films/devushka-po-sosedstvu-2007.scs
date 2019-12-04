@@ -1,4 +1,4 @@
-concept_film_devushka_po_sosedstvu_2007
+film_devushka_po_sosedstvu_2007
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Девушка по соседству]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_devushka_po_sosedstvu_2007 =>nrel_keywords: film;;
+film_devushka_po_sosedstvu_2007 =>nrel_keywords: film;;
 
-concept_film_devushka_po_sosedstvu_2007 <- concept_crime;concept_drama;concept_horror;concept_thriller;;
+film_devushka_po_sosedstvu_2007 <- concept_crime;concept_drama;concept_horror;concept_thriller;;
 
-concept_film_devushka_po_sosedstvu_2007 => nrel_main_actor : concept_william_atherton;concept_blythe_auffarth;concept_blanche_baker;concept_kevin_chamberlin;;
-concept_film_devushka_po_sosedstvu_2007 => nrel_producer : concept_gregory_wilson;;
+film_devushka_po_sosedstvu_2007 => nrel_main_actor : william_atherton;blythe_auffarth;blanche_baker;kevin_chamberlin;;
+film_devushka_po_sosedstvu_2007 => nrel_producer : gregory_wilson;;

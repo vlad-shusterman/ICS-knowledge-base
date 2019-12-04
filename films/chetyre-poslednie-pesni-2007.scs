@@ -1,4 +1,4 @@
-concept_film_chetyre_poslednie_pesni_2007
+film_chetyre_poslednie_pesni_2007
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Четыре последние песни]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_spain;concept_uk;
+=> nrel_producing_country : spain;uk;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_chetyre_poslednie_pesni_2007 =>nrel_keywords: film;;
+film_chetyre_poslednie_pesni_2007 =>nrel_keywords: film;;
 
-concept_film_chetyre_poslednie_pesni_2007 <- concept_comedy;concept_drama;concept_music;;
+film_chetyre_poslednie_pesni_2007 <- concept_comedy;concept_drama;concept_music;;
 
-concept_film_chetyre_poslednie_pesni_2007 => nrel_main_actor : concept_stanley_tucci;concept_rhys_ifans;concept_hugh_bonneville;concept_jena_malone;;
-concept_film_chetyre_poslednie_pesni_2007 => nrel_producer : concept_francesca_joseph;;
+film_chetyre_poslednie_pesni_2007 => nrel_main_actor : stanley_tucci;rhys_ifans;hugh_bonneville;jena_malone;;
+film_chetyre_poslednie_pesni_2007 => nrel_producer : francesca_joseph;;

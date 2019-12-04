@@ -1,4 +1,4 @@
-concept_film_chuzhaya_mat_2016
+film_chuzhaya_mat_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Чужая мать]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_chuzhaya_mat_2016 =>nrel_keywords: film;;
+film_chuzhaya_mat_2016 =>nrel_keywords: film;;
 
-concept_film_chuzhaya_mat_2016 <- concept_drama;concept_family;;
+film_chuzhaya_mat_2016 <- concept_drama;concept_family;;
 
-concept_film_chuzhaya_mat_2016 => nrel_main_actor : concept_richard_abraham;concept_daniel_ahearn;concept_wyeth_ahearn;concept_wyeth_james_ahearn;;
-concept_film_chuzhaya_mat_2016 => nrel_producer : concept_gabriela_tollman;;
+film_chuzhaya_mat_2016 => nrel_main_actor : richard_abraham;daniel_ahearn;wyeth_ahearn;wyeth_james_ahearn;;
+film_chuzhaya_mat_2016 => nrel_producer : gabriela_tollman;;

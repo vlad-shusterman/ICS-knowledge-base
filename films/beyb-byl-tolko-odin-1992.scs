@@ -1,4 +1,4 @@
-concept_film_beyb_byl_tolko_odin_1992
+film_beyb_byl_tolko_odin_1992
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бэйб был только один]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_PG;;
 
-concept_film_beyb_byl_tolko_odin_1992 =>nrel_keywords: film;;
+film_beyb_byl_tolko_odin_1992 =>nrel_keywords: film;;
 
-concept_film_beyb_byl_tolko_odin_1992 <- concept_biography;concept_drama;concept_sport;;
+film_beyb_byl_tolko_odin_1992 <- concept_biography;concept_drama;concept_sport;;
 
-concept_film_beyb_byl_tolko_odin_1992 => nrel_main_actor : concept_john_goodman;concept_kelly_mcgillis;concept_trini_alvarado;concept_bruce_boxleitner;;
-concept_film_beyb_byl_tolko_odin_1992 => nrel_producer : concept_arthur_hiller;;
+film_beyb_byl_tolko_odin_1992 => nrel_main_actor : john_goodman;kelly_mcgillis;trini_alvarado;bruce_boxleitner;;
+film_beyb_byl_tolko_odin_1992 => nrel_producer : arthur_hiller;;

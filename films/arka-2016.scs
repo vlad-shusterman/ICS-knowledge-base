@@ -1,4 +1,4 @@
-concept_film_arka_2016
+film_arka_2016
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Арка]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_canada;concept_usa;
+=> nrel_producing_country : canada;usa;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_TV_MA;;
 
-concept_film_arka_2016 =>nrel_keywords: film;;
+film_arka_2016 =>nrel_keywords: film;;
 
-concept_film_arka_2016 <- concept_action;concept_sci_fi;concept_thriller;;
+film_arka_2016 <- concept_action;concept_sci_fi;concept_thriller;;
 
-concept_film_arka_2016 => nrel_main_actor : concept_robbie_amell;concept_rachael_taylor;concept_shaun_benson;concept_gray_powell;;
-concept_film_arka_2016 => nrel_producer : concept_tony_elliott;;
+film_arka_2016 => nrel_main_actor : robbie_amell;rachael_taylor;shaun_benson;gray_powell;;
+film_arka_2016 => nrel_producer : tony_elliott;;

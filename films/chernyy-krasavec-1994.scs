@@ -1,4 +1,4 @@
-concept_film_chernyy_krasavec_1994
+film_chernyy_krasavec_1994
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Черный красавец / Черный Красавчик]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_uk;
+=> nrel_producing_country : usa;uk;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_G;;
 
-concept_film_chernyy_krasavec_1994 =>nrel_keywords: film;;
+film_chernyy_krasavec_1994 =>nrel_keywords: film;;
 
-concept_film_chernyy_krasavec_1994 <- concept_adventure;concept_drama;concept_family;concept_romance;;
+film_chernyy_krasavec_1994 <- concept_adventure;concept_drama;concept_family;concept_romance;;
 
-concept_film_chernyy_krasavec_1994 => nrel_main_actor : concept_sean_bean;concept_david_thewlis;concept_docs_keepin_time;concept_alan_cumming;;
-concept_film_chernyy_krasavec_1994 => nrel_producer : concept_caroline_thompson;;
+film_chernyy_krasavec_1994 => nrel_main_actor : sean_bean;david_thewlis;docs_keepin_time;alan_cumming;;
+film_chernyy_krasavec_1994 => nrel_producer : caroline_thompson;;

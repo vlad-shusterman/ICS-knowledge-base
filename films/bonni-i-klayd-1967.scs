@@ -1,4 +1,4 @@
-concept_film_bonni_i_klayd_1967
+film_bonni_i_klayd_1967
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Бонни и Клайд]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 8;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_bonni_i_klayd_1967 =>nrel_keywords: film;;
+film_bonni_i_klayd_1967 =>nrel_keywords: film;;
 
-concept_film_bonni_i_klayd_1967 <- concept_action;concept_biography;concept_crime;concept_drama;;
+film_bonni_i_klayd_1967 <- concept_action;concept_biography;concept_crime;concept_drama;;
 
-concept_film_bonni_i_klayd_1967 => nrel_main_actor : concept_warren_beatty;concept_faye_dunaway;concept_michael_j._pollard;concept_gene_hackman;;
-concept_film_bonni_i_klayd_1967 => nrel_producer : concept_arthur_penn;;
+film_bonni_i_klayd_1967 => nrel_main_actor : warren_beatty;faye_dunaway;michael_j._pollard;gene_hackman;;
+film_bonni_i_klayd_1967 => nrel_producer : arthur_penn;;

@@ -1,4 +1,4 @@
-concept_film_analiziruy_eto_1999
+film_analiziruy_eto_1999
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Анализируй это]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_australia;
+=> nrel_producing_country : usa;australia;
 
 => nrel_film_critic_rating : 7;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_analiziruy_eto_1999 =>nrel_keywords: film;;
+film_analiziruy_eto_1999 =>nrel_keywords: film;;
 
-concept_film_analiziruy_eto_1999 <- concept_comedy;concept_crime;;
+film_analiziruy_eto_1999 <- concept_comedy;concept_crime;;
 
-concept_film_analiziruy_eto_1999 => nrel_main_actor : concept_robert_de_niro;concept_billy_crystal;concept_lisa_kudrow;concept_chazz_palminteri;;
-concept_film_analiziruy_eto_1999 => nrel_producer : concept_harold_ramis;;
+film_analiziruy_eto_1999 => nrel_main_actor : robert_de_niro;billy_crystal;lisa_kudrow;chazz_palminteri;;
+film_analiziruy_eto_1999 => nrel_producer : harold_ramis;;

@@ -1,4 +1,4 @@
-concept_film_angel_hranitel_2012
+film_angel_hranitel_2012
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Ангел-хранитель]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_germany;
+=> nrel_producing_country : germany;
 
 => nrel_film_critic_rating : 6;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_not_rated;;
 
-concept_film_angel_hranitel_2012 =>nrel_keywords: film;;
+film_angel_hranitel_2012 =>nrel_keywords: film;;
 
-concept_film_angel_hranitel_2012 <- concept_action;concept_crime;concept_drama;concept_thriller;;
+film_angel_hranitel_2012 <- concept_action;concept_crime;concept_drama;concept_thriller;;
 
-concept_film_angel_hranitel_2012 => nrel_main_actor : concept_numan_acar;concept_volker_albers;concept_loyd_bateman;concept_gode_benedix;;
-concept_film_angel_hranitel_2012 => nrel_producer : concept_til_schweiger;;
+film_angel_hranitel_2012 => nrel_main_actor : numan_acar;volker_albers;loyd_bateman;gode_benedix;;
+film_angel_hranitel_2012 => nrel_producer : til_schweiger;;

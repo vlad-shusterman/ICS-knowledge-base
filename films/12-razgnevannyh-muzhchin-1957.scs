@@ -1,4 +1,4 @@
-concept_film_12_razgnevannyh_muzhchin_1957
+film_12_razgnevannyh_muzhchin_1957
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [12 разгневанных мужчин]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;
+=> nrel_producing_country : usa;
 
 => nrel_film_critic_rating : 9;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_Not_Rated;;
 
-concept_film_12_razgnevannyh_muzhchin_1957 =>nrel_keywords: film;;
+film_12_razgnevannyh_muzhchin_1957 =>nrel_keywords: film;;
 
-concept_film_12_razgnevannyh_muzhchin_1957 <- concept_drama;;
+film_12_razgnevannyh_muzhchin_1957 <- concept_drama;;
 
-concept_film_12_razgnevannyh_muzhchin_1957 => nrel_main_actor : concept_henry_fonda;concept_lee_j._cobb;concept_martin_balsam;concept_john_fiedler;;
-concept_film_12_razgnevannyh_muzhchin_1957 => nrel_producer : concept_sidney_lumet;;
+film_12_razgnevannyh_muzhchin_1957 => nrel_main_actor : henry_fonda;lee_j._cobb;martin_balsam;john_fiedler;;
+film_12_razgnevannyh_muzhchin_1957 => nrel_producer : sidney_lumet;;

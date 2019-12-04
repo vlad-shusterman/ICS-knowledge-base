@@ -1,4 +1,4 @@
-concept_film_amerikanskiy_nindzya_4_polnoe_unichtozhenie_1990
+film_amerikanskiy_nindzya_4_polnoe_unichtozhenie_1990
 <- sc_node_not_relation;
 => nrel_main_idtf:
 [Американский ниндзя 4: Полное уничтожение]
@@ -37,7 +37,7 @@ concept_film
 	*);;
 *);
 
-=> nrel_producing_country : concept_usa;concept_south_africa;
+=> nrel_producing_country : usa;south_africa;
 
 => nrel_film_critic_rating : 4;
 
@@ -59,9 +59,9 @@ concept_film
 
 =>nrel_age_rating: concept_R;;
 
-concept_film_amerikanskiy_nindzya_4_polnoe_unichtozhenie_1990 =>nrel_keywords: film;;
+film_amerikanskiy_nindzya_4_polnoe_unichtozhenie_1990 =>nrel_keywords: film;;
 
-concept_film_amerikanskiy_nindzya_4_polnoe_unichtozhenie_1990 <- concept_action;concept_drama;;
+film_amerikanskiy_nindzya_4_polnoe_unichtozhenie_1990 <- concept_action;concept_drama;;
 
-concept_film_amerikanskiy_nindzya_4_polnoe_unichtozhenie_1990 => nrel_main_actor : concept_michael_dudikoff;concept_david_bradley;concept_james_booth;concept_dwayne_alexandre;;
-concept_film_amerikanskiy_nindzya_4_polnoe_unichtozhenie_1990 => nrel_producer : concept_cedric_sundstrom;;
+film_amerikanskiy_nindzya_4_polnoe_unichtozhenie_1990 => nrel_main_actor : michael_dudikoff;david_bradley;james_booth;dwayne_alexandre;;
+film_amerikanskiy_nindzya_4_polnoe_unichtozhenie_1990 => nrel_producer : cedric_sundstrom;;
