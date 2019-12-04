@@ -1,0 +1,7 @@
+concept_video_sequence -> great_gatsby;butterfly;;
+
+great_gatsby => nrel_rating: ...(* -> rrel_imdb_score: 10;;*);;
+butterfly => nrel_rating: ... (* -> rrel_imdb_score: 9;;*);;
+
+great_gatsby => nrel_production_country: ... (*-> USA;;*);;
+butterfly => nrel_production_country: ...(* -> India;;*);;
