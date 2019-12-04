@@ -40,10 +40,8 @@ Prison_Break <-rrel_key_sc_element:...
 
 Prison_Break => nrel_production_country : Usa;;
 
-concept_calendar_date -> 2005;;
-2005 => nrel_main_idtf : [2005 год](*<-lang_ru;;*);;
-2005 => nrel_main_idtf : [year of 2005](*<-lang_en;;*);;
-Prison_Break => nrel_production_year : 2005;;
+
+Prison_Break => nrel_world_premiere: ...(* -> rrel_number_of_year: 2005;;*);;
 	
 value -> 6;;
 Prison_Break => nrel_num_of_seasons: 6;;

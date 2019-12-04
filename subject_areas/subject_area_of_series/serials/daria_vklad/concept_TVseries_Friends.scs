@@ -37,12 +37,10 @@ Friends <-rrel_key_sc_element:...
 	*);;
 *);;
 	
-Friends => nrel_production : Usa;;
+Friends => nrel_production_country : Usa;;
 
-concept_calendar_date -> 1994;;
-1994 => nrel_main_idtf : [1994 год](*<-lang_ru;;*);;
-1994 => nrel_main_idtf : [year of 1994](*<-lang_en;;*);;
-Friends => nrel_production_year : 1994;;
+
+Friends => nrel_world_premiere: ...(* -> rrel_number_of_year: 1994;;*);;
 	
 value -> 10;;
 Friends => nrel_num_of_seasons: 10;;

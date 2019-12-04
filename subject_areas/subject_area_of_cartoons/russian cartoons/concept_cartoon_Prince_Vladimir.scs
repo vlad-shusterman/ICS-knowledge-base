@@ -40,4 +40,5 @@ concept_cartoon_Prince_Vladimir
 =>nrel_keywords: concept_fantasy;
 =>nrel_keywords: concept_superhero;
 =>nrel_age_rating: concept_PG0;
+=> nrel_production_country: Russia;
 =>nrel_prototype: concept_character_Vladimir_Svyatoslavich;;

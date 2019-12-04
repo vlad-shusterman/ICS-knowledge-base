@@ -39,10 +39,8 @@ Shameless <-rrel_key_sc_element:...
 
 Shameless => nrel_production_country : Usa;;
 
-concept_calendar_date -> 2011;;
-2011 => nrel_main_idtf : [2011 год](*<-lang_ru;;*);;
-2011 => nrel_main_idtf : [year of 2011](*<-lang_en;;*);;
-Shameless => nrel_production_year : 2011;;
+
+Shameless => => nrel_world_premiere: ...(* -> rrel_number_of_year: 2011;;*);;
 	
 value -> 9;;
 Shameless => nrel_num_of_seasons: 9;;

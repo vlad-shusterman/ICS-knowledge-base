@@ -39,10 +39,8 @@ Breaking_Bad <-rrel_key_sc_element:...
 
 Breaking_Bad => nrel_production_country : Usa;;
 
-concept_calendar_date -> 2008;;
-2008 => nrel_main_idtf : [2008 год](*<-lang_ru;;*);;
-2008 => nrel_main_idtf : [year of 2008](*<-lang_en;;*);;
-Breaking_Bad => nrel_production_year : 2008;;
+
+Breaking_Bad => nrel_world_premiere: ...(* -> rrel_number_of_year: 2008;;*);;
 	
 value -> 5;;
 Breaking_Bad => nrel_num_of_seasons: 5;;

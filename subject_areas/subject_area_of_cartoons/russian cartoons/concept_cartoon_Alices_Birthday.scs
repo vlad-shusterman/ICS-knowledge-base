@@ -34,8 +34,10 @@ concept_cartoon_Alices_Birthday
 	*);;
 *);	
 <- concept_cartoon;
+<- concept_fantasy;
 => nrel_creation: concept_traditional_animation;
 =>nrel_keywords: concept_magic;
 =>nrel_keywords: concept_fantasy;
 =>nrel_keywords: concept_adventure;
+=> nrel_production_country: Russia;
 =>nrel_age_rating: concept_PG0;;

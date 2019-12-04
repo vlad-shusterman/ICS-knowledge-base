@@ -1,0 +1,19 @@
+concept_film -> mother; human; Earthlings;;
+
+
+mother => nrel_production_country: usa;;
+
+human => nrel_production_country: usa;;
+
+Earthlings => nrel_production_country: uae;;
+
+mother => nrel_world_premiere: ...(*-> rrel_number_of_year: 2016;;*);;
+
+human => nrel_world_premiere: ...(*-> rrel_number_of_year: 2016;;*);;
+
+Earthlings => nrel_world_premiere: ...(*-> rrel_number_of_year: 2018;;*);;
+
+concept_country -> usa; uea;;
+
+
+

@@ -8,6 +8,7 @@ concept_bleach
 	(* <- lang_en;;	*);
 
 => nrel_number_of_arches: 16;
+=> nrel_world_premiere: ...(*-> rrel_number_of_year: 2004;;*);
 => nrel_anime_studio: 
 	[Studio Pierrot]
 	(* <- lang_en;;	*);
